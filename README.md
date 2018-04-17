@@ -20,7 +20,7 @@ For reference, try to keep an up-to-date list of Overleaf links here:
 
 | Directory             | Overleaf |
 | --------------------- | ------------- |
-| proposals/KeckWP_2018 | [](https://www.overleaf.com/15600261fykfjpznsdpz#/59256766/) |
+| proposals/KeckWP_2018 | https://www.overleaf.com/15600261fykfjpznsdpz#/59256766/ |
 
 ## Adding a new document
 
