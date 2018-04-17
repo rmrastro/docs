@@ -75,9 +75,9 @@ complications to that here.
 
 ### Removing the submodule
 
-You can remove the submodule connection to the Overleaf project.  This 
-does **not** actually delete the project from Overleaf!.
-Using the proposals/KeckWP_2018 as an example, you would do the following:
+You can remove the submodule connection to the Overleaf project.  This
+does **not** actually delete the project from Overleaf!  Using the
+proposals/KeckWP_2018 as an example, you would do the following:
 
 ```
 git submodule deinit proposals/KeckWP_2018
