@@ -69,9 +69,13 @@ git checkout master
 ```
 
 You can then treat the docs/proposals/KeckWP_2018 directory as you would
-any other git repository.  The status of the main repository should also
-track changes in the submodule.  I'll update this with details of any
-complications I run into.
+any other git repository.  **Be sure to pull/push often to make sure
+that you're in sync with anyone making edits directly via the Overleaf
+browser interface.**
+
+The status of the main repository should also track changes in the
+submodule.  I'll update this with details of any complications I run
+into.
 
 ### Updating all submodules
 
