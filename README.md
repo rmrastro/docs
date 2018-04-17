@@ -70,8 +70,8 @@ git checkout master
 
 You can then treat the docs/proposals/KeckWP_2018 directory as you would
 any other git repository.  The status of the main repository should also
-track changes in the submodule.  I'll try to keep track of any
-complications to that here.
+track changes in the submodule.  I'll update this with details of any
+complications I run into.
 
 ### Removing the submodule
 
