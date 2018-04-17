@@ -73,6 +73,15 @@ any other git repository.  The status of the main repository should also
 track changes in the submodule.  I'll update this with details of any
 complications I run into.
 
+### Updating all submodules
+
+You can update all the submodules to match their respective remote
+repositories by running:
+
+```
+git submodule foreach git pull
+```
+
 ### Removing the submodule
 
 You can remove the submodule connection to the Overleaf project.  This
