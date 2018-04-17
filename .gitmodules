@@ -1,0 +1,4 @@
+[submodule "proposals/KeckWP_2018"]
+	path = proposals/KeckWP_2018
+	url = https://git.overleaf.com/15600261fykfjpznsdpz
+    ignore = all
