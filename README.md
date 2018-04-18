@@ -21,6 +21,8 @@ For reference, try to keep an up-to-date list of Overleaf links here:
 | Directory             | Overleaf |
 | --------------------- | ------------- |
 | proposals/KeckWP_2018 | https://www.overleaf.com/15600261fykfjpznsdpz#/59256766/ |
+| design/science_drivers | https://www.overleaf.com/15611483cdhzxxhmcbps#/59306618/ |
+
 
 ## Adding a new document
 
