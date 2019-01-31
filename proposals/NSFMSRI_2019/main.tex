@@ -1,0 +1,585 @@
+
+% Outline: 28 Jan 2019
+%   - 0. Summary (PAPPG guidlines) - 1p
+%   - 1. Project Description - 10 pp
+%   - 1.1 Intellectual Merit:
+%       - 1.1.1 Background \& Motivation
+%           - LSST cost NSF ~ \$1B
+%               - LSST Science goals
+%           - Can think of LSST as the next generation SDSS
+%               - But it doesn't have spectroscopy!
+%           - SDSS was an Imaging + Spectroscopy survey
+%               - SDSS the most cited survey ever
+%               - SDSS science milestones
+%               - Spectroscopy was a key aspect for the success of SDSS
+%                 (MPA-JHU)
+%               - Public release of data also key
+%           - What would it look like to perform SDSS-like spectroscopy
+%             for the LSST imagine survey?
+%               - Fraction of observed objects
+%               - Cost
+%               - currently an intractible problem
+%                   - link to photonics development?
+%               - Need new techniques (machine learning) to infer
+%                 statistically accurate population characteristics with
+%                 small training sets
+%           - LSST Science themes
+%           - Science enabled by LSST spectroscopy, lay groundwork for
+%             later science discussion.
+%
+%       - 1.1.2 Research Community Priority
+%           - Review Astro2010
+%               - LSST
+%           - Preview of or predictions for astro2020
+%           - Big data initiatives:
+%               - Moore-Sloan Data-Science Environments
+%                   - Berkeley institute for data science, NYU, UW
+%               - Using subsets of training data to understand a
+%                 population
+%                   - Hogg's AAS talk...
+%
+%           - Spectroscopy of LSST sources to get photozs provides key
+%             advantages to Cosmology/Dark Energy
+%           - Time domain astrophysics
+%               - AGN, CVs, stars (astroseismology)
+%
+%       - 1.1.3 Astrophysics and Data Science Goals
+%           - A Universe in transition
+%               - Gravity to Dark Energy:
+%                   - Precise cosmology with LSST and trained photozs
+%               - Gas to stellar dominated: The Galactic Ecosystem at z~2
+%                   - environment (Cooper)
+%                   - absorption-line systems (Prochaska)
+%                   - stellar populations (Shapely, Siana)
+%                       - Bootstrap z~2 properties to higher redshift (z~7)
+%               - Neutral to ionized gas: The heterogeneity of
+%                 Reionization
+%                   - environment and neutral fractions (Becker)
+%                   - Ly continuum (photon budget) at z~5-7 (Siana)
+%           - The Chemodynamical history of the Local Group
+%               - Chemical tagging of GAIA spectra on the far side of
+%                 the Milky Way (Yuan-Sen)
+%                   - What's gained in 0.31-0.4 range (unavailable to
+%                     PFS)
+%               - MW/M31/M33 (Raja, Connie)
+%               - Life cycle of stellar clusters
+%           - Time Domain (Foley)
+%
+%       - 1.1.4 FOBOS
+%           - How does FOBOS meet the science goals?
+%           - Instrument description as of conceptual design
+%           - Development from concept to final design
+%               - Sketch of timeline
+%           - Public survey design
+%               - Key science programs
+%               - AI-informed targeting system
+%               - Robust DRP and DAP
+%               - Public release schedule
+%           - Longer-term strategy for public release of *any* FOBOS
+%             data
+%               - 18-month proprietary period for PI data
+%               - Observatory queue for opportunistic use of "free"
+%                 fibers
+%
+%       - 1.2 Broader Impacts
+%           - Student Training
+%           - ISEE, AKAMAI (Lisa Hunter)
+%           - New UCSC Astrophysics major with Data Science emphasis
+%               - New course, summer projects
+%   
+%   - 2. References (2-page max)
+%
+%   - 3. Biographical Sketches (2 pages each), required for PI, co-PIs,
+%     and any additional senior personnel (see PAPPG)
+%
+%   - 4. Budget and Budget Justification: "For preliminary proposals
+%     cost estimates may be preliminary estimates with the Basis of
+%     Estimates (BoE) included. Copies of vendor quotations should not
+%     be included in preliminary proposals. If the budget includes
+%     contingency, that contingency should cover the 'known unknowns'
+%     and be used to mitigate identified risks."
+%
+%   - 5. Facilities, Equipment, and Other Resources: "In order for NSF,
+%     and its reviewers, to assess the scope of a proposed project, all
+%     organizational resources necessary for, and available to a
+%     project, must be described in this section of the proposal.
+%     Proposers should describe only those resources that are directly
+%     applicable. The description should be narrative in nature and must
+%     not include any quantifiable financial information. Proposers
+%     should include a description of the internal and external
+%     resources (both physical and personnel) that are expected to be
+%     available to the project.  Such information must be provided in
+%     this section, in lieu of other parts of the proposal (e.g., Budget
+%     Justification, Project Description)."
+%
+%   - 6. Supplementary Documents:
+%           - A list of the major team members, their affiliations, and
+%             their role in the project
+%           - A list of Partner Organizations to be funded via
+%             subawards, and the role of each in the project
+%           - An outline of the Project Execution Plan (PEP) . See the
+%             LFM/MFG. Greater detail will be required in invited full
+%             proposals should that occur.
+%
+%         "No other items or appendices should be included. Information
+%         pertaining to 'Results from Prior NSF Support', 'Current and
+%         Pending Support', 'Data Management Plan', and 'Postdoctoral
+%         Mentoring Plan' is not required for preliminary proposals and
+%         should not be included. Preliminary proposals containing items
+%         other than those required above will be returned without
+%         review.
+
+
+%\documentclass[11pt,letterpaper]{article}
+\documentclass[oneside,11pt]{amsart}
+
+%\usepackage{a4wide}
+%\usepackage{epsfig}
+%\usepackage{psfig}
+\usepackage{graphicx}
+\usepackage{natbib,latexsym,url,enumitem,pdfpages}
+\usepackage{color}
+
+% Some fancy commenting
+\definecolor{todo}{RGB}{200,0,0}
+\newcommand{\comment}[2][todo]{{\color{#1}[[{\bf #2}]]}}
+
+% User commands
+\input{journaldefs}
+
+\DeclareRobustCommand{\gtrsim}{%
+\mathrel{\hskip-.5em\begin{array}{c}>\\[-8pt]\sim\end{array}\hskip-.5em}}
+\DeclareRobustCommand{\lesssim}{%
+\mathrel{\hskip-.5em\begin{array}{c}<\\[-8pt]\sim\end{array}\hskip-.5em}}
+
+\pretolerance=10000
+\textwidth=6.4in
+\textheight=8.95in
+\voffset = 0.in
+%\voffset = -0.3in  % For my printer
+\topmargin=0.0in
+\headheight=0.00in
+\hoffset = 0.0in
+%\hoffset = 0.33in  %  For my printer
+\headsep=0.00in
+\oddsidemargin=0in
+\evensidemargin=0in
+\parindent=2em
+\parskip=0.2ex
+ 
+\renewcommand{\baselinestretch}{1.03}
+
+\special{papersize=8.5in,11in}
+
+
+
+\setlength{\parskip}{0.6 ex plus 0.4ex minus 0.2ex} \flushbottom
+\pagestyle{plain} 
+
+\begin{document}
+% \thispagestyle{empty}
+
+\pagenumbering{arabic}
+\begin{center}
+
+\vspace*{-1.5cm}
+
+\textbf{\textsf{Mid-scale RI-1 (M1:DP) Keck-FOBOS:\\ Building Comprehensive, Data-Driven Models of a Universe in Transition}}
+
+\authors{K. Bundy, K. Westfall, N. MacDonald, P. Capak, A. Coil, C. Conroy, M. Cooper, R. Kupke, K.G. Lee, R.
+Mandelbaum, D. Masters, J. Newman, X. Prochaska, C. Rockosi, J. Rhodes, M. Rich, M. Savage, A. Shapley, B. Siana, Y.-S.
+Ting}
+
+\end{center}
+
+\noindent\comment{10-page limit, excluding references.  This Mid-scale Research Infrastructure-1 ``Design'' proposal
+requests funds to complete the preliminary instrument design for the Fiber-Optic Broadband Optical Spectrograph
+(FOBOS) and build frameworks for enabling data-driven science goals via a FOBOS Public Survey.}
+
+
+% \smallskip
+% \section{Project Summary}
+% \label{sec:summary}
+
+% \noindent\comment{1 pg, doesn't count towards 10-pg limit}
+
+% \noindent {\bf Overview:}
+% (activity that would result and methods)
+
+% \noindent {\bf Intellectural Merit:}
+
+% \noindent {\bf Broader Impacts:}
+
+% \clearpage
+
+
+\smallskip
+\section{Intellectual Merit}
+\label{sec:im}
+
+\subsection{Scientific Justification} "including the unique research
+capabilities and lack of general availability of the requested
+infrastructure and its potential to significantly advance the Nation’s
+research infrastructure."
+
+\noindent \comment{3/4 page}
+
+Led by NSF's Large Synoptic Survey Telescope (LSST) which deploys in 2023, astronomy is entering a new era of
+unprecedented deep-imaging data sets that will survey huge volumes of the universe when it was only one-half or
+one-third its current age.  These epochs mark important but poorly understood transitions in cosmic history. Early
+galaxies were emerging from a ``primordial soup'' of gas and dust, assembling now fossilized structures that may be
+detected even within our own Milky Way.  Meanwhile, the rate of cosmic expansion was beginning to accelerate, as the
+Universe became increasingly dominated by ``Dark Energy,'' whose origin remains the single greatest mystery in
+astronomy and cosmology today.
+
+Since Edwin Hubble's observations over 100 years ago, major advances in our understanding of the universe have come
+from the two-step process of first taking images of the sky to locate sources of interest and then obtaining
+information-rich spectroscopy to reveal the nature of those sources.  A modern example is the Sloan Digital Sky Survey
+(SDSS) whose combination of panoramic ``imaging'' followed by dedicated spectroscopy yielded an unprecedented sample of
+over 1 million galaxies, mapping the present-day universe and making SDSS the most highly cited survey in the history
+of astronomy.
+
+% Because a quality spectrum requires far more observing time per source than an image, SDSS pioneered ``high multiplex''
+% spectrographs, capable of \emph{simultaneous} spectroscopy of hundreds of objects.
+
+LSST's all-sky images will be 1,000 times deeper and detect far more distant galaxies than SDSS, but {\bf no current
+U.S. facility is capable obtainng the spectroscopic followup} at a level required to capitalize on our \$1B investment
+in LSST.  In fact, SDSS-like spectroscopic followup of 1 million galaxies at LSST distances would require 300 years of
+observing on the largest telescopes with current instrumentation!
+
+The only way forward is encapsulated in one of NSF's ``10 Big Ideas,'' namely \emph{Harnessing the Data Revolution} in
+order to maximize the information content of LSST via machine learning of optimally-designed spectroscopic training
+sets.  This proposal presents a connected approach to the three critical components in this endeavor: 1) Development of
+statistical approaches to specific and ambitious data-science challenges that will address key questions about
+transitional epochs in cosmic history; 2) Design of FOBOS, a state-of-the-art spectroscopic facility on one of the
+world's largest telescopes optimized for obtaining spectroscopic training sets; 3) Design and execution
+of a ``Public Survey'' with this facility as well as a data-serving platform to provide spectroscopy and training data
+to the U.S. community.  This MSRI-1 design proposal lays out the path for maximizing the panoramic imaging of LSST with
+spectroscopic followup.  Through a subsequent MSRI proposal we will deliver on our goals with an instrument deployment
+in 2026 and completed spectroscopic followup as LSST concludes in 2029.
+
+We address data science challenges in four research areas in order to guide our instrument and survey design:
+
+\begin{enumerate}
+	\item Significantly more powerful probes of Dark Energy and Cosmology
+	\item Comprehensive understanding of the proto-galaxy ecosystem at $z\sim2$
+	\item Archaeological studies of our own Milky Way galaxy and its satellites to unravel their specific journeys
+	through this transition.
+	\item Time domain spectroscopy...?
+\end{enumerate}
+
+
+% Reference test: \citet{2015ApJ...798....7B}.
+
+
+
+\subsection{Research Community Priority} 
+\label{sec:community}
+\noindent\comment{3/4 page}
+
+\noindent "evidence, such as workshop
+reports or other publicly available indicators, that the infrastructure
+is a priority for a research community or important for a recognized NSF
+priority area such as one of NSF’s research Big Ideas."
+
+<<<<<<< HEAD
+% The coming decade will benefit from  major investments in both the depth and breadth of astronomical observations.  The James Webb Space Telescope will provide our deepest views yet, probing the first billion years of cosmic time over narrow sightlines.  At the same time, LSST's panoramic imaging will survey broad cosmic volumes of unprecedented size, detecting the majority of luminous sources a few billion years later.  LSST's optical imaging will be complemented by space-based near-infrared imaging from Euclid and eventually's NASA's WFIRST. 
+
+The National Research Council's 2015 report, ``Optimizing the U.S. Ground-Based Optical and Infrared Astronomy System'' \citep{NAP21722} made the following recommendation:
+
+\begin{quote}
+The National Science Foundation should support the development of a wide-field, highly multiplexed spectroscopic capability on a medium- or large-aperture telescope in the Southern Hemisphere to enable a wide variety of science, including follow-up spectroscopy of Large Synoptic Survey Telescope targets. Examples of enabled science are studies of cosmology, galaxy evolution, quasars, and the Milky Way.
+\end{quote}
+
+% \begin{quote}
+% The science reach of LSST could be substantially enhanced by developing for the U.S. astronomy community a very-wide-field, massively multiplexed, spectroscopic capability. This facility should be capable of overlapping the majority of the sky area covered by the LSST surveys. Such a wide-field instrument or instruments should be sufficiently multiplexed to enable spectroscopic surveys of tens of millions of objects over several years. The science case for such a capability is rich for objects of a wide range of brightnesses...
+% \end{quote}
+
+% Therefore MSE as currently envisioned:  (https://www.noao.edu/meetings/2020decadal/files/PHall_MSE_Tucson_201802v3.pdf)
+% •  will have access to 74% of the primary LSST footprint
+% •  will meet its science requirements over 59% of the primary
+% LSST area
+% •  will observe at airmass < 1.4 (the LSST limit in its primary
+% footprint) over 51% of the primary LSST area.
+
+In addition to this report, further details of spectroscopic needs for LSST in all science areas were dessiminated
+after a two-day workshop on this topic attended by more than 60 astronomers and organized by the National Optical
+Astronomy Observatory (NOAO) in 2013.  Based on these recommendations, we propose the Keck-FOBOS instrument coupled
+with a data-driven framework to address a majority LSST's spectroscopic requirements at a final cost 20 times less than
+a new Southern Hemisphere facility. Located in Hawaii, Keck-FOBOS would have access to more than 70\% of the LSST
+footprint, more than adequate for its primary goal of building powerful spectroscopic training sets and complementary to future spectroscopic instruments designed to cover wider areas (several deg$^2$ per pointing) at shallower depths.
+
+Photo-z working group.
+
+=======
+The coming decade will benefit from  major investments in both the depth and breadth of astronomical observations.  The James Webb Space Telescope will provide our deepest views yet, probing the first billion years of cosmic time over narrow sightlines.  At the same time, LSST's panoramic imaging will survey broad cosmic volumes of unprecedented size, detecting the majority of luminous sources a few billion years later.  LSST's optical imaging will be complemented by space-based near-infrared imaging from Euclid and eventually's NASA's WFIRST. 
+
+The lack of telescope facilities capable of providing required spectrocopic followup for LSST, Euclid, and WFIRST is an urgent problem.  
+>>>>>>> c2c7052aae75984c7b133de82ffdd7b5b886bf35
+
+\subsection{Data-Driven Science Challenges}
+\label{sec:goals}
+
+We introduce data science challenges in three science areas that will be addressed in this proposal.  Each enables significant advances in our understanding of transitional epochs in cosmic history by leveraging FOBOS-derived spectroscopic training sets to maximize the information that can be extracted from LSST.
+
+\subsubsection{Enhancing Dark Energy Probes via Precision Cosmic Distances}
+\label{sec:cosmology}
+\noindent \comment{1 page}
+
+
+\begin{figure}[h!]
+ \vskip -0.1in
+ \includegraphics[width=\textwidth]{Hemmati18_Fig8_VVDS_spec.png}
+ \caption{\small \emph{Left:} A Self-Organizing Map (SOM) from \citet{hemmati18} visualizing the relationship between
+ broadband galaxy brightness in different broadband filters (projected along the x and y axes) and observed
+ spectroscopic redshift (indicated by the color map).  SOMs guide the optimal construction of training samples by
+ highlighting which galaxy classes require targeting.  \emph{Right:} Remarkably, the spectra associated with localized
+ SOM regions are surprisingly similar, not just the associated redshifts.}\label{fig:SOM}
+\end{figure}
+
+The 2011 Nobel Prize in Physics was awarded for the discovery of an era of acceleration in the expansion rate of the
+universe that sets in when the universe was roughly half its current age.  This accelerated expansion is often
+attributed to a mysterious ``Dark Energy,'' but the amplitude of this vacuum energy density is 120 orders of magnitude
+smaller than what naive models would predict.
+
+Dark Energy is perhaps the single most important unsolved problem in cosmology and astrophysics.  As such, it has
+inspired enormous world-wide effort and the construction of dedicated ground and space-based facilities.  These include
+LSST, Euclid, and WFIRST.  The goal of these experiments is the precision mapping of cosmic structure.  Because this
+structure expands as the universe expands, precise measures of cosmic structure allow us to reconstruct the cosmic
+expansion history, and at sufficient levels of detail, distinguish among various Dark Energy models.
+
+Many of the most important cosmological probes require galaxy ``redshifts,'' a Doppler-like shift in the observed
+wavelengths of emitted light, as distant galaxies appear to recede from us as a result of cosmic expansion.
+Cosmological models, which provide access to Dark Energy parameters, are constrained in part via the conversion of
+redshift into distance.  Accurate redshifts are conventionally derived via spectroscopy by fitting the observed
+wavelength locations of spectral features.  Less precise redshifts, so-called ``photometric redshifts'' (or photo-$z$s) can be estimated with imaging photometry alone, a
+compelling option for large and faint data sets where spectroscopic redshifts are infeasible.  But, ``to infer
+cosmological parameters not limited by systematic errors, accurate redshift measurements are needed'' \citep
+{hemmati18}.  
+
+Spectroscopic redshifts are critical for both the training of photometric redshift algorithms and for calibrating
+results in order to correct for biases.  Complete photo-$z$ training samples can \emph{increase the Dark Energy
+Figure of Merit in LSST by 50\%} \citep{newman15}.  
+
+\medskip
+\noindent {\bf Data Science Challenge 1: Obtain precise LSST Photometric Redshifts ($\sigma_z/(1+z) \lesssim 0.005$ at
+i(AB) $<$ 25.3) with Targeted Training Sample sizes of $<$10k}.  Our proposed FOBOS instrument is ideally suited to
+providing the spectroscopic training defined in \citet{newman15}, but a complete program would require a 400-night
+investment in 10 m telescope time.  This challenge demands a reduction in the required FOBOS training sample by a
+factor of $\sim$4 via clever application of state-of-the-art machine learning techniques.
+
+Neural network trained photo-$z$s have long been recognized for providing the best precision when sufficient training
+sets are available \citep[e.g.][]{bundy06}, and significant effort is underway in optimizing their application to
+future cosmological imaging surveys.  \citet{hemmati18} for example have exploited Self-Organizing Maps (SOMs, Fig \ref
+{fig:SOM}) to sort multiband photometric data by observed redshift in order to select optimized training samples for spectroscopic followup.
+
+
+
+
+\subsubsection{A Comprehensive Picture of the Proto-galaxy Ecosystem}
+\label{sec:galaxies}
+\noindent \comment{1 page}
+
+\subsubsection{Unraveling the Formation History of our Local Group of Galaxies}
+\label{sec:localgroup}
+\noindent \comment{1 page}
+
+\subsubsection{Time Domain}
+\label{sec:timedomain}
+\noindent \comment{1/2 page}
+
+
+
+\section{Project Implementation}
+\label{sec:project}
+
+\begin{figure}[h!]
+ \vskip -0.1in
+ \includegraphics[width=\textwidth]{FOBOSatKeck_v1.pdf}
+ \caption{\small Rendering of FOBOS instrument systems deployed at the Keck II Nasmyth port.  By mounting the FOBOS spectrographs under the Nasmyth platform, other instruments like DEIMOS can maintain access to the telescope.}\label{fig:layout}
+\end{figure}
+
+
+\subsection{FOBOS Instrument Concept}
+\label{sec:concept}
+\noindent \comment{1 page}
+
+Mounted at the Keck II Telescope's Nasmyth focus, the Fiber Optic Broadband Optical Spectrograph (FOBOS) will be one of
+the most powerful spectroscopic facilities in the next decade.  FOBOS consists of several key components (Fig).  A
+compensating lateral atmospheric dispersion corrector (CLADC) ensures that target light from all wavelengths falls on
+allocated fibers while also correcting image aberrations at the edges of the 20 arcmin diameter Keck field that result
+from the telescope design.  The final lens surface in the 3-lens CLADC also serves as the mounting plate for roaming
+Starbugs fiber positioners.  Starbugs patrol a large on-sky area, enabling flexible targeting configurations that can
+be dynamically adjusted during observations.
+
+A total of 1800 150 $\mu$m core diameter fibers are deployed at the curved focal plane, which rotates and translates to
+maintain image positions as the telescope tracks across the sky.  The fiber run is kept at less than $\sim$10 m to
+maintain high throughput at UV wavelengths, and special care is given to stress-relief cabling to minimize variable
+focal ratio degradation over the fiber run.
+
+Sets of 600 fibers feed each of three identical spectrographs.  Each spectrograph uses a series of dichroics to divide
+the fiber output into four wavelength channels with combined coverage from 310 to 1000 nm and mid-channel spectral
+resolutions of $R \sim 3500$.  The dispersed light in each channel is focused by an f/1.1 catadioptric camera and
+recorded by an on-axis CCD mounted at the center of the first camera lens element.  Spectrographs are mounted in a
+temperature controlled housing installed under the Nasmyth Deck to allow space for other Keck instruments to access the
+Nasmyth port.  The end-to-end instrument throughput is greater than 30\% at all wavelengths.
+
+FOBOS includes observatory level systems for precise instrument calibration using dome-interior screen illumination, a
+metrology system for accurate fiber positioning, and guide cameras for field acquisition and guiding.  The instrument
+design envisions future upgrades including alternate collecting modes that deploy multiple fiber bundles, feeds to
+other fiber-based spectrographs at different wavelengths or spectral resolutions, and the ability to support and
+benefit from image corrections with Ground-Layer Adaptive Optics.
+
+
+
+\subsection{Instrument Design Effort}
+\label{sec:design}
+\noindent \comment{1 page}
+
+\subsection{Design of Public Survey and Training Sets}
+\label{sec:survey}
+\noindent \comment{1 page}
+
+\subsection{Target Allocation with Artificial Intelligence}
+\label{sec:targeting}
+\noindent \comment{1/2 page}
+
+\subsection{Pulicly Available Automated Data Products}
+\label{sec:DAP}
+\noindent \comment{1/2 page}
+
+
+\section{Broader Impacts}
+\label{sec:bi}
+
+"include a discussion of student training, increased participation of
+underrepresented groups and a description of tangible benefits to the
+wider U.S. research community (access, data products, technology,
+etc.)."
+
+\subsection{Student training}
+\label{sec:training}
+\noindent \comment{1/4 page}
+
+\subsection{ISEE?}
+\noindent \comment{1/2 page}
+
+\subsection{Data Science Major in Astrophysics}
+\noindent \comment{1/4 page}
+
+
+"Preliminary proposals must include an outline of ongoing operations and
+maintenance plans, including an estimate of any needs for ongoing,
+NSF-supported operations and maintenance that may be requested outside
+of the Mid-scale RI program."
+
+"Results from Prior NSF Support should not be included. Also, links to
+URLs may not be used."
+
+\vspace{-0.5cm}
+
+{\bf no more than 2 pages for references}
+
+\clearpage
+\bibliographystyle{nsf}
+\bibliography{references}
+
+
+\newpage
+
+\noindent{\bf Budget and Budget Justification}
+
+"including budgets for any subawards. For preliminary proposals cost
+estimates may be preliminary estimates with the Basis of Estimates (BoE)
+included. Copies of vendor quotations should not be included in
+preliminary proposals. If the budget includes contingency, that
+contingency should cover the "known unknowns" and be used to mitigate
+identified risks."
+
+\newpage
+
+\noindent{\bf Facilities, Equipment, and Other Resources:}
+
+In order for NSF, and its reviewers, to assess the scope of a proposed
+project, all organizational resources necessary for, and available to a
+project, must be described in this section of the proposal. Proposers
+should describe only those resources that are directly applicable. The
+description should be narrative in nature and must not include any
+quantifiable financial information. Proposers should include a
+description of the internal and external resources (both physical and
+personnel) that are expected to be available to the project.  Such
+information must be provided in this section, in lieu of other parts of
+the proposal (e.g., Budget Justification, Project Description).
+
+\newpage
+
+\noindent{\bf Supplementary Documents:}
+
+(to be entered in the Supplementary Documents section of FastLane)
+
+\begin{enumerate}
+%
+\item A list of the major team members, their affiliations, and their
+role in the project;
+%
+\item A list of Partner Organizations to be funded via subawards, and
+the role of each in the project;
+%
+\item An outline of the Project Execution Plan (PEP).
+%  see https://www.nsf.gov/bfa/lfo/lfo_documents.jsp
+\end{enumerate}
+
+(See the LFM/MFG. Greater detail will be required in invited full
+proposals should that occur. See Full Proposal Preparation section for
+further information.)
+
+%\begin{figure}[h!]
+%  \vskip -0.1in
+%  \includegraphics[width=\textwidth]{red_geyser_fig.pdf}
+%  \caption{\small Discovery of the ``red geyser'' phenomenon in MaNGA which may
+%      provide key missing evidence for how early-type galaxies remain quiescent.  Our prototypical example is the
+%      elliptical galaxy (MaNGA ID 1-217022) pictured to the right in the SDSS image (top panel) and tidally interacting
+%      with a low-mass companion.  The purple hexagons show the MaNGA integral-field footprint.  Bisymmetric features in
+%      the H$\alpha$ equivalent width map (EW, central panel) suggest outflowing material.  A cool gas component traced
+%      by Na D is offset, however, with material apparently falling into the galaxy's center (center-right panels).
+%      Further evidence for an outflowing ionized gas is apparent emission line velocity field ($v_{\rm gas}$,
+%      bottom-center panel).  Schematic diagrams of a wind model are shown to the left while the bottom-right panel
+%      demonstrates how features in the $v_{\rm gas}$ field can be reproduced by the model.  The enhanced H$\alpha$
+%      emission (over-plotted white contours) can be explained by shocks or over-densities occurring along the central
+%      wind axis (highlighted in green in the wind drawings).  Other examples of MaNGA red geysers are shown in Figure
+%      \ref{fig:montage}. }\label{fig:splash}
+%\end{figure}
+
+
+% \begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+%
+%  \item[] {\bf Preparatory Work}: Using a parent sample of 2400 MaNGA galaxies we apply a red sequence color cut of
+%  $NUV-r>5$ \citep[see][]{salim09} which yields $\sim$1000 quiescent galaxies from which we visually identify 83 red
+%  geyser candidates.  We have built a control sample of 442 galaxies by matching on redshift, $M_*$, and axis ratio
+%  ($b/a$).  Stellar mass and redshift have been shown to correlate with radio emission and thus must be controlled for
+%  \citep[e.g.,] []{best07}.  We additionally consider a control sub-sample with MaNGA-detected emission lines (LIER
+%  galaxies).
+%
+%  We have downloaded FIRST radio image data and extracted cutouts centered on both the red geyser and control samples.
+%   Among these we have identified radio detections and performed initial median stacks which are shown in Figure
+%   \ref{fig:stacks}.  We find that 19/83 ($\approx23\%$) red geysers and 39/442 ($\approx9\%$) control galaxies are
+%   radio-detected.  Our prelminary stacked photometry indicates that with detections removed, the radio flux associated
+%   with red geysers is $\approx$7 times stronger than in the control samples.
+%
+%  \item[] {\bf Proposed Work}: Our preliminary analysis of the FIRST data points to an important result: radio
+%  emission, most likely associated with AGN, appears to be elevated among red geysers bolstering our AGN wind
+%  interpretation.  Here we propose to complete and publish this analysis.  We will update the red geyser sample using
+%  the latest MaNGA catalog ($\sim$5000 galaxies, see Section \ref{sec:stats}) and more carefully vet the stacked
+%  samples.  Using deep star formation rate estimates from \citet{chang15}, we will test that radio flux
+%  contamination from residual star formation does not affect our conclusions.  Most important, we will develop a Monte
+%  Carlo technique to measure the photometric errors on our stacked flux estimates.  This will enable us to assign a
+%  confidence level to the significance of the stronger radio flux associated with red geysers.  
+%
+
+%\end{enumerate}
+
+
+\includepdf[pages=-,landscape=true]{FOBOS_HighLevel_Schedule_v1.pdf}
+
+\end{document}
+
