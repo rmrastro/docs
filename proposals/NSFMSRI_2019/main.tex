@@ -394,6 +394,17 @@ future cosmological imaging surveys.  \citet{hemmati18} for example have exploit
 \label{sec:galaxies}
 \noindent \comment{1 page}
 
+
+
+The rate at which stars have been born in the Universe has varied
+dramatically over cosmic history.  At roughly half its current age, the
+Universe was on average forming 10 stars for every one star formed today
+\comment{ref}.  At these epochs, galaxies looked rather different then
+they do now, dominated by all-consuming star-formation regions
+\comment{ref}.  These morphologies are only seen in rare star-burst
+galaxies in the Local Volume \comment{ref}.  The 
+
+
 \subsubsection{Unraveling the Formation History of our Local Group of Galaxies}
 \label{sec:localgroup}
 \noindent \comment{1 page}
@@ -488,13 +499,54 @@ workpackage also includes the stress-relief cable system and fiber termination h
 \label{sec:survey}
 \noindent \comment{1 page}
 
+% The components of the FPS are as follows:
+%     - Photo-z training samples (Newman, Masters)
+%         - z>1.5 in the blue
+%         - z<1.5 in the red
+%     - Ly continuum
+%         - z~2 in the blue
+%         - z~7 in the red
+%     - Machine-learning the SDSS but at z~2
+
+
 \subsection{Target Allocation with Artificial Intelligence}
 \label{sec:targeting}
 \noindent \comment{1/2 page}
 
+
+Afforded the flexibility of the Starbugs positioning system, we envision
+a target allocation package that
+    - maintains a database with observational progress on individual
+      targets in the survey and
+    - dynamically reallocates fibers based on real-time assessments of
+      the aggregate S/N of each target to meet the specific need of each
+      science case.
+
+This requires significant design and testing of a combined software
+package and hardware interface.  Specific considerations involve (1)
+fast and robust reduction procedures (cf. MaNGA DOS) that can assess the
+aggregate data and (2) a responsive database with a schema optimized for
+real-time decision making to select targets for (re)acquisition while
+accounting for collision limitations.  Provided enough design effort,
+this lends itself to a machine-learning application.
+
+
 \subsection{Pulicly Available Automated Data Products}
 \label{sec:DAP}
 \noindent \comment{1/2 page}
+
+The advanced products of the survey will be delivered to the public via
+the Keck Observatory Archive (KOA).  However, beyond the raw data, the
+survey will provide reduced and derived products immediately (cf. MaNGA
+DAP).  The latter will be true of both the data from the public survey
+(released immediately) and indeed {\it any} data taken with the FOBOS
+instrument after the nominal 18-month proprietary period.  For the
+latter, we will encourage involvement of the program PI in refining the
+data-reduction and data-analysis software and its execution to garner
+the most from its application to their data.  Community involvement in a
+common software development obviates the need for different groups to
+retread old ground.
+
 
 
 \section{Broader Impacts}
@@ -511,6 +563,47 @@ etc.)."
 
 \subsection{ISEE?}
 \noindent \comment{1/2 page}
+
+% AKAMAI: local Hawaiian workforce
+%     - many more computer science students
+%         UH Hilo 
+%     - UH manao mostly engineering
+
+%     - AMOS - airforce 
+%         - abstract
+% 
+% 
+%     1/3 of students on mainland but from hawaii
+% 
+%     1/4 are native hawaii
+% 
+%     38\% women
+% 
+%         \$15k intern
+% 
+%         2 students for 2 summers?
+% 
+%     4/5 day prep for prof dev
+% 
+% Prof dev program:
+%     grads postdocs
+%         - learn diverse students and inclusively
+%         - form a team, design something, and teach it
+%         - ~25 teams every year.
+%         - teams geared toward specific need of ugrad groups
+% 
+%     chapters throughout country
+%         - REU prep
+%         - stats
+%         - cfa summerschool
+%         - dunlap summer school
+% 
+%         - kappa w/ Jessica Lu : astrotech
+% 
+%         - 
+% 
+%     grad+postdoc: local ~\$3500 per
+
 
 \subsection{Data Science Major in Astrophysics}
 \noindent \comment{1/4 page}
