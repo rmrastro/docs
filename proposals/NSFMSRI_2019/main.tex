@@ -145,6 +145,10 @@
 \definecolor{todo}{RGB}{200,0,0}
 \newcommand{\comment}[2][todo]{{\color{#1}[[{\bf #2}]]}}
 
+% Challenge counter
+\newcounter{chalno}
+\newcommand{\chal}[1]{\refstepcounter{chalno}\label{#1}}
+
 % User commands
 \input{journaldefs}
 
@@ -247,7 +251,7 @@ of astronomy.
 % spectrographs, capable of \emph{simultaneous} spectroscopy of hundreds of objects.
 
 LSST's all-sky images will be 1,000 times deeper and detect far more distant galaxies than SDSS, but {\bf no current
-U.S. facility is capable obtainng the spectroscopic followup} at a level required to capitalize on our \$1B investment
+U.S. facility is capable obtaining the spectroscopic followup} at a level required to capitalize on our \$1B investment
 in LSST.  In fact, SDSS-like spectroscopic followup of 1 million galaxies at LSST distances would require 300 years of
 observing on the largest telescopes with current instrumentation!
 
@@ -378,7 +382,8 @@ results in order to correct for biases.  Complete photo-$z$ training samples can
 Figure of Merit in LSST by 50\%} \citep{newman15}.  
 
 \medskip
-\noindent {\bf Data Science Challenge 1: Obtain precise LSST Photometric Redshifts ($\sigma_z/(1+z) \lesssim 0.005$ at
+\chal{photozs}
+\noindent {\bf Data-Science Challenge \ref{photozs}: Obtain precise LSST Photometric Redshifts ($\sigma_z/(1+z) \lesssim 0.005$ at
 i(AB) $<$ 25.3) with Targeted Training Sample sizes of $<$10k}.  Our proposed FOBOS instrument is ideally suited to
 providing the spectroscopic training defined in \citet{newman15}, but a complete program would require a 400-night
 investment in 10 m telescope time.  This challenge demands a reduction in the required FOBOS training sample by a
@@ -404,14 +409,17 @@ stars.  It is thus critical that we study not just the galaxy population but the
 LSST's deep imaging will detect huge numbers of galaxies undergoing this transition, enabling targeted spectroscopic followup with Keck-FOBOS that can be used to infer SDSS-like information from LSST and other photometric data sets alone.  
 
 \medskip
-\noindent {\bf Data Science Challenge 2: Apply Deep Learning to infer star formation rates and formation histories, dust content, and stellar masses from $z \sim 2$ photometry}.
+\chal{phot}
+\noindent {\bf Data-Science Challenge \ref{phot}: Apply Deep Learning to infer star formation rates and formation histories, dust content, and stellar masses from $z \sim 2$ photometry}.
 
 \medskip
-\noindent {\bf Data Science Challenge 3: Enable label transfer from rest-frame optical to UV stellar and ISM indicators}.
+\chal{uv}
+\noindent {\bf Data-Science Challenge \ref{uv}: Enable label transfer from rest-frame optical to UV stellar and ISM indicators}.
 
 
 \medskip
-\noindent {\bf Data Science Challenge 4: Train short spectroscopic exposures in combination with LSST photometry to provide environmental diagnostics for 1M galaxies at $z=1--2$}.
+\chal{lowsnr}
+\noindent {\bf Data-Science Challenge \ref{lowsnr}: Train short spectroscopic exposures in combination with LSST photometry to provide environmental diagnostics for 1M galaxies at $z=1--2$}.
 
 
 
@@ -502,20 +510,14 @@ similar to the SOM example provided in Figure 1.  At their core,
 machine-learning algorithms, particularly supervised learning, are only
 as good as the parameter space spanned by their training sets.
 
-\medskip \noindent {\bf Data Science Challenge 5: Stellar parameter
-determinations for a billion stellar spectra.}  To realize the full
-potential of the Gaia astrometric catalog, one needs the full 6D phase
-space for each star and its chemical abundance pattern.  Although
-anything more than simple total metallicity measurements are out of
-reach for FOBOS, a strategically developed training set observed at high
-S/N can be used for kinematics and simple stellar parameter
-determination.
-
-% \medskip \noindent {\bf Data Science Challenge 6: Intelligent target
-% allocation schemes that allow for the integration of high target
-% density programs (such as discussed in Section X) with low density
-% programs, such as this one, to appropriately meet the needs of both
-% surveys.} See Section X.
+\medskip \chal{gaia} \noindent {\bf Data-Science Challenge \ref{gaia}:
+Stellar parameter determinations for a billion stellar spectra.}  To
+realize the full potential of the Gaia astrometric catalog, one needs
+the full 6D phase space for each star and its chemical abundance
+pattern.  Although anything more than simple total metallicity
+measurements are out of reach for FOBOS, a strategically developed
+training set observed at high S/N can be used for kinematics and simple
+stellar parameter determination.
 
 % Beyond its internal chemodynamical history, LSST will also reveal
 % hundreds of faint Milky Way satellites, as well as discover new
@@ -523,7 +525,7 @@ determination.
 % census of these galaxies.  These faint galaxies provide critical tests
 % of the hierarchical formation of the Local Group.
 
-% \medskip \noindent {\bf Data Science Challenge 7: Dynamics of newly
+% \medskip \noindent {\bf Data-Science Challenge 7: Dynamics of newly
 % discovered Ultra-Faint dwarfs.}
 
 \subsubsection{Time Domain}
@@ -630,27 +632,69 @@ workpackage also includes the stress-relief cable system and fiber termination h
 \label{sec:targeting}
 \noindent \comment{1/2 page}
 
+Traditionally, target allocation involves laborious hands-on
+optimization of a set of desired targets, the allowed positions of
+entrance apertures, and constraints on the pointing center for precise
+target acquisition and tracking.  These activities are typically
+preformed days in advance of any observations and inflexible to the
+actual observing conditions or any real-time decision making on the
+observing night.  This inflexibility can be hardware related, such as
+the pre-drilled metal sheets used to provide fiber entrance apertures in
+SDSS, or software related, such as with interfaces that are overly user
+intensive.
 
-Afforded the flexibility of the Starbugs positioning system, we envision
-a target allocation package that
-    - maintains a database with observational progress on individual
-      targets in the survey and
-    - dynamically reallocates fibers based on real-time assessments of
-      the aggregate S/N of each target to meet the specific need of each
-      science case.
+For both our public survey and its long-term operation, FOBOS will avoid
+these limitations and allow for fast, dynamic reallocation of fibers to
+maximize its efficiency.  First, we use the Starbugs positioning system
+to largely mitigate the hardware limitations to FOBOS's flexibility to
+real-time reallocation of fibers.  Second, as another data-science
+challenge, we will develop software that efficiently optimizes targets
+for allocation given a database of sources to be observed, the aggregate
+data quality for the spectra obtained of the target using a quick-look
+reduction package, {\it and real-time assessments of the observing
+conditions.}  Finally, each target will have an expected data quality
+metric that will be used to decide when the observation has successfully
+met the observing request allowing for reallocation of individual
+fibers.
 
-This requires significant design and testing of a combined software
-package and hardware interface.  Specific considerations involve (1)
-fast and robust reduction procedures (cf. MaNGA DOS) that can assess the
-aggregate data and (2) a responsive database with a schema optimized for
-real-time decision making to select targets for (re)acquisition while
-accounting for collision limitations.  Provided enough design effort,
-this lends itself to a machine-learning application.
+\medskip \chal{target} \noindent {\bf Data-Science Challenge
+\ref{target}: Intelligent target allocation algorithms that integrate
+multiple observing programs and reallocate fibers based on real-time
+assessments of observing conditions and the aggregate data quality of
+each target.}  FOBOS will generally be able to optimize observations for
+multiple programs with vastly different target densities and
+exposure-time requirements.  We will build a database with efficiency
+and observing success metrics and aggregate data quality for all targets
+that have been observed.  Queries to this database will allow the
+software to learn which observations should be successful, among all
+possible observations for any given pointing and observing night.  For
+example, if conditions are slightly less than optimal, the Starbugs
+would quickly be reconfigured to target brighter objects in a given
+field.  During survey operations, we expect this to be the primary mode
+of allocating fibers; however, we will also provide a PI override for
+specific targets and allow for unallocated fibers to be assigned to
+targets drawn from an observatory-level ``filler" database.
 
+%   - maintains a database with observational progress on individual
+%     targets in the survey and
+%   - dynamically reallocates fibers based on real-time assessments of
+%     the aggregate S/N of each target to meet the specific need of each
+%     science case.
 
-\subsection{Pulicly Available Automated Data Products}
+% This requires significant design and testing of a combined software
+% package and hardware interface.  Specific considerations involve (1)
+% fast and robust reduction procedures (cf. MaNGA DOS) that can assess
+% the aggregate data and (2) a responsive database with a schema
+% optimized for real-time decision making to select targets for
+% (re)acquisition while accounting for collision limitations.  Provided
+% enough design effort, this lends itself to a machine-learning
+% application.
+
+\subsection{Publicly Available Automated Data Products}
 \label{sec:DAP}
 \noindent \comment{1/2 page}
+
+
 
 The advanced products of the survey will be delivered to the public via
 the Keck Observatory Archive (KOA).  However, beyond the raw data, the
