@@ -410,7 +410,7 @@ LSST's deep imaging will detect huge numbers of galaxies undergoing this transit
 
 
 \medskip
-\noindent {\bf Data Science Challenge 4: Train short spectroscopic exposures in combination with LSST photometry to provide environmental diagnostics for 1M galaxies at $z=1--2}.
+\noindent {\bf Data Science Challenge 4: Train short spectroscopic exposures in combination with LSST photometry to provide environmental diagnostics for 1M galaxies at $z=1--2$}.
 
 
 
@@ -435,30 +435,32 @@ LSST's deep imaging will detect huge numbers of galaxies undergoing this transit
 %  \caption{\small From Madau \& Dickinson (2014) }\label{fig:Madau_plot}
 % \end{wrapfigure}
 
-A critical transition in evolution of galaxies in our Universe emerges when one considers the volumetric star-formation rate as a function of cosmic time 
-
- - cosmic star-formation rate shows the unique phases of the growth of
-   galaxies in the Universe
-
- - the detailed cause for the decline in the CSFR since z~2 remains
-   unclear, but it could be thought of as the starvation of galaxies
-   from the rapid gas accretion they enjoyed in the early universe.
-
- - the outbreak of star-formation sparked by free-falling accretion of
-   gas is now stymied by the size of the galaxies themselves.
-
- - a number of fundamental properties of galaxies have emerged over the
-   past ~30 years: mass, size, metallicity, star-formation rate, angular
-   momentum, and gas fraction.  Environment
-
-
-The rate at which stars have been born in the Universe has varied
-dramatically over cosmic history.  At roughly half its current age, the
-Universe was on average forming 10 stars for every one star formed today
-\comment{ref}.  At these epochs, galaxies looked rather different then
-they do now, dominated by all-consuming star-formation regions
-\comment{ref}.  These morphologies are only seen in rare star-burst
-galaxies in the Local Volume \comment{ref}.  The 
+%A critical transition in evolution of galaxies in our Universe emerges
+%when one considers the volumetric star-formation rate as a function of
+%cosmic time 
+%
+% - cosmic star-formation rate shows the unique phases of the growth of
+% galaxies in the Universe
+%
+% - the detailed cause for the decline in the CSFR since z~2 remains
+% unclear, but it could be thought of as the starvation of galaxies from
+% the rapid gas accretion they enjoyed in the early universe.
+%
+% - the outbreak of star-formation sparked by free-falling accretion of
+% gas is now stymied by the size of the galaxies themselves.
+%
+% - a number of fundamental properties of galaxies have emerged over the
+% past ~30 years: mass, size, metallicity, star-formation rate, angular
+% momentum, and gas fraction.  Environment
+%
+%
+%The rate at which stars have been born in the Universe has varied
+%dramatically over cosmic history.  At roughly half its current age, the
+%Universe was on average forming 10 stars for every one star formed
+%today \comment{ref}.  At these epochs, galaxies looked rather different
+%then they do now, dominated by all-consuming star-formation regions
+%\comment{ref}.  These morphologies are only seen in rare star-burst
+%galaxies in the Local Volume \comment{ref}.  The 
 
 
 
@@ -470,45 +472,59 @@ While only a single realization of the galaxy-formation process, our
 Milky Way Galaxy and its Local Group provide unparalleled opportunities
 to study galaxies in exquisite detail, by virtue of being able to
 spatially resolve their constituent parts.  In fact, the Gaia satellite
-is currently providing a revolution in our understanding of our own
-galaxy, providing distances and three-dimensional motions for more than
-a billion stars spanning the full extent of the Milky Way's disk.
+(ref) is currently revolutionizing our understanding of the Milky Way
+Galaxy, providing distances and on-sky motions for more than a billion
+stars spanning the full extent of its disk.  These data represent a
+gigantic leap forward in our ability to construct a history of the Milky
+Way by effectively tracing its stellar populations and dynamical
+structures back in time.  However, the Gaia data are still limited:
+Fewer than 10\% of stars will have a full complement of
+three-dimensional space motions, fewer than 0.3\% will have the basic
+stellar parameter measurements needed to classify the stellar type, and
+only 0.1\% will have measured chemical abundances.  Existing and ongoing
+surveys, like SEGUE, RAVE, and APOGEE, and planned surveys, like WEAVE
+and 4MOST (refs), provide critical supplements, but these efforts only
+just begin to fulfill the potential of the Gaia astrometric data.
+Directly observing the all 1.7 billion stars is simply untenable for the
+foreseeable future.
+
+Instead, a growing number of studies aim to infer the necessary
+measurements using novel applications of machine-learning.  For example,
+Ness et al.\ have developed {\it The Cannon}, a supervised learning
+algorithm that uses spectra with known stellar parameters to label
+spectra where those parameters are unknown.  In their application, they
+determined three fundamental parameters for 55000 APOGEE spectra using a
+1\% training sample.  Additionally, Ting et al.\ have developed {\it The
+Payne}, which uses a neural network and theoretical stellar spectra to
+determine 25 stellar labels.  In both of these applications, careful
+attention has to be given to the limitations of the training sample,
+similar to the SOM example provided in Figure 1.  At their core,
+machine-learning algorithms, particularly supervised learning, are only
+as good as the parameter space spanned by their training sets.
+
+In both of these applications, there are critical regimes that 
+
+\medskip \noindent {\bf Data Science Challenge 5: Stellar parameter
+determinations for a billion stellar spectra.}  To realize the full
+potential of the Gaia astrometric catalog, one needs the full 6D phase
+space for each star and its chemical abundance pattern.  Although
+anything more than simple total metallicity measurements are out of
+reach for FOBOS, a well formulated training set that spans the
+
+\medskip \noindent {\bf Data Science Challenge 6: Intelligent target
+allocation schemes that allow for the integration of high target density
+programs (such as discussed in Section X) with low density programs,
+such as this one, to appropriately meet the needs of both surveys.} See
+Section X.
 
 
-in terms of the detail to
-which we can study their content.
-
-by virtue of .
-
-Although only one realization of the dynamically bound small groups of
-galaxies in the Local Volume, we can study our own Local Group in elaborate detail,
-including the Milky Way, and Andromeda and Triangulum galaxies, as well
-as many smaller satellites, both star-forming (LMC, SMC) and not
-star-forming (M32, Fornax and other dSphs).
-
-Nothing exemplifies this more than the current data coming from GAIA.
-Although GAIA will not get chemical abundances for stars outside X pc
-from the sun.  Follow-up programs like WEAVE and 4MOST aim to build up
-radial velocities.  Can use FOBOS to go deeper, specifically in the disk
-where the target densities are high.  Similar to photo-zs, idea would be
-to build up the radial velocity sample at the faint end of the GAIA
-surface brightness limit.  Chemical tagging.
-
-SDSS revolutionized our census of the local group, allowing us to locate
-ultra-faint dwarf satellites of the Milky Way, in effect solving the
-"missing satellites" problem.  LSST will likely reveal hundreds more of
-these satellites.
-
+- SDSS revolutionized our census of the local group, allowing us to
+  locate ultra-faint dwarf satellites of the Milky Way, in effect
+  solving the "missing satellites" problem.  LSST will likely reveal
+  hundreds more of these satellites.
 
 \medskip
-\noindent {\bf Data Science Challenge \comment{x}: Dynamics of newly discovered Ultra-Faint dwarfs.}
-
-\medskip
-\noindent {\bf Data Science Challenge \comment{x}: Chemodynamical tagging Dynamics of newly discovered Ultra-Faint dwarfs.}
-
-
-\medskip
-\noindent {\bf Data Science Challenge \comment{x}: Dynamics of newly discovered Ultra-Faint dwarfs.}
+\noindent {\bf Data Science Challenge 7: Dynamics of newly discovered Ultra-Faint dwarfs.}
 
 
 
