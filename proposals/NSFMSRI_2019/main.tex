@@ -469,30 +469,29 @@ LSST's deep imaging will detect huge numbers of galaxies undergoing this transit
 \noindent \comment{1 page}
 
 While only a single realization of the galaxy-formation process, our
-Milky Way Galaxy and its Local Group provide unparalleled opportunities
-to study galaxies in exquisite detail, by virtue of being able to
-spatially resolve their constituent parts.  In fact, the Gaia satellite
-(ref) is currently revolutionizing our understanding of the Milky Way
-Galaxy, providing distances and on-sky motions for more than a billion
-stars spanning the full extent of its disk.  These data represent a
-gigantic leap forward in our ability to construct a history of the Milky
-Way by effectively tracing its stellar populations and dynamical
-structures back in time.  However, the Gaia data are still limited:
-Fewer than 10\% of stars will have a full complement of
-three-dimensional space motions, fewer than 0.3\% will have the basic
-stellar parameter measurements needed to classify the stellar type, and
-only 0.1\% will have measured chemical abundances.  Existing and ongoing
-surveys, like SEGUE, RAVE, and APOGEE, and planned surveys, like WEAVE
-and 4MOST (refs), provide critical supplements, but these efforts only
-just begin to fulfill the potential of the Gaia astrometric data.
-Directly observing the all 1.7 billion stars is simply untenable for the
-foreseeable future.
+Local Group provide unparalleled opportunities to study galaxies in
+exquisite detail, by virtue of being able to spatially resolve their
+constituent parts.  In fact, the Gaia satellite (ref) is currently
+revolutionizing our understanding of our Milky Way Galaxy, providing
+distances and on-sky motions for more than a billion stars spanning the
+full extent of its disk.  These data represent a gigantic leap forward
+in our ability to construct a history of the Milky Way by effectively
+tracing its stellar populations and dynamical structures back in time.
+However, the Gaia data are still limited: Fewer than 10\% of stars will
+have a full complement of three-dimensional space motions, fewer than
+0.3\% will have the basic stellar parameter measurements needed to
+classify the stellar type, and only 0.1\% will have measured chemical
+abundances.  Existing and ongoing surveys, like SEGUE, RAVE, and APOGEE,
+and planned surveys, like WEAVE and 4MOST (refs), provide critical
+supplementary observations, but these efforts only just begin to fulfill
+the potential of the Gaia astrometric data.  Directly observing the all
+1.7 billion stars is simply untenable for the foreseeable future.
 
 Instead, a growing number of studies aim to infer the necessary
 measurements using novel applications of machine-learning.  For example,
 Ness et al.\ have developed {\it The Cannon}, a supervised learning
 algorithm that uses spectra with known stellar parameters to label
-spectra where those parameters are unknown.  In their application, they
+spectra where those parameters are unknown.  In one application, they
 determined three fundamental parameters for 55000 APOGEE spectra using a
 1\% training sample.  Additionally, Ting et al.\ have developed {\it The
 Payne}, which uses a neural network and theoretical stellar spectra to
@@ -507,24 +506,24 @@ determinations for a billion stellar spectra.}  To realize the full
 potential of the Gaia astrometric catalog, one needs the full 6D phase
 space for each star and its chemical abundance pattern.  Although
 anything more than simple total metallicity measurements are out of
-reach for FOBOS, a well formulated training set that spans the
+reach for FOBOS, a strategically developed training set observed at high
+S/N can be used for kinematics and simple stellar parameter
+determination.
 
-\medskip \noindent {\bf Data Science Challenge 6: Intelligent target
-allocation schemes that allow for the integration of high target density
-programs (such as discussed in Section X) with low density programs,
-such as this one, to appropriately meet the needs of both surveys.} See
-Section X.
+% \medskip \noindent {\bf Data Science Challenge 6: Intelligent target
+% allocation schemes that allow for the integration of high target
+% density programs (such as discussed in Section X) with low density
+% programs, such as this one, to appropriately meet the needs of both
+% surveys.} See Section X.
 
+% Beyond its internal chemodynamical history, LSST will also reveal
+% hundreds of faint Milky Way satellites, as well as discover new
+% satellites of the Andromeda and Triangulum galaxies, extending the
+% census of these galaxies.  These faint galaxies provide critical tests
+% of the hierarchical formation of the Local Group.
 
-- SDSS revolutionized our census of the local group, allowing us to
-  locate ultra-faint dwarf satellites of the Milky Way, in effect
-  solving the "missing satellites" problem.  LSST will likely reveal
-  hundreds more of these satellites.
-
-\medskip
-\noindent {\bf Data Science Challenge 7: Dynamics of newly discovered Ultra-Faint dwarfs.}
-
-
+% \medskip \noindent {\bf Data Science Challenge 7: Dynamics of newly
+% discovered Ultra-Faint dwarfs.}
 
 \subsubsection{Time Domain}
 \label{sec:timedomain}
