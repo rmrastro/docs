@@ -694,21 +694,47 @@ targets drawn from an observatory-level ``filler" database.
 \label{sec:DAP}
 \noindent \comment{1/2 page}
 
+The typical proprietary period for raw data acquired at Keck is 18
+months.  However, typical of other public surveys (e.g., SDSS), this
+period will be shortened to one year for the FOBOS Public Survey.
 
+Both as part of our design effort and for long-term use, we will develop
+a data-reduction pipeline, building on work already done for other
+fiber-based observations, like SDSS and DESI.  This software will
+provide both the quick reduction assessments needed for our dynamic
+targeting system and the more detailed reduction to produce the data for
+scientific analysis.  Reduced data will be delivered to the community
+(e.g., via the Keck Observatory Archive) after the proprietary periods
+are finished for {\it both} PI-led and public survey observations.
 
-The advanced products of the survey will be delivered to the public via
-the Keck Observatory Archive (KOA).  However, beyond the raw data, the
-survey will provide reduced and derived products immediately (cf. MaNGA
-DAP).  The latter will be true of both the data from the public survey
-(released immediately) and indeed {\it any} data taken with the FOBOS
-instrument after the nominal 18-month proprietary period.  For the
-latter, we will encourage involvement of the program PI in refining the
-data-reduction and data-analysis software and its execution to garner
-the most from its application to their data.  Community involvement in a
-common software development obviates the need for different groups to
-retread old ground.
+Finally, we will also provide a data-analysis pipeline that provides
+high-level data products.  There are two aspects to analysis of the
+data.  First, we will provide software to perform the traditional
+measurements of properties like Doppler shift, emission-line strengths,
+and internal kinematics that are measured from FOBOS-observed spectra.
+This software will build on existing software we have built for the
+SDSS-IV MaNGA survey (Westfall et al.), and it will be executed for {\it
+any} data taken with FOBOS and released along with the reduced spectra.
+This is a substantial effort and unheard of for observations taken
+outside of a large-scale survey effort.  Second, we will provide the
+results of our various machine-learning applications in the FOBOS Public
+Survey (e.g., the LSST-source redshifts as determined by the FOBOS
+observed training set).
 
+Important to the success of both the data-reduction and data-analysis
+software will be PI and community involvement in their refinement to
+meet the needs of specific science applications.  These software
+packages will be open source and publicly served (e.g., using GitHub).
 
+% Beyond the raw data, the survey will provide reduced and derived
+% products immediately (cf. MaNGA DAP).  The latter will be true of both
+% the data from the public survey (released immediately) and indeed {\it
+% any} data taken with the FOBOS instrument after the nominal 18-month
+% proprietary period.  For the latter, we will encourage involvement of
+% the program PI in refining the data-reduction and data-analysis
+% software and its execution to garner the most from its application to
+% their data.  Community involvement in a common software development
+% obviates the need for different groups to retread old ground.
 
 \section{Broader Impacts}
 \label{sec:bi}
