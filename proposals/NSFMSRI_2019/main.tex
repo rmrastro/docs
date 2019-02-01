@@ -190,7 +190,7 @@
 \vspace*{-1.5cm}
 
 %\textbf{\textsf{Training LSST with Keck-FOBOS:\\ Comprehensive, Data-Driven Models of a Universe in Transition}}
-\textbf{\textsf{Training Imaging Surveys with Deep Spectroscopy:\\ Comprehensive, Data-Driven Models of a Universe in Transition}}
+\textbf{\textsf{Training Big Astronomical Data with Keck-FOBOS:\\ Comprehensive, Data-Driven Models of a Universe in Transition}}
 
 \authors{K. Bundy, K. Westfall, N. MacDonald, P. Capak, A. Coil, C. Conroy, M. Cooper, R. Kupke, K.G. Lee, R.
 Mandelbaum, D. Masters, J. Newman, X. Prochaska, C. Rockosi, J. Rhodes, M. Rich, M. Savage, A. Shapley, B. Siana, Y.-S.
@@ -401,25 +401,46 @@ future cosmological imaging surveys.  \citet{hemmati18} for example have exploit
 \label{sec:galaxies}
 \noindent \comment{1 page}
 
-The cosmic period 3--6 billion years after the Big Bang marks a key epoch in which proto-galaxies transition from often
-disturbed, gas-rich systems into the more ordered structures dominated by stars.  This period marks a peak in the
-global star formation rate and assembly history of galaxies as vast reservoirs of cool gas are converted into
-stars.  It is thus critical that we study not just the galaxy population but their local environments including the interspersed gas reservoirs and gaseous flows of the ``intergalactic medium.''  The goal is to build a comprehensive picture of the physical processes that shape proto-galaxies, promote the emergence of internal structure, and regulate their rapid growth and assembly.
+Roughly 4 billion years after the Big Bang ($z \sim 2$), the universe entered a key epoch in which proto-galaxies
+transitioned from interacting, gas-rich systems into the more ordered, star-dominated structures that populate the
+universe today.  This period marks the peak of global star formation rate and galaxy assembly history.   To understand
+it, we must not only study the galaxy population at this epoch but the entire galaxy ``ecosystem'' which includes their
+gas-filled environments.  The goal is to build a comprehensive picture of the physical processes that fuel proto-galaxy
+growth, shape their internal structure, and influence their environment.
 
-LSST's deep imaging will detect huge numbers of galaxies undergoing this transition, enabling targeted spectroscopic followup with Keck-FOBOS that can be used to infer SDSS-like information from LSST and other photometric data sets alone.  
+LSST's panoramic imaging will detect huge numbers of galaxies at this epoch.  Targeted followup with Keck-FOBOS will
+allow us to ascribe detailed galaxy and environmental information from deep spectroscopic training samples to the much
+larger cosmic volumes surveyed with broad-band imaging.
 
 \medskip
 \chal{phot}
-\noindent {\bf Data-Science Challenge \ref{phot}: Apply Deep Learning to infer star formation rates and formation histories, dust content, and stellar masses from $z \sim 2$ photometry}.
+\noindent {\bf Data-Science Challenge \ref{phot}: Apply Deep Learning to infer star formation rates and formation histories, dust content, wind properties, and stellar masses from $z \sim 2$ photometry}.  The range of observed spectral types is remarkably constrained by broad-band imaging (Figure \ref{fig:SOM}, right panel), suggesting a far greater potential for imaging data to reveal physical properties with sufficient training than conventional modeling of spectral energy distributions (SEDs) would suggest.  Applying machine learning, our challenge is to deliver SDSS-like information for millions of imaged galaxies at $z \sim 2$.  With simulated data sets, we will investigate derived uncertainties and biases and explore benefits from incorporating additional imaging information like morphology, structure, and size from a wide range of wave-bands (e.g., LSST plus Euclid plus WFIRST).  The exercise will define requirements for Keck-FOBOS instrument performance and the Public Survey Design.
 
 \medskip
 \chal{uv}
-\noindent {\bf Data-Science Challenge \ref{uv}: Enable label transfer from rest-frame optical to UV stellar and ISM indicators}.
+\noindent {\bf Data-Science Challenge \ref{uv}: Enable label transfer from rest-frame optical to UV stellar and ISM
+indicators}.  There are many powerful gas and stellar spectral features just redward of the Lyman-$\alpha$ line at 1216
+\AA.  By combining Keck-FOBOS UV and near-IR spectroscopy (e.g., from PFS) at $z \sim 2$, we can transfer ``labels''
+best modeled in the rest-frame optical to spectra at UV wavelengths, at least for certain types of galaxies.  This
+``label transfer'' will dramatically enhance interpretation of JWST discoveries of the first galaxies ($z \sim 10$) for
+which rest-frame UV imaging and spectroscopy will be most accessible.  A similar application can ascribe the escape
+fraction of Lyman continuum radiation observed in the Keck-FOBOS Public Survey to constrain the sources responsible for
+``reionization'' at $z \sim 6$.  With simulated spectral observations, we will determine the extent of label transfer
+that is possible and set requirements on training samples.
 
 
 \medskip
 \chal{lowsnr}
-\noindent {\bf Data-Science Challenge \ref{lowsnr}: Train short spectroscopic exposures in combination with LSST photometry to provide environmental diagnostics for 1M galaxies at $z=1--2$}.
+\noindent {\bf Data-Science Challenge \ref{lowsnr}: Train short spectroscopic exposures in combination with LSST
+photometry to provide environmental diagnostics for 1M galaxies at $z=1--2$}.  Photometric redshifts, while acceptable
+in large cosmological analyses, wash out information about the local position of galaxies with respect to one another.
+To characterize a galaxy's local environment and identify its neighbors requires (observationally expensive)
+spectroscopic redshifts (spec-$z$s).  However, with improved photometric redshifts available from Challenge
+\ref{photozs} and strong priors on spectral types (Challenge \ref{phot}), machine learning techniques can yield
+\emph{spectroscpic} redshifts at much lower signal-to-noise than conventional redshift measurements. Specifically, our
+challenge is to develop a methodology that can measure 300 km s$^{-1}$ accuracy spec-$z$s on spectra obtained in just
+10 minutes with Keck-FOBOS.  This would enable an SDSS-like environmental study of 1M galaxies at $z=1--2$ in just 20
+nights of 10 m telescope time, making it a compelling sub-component of the Keck-FOBOS Public Survey.
 
 
 
