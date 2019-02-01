@@ -380,7 +380,9 @@ cosmological parameters not limited by systematic errors, accurate redshift meas
 
 Spectroscopic redshifts are critical for both the training of photometric redshift algorithms and for calibrating
 results in order to correct for biases.  Complete photo-$z$ training samples can \emph{increase the Dark Energy
-Figure of Merit in LSST by 50\%} \citep{newman15}.  
+Figure of Merit in LSST by 50\%} \citep{newman15} and Keck-FOBOS is particularly powerful in this respect because it
+has no redshift desert.  Keck-FOBOS can measure spec-$z$s above $z > 1.5$ via rest-frame UV features, eliminating
+the need for exensive, space-based near-IR spectroscopy.
 
 \medskip
 \chal{photozs}
@@ -669,9 +671,22 @@ workpackage also includes the stress-relief cable system and fiber termination h
 \noindent \comment{1 page}
 
 With our team of leading experts on data science applications to astronomy, we will tackle the Data Science Challenges
-laid out in this proposal by supporting their continuing research and organizing two focused workshops open to the
-broader astrostatistics community.  These workshops will connect with ongoing efforts of LSST's Informatics and
-Statistics Science Collaboration and Data Science Fellowship Programs.  At the end of the proposal period, we will publish the results of work on these challenges and make public any resulting code.
+laid out in this proposal by supporting continuing research and organizing two focused workshops to encourage
+engagement from the broader astrostatistics community.  These workshops will connect with ongoing activities of LSST's
+Informatics and Statistics Science Collaboration and Data Science Fellowship Programs.  At the end of the proposal
+period, we will publish the results of work on these challenges and make public resulting software packages.
+
+The resulting success of the Data Science Challenge activities will define their level of readiness and set
+requirements on the associated training sets to be delivered by the FOBOS Public Survey.  The detailed design of the
+survey and embedded training sets will be completed in the next phase of this project (MSRI-2).  The anticipated survey
+will consist of multiple, combined programs with integrated tiers of exposure time and target density.  The complete
+photo-$z$ training survey described in \citet{newman15} would require 15 independent pointings, each spanning 0.1
+deg$^2$ with a target density of 6 arcmin$^{-2}$ (8 arcmin$^{-2}$ when including $z > 1.5$ galaxies accessible in the
+UV with Keck-FOBOS), perfectly matched to the Keck-FOBOS field-of-view and target density.  With a conservative
+exposure time of 100 hours to reach 75\% redshift completeness for 40,000 galaxies with $i_{\rm AB} < 25.3$, the Neman
+survey would require 400 nights.  Challenge \ref{photoz} would reduce the required survey duration by a factor of at
+least four.  The extreme depths and flux-limited selection would benefit 
+
 
 
 
