@@ -194,7 +194,7 @@
 
 \authors{K. Bundy, K. Westfall, N. MacDonald, P. Capak, A. Coil, C. Conroy, M. Cooper, R. Kupke, K.G. Lee, R.
 Mandelbaum, D. Masters, J. Newman, X. Prochaska, C. Rockosi, J. Rhodes, M. Rich, M. Savage, A. Shapley, B. Siana, Y.-S.
-Ting}
+Ting, G. Wilson}
 
 \end{center}
 
@@ -353,55 +353,87 @@ We introduce data science challenges in three science areas that will be address
 \label{sec:cosmology}
 \noindent \comment{1 page}
 
-
 \begin{figure}[h!]
- \vskip -0.1in
- \includegraphics[width=\textwidth]{Hemmati18_Fig8_VVDS_spec.png}
- \caption{\small \emph{Left:} A Self-Organizing Map (SOM) from \citet{hemmati18} visualizing the relationship between
- broadband galaxy brightness in different broadband filters (projected along the x and y axes) and observed
- spectroscopic redshift (indicated by the color map).  SOMs guide the optimal construction of training samples by
- highlighting which galaxy classes require targeting.  \emph{Right:} Remarkably, the spectra associated with localized
- SOM regions are surprisingly similar, not just the associated redshifts.}\label{fig:SOM}
+%
+\vskip -0.1in
+%
+\includegraphics[width=\textwidth]{Hemmati18_Fig8_VVDS_spec.png}
+%
+\caption{\small \emph{Left:} A Self-Organizing Map (SOM) from
+\citet{hemmati18} visualizing the relationship between broadband galaxy
+brightness in different broadband filters (projected along the x and y
+axes) and observed spectroscopic redshift (indicated by the color map).
+SOMs guide the optimal construction of training samples by highlighting
+which galaxy classes require targeting.  \emph{Right:} Remarkably, the
+spectra associated with localized SOM regions are surprisingly similar,
+not just the associated redshifts.}
+%
+\label{fig:SOM}
+%
 \end{figure}
 
-The 2011 Nobel Prize in Physics was awarded for the discovery of an era of acceleration in the expansion rate of the
-universe that sets in when the universe was roughly half its current age.  This accelerated expansion is often
-attributed to a mysterious ``Dark Energy,'' but the amplitude of this vacuum energy density is 120 orders of magnitude
+The 2011 Nobel Prize in Physics was awarded for the discovery of an era
+of acceleration in the expansion rate of the universe that sets in when
+the universe was roughly half its current age.  This accelerated
+expansion is often attributed to a mysterious ``Dark Energy,'' but the
+amplitude of this vacuum energy density is 120 orders of magnitude
 smaller than what naive models would predict.
 
-Dark Energy is perhaps the single most important unsolved problem in cosmology and astrophysics.  As such, it has
-inspired enormous world-wide effort and the construction of dedicated ground and space-based facilities.  These include
-LSST, Euclid, and WFIRST.  The goal of these experiments is the precision mapping of cosmic structure.  Because this
-structure expands as the universe expands, precise measures of cosmic structure allow us to reconstruct the cosmic
-expansion history, and at sufficient levels of detail, distinguish among various Dark Energy models.
+Dark Energy is perhaps the single most important unsolved problem in
+cosmology and astrophysics.  As such, it has inspired enormous
+world-wide effort and the construction of dedicated ground and
+space-based facilities.  These include LSST, Euclid, and WFIRST.  The
+goal of these experiments is the precision mapping of cosmic structure.
+Because this structure expands as the universe expands, precise measures
+of cosmic structure allow us to reconstruct the cosmic expansion
+history, and at sufficient levels of detail, distinguish among various
+Dark Energy models.
 
-Many of the most important cosmological probes require galaxy ``redshifts,'' a Doppler-like shift in the observed
-wavelengths of emitted light, as distant galaxies appear to recede from us as a result of cosmic expansion.
-Cosmological models, which provide access to Dark Energy parameters, are constrained in part via the conversion of
-redshift into distance.  Accurate redshifts are conventionally derived via spectroscopy by fitting the observed
-wavelength locations of spectral features.  Less precise redshifts, so-called ``photometric redshifts'' (or photo-$z$s) can be estimated with imaging photometry alone, a
-compelling option for large and faint data sets where spectroscopic redshifts are infeasible.  But, ``to infer
-cosmological parameters not limited by systematic errors, accurate redshift measurements are needed'' \citep
-{hemmati18}.  
+Many of the most important cosmological probes require galaxy
+``redshifts,'' a Doppler-like shift in the observed wavelengths of
+emitted light, as distant galaxies appear to recede from us as a result
+of cosmic expansion.  Cosmological models, which provide access to Dark
+Energy parameters, are constrained in part via the conversion of
+redshift into distance.  Accurate redshifts are conventionally derived
+via spectroscopy by fitting the observed wavelength locations of
+spectral features.  Less precise redshifts, so-called ``photometric
+redshifts'' (or photo-$z$s) can be estimated with imaging photometry
+alone, a compelling option for large and faint data sets where
+spectroscopic redshifts are infeasible.  But, ``to infer cosmological
+parameters not limited by systematic errors, accurate redshift
+measurements are needed'' \citep {hemmati18}.  
 
-Spectroscopic redshifts are critical for both the training of photometric redshift algorithms and for calibrating
-results in order to correct for biases.  Complete photo-$z$ training samples can \emph{increase the Dark Energy
-Figure of Merit in LSST by 50\%} \citep{newman15} and Keck-FOBOS is particularly powerful in this respect because it
-has no redshift desert.  Keck-FOBOS can measure spec-$z$s above $z > 1.5$ via rest-frame UV features, eliminating
-the need for exensive, space-based near-IR spectroscopy.
+Spectroscopic redshifts are critical for both the training of
+photometric redshift algorithms and for calibrating results in order to
+correct for biases.  Complete photo-$z$ training samples can
+\emph{increase the Dark Energy Figure of Merit in LSST by 50\%}
+\citep{newman15} and Keck-FOBOS is particularly powerful in this respect
+because it has no redshift desert.  Keck-FOBOS can measure spec-$z$s
+above $z > 1.5$ via rest-frame UV features, eliminating the need for
+exensive, space-based near-IR spectroscopy.
 
 \medskip
+%
 \chal{photozs}
-\noindent {\bf Data-Science Challenge \ref{photozs}: Obtain precise LSST Photometric Redshifts ($\sigma_z/(1+z) \lesssim 0.005$ at
-i(AB) $<$ 25.3) with Targeted Training Sample sizes of $<$10k}.  Our proposed FOBOS instrument is ideally suited to
-providing the spectroscopic training defined in \citet{newman15}, but a complete program would require a 400-night
-investment in 10 m telescope time.  This challenge demands a reduction in the required FOBOS training sample by a
-factor of $\sim$4 via clever application of state-of-the-art machine learning techniques.
+%
+\noindent {\bf Data-Science Challenge \ref{photozs}: Obtain precise LSST
+Photometric Redshifts ($\sigma_z/(1+z) \lesssim 0.005$ at i(AB) $<$
+25.3) with Targeted Training Sample sizes of $<$10k}.  Our proposed
+FOBOS instrument is ideally suited to providing the spectroscopic
+training defined in \citet{newman15}, but a complete program would
+require a 400-night investment in 10 m telescope time.  This challenge
+demands a reduction in the required FOBOS training sample by a factor of
+$\sim$4 via clever application of state-of-the-art machine learning
+techniques.
 
-Neural network trained photo-$z$s have long been recognized for providing the best precision when sufficient training
-sets are available \citep[e.g.][]{bundy06}, and significant effort is underway in optimizing their application to
-future cosmological imaging surveys.  \citet{hemmati18} for example have exploited Self-Organizing Maps (SOMs, Fig \ref
-{fig:SOM}) to sort multiband photometric data by observed redshift in order to select optimized training samples for spectroscopic followup.
+Neural network trained photo-$z$s have long been recognized for
+providing the best precision when sufficient training sets are available
+\citep[e.g.][]{bundy06}, and significant effort is underway in
+optimizing their application to future cosmological imaging surveys.
+\citet{hemmati18} for example have exploited Self-Organizing Maps (SOMs,
+Fig \ref {fig:SOM}) to sort multiband photometric data by observed
+redshift in order to select optimized training samples for spectroscopic
+followup.
 
 
 
@@ -410,53 +442,103 @@ future cosmological imaging surveys.  \citet{hemmati18} for example have exploit
 \label{sec:galaxies}
 \noindent \comment{1 page}
 
-Roughly 4 billion years after the Big Bang ($z \sim 2$), the universe entered a key epoch in which proto-galaxies
-transitioned from interacting, gas-rich systems into the more ordered, star-dominated structures that populate the
-universe today.  This period marks the peak of global star formation rate and galaxy assembly history.   To understand
-it, we must not only study the galaxy population at this epoch but the entire galaxy ``ecosystem'' which includes their
-gas-filled environments.  The goal is to build a comprehensive picture of the physical processes that fuel proto-galaxy
-growth, shape their internal structure, and influence their environment.
+Roughly 4 billion years after the Big Bang ($z \sim 2$), the universe
+entered a key epoch in which proto-galaxies transitioned from
+interacting, gas-rich systems into the more ordered, star-dominated
+structures that populate the universe today.  This period marks the peak
+of global star formation rate and galaxy assembly history.   To
+understand it, we must not only study the galaxy population at this
+epoch but the entire galaxy ``ecosystem'' which includes their
+gas-filled environments.  The goal is to build a comprehensive picture
+of the physical processes that fuel proto-galaxy growth, shape their
+internal structure, and influence their environment.
 
-LSST's panoramic imaging will detect huge numbers of galaxies at this epoch.  Targeted followup with Keck-FOBOS will
-allow us to ascribe detailed galaxy and environmental information from deep spectroscopic training samples to the much
-larger cosmic volumes surveyed with broad-band imaging.
-
+LSST's panoramic imaging will detect huge numbers of galaxies at this
+epoch.  Targeted followup with Keck-FOBOS will allow us to ascribe
+detailed galaxy and environmental information from deep spectroscopic
+training samples to the much larger cosmic volumes surveyed with
+broad-band imaging.
 
 \begin{figure}[h!]
- \vskip -0.1in
- \includegraphics[width=0.5\textwidth]{Parks18_Fig7_fig_labels.pdf}
- \caption{\small Example of machine learning applied to absorption features in rest-frame UV spectroscopy to detect two intervening gas clouds along the line-of-sight \citep[from][]{parks18}.  A spectrum is shown at top with lower panels indicating associated labels conveying physical information.  Keck-FOBOS will provide a rich set of similar features and the opportunity to transfer labels to imaging and higher redshift data sets.}\label{fig:absorber}
+%
+\vskip -0.1in
+%
+\includegraphics[width=0.5\textwidth]{Parks18_Fig7_fig_labels.pdf}
+%
+\caption{\small Example of machine learning applied to absorption
+features in rest-frame UV spectroscopy to detect two intervening gas
+clouds along the line-of-sight \citep[from][]{parks18}.  A spectrum is
+shown at top with lower panels indicating associated labels conveying
+physical information.  Keck-FOBOS will provide a rich set of similar
+features and the opportunity to transfer labels to imaging and higher
+redshift data sets.}
+%
+\label{fig:absorber}
+%
 \end{figure}
 
 \medskip
+%
 \chal{phot}
-\noindent {\bf Data-Science Challenge \ref{phot}: Apply Deep Learning to infer star formation rates and formation histories, dust content, wind properties, and stellar masses from $z \sim 2$ photometry}.  The range of observed spectral types is remarkably constrained by broad-band imaging (Figure \ref{fig:SOM}, right panel), suggesting a far greater potential for imaging data to reveal physical properties with sufficient training than conventional modeling of spectral energy distributions (SEDs) would suggest.  Applying machine learning, our challenge is to deliver SDSS-like information for millions of imaged galaxies at $z \sim 2$.  With simulated data sets, we will investigate derived uncertainties and biases and explore benefits from incorporating additional imaging information like morphology, structure, and size from a wide range of wave-bands (e.g., LSST plus Euclid plus WFIRST).  The exercise will define requirements for Keck-FOBOS instrument performance and the FOBOS Public Survey design.
+%
+\noindent {\bf Data-Science Challenge \ref{phot}: Apply Deep Learning to
+infer star formation rates and formation histories, dust content, wind
+properties, and stellar masses from $z \sim 2$ photometry}.  The range
+of observed spectral types is remarkably constrained by broad-band
+imaging (Figure \ref{fig:SOM}, right panel), suggesting a far greater
+potential for imaging data to reveal physical properties with sufficient
+training than conventional modeling of spectral energy distributions
+(SEDs) would suggest.  Applying machine learning, our challenge is to
+deliver SDSS-like information for millions of imaged galaxies at $z \sim
+2$.  With simulated data sets, we will investigate derived uncertainties
+and biases and explore benefits from incorporating additional imaging
+information like morphology, structure, and size from a wide range of
+wave-bands (e.g., LSST plus Euclid plus WFIRST).  The exercise will
+define requirements for Keck-FOBOS instrument performance and the FOBOS
+Public Survey design.
 
 \medskip
+%
 \chal{uv}
-\noindent {\bf Data-Science Challenge \ref{uv}: Enable label transfer from rest-frame optical to UV stellar and ISM
-indicators}.  There are many powerful gas and stellar spectral features just redward of the Lyman-$\alpha$ line at 1216
-\AA.  By combining Keck-FOBOS UV and near-IR spectroscopy (e.g., from PFS) at $z \sim 2$, we can transfer ``labels''
-best modeled in the rest-frame optical to spectra at UV wavelengths, at least for certain types of galaxies.  This
-``label transfer'' will dramatically enhance interpretation of JWST discoveries of the first galaxies ($z \sim 10$) for
-which rest-frame UV imaging and spectroscopy will be most accessible.  A similar application can ascribe the escape
-fraction of Lyman continuum radiation observed in the Keck-FOBOS Public Survey to constrain the sources responsible for
-``reionization'' at $z \sim 6$.  With simulated spectral observations, we will determine the extent of label transfer
-that is possible and set requirements on training samples.
+%
+\noindent {\bf Data-Science Challenge \ref{uv}: Enable label transfer
+from rest-frame optical to UV stellar and ISM indicators}.  There are
+many powerful gas and stellar spectral features just redward of the
+Lyman-$\alpha$ line at 1216 \AA.  By combining Keck-FOBOS UV and near-IR
+spectroscopy (e.g., from PFS) at $z \sim 2$, we can transfer ``labels''
+best modeled in the rest-frame optical to spectra at UV wavelengths, at
+least for certain types of galaxies.  This ``label transfer'' will
+dramatically enhance interpretation of JWST discoveries of the first
+galaxies ($z \sim 10$) for which rest-frame UV imaging and spectroscopy
+will be most accessible.  A similar application can ascribe the escape
+fraction of Lyman continuum radiation observed in the Keck-FOBOS Public
+Survey to constrain the sources responsible for ``reionization'' at $z
+\sim 6$.  With simulated spectral observations, we will determine the
+extent of label transfer that is possible and set requirements on
+training samples.
 
 
 \medskip
+%
 \chal{lowsnr}
-\noindent {\bf Data-Science Challenge \ref{lowsnr}: Train short spectroscopic exposures in combination with LSST
-photometry to provide environmental diagnostics for 1M galaxies at $z=1$--$2$}.  Photometric redshifts, while acceptable
-in large cosmological analyses, wash out information about the local position of galaxies with respect to one another.
-To characterize a galaxy's local environment and identify its neighbors requires (observationally expensive)
-spectroscopic redshifts (spec-$z$s).  However, with improved photometric redshifts available from Challenge
-\ref{photozs} and strong priors on spectral types (Challenge \ref{phot}), machine learning techniques can yield
-\emph{spectroscpic} redshifts at much lower signal-to-noise than conventional redshift measurements. Specifically, our
-challenge is to develop a methodology that can measure 300 km s$^{-1}$ accuracy spec-$z$s on spectra obtained in just
-10 minutes with Keck-FOBOS.  This would enable an SDSS-like environmental study of 1M galaxies at $z=1$--$2$ in just 20
-nights of 10 m telescope time, making it a compelling sub-component of the Keck-FOBOS Public Survey.
+%
+\noindent {\bf Data-Science Challenge \ref{lowsnr}: Train short
+spectroscopic exposures in combination with LSST photometry to provide
+environmental diagnostics for 1M galaxies at $z=1$--$2$}.  Photometric
+redshifts, while acceptable in large cosmological analyses, wash out
+information about the local position of galaxies with respect to one
+another.  To characterize a galaxy's local environment and identify its
+neighbors requires (observationally expensive) spectroscopic redshifts
+(spec-$z$s).  However, with improved photometric redshifts available
+from Challenge \ref{photozs} and strong priors on spectral types
+(Challenge \ref{phot}), machine learning techniques can yield
+\emph{spectroscpic} redshifts at much lower signal-to-noise than
+conventional redshift measurements. Specifically, our challenge is to
+develop a methodology that can measure 300 km s$^{-1}$ accuracy
+spec-$z$s on spectra obtained in just 10 minutes with Keck-FOBOS.  This
+would enable an SDSS-like environmental study of 1M galaxies at
+$z=1$--$2$ in just 20 nights of 10 m telescope time, making it a
+compelling sub-component of the Keck-FOBOS Public Survey.
 
 
 
