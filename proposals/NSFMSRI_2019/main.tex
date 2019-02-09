@@ -198,14 +198,14 @@ Ting, G. Wilson}
 
 \end{center}
 
-\noindent\begin{center}\mbox{\parbox{0.9\linewidth}{
-%
-This Mid-scale Research Infrastructure-1 ``Design'' proposal requests
-funds to complete the preliminary instrument design for the Fiber-Optic
-Broadband Optical Spectrograph (FOBOS) and build frameworks for enabling
-data-driven science goals via a FOBOS Public Survey.}}
-%
-\end{center}
+% \noindent\begin{center}\mbox{\parbox{0.9\linewidth}{
+% %
+% This Mid-scale Research Infrastructure-1 ``Design'' proposal requests
+% funds to complete the preliminary instrument design for the Fiber-Optic
+% Broadband Optical Spectrograph (FOBOS) and build frameworks for enabling
+% data-driven science goals via a FOBOS Public Survey.}}
+% %
+% \end{center}
 
 % \smallskip
 % \section{Project Summary}
@@ -230,7 +230,7 @@ data-driven science goals via a FOBOS Public Survey.}}
 \label{sec:im}
 
 \subsection{Scientific Justification} 
-\noindent \comment{3/4 page}
+% \noindent \comment{3/4 page}
 
 % "including the unique research
 % capabilities and lack of general availability of the requested
@@ -238,50 +238,52 @@ data-driven science goals via a FOBOS Public Survey.}}
 % research infrastructure."
 
 
-Led by NSF's Large Synoptic Survey Telescope (LSST) which deploys in 2023, astronomy is entering a new era of
-unprecedented deep-imaging data sets that will survey huge volumes of the universe when it was only one-half or
-one-third its current age.  These epochs mark important but poorly understood transitions in cosmic history. Early
-galaxies were emerging from a ``primordial soup'' of gas and dust, assembling now fossilized structures that may be
-detected even within our own Milky Way.  Meanwhile, the rate of cosmic expansion was beginning to accelerate, as the
-Universe became increasingly dominated by ``Dark Energy,'' whose origin remains the single greatest mystery in
-astronomy and cosmology today.
+Led by NSF's Large Synoptic Survey Telescope (LSST\footnote{LSST will be begin science operations in 2023.}), astronomy is entering a new era of unprecedented deep-imaging data
+sets that will survey huge volumes of the universe when it was only one-half or one-third its current age ($z \sim
+$1--3).  These epochs mark important but poorly understood transitions in cosmic history. Early galaxies were emerging
+from a ``primordial soup'' of gas and dust, assembling now-fossilized structures that may persist even within our
+own Milky Way.  Meanwhile, the rate of cosmic expansion was beginning to accelerate, as the Universe became
+increasingly dominated by ``Dark Energy,'' whose origin remains the single greatest mystery in astronomy and cosmology
+today.
 
 Since Edwin Hubble's observations over 100 years ago, major advances in our understanding of the universe have come
 from the two-step process of first taking images of the sky to locate sources of interest and then obtaining
 information-rich spectroscopy to reveal the nature of those sources.  A modern example is the Sloan Digital Sky Survey
 (SDSS) whose combination of panoramic broad-band ``imaging'' followed by dedicated spectroscopy yielded an
-unprecedented sample of over 1 million galaxies, mapping the present-day universe and making SDSS the most highly cited
-survey in the history of astronomy.
+unprecedented sample of over 1 million galaxies, mapping the present-day universe and making SDSS one of the most
+highly cited survey in the history of astronomy.
 
 % Because a quality spectrum requires far more observing time per source than an image, SDSS pioneered ``high multiplex''
 % spectrographs, capable of \emph{simultaneous} spectroscopy of hundreds of objects.
 
 LSST's all-sky images will be 1,000 times deeper and detect far more distant galaxies than SDSS, but \textbf{no current
-U.S. facility is capable of obtaining spectroscopic followup of LSST} at a level required to capitalize on our \$1B
+U.S. facility is capable of obtaining spectroscopic followup of LSST} at a level required to capitalize on \$1B U.S.\
 investment in that project.  In fact, SDSS-like spectroscopic followup of 1 million galaxies at LSST depths would
-require 300 years of observing on the largest telescopes with current instrumentation!
+require 300 years of observing on the largest telescopes with current instrumentation!  
 
 The only way forward is encapsulated in one of NSF's ``10 Big Ideas,'' namely \emph{Harnessing the Data Revolution} in
-order to maximize the information content of LSST via machine learning of optimally-designed spectroscopic training
-sets.  This proposal presents a coordinated framework with three critical components necessary for success in this
-endeavor: 1) Development of statistical approaches to specific and ambitious data-science challenges that will address
-key questions about transitional epochs in cosmic history; 2) Design of Keck-FOBOS\footnote{Keck-FOBOS: The Keck Observatory Fiber Optic Broadband Optical Spectrograph}, a state-of-the-art spectroscopic
-facility on one of the world's largest telescopes optimized for obtaining spectroscopic training sets for LSST
-followup; 3) Design and execution of a ``FOBOS Public Survey'' and construction of a data-serving platform to provide
-high-level data products and training sets to the U.S. community.  This MSRI-1 design proposal lays out the path for
-maximizing the panoramic imaging of LSST with spectroscopic followup.  Through a subsequent MSRI proposal we will
-deliver on our goals with an instrument deployment in 2025 and completed spectroscopic followup with associated
-public-ready training sets made available as LSST's primary survey concludes in 2029.
+order to maximize the information content of LSST and other imaging facilities via machine learning of
+optimally-designed spectroscopic training sets.  This proposal presents a coordinated framework with three critical
+components necessary for success in this endeavor: 1) Using simulated spectroscopic$+$imaging data to define the
+training sets required to address ambitious data-science challenges in Cosmology, Galaxy Formation, and Local Group
+Archeology in the LSST era; 2) Preliminary design of Keck-FOBOS\footnote{Keck-FOBOS: The Keck Observatory Fiber Optic
+Broadband Optical Spectrograph}, a state-of-the-art spectroscopic facility on one of the world's largest telescopes
+optimized for providing the required training sets; 3) Preliminary design of the coordinated Keck-FOBOS observations
+required as well as the systems needed to publicly deliver training set data products.  This MSRI-1 design proposal
+lays out the path for maximizing panoramic imaging from LSST, WFIRST\footnote{WFIRST is NASA's space-based Wide-Field
+Infrared Survey Telescope, expected to launch in the mid 2020's.}, Euclid\footnote{Euclid is led by the European Space
+Agency with significant NASA involvement and will launch in 2021. Its primary mission is a 15,000 deg$^2$ imaging
+survey in optical and near-IR wavebands.}, and other facilities with unparalleled deep and high-sampling density
+spectroscopic followup.  Through a subsequent MSRI proposal we will deliver on our goals with an instrument deployment
+in 2026, an array of spectroscopic programs, and associated public-ready training sets.
 
-We address data science challenges in four scientific areas in order to guide our instrument and survey design:
+% We discuss three major scientific areas and identify Data Science Challenges in each category:
 
-\begin{enumerate}
-	\item Significantly more powerful probes of Dark Energy and Cosmology
-	\item Comprehensive understanding of the proto-galaxy ecosystem at $z\sim2$
-	\item Archaeological studies of our own Milky Way galaxy and its satellites to unravel their specific journeys
-	through this transition.
-	\item Time domain spectroscopy...(?)
-\end{enumerate}
+% \begin{enumerate}
+% 	\item Significantly more powerful probes of Dark Energy and Cosmology
+% 	\item Comprehensive understanding of the proto-galaxy ecosystem at $z\sim2$
+% 	\item Archaeological studies of our own Milky Way galaxy and its Local Group neighbors
+% \end{enumerate}
 
 
 % Reference test: \citet{2015ApJ...798....7B}.
@@ -290,7 +292,7 @@ We address data science challenges in four scientific areas in order to guide ou
 
 \subsection{Research Community Priority} 
 \label{sec:community}
-\noindent\comment{3/4 page}
+% \noindent\comment{3/4 page}
 
 % \noindent "evidence, such as workshop
 % reports or other publicly available indicators, that the infrastructure
@@ -347,7 +349,13 @@ contributes to these ongoing efforts.
 \subsection{Data-Driven Science Challenges}
 \label{sec:goals}
 
-We introduce data science challenges in three science areas that will be addressed in this proposal.  Each enables significant advances in our understanding of transitional epochs in cosmic history by leveraging FOBOS-derived spectroscopic training sets to maximize the information that can be extracted from LSST.  These challenges are intentionally ambitious in order to push the boundaries of current astrostatistics techniques and applications.  The level of success we achieve in each challenge over the next two years will define the ``readiness'' of these applications.  Based on this readiness, we will refine the FOBOS Public Survey design and requirements on delivered training sets in the next (MSRI-2) phase of this project.
+We introduce data science challenges in three science areas that will be addressed in this proposal.  Each enables
+significant advances in our understanding of transitional epochs in cosmic history by leveraging FOBOS-derived
+spectroscopic training sets to maximize the information that can be extracted from LSST.  These challenges are
+intentionally ambitious in order to push the boundaries of current astrostatistics techniques and applications.  The
+level of success we achieve in each challenge over the next two years will define the ``readiness'' of these
+applications.  Based on this readiness, we will refine the FOBOS Public Survey design and requirements on delivered
+training sets in the next (MSRI-2) phase of this project.
 
 \subsubsection{Enhancing Dark Energy Probes via Precision Cosmic Distances}
 \label{sec:cosmology}
