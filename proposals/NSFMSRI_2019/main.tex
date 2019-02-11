@@ -813,52 +813,18 @@ observing time to enable rapid, publicly release of training data with any propr
 %     - Machine-learning the SDSS but at z~2
 
 
-\subsection{Target Allocation with Artificial Intelligence}
+\subsection{MAISTRO: Target Allocation with Artificial Intelligence}
 \label{sec:targeting}
 % \noindent \comment{1/2 page}
 
-Traditionally, target allocation involves laborious hands-on
-optimization of a set of desired targets, the allowed positions of
-entrance apertures, and constraints on the pointing center for precise
-target acquisition and tracking.  These activities are typically
-preformed days in advance of any observations and inflexible to the
-actual observing conditions or any real-time decision making on the
-observing night.  This inflexibility can be hardware related, such as
-the pre-drilled metal sheets used to provide fiber entrance apertures in
-SDSS, or software related, such as with interfaces that are overly user
-intensive.
-
-For both our public survey and its long-term operation, FOBOS will avoid
-these limitations and allow for fast, dynamic reallocation of fibers to
-maximize its efficiency.  First, we use the Starbugs positioning system
-to largely mitigate the hardware limitations to FOBOS's flexibility to
-real-time reallocation of fibers.  Second, as another data-science
-challenge, we will develop software that efficiently optimizes targets
-for allocation given a database of sources to be observed, the aggregate
-data quality for the spectra obtained of the target using a quick-look
-reduction package, {\it and real-time assessments of the observing
-conditions.}  Finally, each target will have an expected data quality
-metric that will be used to decide when the observation has successfully
-met the observing request allowing for reallocation of individual
-fibers.
-
-\medskip \chal{target} \noindent {\bf Data-Science Challenge
-\ref{target}: Intelligent target allocation algorithms that integrate
-multiple observing programs and reallocate fibers based on real-time
-assessments of observing conditions and the aggregate data quality of
-each target.}  FOBOS will generally be able to optimize observations for
-multiple programs with vastly different target densities and
-exposure-time requirements.  We will build a database with efficiency
-and observing success metrics and aggregate data quality for all targets
-that have been observed.  Queries to this database will allow the
-software to learn which observations should be successful, among all
-possible observations for any given pointing and observing night.  For
-example, if conditions are slightly less than optimal, the Starbugs
-would quickly be reconfigured to target brighter objects in a given
-field.  During survey operations, we expect this to be the primary mode
-of allocating fibers; however, we will also provide a PI override for
-specific targets and allow for unallocated fibers to be assigned to
-targets drawn from an observatory-level ``filler" database.
+Powered by Starbugs fiber positioners, Keck-FOBOS will enable fast, dynamic reallocation of fibers.  To efficiently
+determine the best options given a wide range of possible targets and desired observing outcomes, we will develop a
+preliminary design for MAISTRO\footnote{MAISTRO: Modular Artificial Intelligence System for Target Reallocation and
+Observing.} an ``artificial intelligence'' (AI) targeting system that will learn optimization strategies for assigning
+targets from a database of overlapping observing programs with pre-defined priorities.  The AI package will aggregate
+data quality using a quick-look reduction package, science-driven performance metrics, {\it and real-time assessments
+of the observing conditions} to make dynamic targeting recommendations.  For example, if conditions are
+slightly less than optimal, MAISTRO would reconfigure Starbugs to brighter objects in a field or implement a different program prioritization.  MAISTRO would incorporate updated target lists and priorities from the active observer and could easily be over-ridden at any time.   Fractions of the full Keck-FOBOS multiplex might also be reserved ``manual targeting'' as required by the P.I.  
 
 %   - maintains a database with observational progress on individual
 %     targets in the survey and
