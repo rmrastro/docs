@@ -653,6 +653,51 @@ measurements are out of reach for FOBOS, a strategically developed
 training set observed at high S/N can be used for kinematics and simple
 stellar parameter determination.
 
+% Notes from Yuan-Sen:
+%   - One has to check the survey coverage more carefully. I believe
+%     most surveys that you mentioned are focusing the disk, and FOBOS
+%     will be a great complementary survey.
+%   - This might be too details for such proposals, but it might useful
+%     to mention that low-resolution spectroscopy (i.e., fitting the
+%     full spectra) is only recently made possible by The Cannon and The
+%     Payne.  And at low-resolution, ab initio spectral models are
+%     typically not good enough, and one might want to resort to
+%     data-driven model.  Having large (ideally, high S/N) empirical
+%     library will be very useful. And FOBOS might provide that.
+%   - Complementing Gaia with spectra are not only about chemical
+%     abundances or simply RV. Knowing stellar parameters are *crucial*
+%     to get very precise distances. Gaia parallax suffers from the fact
+%     that the errors grows quadratically with distance. So Gaia
+%     typically does not give good distances. But combining stellar
+%     spectroscopic parameters + parallax, we will be able to predict
+%     the absolute magnitude of stars, and hence gives much more precise
+%     distances -- Hogg, Eiler, Rix+ 18, Ting, Hawkins, Rix+ 18. I think
+%     simply having spectra for all halo stars Gaia survey will be a
+%     tremendous service of Gaia. And this might be a good sell.
+%   - "Although anything more than simple total metallicity measurements
+%     are out of reach for FOBOS, a strategically developed training set
+%     observed at high S/N can be used for kinematics and simple stellar
+%     parameter determination." Actually, that's the whole point of The
+%     Payne -- we can measure > 16 elemental abundances now from LAMOST
+%     (R=1800, optical full range, S/N=30). So having FOBOS + smart way
+%     (The Cannon/The Payne) should give amazing chemical information.
+%   - Then combined with the fact that Gaia + FOBOS (stellar parameters
+%     + parallax -> stellar absolute magnitude -> distance to ~10\%),
+%     and TESS/PLATO + FOBOS which should give you stellar ages from
+%     stellar spectra (you can get stellar ages to 0.1 dex with LAMOST
+%     spectra -- Ting & Rix, 2018), we would have (a) 20+ elemental
+%     abundances, (b) distances to ~10\%, (c) stellar ages to 0.1 dex
+%     (20\%).  And this should tell us tremendously much on the Galactic
+%     halo. But how to frame it as a "challenge" might be tricky.
+%   - Abundance recovery of GALAH using LAMOST (FOBOS-like resolution)
+%     spectra.  Figure provided.
+%   - MW rotation curve measurements from Eilers et al.  Gaia+spectral
+%     distances.
+%   - Age determination from LAMOST, Ting & Rix 2018.
+
+% Why couldn't we do the rotation curve using DEIMOS + Gaia.  anything
+% unique about fobos?
+
 % Beyond its internal chemodynamical history, LSST will also reveal
 % hundreds of faint Milky Way satellites, as well as discover new
 % satellites of the Andromeda and Triangulum galaxies, extending the
@@ -1117,3 +1162,38 @@ the role of each in the project;
 
 \end{document}
 
+Proto-galaxy:
+
+    - Alice comments:
+        - Better Figure 1
+        - Show Fig. 2 from Steidel et al 2016, richness of rest UV
+        - Show rest spectra from Kriek et al. 2015, sanders et al. 2015,
+          steidel et al 2014.
+        - lyman-continuum escape fraction references
+        - Justify resolution requirements
+
+
+    - George's comments:
+        - fill out case for probing both galaxies and their “gas-filled
+          environments”
+            - make it more explicit that getting large numbers of
+              redshifts would make it possible to trace out large-scale
+              structure in detail
+            - enables studies of galaxy properties as a function of
+              environment
+        - also mention targeting galaxies along QSO lines of sight
+            - much higher target density than with LRIS, DEIMOS over
+              larger FOV.
+        - Worth discussing Lyman-alpha or metal-line tomography?  
+        - More quantitative comparisons with existing data sets?
+            - What key science questions can FOBOS address that many
+              years of LRIS and DEIMOS observations have not been able
+              to?  Surely some level of the spectral tagging and photo-z
+              training can be done (and surely is being done) with
+              existing data.  Is FOBOS going to be a huge leap, or will
+              it mainly be cleaning up neglected corners of parameter
+              space?
+        - More excited to hear about how the FOBOS spectra will be used
+          for science directly, instead of support for LSST
+
+    
