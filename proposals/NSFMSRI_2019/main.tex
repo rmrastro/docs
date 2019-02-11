@@ -683,9 +683,9 @@ deliverables in order to motivate this work.
 
 \subsection{Keck-FOBOS Instrument Concept}
 \label{sec:concept}
-\noindent \comment{1 page}
+% \noindent \comment{1 page}
 
-% Here's an alternative way to put in figures if we want captions on the side
+% Here's an alternative way to put in figures if we want captions on the side (to save space)
 % Could introduce a new ``counter'' to count and label figures appropriately
 \centerline{\hbox{\includegraphics[width=0.6\textwidth, angle=0]{FOBOSatKeck_v1.pdf}
     \hspace{0.1cm} \vspace{2in}
@@ -729,7 +729,7 @@ benefit from image corrections with Ground-Layer Adaptive Optics.
 
 \subsection{Keck-FOBOS Instrument Design Effort}
 \label{sec:design}
-\noindent \comment{1 page}
+% \noindent \comment{1 page}
 
 Keck-FOBOS will complete its current conceptual design phase in October 2019.  Funding from this proposal will support preliminary design beginning in November 2019.  A detailed schedule of activities is attached.  Major components of the preliminary design effort are described below.
 
@@ -756,32 +756,41 @@ workpackage also includes the stress-relief cable system and fiber termination h
 \noindent \textbf{Auxiliary Systems.} Design of auxiliary systems includes Nasmyth platform interfaces, utilities access, fiber routing and support, thermal control and vibration control systems.
 
 
-\subsection{Addressing Data Science Challenges and Designing the FOBOS Public Survey}
+\subsection{Addressing Data Science Challenges and Designing FOBOS Training Sets}
 \label{sec:survey}
-\noindent \comment{1 page}
+% \noindent \comment{1 page}
 
-With our team of leading experts on data science applications to astronomy, we will tackle the Data Science Challenges
-laid out in this proposal by supporting continuing research and organizing two focused workshops to encourage
-engagement from the broader astrostatistics community.  These workshops will connect with ongoing activities of LSST's
-Informatics and Statistics Science Collaboration and Data Science Fellowship Programs.  At the end of the proposal
-period, we will publish the results of work on these challenges and make public resulting software packages.
+Our team includes leading experts on data science applications to astronomy and LSST specifically.  We will also use
+our established connections to LSST's Informatics and Statistics Science Collaboration (ISSC) to advertise, recruit,
+and coordinate efforts to tackle the Data Science Challenges described in Section \ref{sec:goals}.  Our proposal
+request includes two open workshops to motivate progress and discuss results. At the end of the proposal period, we
+will publish the results and developed software packages.
 
-The resulting success of the Data Science Challenge activities will define their level of readiness and set
-requirements on the associated training sets to be delivered by the FOBOS Public Survey.  The detailed design of the
-survey and embedded training sets will be completed in the next phase of this project (MSRI-2).  The anticipated survey
-will consist of multiple, combined programs with integrated tiers of exposure time and target density.  The complete
-photo-$z$ training survey described in \citet{newman15} would require 15 independent pointings, each spanning 0.1
-deg$^2$ with a target density of 6 arcmin$^{-2}$ (8 arcmin$^{-2}$ when including $z > 1.5$ galaxies accessible in the
-UV with Keck-FOBOS), perfectly matched to the Keck-FOBOS field-of-view and target density.  With a conservative
-exposure time of 100 hours to reach 75\% redshift completeness for 40,000 galaxies with $i_{\rm AB} < 25.3$, the Neman
-survey would require 400 nights.  Challenge \ref{photoz} would reduce the required survey duration by a factor of at
-least four.  Meanwhile the extreme depths and flux-limited selection are likely also requirements for training sets
-associated with Challenges \ref{phot}, \ref{uv}.
+The Data Science Challenges require work on simulated imaging$+$spectroscopic data sets where input physical properties
+(e.g., a redshift) can be imposed and the output, recovered values compared against the input.  Simulated imaging data
+(e.g., from LSST) is in-hand, while mock spectroscopy will be provided by a Keck-FOBOS instrument simulator, an initial
+version of which has already been developed.  Further advances on the FOBOS simulator will be supported by this
+proposal and include improved error modeling and simulating systematic effects from detector artifacts, image quality
+aberrations informed by the emerging detailed optical design, and variable observing conditions.
 
-A wider and shallower survey component is envisioned for Challenges \ref{lowsnr} and \ref{gaia}.  With 10-minute
-integrations, a 52 deg$^2$ Keck-FOBOS sample of environmental diagnostics for 1 million galaxies could be carried out
-in less than 20 nights.  This program would sample at $z \sim 1.5$ the same cosmic volume as SDSS.  A program of a
-similar scale would provide training set data for inference of stellar parameters in the Milky Way.  These shallow programs would be integrated with the deeper components described above into a single survey plan.
+The resulting success in addressing each Data Science Challenge will define a level of readiness and set requirements
+on the associated Keck-FOBOS training sets required.  Preliminary observing design and a description of required
+operational modes will begin with this proposal, with detailed survey and execution plans to be completed in the next
+phase of this project (MSRI-2).  The anticipated survey will consist of multiple, combined programs with integrated
+tiers of exposure time and target density.  
+
+% The complete photo-$z$ training survey described in \citet{newman15} would
+% require 15 independent pointings, each spanning 0.1 deg$^2$ with a target density of 6 arcmin$^{-2}$ (8 arcmin$^{-2}$
+% when including $z > 1.5$ galaxies accessible in the UV with Keck-FOBOS), perfectly matched to the Keck-FOBOS
+% field-of-view and target density.  With a conservative exposure time of 100 hours to reach 75\% redshift completeness
+% for 40,000 galaxies with $i_{\rm AB} < 25.3$, the Neman survey would require 400 nights.  Challenge \ref{photoz} would
+% reduce the required survey duration by a factor of at least four.  Meanwhile the extreme depths and flux-limited
+% selection are likely also requirements for training sets associated with Challenges \ref{phot}, \ref{uv}.
+
+% A wider and shallower survey component is envisioned for Challenges \ref{lowsnr} and \ref{gaia}.  With 10-minute
+% integrations, a 52 deg$^2$ Keck-FOBOS sample of environmental diagnostics for 1 million galaxies could be carried out
+% in less than 20 nights.  This program would sample at $z \sim 1.5$ the same cosmic volume as SDSS.  A program of a
+% similar scale would provide training set data for inference of stellar parameters in the Milky Way.  These shallow programs would be integrated with the deeper components described above into a single survey plan.
 
 
 
@@ -797,7 +806,7 @@ similar scale would provide training set data for inference of stellar parameter
 
 \subsection{Target Allocation with Artificial Intelligence}
 \label{sec:targeting}
-\noindent \comment{1/2 page}
+% \noindent \comment{1/2 page}
 
 Traditionally, target allocation involves laborious hands-on
 optimization of a set of desired targets, the allowed positions of
@@ -859,7 +868,7 @@ targets drawn from an observatory-level ``filler" database.
 
 \subsection{Publicly Available Automated Data Products}
 \label{sec:DAP}
-\noindent \comment{1/2 page}
+% \noindent \comment{1/2 page}
 
 The typical proprietary period for raw data acquired at Keck is 18
 months.  However, typical of other public surveys (e.g., SDSS), this
@@ -912,7 +921,7 @@ wider U.S. research community (access, data products, technology,
 etc.)."
 
 \subsection{Akamai: Training the next generation of Hawaiian STEM professionals}
-\noindent \comment{1/2 page}
+% \noindent \comment{1/2 page}
 
 Led by the Institute for Scientist and Engineer Educators (ISEE) at
 UCSC, the Akamai program provides resources for STEM training of
@@ -1079,9 +1088,9 @@ the role of each in the project;
 %  see https://www.nsf.gov/bfa/lfo/lfo_documents.jsp
 \end{enumerate}
 
-(See the LFM/MFG. Greater detail will be required in invited full
-proposals should that occur. See Full Proposal Preparation section for
-further information.)
+% (See the LFM/MFG. Greater detail will be required in invited full
+% proposals should that occur. See Full Proposal Preparation section for
+% further information.)
 
 %\begin{figure}[h!]
 %  \vskip -0.1in
