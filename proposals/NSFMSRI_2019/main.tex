@@ -193,7 +193,7 @@
 \textbf{\textsf{Training Big Astronomical Data with Keck-FOBOS:\\ Comprehensive, Data-Driven Models of a Universe in Transition}}
 
 \authors{K. Bundy, K. Westfall, N. MacDonald, P. Capak, A. Coil, C. Conroy, M. Cooper, R. Kupke, K.G. Lee, R.
-Mandelbaum, D. Masters, J. Newman, X. Prochaska, C. Rockosi, J. Rhodes, M. Rich, M. Savage, A. Shapley, B. Siana, Y.-S.
+Mandelbaum, D. Masters, J. A. Newman, X. Prochaska, C. Rockosi, J. Rhodes, M. Rich, M. Savage, A. Shapley, B. Siana, Y.-S.
 Ting, G. Wilson}
 
 \end{center}
@@ -249,20 +249,18 @@ today.
 Since Edwin Hubble's observations over 100 years ago, major advances in our understanding of the universe have come
 from the two-step process of first taking images of the sky to locate sources of interest and then obtaining
 information-rich spectroscopy to reveal the nature of those sources.  A modern example is the Sloan Digital Sky Survey
-(SDSS) whose combination of panoramic broad-band ``imaging'' followed by dedicated spectroscopy yielded an
-unprecedented sample of over 1 million galaxies, mapping the present-day universe and making SDSS one of the most
-highly cited survey in the history of astronomy.
+(SDSS) whose combination of panoramic broad-band ``imaging'' followed by dedicated spectroscopy yielded 
+unprecedented in-depth data on over 1 million galaxies, mapping the present-day universe and making SDSS one of the most
+highly cited surveys in the history of astronomy.
 
 % Because a quality spectrum requires far more observing time per source than an image, SDSS pioneered ``high multiplex''
 % spectrographs, capable of \emph{simultaneous} spectroscopy of hundreds of objects.
 
 LSST's all-sky images will be 1,000 times deeper and detect far more distant galaxies than SDSS, but \textbf{no current
-U.S. facility is capable of obtaining spectroscopic followup of LSST} at a level required to capitalize on \$1B U.S.\
-investment in that project.  In fact, SDSS-like spectroscopic followup of 1 million galaxies at LSST depths would
-require 300 years of observing on the largest telescopes with current instrumentation!  
+U.S. facility is capable of obtaining spectroscopic followup of LSST galaxies} at a level required to capitalize on the \$1B U.S.\
+investment in that project.  In fact, an SDSS-like spectroscopic study of 1 million galaxies at LSST depth would require 300 years of observing on the largest telescopes with current instrumentation!  
 
-The only way forward is encapsulated in one of NSF's ``10 Big Ideas,'' namely \emph{Harnessing the Data Revolution} in
-order to maximize the information content of LSST and other imaging facilities via machine learning of
+The only way forward is encapsulated in one of NSF's ``10 Big Ideas,''  \emph{Harnessing the Data Revolution}: we can maximize the information content of LSST and other imaging facilities via machine learning from
 optimally-designed spectroscopic training sets.  This proposal presents a coordinated framework with three critical
 components necessary for success in this endeavor: 1) Using simulated spectroscopic$+$imaging data to define the
 training sets required to address ambitious data-science challenges in Cosmology, Galaxy Formation, and Local Group
@@ -301,7 +299,7 @@ in 2026, an array of spectroscopic programs, and associated public-ready trainin
 
 % The coming decade will benefit from  major investments in both the depth and breadth of astronomical observations.  The James Webb Space Telescope will provide our deepest views yet, probing the first billion years of cosmic time over narrow sightlines.  At the same time, LSST's panoramic imaging will survey broad cosmic volumes of unprecedented size, detecting the majority of luminous sources a few billion years later.  LSST's optical imaging will be complemented by space-based near-infrared imaging from Euclid and eventually's NASA's WFIRST. 
 
-The need for spectroscopic followup in the LSST era was made clear in the National Research Council's 2015 report, ``Optimizing the U.S. Ground-Based Optical and Infrared Astronomy System'' \citep{NAP21722} which made the following recommendation:
+The need for spectroscopic followup in the LSST era was made clear in the National Research Council's 2015 report, ``Optimizing the U.S. Ground-Based Optical and Infrared Astronomy System'' \citep{NAP21722} which recommended:
 
 \begin{quote}
 The National Science Foundation should support the development of a wide-field, highly multiplexed spectroscopic capability on a medium- or large-aperture telescope in the Southern Hemisphere to enable a wide variety of science, including follow-up spectroscopy of Large Synoptic Survey Telescope targets. Examples of enabled science are studies of cosmology, galaxy evolution, quasars, and the Milky Way.
@@ -320,15 +318,15 @@ The National Science Foundation should support the development of a wide-field, 
 
 In addition to this report, further details of spectroscopic needs for LSST in all science areas were disseminated
 after a 2013 workshop on this topic organized by the National Optical
-Astronomy Observatory (NOAO).  Based on these recommendations, we propose the Keck-FOBOS instrument coupled
-with a suite of data-driven tools to address LSST's spectroscopic requirements at a final cost 20 times less than
-a new Southern Hemisphere facility. Located in Hawaii, Keck-FOBOS would have access to greater than 70\% of the LSST
+Astronomy Observatory (NOAO).  \textcolor{red}{JAN: I think at least as relevant is the NSF-requested Kavli/NOAO/LSST report, https://www.noao.edu/meetings/lsst-oir-study/, which followed up on the Elmegreen report.}
+ Based on these recommendations, we propose the Keck-FOBOS instrument coupled
+with a suite of data-driven tools to address LSST's spectroscopic requirements at a final cost 20 times less than a new Southern Hemisphere facility. Located in Hawaii, Keck-FOBOS would have access to more than 70\% of the LSST
 footprint, more than adequate for our primary goal of building powerful spectroscopic training sets.  FOBOS would complement future ambitious facilities that could cover wider areas (several deg$^2$ per pointing) at shallower depths.
 
-The need for deep spectroscopic followup is particularly acute for LSST's major cosmological probes which rely on ``photometric redshifts.''  \citet{newman15} summarize the case and describe a redshift survey which, if carried out with Keck-FOBOS, would increase LSST's Dark Energy Figure-of-Merit by a factor of 50\% at a cost of less than 5\% of the LSST budget.  The urgent case for spectroscopic redshift training has been the subject of numerous publications \citep[e.g.,][]{laureijs11,masters15, hemmati18}.  
+The need for deep spectroscopic followup is particularly acute for LSST's major cosmological probes which rely on ``photometric redshifts:'' measures of the redshifts of objects -- which indicate how far back in time and space we are looking -- based on imaging alone.  \citet{newman15} summarize the case for this and describe a redshift survey which, if carried out with Keck-FOBOS, would increase LSST's Dark Energy Figure-of-Merit by a factor of 40\% at a cost of less than 5\% of the LSST budget.  The urgent case for spectroscopic redshift training has been the subject of numerous publications \citep[e.g.,][]{laureijs11,masters15, hemmati18}.  
 
 Meanwhile, the astronomy community recognizes that the coming era of ``Big Data'' astronomy culminating in LSST
-necessitates ``harnessing the data revolution.''  Wide-spread community interest in advanced data science techniques
+necessitates ``harnessing the data revolution.''  Widespread community interest in advanced data science techniques
 continues to grow amidst calls for educational programs, conference series, and research funding to support the
 growth of a new field, ``Astroinformatics,'' which exploits the interface between astrophysics and statistics
 \citep{borne09}.  Astronomy's largest organizations, including the American Astronomical Society and the International
@@ -368,81 +366,69 @@ area---many represented among our Senior Personnel.
 \includegraphics[width=\textwidth]{Hemmati18_Fig8_VVDS_spec.png}
 %
 \caption{\small \emph{Left:} A Self-Organizing Map (SOM) from
-\citet{hemmati18} visualizing the relationship between broadband galaxy
-brightness in different broadband filters (projected along the x and y
-axes) and observed spectroscopic redshift (indicated by the color map).
+\citet{hemmati18} visualizing the relationship between galaxy
+brightness in different broadband filters (projected into a two-dimensional space) and observed spectroscopic redshift (indicated by the color map).
 SOMs guide the optimal construction of training samples by highlighting
-which galaxy classes require targeting.  \emph{Right:} Remarkably, the
-spectra associated with localized SOM regions are surprisingly similar,
-not just the associated redshifts.}
+which galaxy classes require targeting.  \emph{Right:} The
+spectra associated with localized SOM regions have similar spectra, as well as similar redshifts. \textcolor{red}{JAN: Contra the previous text, I would say that the similarity of the spectra is neither remarkable nor surprising, since to be assigned to the same cell the galaxies have to have extremely similar SEDs, and hence spectra.  A bigger open question is can you get similar apparent SEDs from multiple redshifts (e.g., are there degeneracies with other parameters); the SOM is not necessarily one-to-one with redshift, but should be deterministic of spectral shape in any event.} }
 %
 \label{fig:SOM}
 %
 \end{figure}
 
-The 2011 Nobel Prize in Physics was awarded for the discovery of an era
-of acceleration in the expansion rate of the universe that sets in when
-the universe was roughly half its current age.  This accelerated
-expansion is often attributed to a mysterious ``Dark Energy,'' but the
-amplitude of this vacuum energy density is 120 orders of magnitude
-smaller than what naive models would predict.
+The 2011 Nobel Prize in Physics was awarded for the discovery that the expansion of the universe has been accelerating instead of slowing down due to gravity as previously expected, starting when it was roughly half its current age.  This accelerated expansion is often attributed to a mysterious ``Dark Energy,'' the origin of which remains unknown.
 
-Dark Energy is perhaps the single most important unsolved problem in
-cosmology and astrophysics.  As such, it has inspired enormous
+Dark Energy is perhaps the single most important unsolved problem in both
+cosmology and particle physics.  As such, it has inspired enormous
 world-wide effort and the construction of dedicated ground and
 space-based facilities.  These include LSST, Euclid, and WFIRST.  The
 goal of these experiments is the precision mapping of cosmic structure.
-Because this structure expands as the universe expands, precise measures
-of cosmic structure allow us to reconstruct the cosmic expansion
-history, and at sufficient levels of detail, distinguish among various
+Because this structure grows as the universe does, these measurements allow us to reconstruct the cosmic expansion history and distinguish amongst 
 Dark Energy models.
 
-Many of the most important cosmological probes require galaxy
-``redshifts,'' a Doppler-like shift in the observed wavelengths of
-emitted light, as distant galaxies appear to recede from us as a result
-of cosmic expansion.  Cosmological models, which provide access to Dark
-Energy parameters, are constrained in part via the conversion of
-redshift into distance.  Accurate redshifts are conventionally derived
-via spectroscopy by fitting the observed wavelength locations of
-spectral features.  Less precise redshifts, so-called ``photometric
-redshifts'' (or photo-$z$s) can be estimated with imaging photometry
+Most cosmological probes require measurements of galaxy
+``redshifts,'' the Doppler-like shift in the observed wavelengths of
+emitted light; like structure on the largest scales, the wavelengths of light also grow with the cosmic expansion as it travels to us.  By comparing the relationship between redshifts and other observable quantities (such as angles or brightnesses) to expectations from cosmological models (including dark energy parameters), we can constrain the nature of our Universe.   Accurate redshifts are conventionally derived via spectroscopy by comparing the observed wavelengths of
+spectral features to the characteristic wavelengths of those features where light was emitted.  Less precise redshifts, called ``photometric redshifts'' (or photo-$z$s), can be obtained from imaging (a.k.a. ``photometric'') data
 alone, a compelling option for large and faint data sets where
-spectroscopic redshifts are infeasible.  But, ``to infer cosmological
+spectroscopic redshifts are infeasible.  However, ``to infer cosmological
 parameters not limited by systematic errors, accurate redshift
 measurements are needed'' \citep {hemmati18}.  
 
 Spectroscopic redshifts are critical for both the training of
 photometric redshift algorithms and for calibrating results in order to
 correct for biases.  Complete photo-$z$ training samples can
-\emph{increase the Dark Energy Figure of Merit in LSST by 50\%}
+\emph{increase the Dark Energy Figure of Merit in LSST by 40\%}
 \citep{newman15} and Keck-FOBOS is particularly powerful in this respect
 because it has no redshift desert.  Keck-FOBOS can measure spec-$z$s
 above $z > 1.5$ via rest-frame UV features, eliminating the need for
-exensive, space-based near-IR spectroscopy.
+expensive, space-based near-IR spectroscopy.
 
 \medskip
 %
 \chal{photozs}
 %
-\noindent {\bf Data-Science Challenge \ref{photozs}: Obtain precise LSST
-Photometric Redshifts ($\sigma_z/(1+z) \lesssim 0.005$ at i(AB) $<$
-25.3) with Targeted Training Sample sizes of $<$10k}.  Our proposed
-FOBOS instrument is ideally suited to providing the spectroscopic
-training defined in \citet{newman15}, but a complete program would
-require a 400-night investment in 10 m telescope time.  This challenge
-demands a reduction in the required FOBOS training sample by a factor of
-$\sim$4 via clever application of state-of-the-art machine learning
-techniques.
+\noindent {\bf Data-Science Challenge \ref{photozs}: Enable High-precision LSST
+Photometric Redshifts ($\sigma_z/(1+z) \lesssim 0.02$ at i(AB) $<$
+25.3) with Targeted Training Spectroscopy}.  Delivering optimal photometric redshifts with minimal errors per object will require sets of $>10,000$ spectra for training purely machine learning-based algorithms or optimizing our knowledge of galaxy spectra and calibration errors for template-based and hybrid algorithms.  Our proposed FOBOS instrument is ideally suited to providing this training set, considering  the requirements in \citet{newman15}.  Our goal is to design and deliver an optimized set of spectroscopic redshifts which will enable photometric redshifts to be accurately 'painted on' to LSST imaging-only objects, and thereby improve both dark energy and galaxy evolution science from LSST.
 
-Neural network trained photo-$z$s have long been recognized for
-providing the best precision when sufficient training sets are available
-\citep[e.g.][]{bundy06}, and significant effort is underway in
-optimizing their application to future cosmological imaging surveys.
-\citet{hemmati18} for example have exploited Self-Organizing Maps (SOMs,
-Fig \ref {fig:SOM}) to sort multiband photometric data by observed
-redshift in order to select optimized training samples for spectroscopic
-followup.
 
+%, but a complete program would
+%require a 400-night investment in 10 m telescope time.  This challenge
+%demands a reduction in the required FOBOS training sample by a factor of
+%$\sim$4 via clever application of state-of-the-art machine learning
+%techniques.
+% JAN: I don't agree with that text, but also think it's way down in the weeds for a pre-proposal.  
+%Neural network trained photo-$z$s have long been recognized for
+%providing the best precision when sufficient training sets are available
+%\citep[e.g.][]{bundy06}, and significant effort is underway in
+%optimizing their application to future cosmological imaging surveys.
+% JAN:  NNs are not necessarily leading the field right now, but they also don't solve this issue.  The requirement is set based on being able to obtain a <0.002(1+z) calibration from the training set if redshift success is high.  
+%\citet{hemmati18} for example have exploited Self-Organizing Maps (SOMs,
+%Fig \ref {fig:SOM}) to sort multiband photometric data by observed
+%redshift in order to select optimized training samples for spectroscopic
+%followup.
+% JAN: That does not change the math for direct calibration, which the SOM fundamentally is doing..
 
 
 
