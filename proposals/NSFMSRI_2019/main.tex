@@ -621,32 +621,34 @@ Group.  In particular, SDSS and Pan-STARRS have unveiled numerous
 stellar streams and other halo substructures in both the MW and M31,
 including a stellar bridge stretching between M31 and M33.  We expect a
 hundredfold growth in the census of halo substructures in the MW via the
-upcoming LSST and WFIRST surveys.  Follow-up spectroscopy of their
-constituent stars allow us to, e.g., constrain the orbits of stellar
-streams and the present-day enclosed mass of the galaxies they orbit
-(refs), as well as the age and chemical composition of their stellar
-populations (refs).  At the same time, cosmological simulations [refs],
-like IllustrisTNG [others], can now simulate the full chemo-dynamical
-evolution of Local-Group-like galaxy groups to which data can be
-meaningfully compared.  Finally, the Gaia satellite (ref) is currently
-revolutionizing our understanding of the MW by providing distances and
-on-sky motions for more than a billion stars spanning the full extent of
-its disk.  This simultaneous maturation of both the theoretical and
-observational data will allow us to form physically motivated models for
-the formation history of the Local Group and its constituents.
+upcoming LSST and WFIRST surveys.  Follow-up spectroscopy of Local Group
+member stars allow us to, e.g., constrain the orbits of stellar streams
+and the present-day enclosed mass of the galaxies they orbit (refs), as
+well as the age and chemical composition of their stellar populations
+(refs).  At the same time, cosmological simulations [refs], like
+IllustrisTNG [others], can now simulate the full chemo-dynamical
+evolution of Local-Group-like overdensities in the Universe to which
+data can be meaningfully compared.  Finally, the Gaia satellite (ref) is
+currently revolutionizing our understanding of the MW by providing
+distances and on-sky motions for more than a billion stars spanning the
+full extent of its disk.  This simultaneous maturation of both the
+theoretical and observational data will allow us to form physically
+motivated models for the formation history of the Local Group and its
+constituents.
 
-As we obtain deeper imaging data, follow-up spectroscopy of Local Group
-objects of interest becomes ever more difficult.  As it is, e.g.,
-Keck-DEIMOS programs to measure the radial velocities of stars in the MW
-halo or the M31 disk require observations of up to 10 hours, depending
-on the population being probed [Tollerud, Dorman, Cunningham].  Given
-such long integration times, maximizing the number of targets observed
-in a single pointing can be critical.  However, one can also appeal to
-machine-learning algorithms to infer the relevant physical quantities
-statistically from both multi-band imaging and lower quality (S/N,
-resolution) spectra using a relatively small, yet high-S/N, training
-set.  There has been a significant push over the past 5 years toward
-building such machine-learning applications.
+As we obtain deeper images and more varied data sets, follow-up
+spectroscopy of Local Group objects of interest becomes ever more
+difficult.  As it is, e.g., Keck-DEIMOS programs to measure the radial
+velocities of stars in the MW halo or the M31 disk require observations
+of up to 10 hours, depending on the population being probed [Tollerud,
+Dorman, Cunningham].  Given such long integration times, one approach is
+to maximize the number of targets observed in a single pointing.
+However, one can also appeal to machine-learning algorithms to infer the
+relevant physical quantities statistically from both multi-band imaging
+and lower quality spectra (low resolution and S/N) using a relatively
+small, yet high-S/N, training set.  There has been a significant push
+over the past 5 years toward building such machine-learning
+applications.
 
 For example, [Ness+] have developed {\it The Cannon}, a supervised
 learning algorithm that uses spectra with known stellar parameters to
@@ -658,9 +660,10 @@ to determine 25 stellar-abundance labels providing the detailed chemical
 make-up of each observed star.  Example applications of these techniques
 are shown in Figure X.
 
-These efforts open up new lines of inquiry, both in terms of application
-of these machine-learning techniques to new data sets and
-development of new techniques as we discuss below.
+Our proposed effort builds on new lines of inquiry based on these
+successes, both in terms of application of these machine-learning
+techniques to new data sets and development of new techniques as we
+discuss below.
 
 \medskip \chal{mwhalo} \noindent {\bf Data-Science Challenge
 \ref{mwhalo}: The chemical evolution and assembly history of the MW
@@ -668,47 +671,45 @@ stellar halo.} LSST and WFIRST will reveal a trove of substructure in
 both the MW and M31 halo.  We will design an observational program that
 would employ Keck-FOBOS to observe main-sequence turn-off and red-giant
 stars in these substructures within the MW.  These and additional data
-(APOGEE, Gaia) will be used as training sets to build data-driven models
+(APOGEE, H3) will be used as training sets to build data-driven models
 for the stellar parameters (temperature, surface gravity, metallicity)
-for all stars with LSST+2MASS+WISE+WFIRST multi-band photometry.  These
-will be combined with dynamical data and compared with cosmological
-simulations to build a generative model for the assembly history of the
-MW stellar halo.
+for all halo stars with LSST+2MASS+WISE+WFIRST multi-band photometry.
+These will be combined with dynamical data and compared with
+cosmological simulations to build a generative model for the assembly
+history of the MW stellar halo.
 
 \medskip \chal{m31} \noindent {\bf Data-Science Challenge \ref{m31}: The
 differential chemical evolution of M31 and MW.}  A natural extension of
-Data-Science Challenge \ref{m31} is to perform the same analysis of the
+Data-Science Challenge \ref{m31} is to perform the same analysis for the
 halo of M31.  However, we cannot expect to obtain high-quality spectra
 of individual main-sequence stars at the distance of M31 with
 Keck-FOBOS.  Moreover, training a chemical evolution model based on
-stars training sets derived using stars in the Milky Way could lead to
-systematic errors:  The Milky Way and Andromeda likely have distinct
-chemical evolution histories (ref), despite being relatively similar in
-many other respects.  We will therefore design an observational program
-that will obtain deep observations of giant stars in the M31 halo.
-These data will be combined with a machine-learning algorithm that
-combines the data and model of the MW halo with results from
-cosmological hydrodynamical simulations to constrain the differential
-history of M31's stellar halo.
+training sets composed of stars in the Milky Way could lead to
+systematic errors:  The Milky Way and Andromeda have distinct chemical
+evolution histories (ref), despite being relatively similar in many
+other respects.  We will therefore design an observational program that
+will obtain deep observations of giant stars in the M31 halo.  These
+data will drive a machine-learning algorithm that combines a model of
+the MW halo with results from cosmological hydrodynamical simulations to
+constrain the differential history of the MW and M31 stellar halos.
 
 \medskip \chal{gaia} \noindent {\bf Data-Science Challenge \ref{gaia}:
 Stellar parameter determinations for a billion stellar spectra.} While
 providing on-sky motions and photometry for 1.7 billion stars in the MW,
 fewer than 10\% of stars will have a full complement of
-three-dimensional space motions, fewer than 0.3\% will have the basic
-stellar parameter measurements needed to classify the stellar type, and
-only 0.1\% will have measured chemical abundances.  In addition, Gaia
-distance measurements have errors that increase quadratically with
-distance.  To realize the full potential of the Gaia astrometric
-catalog, one needs the full 6D phase space for each star and its
-chemical abundance pattern.  We will design training data sets to
-observe with Keck-FOBOS that, when combined with existing high
-resolution datasets (e.g., APOGEE, WEAVE) will allow us to build
-data-driven models for the distances, stellar parameters, and stellar
-abundances for {\it all} stars in the Gaia dataset.  These data are
-critical to isolating coeval populations in the Galactic disk that can
-be combined with very high resolution simulations of the Milky Way to
-understand the evolutionary history of our Galactic home.
+three-dimensional space motions, fewer than 0.3\% will have basic
+stellar parameters, and only 0.1\% will have measured chemical
+abundances.  In addition, Gaia distance measurements have errors that
+increase quadratically with distance.  To realize the full potential of
+the Gaia astrometric catalog, one needs 3D position and 3D velocity
+vectors and chemical abundances for each star.  We will therefore design
+training sets to observe with Keck-FOBOS that, when combined with
+existing high-resolution datasets (e.g., APOGEE, WEAVE) will allow us to
+build data-driven models of distance, temperature, surface-gravity, and
+stellar abundance for {\it all} stars in the Gaia dataset.  These data
+will allow us to isolate coeval populations in the Galactic disk that
+can be combined with very high-resolution simulations of the Milky Way
+to provide a detailed evolutionary history of our Galactic home.
 
 
 % Deeper in their potential wells, the shorter dynamical times mean that
