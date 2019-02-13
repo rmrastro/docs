@@ -140,6 +140,12 @@
 \usepackage{natbib,latexsym,url,enumitem,pdfpages}
 \usepackage{color}
 \usepackage{wrapfig}
+\usepackage{caption}
+
+\captionsetup{
+    justification=justified,
+    margin=8pt,
+    font=small}
 
 % Some fancy commenting
 \definecolor{todo}{RGB}{200,0,0}
@@ -371,22 +377,87 @@ area---many represented among our Senior Personnel.
 \label{sec:cosmology}
 % \noindent \comment{1 page}
 
+% \caption{\small \emph{Left:} A Self-Organizing Map (SOM) from
+% \citet{hemmati18} visualizing the relationship between galaxy
+% brightness in different broadband filters (projected into a
+% two-dimensional space) and observed spectroscopic redshift (indicated
+% by the color map).  SOMs guide the optimal construction of training
+% samples by highlighting which galaxy classes require targeting.
+% \emph{Right:} The spectra associated with localized SOM regions have
+% similar spectra, as well as similar redshifts. \textcolor{red}{JAN:
+% Contra the previous text, I would say that the similarity of the
+% spectra is neither remarkable nor surprising, since to be assigned to
+% the same cell the galaxies have to have extremely similar SEDs, and
+% hence spectra.  A bigger open question is can you get similar apparent
+% SEDs from multiple redshifts (e.g., are there degeneracies with other
+% parameters); the SOM is not necessarily one-to-one with redshift, but
+% should be deterministic of spectral shape in any event.} }
+
+%\begin{wrapfigure}{r}{0.6\textwidth}\small
+%%
+%\includegraphics[width=0.6\textwidth]{TestBench.jpg}
+%%
+%\caption{\label{fig:testbench} A schematic of the current UCO fiber test
+%bench.  The components to the right of the first fiber positioner will
+%be repackaged and delivered to Keck for our on-sky experiment; the
+%fibers themselves will be fed light from Keck after being plugged into a
+%DEIMOS mask.  Image Credit: Jaren Ashcroft.}
+%%
+%\end{wrapfigure}
+
 \begin{figure}[h!]
 %
-\vskip -0.1in
+\vskip -0.2in
 %
 \includegraphics[width=\textwidth]{Hemmati18_Fig8_VVDS_spec.png}
 %
-\caption{\small \emph{Left:} A Self-Organizing Map (SOM) from
-\citet{hemmati18} visualizing the relationship between galaxy
-brightness in different broadband filters (projected into a two-dimensional space) and observed spectroscopic redshift (indicated by the color map).
-SOMs guide the optimal construction of training samples by highlighting
-which galaxy classes require targeting.  \emph{Right:} The
-spectra associated with localized SOM regions have similar spectra, as well as similar redshifts. \textcolor{red}{JAN: Contra the previous text, I would say that the similarity of the spectra is neither remarkable nor surprising, since to be assigned to the same cell the galaxies have to have extremely similar SEDs, and hence spectra.  A bigger open question is can you get similar apparent SEDs from multiple redshifts (e.g., are there degeneracies with other parameters); the SOM is not necessarily one-to-one with redshift, but should be deterministic of spectral shape in any event.} }
+\caption{\small {\it Left}: A Self-Organizing Map
+\citep[SOM;][]{1990Natur.346...24K} from \citet{hemmati18} encoding the
+relation between colors in an LSST+WFIRST-like color space and redshift.
+Position on the SOM is associated with a position in the
+multi-dimensional broad-band color space of galaxies.  The redshift,
+$z$, is assigned using to the median photometric redshift of galaxies
+from the CANDELS survey \citep{2011ApJS..197...35G} at each point in the
+color space.  Note that SOMs and related machine-learning techniques can
+guide the optimal construction of spectroscopic training samples that
+fully explore the parameter space of imaging surveys like LSST.  {\it
+Right}: Galaxy spectra from VVDS \citep{2005A&A...439..845L}
+corresponding to the top and bottom groups of black crosses on the SOM.
+This selection highlights the similarity of the high-resolution spectra
+associated with localized regions in the broad-band color space. This
+suggests that a systematic spectroscopic exploration of the LSST color
+space would have far-reaching benefits to the science return of the
+mission beyond the photo-$z$ application.}
 %
 \label{fig:SOM}
 %
 \end{figure}
+
+%\begin{wrapfigure}{r}{\textwidth}\small
+%%
+%\includegraphics[width=\textwidth]{Hemmati18_Fig8_VVDS_spec.png}
+%%
+%\caption{{\it Left}: A Self-Organizing Map
+%\citep[SOM;][]{1990Natur.346...24K} from \citet{hemmati18} encoding the
+%relation between colors in an LSST+WFIRST-like color space and redshift.
+%Position on the SOM is associated with a position in the
+%multi-dimensional broad-band color space of galaxies.  The redshift,
+%$z$, is assigned using to the median photometric redshift of galaxies
+%from the CANDELS survey \citep{2011ApJS..197...35G} at each point in the
+%color space.  Note that SOMs and related machine-learning techniques can
+%guide the optimal construction of spectroscopic training samples that
+%fully explore the parameter space of imaging surveys like LSST.  {\it
+%Right}: Galaxy spectra from VVDS \citep{2005A&A...439..845L}
+%corresponding to the top and bottom groups of black crosses on the SOM.
+%This selection highlights the similarity of the high-resolution spectra
+%associated with localized regions in the broad-band color space. This
+%suggests that a systematic spectroscopic exploration of the LSST color
+%space would have far-reaching benefits to the science return of the
+%mission beyond the photo-$z$ application.}
+%%
+%\label{fig:SOM}
+%%
+%\end{wrapfigure}
 
 The 2011 Nobel Prize in Physics was awarded for the discovery that the expansion of the universe has been accelerating instead of slowing down due to gravity as previously expected, starting when it was roughly half its current age.  This accelerated expansion is often attributed to a mysterious ``Dark Energy,'' the origin of which remains unknown.
 
