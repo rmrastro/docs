@@ -1,0 +1,432 @@
+\begin{thebibliography}{21}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Abbott} et~al.(2018){Abbott}, {Abdalla}, {Allam}, {Amara}, {Annis},
+  {Asorey}, {Avila}, {Ballester}, {Banerji}, {Barkhouse}, {Baruah}, {Baumer},
+  {Bechtol}, {Becker}, {Benoit-L{\'e}vy}, {Bernstein}, {Bertin}, {Blazek},
+  {Bocquet}, {Brooks}, {Brout}, {Buckley-Geer}, {Burke}, {Busti}, {Campisano},
+  {Cardiel-Sas}, {Carnero Rosell}, {Carrasco Kind}, {Carretero}, {Castander},
+  {Cawthon}, {Chang}, {Chen}, {Conselice}, {Costa}, {Crocce}, {Cunha},
+  {D{\textquoteright}Andrea}, {da Costa}, {Das}, {Daues}, {Davis}, {Davis}, {De
+  Vicente}, {DePoy}, {DeRose}, {Desai}, {Diehl}, {Dietrich}, {Dodelson},
+  {Doel}, {Drlica-Wagner}, {Eifler}, {Elliott}, {Evrard}, {Farahi}, {Fausti
+  Neto}, {Fernandez}, {Finley}, {Flaugher}, {Foley}, {Fosalba}, {Friedel},
+  {Frieman}, {Garc{\'\i}a-Bellido}, {Gaztanaga}, {Gerdes}, {Giannantonio},
+  {Gill}, {Glazebrook}, {Goldstein}, {Gower}, {Gruen}, {Gruendl}, {Gschwend},
+  {Gupta}, {Gutierrez}, {Hamilton}, {Hartley}, {Hinton}, {Hislop}, {Hollowood},
+  {Honscheid}, {Hoyle}, {Huterer}, {Jain}, {James}, {Jeltema}, {Johnson},
+  {Johnson}, {Kacprzak}, {Kent}, {Khullar}, {Klein}, {Kovacs}, {Koziol},
+  {Krause}, {Kremin}, {Kron}, {Kuehn}, {Kuhlmann}, {Kuropatkin}, {Lahav},
+  {Lasker}, {Li}, {Li}, {Liddle}, {Lima}, {Lin}, {L{\'o}pez- Reyes},
+  {MacCrann}, {Maia}, {Maloney}, {Manera}, {March}, {Marriner}, {Marshall},
+  {Martini}, {McClintock}, {McKay}, {McMahon}, {Melchior}, {Menanteau},
+  {Miller}, {Miquel}, {Mohr}, {Morganson}, {Mould}, {Neilsen}, {Nichol},
+  {Nogueira}, {Nord}, {Nugent}, {Nunes}, {Ogando}, {Old}, {Pace}, {Palmese},
+  {Paz-Chinch{\'o}n}, {Peiris}, {Percival}, {Petravick}, {Plazas}, {Poh},
+  {Pond}, {Porredon}, {Pujol}, {Refregier}, {Reil}, {Ricker}, {Rollins},
+  {Romer}, {Roodman}, {Rooney}, {Ross}, {Rykoff}, {Sako}, {Sanchez}, {Sanchez},
+  {Santiago}, {Saro}, {Scarpine}, {Scolnic}, {Serrano}, {Sevilla- Noarbe},
+  {Sheldon}, {Shipp}, {Silveira}, {Smith}, {Smith}, {Smith}, {Soares-Santos},
+  {Sobreira}, {Song}, {Stebbins}, {Suchyta}, {Sullivan}, {Swanson}, {Tarle},
+  {Thaler}, {Thomas}, {Thomas}, {Troxel}, {Tucker}, {Vikram}, {Vivas},
+  {Walker}, {Wechsler}, {Weller}, {Wester}, {Wolf}, {Wu}, {Yanny}, {Zenteno},
+  {Zhang}, {Zuntz}, {DES Collaboration}, {Juneau}, {Fitzpatrick}, {Nikutta},
+  {Nidever}, {Olsen}, {Scott}, and {Data Lab}]{2018ApJS..239...18A}
+{Abbott}, TMC; {Abdalla}, FB; {Allam}, S; {Amara}, A; {Annis}, J; {Asorey}, J;
+  {Avila}, S; {Ballester}, O; {Banerji}, M; {Barkhouse}, W; {Baruah}, L;
+  {Baumer}, M; {Bechtol}, K; {Becker}, MR; {Benoit-L{\'e}vy}, A; {Bernstein},
+  GM; {Bertin}, E; {Blazek}, J; {Bocquet}, S; {Brooks}, D; {Brout}, D;
+  {Buckley-Geer}, E; {Burke}, DL; {Busti}, V; {Campisano}, R; {Cardiel-Sas}, L;
+  {Carnero Rosell}, A; {Carrasco Kind}, M; {Carretero}, J; {Castander}, FJ;
+  {Cawthon}, R; {Chang}, C; {Chen}, X; {Conselice}, C; {Costa}, G; {Crocce}, M;
+  {Cunha}, CE; {D{\textquoteright}Andrea}, CB; {da Costa}, LN; {Das}, R;
+  {Daues}, G; {Davis}, TM; {Davis}, C; {De Vicente}, J; {DePoy}, DL; {DeRose},
+  J; {Desai}, S; {Diehl}, HT; {Dietrich}, JP; {Dodelson}, S; {Doel}, P;
+  {Drlica-Wagner}, A; {Eifler}, TF; {Elliott}, AE; {Evrard}, AE; {Farahi}, A;
+  {Fausti Neto}, A; {Fernandez}, E; {Finley}, DA; {Flaugher}, B; {Foley}, RJ;
+  {Fosalba}, P; {Friedel}, DN; {Frieman}, J; {Garc{\'\i}a-Bellido}, J;
+  {Gaztanaga}, E; {Gerdes}, DW; {Giannantonio}, T; {Gill}, MSS; {Glazebrook},
+  K; {Goldstein}, DA; {Gower}, M; {Gruen}, D; {Gruendl}, RA; {Gschwend}, J;
+  {Gupta}, RR; {Gutierrez}, G; {Hamilton}, S; {Hartley}, WG; {Hinton}, SR;
+  {Hislop}, JM; {Hollowood}, D; {Honscheid}, K; {Hoyle}, B; {Huterer}, D;
+  {Jain}, B; {James}, DJ; {Jeltema}, T; {Johnson}, MWG; {Johnson}, MD;
+  {Kacprzak}, T; {Kent}, S; {Khullar}, G; {Klein}, M; {Kovacs}, A; {Koziol},
+  AMG; {Krause}, E; {Kremin}, A; {Kron}, R; {Kuehn}, K; {Kuhlmann}, S;
+  {Kuropatkin}, N; {Lahav}, O; {Lasker}, J; {Li}, TS; {Li}, RT; {Liddle}, AR;
+  {Lima}, M; {Lin}, H; {L{\'o}pez- Reyes}, P; {MacCrann}, N; {Maia}, MAG;
+  {Maloney}, JD; {Manera}, M; {March}, M; {Marriner}, J; {Marshall}, JL;
+  {Martini}, P; {McClintock}, T; {McKay}, T; {McMahon}, RG; {Melchior}, P;
+  {Menanteau}, F; {Miller}, CJ; {Miquel}, R; {Mohr}, JJ; {Morganson}, E;
+  {Mould}, J; {Neilsen}, E; {Nichol}, RC; {Nogueira}, F; {Nord}, B; {Nugent},
+  P; {Nunes}, L; {Ogando}, RLC; {Old}, L; {Pace}, AB; {Palmese}, A;
+  {Paz-Chinch{\'o}n}, F; {Peiris}, HV; {Percival}, WJ; {Petravick}, D;
+  {Plazas}, AA; {Poh}, J; {Pond}, C; {Porredon}, A; {Pujol}, A; {Refregier}, A;
+  {Reil}, K; {Ricker}, PM; {Rollins}, RP; {Romer}, AK; {Roodman}, A; {Rooney},
+  P; {Ross}, AJ; {Rykoff}, ES; {Sako}, M; {Sanchez}, ML; {Sanchez}, E;
+  {Santiago}, B; {Saro}, A; {Scarpine}, V; {Scolnic}, D; {Serrano}, S;
+  {Sevilla- Noarbe}, I; {Sheldon}, E; {Shipp}, N; {Silveira}, ML; {Smith}, M;
+  {Smith}, RC; {Smith}, JA; {Soares-Santos}, M; {Sobreira}, F; {Song}, J;
+  {Stebbins}, A; {Suchyta}, E; {Sullivan}, M; {Swanson}, MEC; {Tarle}, G;
+  {Thaler}, J; {Thomas}, D; {Thomas}, RC; {Troxel}, MA; {Tucker}, DL; {Vikram},
+  V; {Vivas}, AK; {Walker}, AR; {Wechsler}, RH; {Weller}, J; {Wester}, W;
+  {Wolf}, RC; {Wu}, H; {Yanny}, B; {Zenteno}, A; {Zhang}, Y; {Zuntz}, J; {DES
+  Collaboration}; {Juneau}, S; {Fitzpatrick}, M; {Nikutta}, R; {Nidever}, D;
+  {Olsen}, K; {Scott}, A; {Data Lab}, N. ``{The Dark Energy Survey: Data
+  Release 1},'' {\em The Astrophysical Journal Supplement Series\/}, v. 239,
+  2018, p.~18. \url{https://ui.adsabs.harvard.edu/\#abs/2018ApJS..239...18A}
+
+\bibitem[{Albrecht} et~al.(2006){Albrecht}, {Bernstein}, {Cahn}, {Freedman},
+  {Hewitt}, {Hu}, {Huth}, {Kamionkowski}, {Kolb}, {Knox}, {Mather}, {Staggs},
+  and {Suntzeff}]{2006astro.ph..9591A}
+{Albrecht}, A; {Bernstein}, G; {Cahn}, R; {Freedman}, WL; {Hewitt}, J; {Hu}, W;
+  {Huth}, J; {Kamionkowski}, M; {Kolb}, EW; {Knox}, L; {Mather}, JC; {Staggs},
+  S; {Suntzeff}, NB. ``{Report of the Dark Energy Task Force},'' {\em arXiv
+  e-prints\/}, 2006, p. astro--ph/0609591.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2006astro.ph..9591A}
+
+\bibitem[{Bonnett} et~al.(2016){Bonnett}, {Troxel}, {Hartley}, {Amara},
+  {Leistedt}, {Becker}, {Bernstein}, {Bridle}, {Bruderer}, {Busha}, {Carrasco
+  Kind}, {Childress}, {Castander}, {Chang}, {Crocce}, {Davis}, {Eifler},
+  {Frieman}, {Gangkofner}, {Gaztanaga}, {Glazebrook}, {Gruen}, {Kacprzak},
+  {King}, {Kwan}, {Lahav}, {Lewis}, {Lidman}, {Lin}, {MacCrann}, {Miquel},
+  {O'Neill}, {Palmese}, {Peiris}, {Refregier}, {Rozo}, {Rykoff}, {Sadeh},
+  {S{\'a}nchez}, {Sheldon}, {Uddin}, {Wechsler}, {Zuntz}, {Abbott}, {Abdalla},
+  {Allam}, {Armstrong}, {Banerji}, {Bauer}, {Benoit-L{\'e}vy}, {Bertin},
+  {Brooks}, {Buckley-Geer}, {Burke}, {Capozzi}, {Carnero Rosell}, {Carretero},
+  {Cunha}, {D'Andrea}, {da Costa}, {DePoy}, {Desai}, {Diehl}, {Dietrich},
+  {Doel}, {Fausti Neto}, {Fernandez}, {Flaugher}, {Fosalba}, {Gerdes},
+  {Gruendl}, {Honscheid}, {Jain}, {James}, {Jarvis}, {Kim}, {Kuehn},
+  {Kuropatkin}, {Li}, {Lima}, {Maia}, {March}, {Marshall}, {Martini},
+  {Melchior}, {Miller}, {Neilsen}, {Nichol}, {Nord}, {Ogando}, {Plazas},
+  {Reil}, {Romer}, {Roodman}, {Sako}, {Sanchez}, {Santiago}, {Smith}, {Soares-
+  Santos}, {Sobreira}, {Suchyta}, {Swanson}, {Tarle}, {Thaler}, {Thomas},
+  {Vikram}, {Walker}, and {Dark Energy Survey
+  Collaboration}]{2016PhRvD..94d2005B}
+{Bonnett}, C; {Troxel}, MA; {Hartley}, W; {Amara}, A; {Leistedt}, B; {Becker},
+  MR; {Bernstein}, GM; {Bridle}, SL; {Bruderer}, C; {Busha}, MT; {Carrasco
+  Kind}, M; {Childress}, MJ; {Castander}, FJ; {Chang}, C; {Crocce}, M; {Davis},
+  TM; {Eifler}, TF; {Frieman}, J; {Gangkofner}, C; {Gaztanaga}, E;
+  {Glazebrook}, K; {Gruen}, D; {Kacprzak}, T; {King}, A; {Kwan}, J; {Lahav}, O;
+  {Lewis}, G; {Lidman}, C; {Lin}, H; {MacCrann}, N; {Miquel}, R; {O'Neill}, CR;
+  {Palmese}, A; {Peiris}, HV; {Refregier}, A; {Rozo}, E; {Rykoff}, ES; {Sadeh},
+  I; {S{\'a}nchez}, C; {Sheldon}, E; {Uddin}, S; {Wechsler}, RH; {Zuntz}, J;
+  {Abbott}, T; {Abdalla}, FB; {Allam}, S; {Armstrong}, R; {Banerji}, M;
+  {Bauer}, AH; {Benoit-L{\'e}vy}, A; {Bertin}, E; {Brooks}, D; {Buckley-Geer},
+  E; {Burke}, DL; {Capozzi}, D; {Carnero Rosell}, A; {Carretero}, J; {Cunha},
+  CE; {D'Andrea}, CB; {da Costa}, LN; {DePoy}, DL; {Desai}, S; {Diehl}, HT;
+  {Dietrich}, JP; {Doel}, P; {Fausti Neto}, A; {Fernandez}, E; {Flaugher}, B;
+  {Fosalba}, P; {Gerdes}, DW; {Gruendl}, RA; {Honscheid}, K; {Jain}, B;
+  {James}, DJ; {Jarvis}, M; {Kim}, AG; {Kuehn}, K; {Kuropatkin}, N; {Li}, TS;
+  {Lima}, M; {Maia}, MAG; {March}, M; {Marshall}, JL; {Martini}, P; {Melchior},
+  P; {Miller}, CJ; {Neilsen}, E; {Nichol}, RC; {Nord}, B; {Ogando}, R;
+  {Plazas}, AA; {Reil}, K; {Romer}, AK; {Roodman}, A; {Sako}, M; {Sanchez}, E;
+  {Santiago}, B; {Smith}, RC; {Soares- Santos}, M; {Sobreira}, F; {Suchyta}, E;
+  {Swanson}, MEC; {Tarle}, G; {Thaler}, J; {Thomas}, D; {Vikram}, V; {Walker},
+  AR; {Dark Energy Survey Collaboration}. ``{Redshift distributions of galaxies
+  in the Dark Energy Survey Science Verification shear catalogue and
+  implications for weak lensing},'' {\em \prd\/}, v.~94, 2016, p. 042005.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2016PhRvD..94d2005B}
+
+\bibitem[{Borne} et~al.(2009){Borne}, {Accomazzi}, {Bloom}, {Brunner}, {Burke},
+  {Butler}, {Chernoff}, {Connolly}, {Connolly}, {Connors}, {Cutler}, {Desai},
+  {Djorgovski}, {Feigelson}, {Finn}, {Freeman}, {Graham}, {Gray}, {Graziani},
+  {Guinan}, {Hakkila}, {Jacoby}, {Jefferys}, {Kashyap}, {Kelly}, {Knuth},
+  {Lamb}, {Lee}, {Loredo}, {Mahabal}, {Mateo}, {McCollum}, {Muench},
+  {Pesenson}, {Petrosian}, {Primini}, {Protopapas}, {Ptak}, {Quashnock},
+  {Raddick}, {Rocha}, {Ross}, {Rottler}, {Scargle}, {Siemiginowska}, {Song},
+  {Szalay}, {Tyson}, {Vestrand}, {Wallin}, {Wandelt}, {Wasserman}, {Way},
+  {Weinberg}, {Zezas}, {Anderes}, {Babu}, {Becla}, {Berger}, {Bickel}, {Clyde},
+  {Davidson}, {van Dyk}, {Eastman}, {Efron}, {Genovese}, {Gray}, {Jang},
+  {Kolaczyk}, {Kubica}, {Loh}, {Meng}, {Moore}, {Morris}, {Park}, {Pike},
+  {Rice}, {Richards}, {Ruppert}, {Saito}, {Schafer}, {Stark}, {Stein}, {Sun},
+  {Wang}, {Wang}, {Wasserman}, {Wegman}, {Willett}, {Wolpert}, and
+  {Woodroofe}]{borne09}
+{Borne}, K; {Accomazzi}, A; {Bloom}, J; {Brunner}, R; {Burke}, D; {Butler}, N;
+  {Chernoff}, DF; {Connolly}, B; {Connolly}, A; {Connors}, A; {Cutler}, C;
+  {Desai}, S; {Djorgovski}, G; {Feigelson}, E; {Finn}, LS; {Freeman}, P;
+  {Graham}, M; {Gray}, N; {Graziani}, C; {Guinan}, EF; {Hakkila}, J; {Jacoby},
+  S; {Jefferys}, W; {Kashyap}; {Kelly}, B; {Knuth}, K; {Lamb}, DQ; {Lee}, H;
+  {Loredo}, T; {Mahabal}, A; {Mateo}, M; {McCollum}, B; {Muench}, A;
+  {Pesenson}, M; {Petrosian}, V; {Primini}, F; {Protopapas}, P; {Ptak}, A;
+  {Quashnock}, J; {Raddick}, MJ; {Rocha}, G; {Ross}, N; {Rottler}, L;
+  {Scargle}, J; {Siemiginowska}, A; {Song}, I; {Szalay}, A; {Tyson}, JA;
+  {Vestrand}, T; {Wallin}, J; {Wandelt}, B; {Wasserman}, IM; {Way}, M;
+  {Weinberg}, M; {Zezas}, A; {Anderes}, E; {Babu}, J; {Becla}, J; {Berger}, J;
+  {Bickel}, PJ; {Clyde}, M; {Davidson}, I; {van Dyk}, D; {Eastman}, T; {Efron},
+  B; {Genovese}, C; {Gray}, A; {Jang}, W; {Kolaczyk}, ED; {Kubica}, J; {Loh},
+  JM; {Meng}, XL; {Moore}, A; {Morris}, R; {Park}, T; {Pike}, R; {Rice}, J;
+  {Richards}, J; {Ruppert}, D; {Saito}, N; {Schafer}, C; {Stark}, PB; {Stein},
+  M; {Sun}, J; {Wang}, D; {Wang}, Z; {Wasserman}, L; {Wegman}, EJ; {Willett},
+  R; {Wolpert}, R; {Woodroofe}, M. ``{Astroinformatics: A 21st Century Approach
+  to Astronomy},'' In {\em astro2010: The Astronomy and Astrophysics Decadal
+  Survey\/}, v. 2010, 2009, p.~P6.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2009astro2010P...6B}
+
+\bibitem[Collaboration et~al.(2018)Collaboration, Chang, Joudaki, Malz,
+  Schneider, Troxel, Mohammed, Wang, Mandelbaum, Dodelson, Simet, Krause,
+  Eifler, Heymans, Zuntz, Jarvis, and Jee]{10.1093/mnras/sty2902}
+Collaboration, LDES; Chang, C; Joudaki, S; Malz, A; Schneider, M; Troxel, MA;
+  Mohammed, I; Wang, M; Mandelbaum, R; Dodelson, S; Simet, M; Krause, E;
+  Eifler, T; Heymans, C; Zuntz, J; Jarvis, M; Jee, MJ. ``{A unified analysis of
+  four cosmic shear surveys},'' {\em Monthly Notices of the Royal Astronomical
+  Society\/}, v. 482(3), 2018, p. 3696--3717
+
+\bibitem[Council(2015)]{NAP21722}
+Council, NR. {\em Optimizing the U.S. Ground-Based Optical and Infrared
+  Astronomy System\/}, The National Academies Press, Washington, DC, ISBN
+  978-0-309-37186-5, 2015
+
+\bibitem[{Efstathiou} \& {Lemos}(2018){Efstathiou} and
+  {Lemos}]{2018MNRAS.476..151E}
+{Efstathiou}, G; {Lemos}, P. ``{Statistical inconsistencies in the KiDS-450
+  data set},'' {\em \mnras\/}, v. 476, 2018, p. 151--157.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2018MNRAS.476..151E}
+
+\bibitem[{Hemmati} et~al.(2018){Hemmati}, {Capak}, {Masters}, {Davidzon},
+  {Dore}, {Mobasher}, {Rhodes}, {Scolnic}, and {Stern}]{hemmati18}
+{Hemmati}, S; {Capak}, P; {Masters}, D; {Davidzon}, I; {Dore}, O; {Mobasher},
+  B; {Rhodes}, J; {Scolnic}, D; {Stern}, D. ``{Photometric redshift calibration
+  requirements for WFIRST Weak Lensing Cosmology: Predictions from CANDELS},''
+  {\em arXiv e-prints\/}, 2018.
+  \url{http://adsabs.harvard.edu/abs/2018arXiv180810458H}
+
+\bibitem[{Hildebrandt} et~al.(2017){Hildebrandt}, {Viola}, {Heymans},
+  {Joudaki}, {Kuijken}, {Blake}, {Erben}, {Joachimi}, {Klaes}, {Miller},
+  {Morrison}, {Nakajima}, {Verdoes Kleijn}, {Amon}, {Choi}, {Covone}, {de
+  Jong}, {Dvornik}, {Fenech Conti}, {Grado}, {Harnois-D{\'e}raps}, {Herbonnet},
+  {Hoekstra}, {K{\"o}hlinger}, {McFarland}, {Mead}, {Merten}, {Napolitano},
+  {Peacock}, {Radovich}, {Schneider}, {Simon}, {Valentijn}, {van den Busch},
+  {van Uitert}, and {Van Waerbeke}]{2017MNRAS.465.1454H}
+{Hildebrandt}, H; {Viola}, M; {Heymans}, C; {Joudaki}, S; {Kuijken}, K;
+  {Blake}, C; {Erben}, T; {Joachimi}, B; {Klaes}, D; {Miller}, L; {Morrison},
+  CB; {Nakajima}, R; {Verdoes Kleijn}, G; {Amon}, A; {Choi}, A; {Covone}, G;
+  {de Jong}, JTA; {Dvornik}, A; {Fenech Conti}, I; {Grado}, A;
+  {Harnois-D{\'e}raps}, J; {Herbonnet}, R; {Hoekstra}, H; {K{\"o}hlinger}, F;
+  {McFarland}, J; {Mead}, A; {Merten}, J; {Napolitano}, N; {Peacock}, JA;
+  {Radovich}, M; {Schneider}, P; {Simon}, P; {Valentijn}, EA; {van den Busch},
+  JL; {van Uitert}, E; {Van Waerbeke}, L. ``{KiDS-450: cosmological parameter
+  constraints from tomographic weak gravitational lensing},'' {\em \mnras\/},
+  v. 465, 2017, p. 1454--1498.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2017MNRAS.465.1454H}
+
+\bibitem[{Kandasamy} et~al.(2017){Kandasamy}, {Dasarathy}, {Schneider}, and
+  {Poczos}]{2017arXiv170306240K}
+{Kandasamy}, K; {Dasarathy}, G; {Schneider}, J; {Poczos}, B. ``{Multi-fidelity
+  Bayesian Optimisation with Continuous Approximations},'' {\em arXiv
+  e-prints\/}, 2017, p. arXiv:1703.06240.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2017arXiv170306240K}
+
+\bibitem[{Kirk} et~al.(2015){Kirk}, {Lahav}, {Bridle}, {Jouvel}, {Abdalla}, and
+  {Frieman}]{2015MNRAS.451.4424K}
+{Kirk}, D; {Lahav}, O; {Bridle}, S; {Jouvel}, S; {Abdalla}, FB; {Frieman}, JA.
+  ``{Optimizing spectroscopic and photometric galaxy surveys: same-sky benefits
+  for dark energy and modified gravity},'' {\em \mnras\/}, v. 451, 2015, p.
+  4424--4444. \url{https://ui.adsabs.harvard.edu/\#abs/2015MNRAS.451.4424K}
+
+\bibitem[{Laureijs} et~al.(2011{\natexlab{a}}){Laureijs}, {Amiaux}, {Arduini},
+  {Augu{\`e}res}, {Brinchmann}, {Cole}, {Cropper}, {Dabin}, {Duvet}, {Ealet},
+  and et~al.]{laureijs11}
+{Laureijs}, R; {Amiaux}, J; {Arduini}, S; {Augu{\`e}res}, J; {Brinchmann}, J;
+  {Cole}, R; {Cropper}, M; {Dabin}, C; {Duvet}, L; {Ealet}, A; et~al. ``{Euclid
+  Definition Study Report},'' {\em arXiv e-prints\/}, 2011{\natexlab{a}}.
+  \url{http://adsabs.harvard.edu/abs/2011arXiv1110.3193L}
+
+\bibitem[{Laureijs} et~al.(2011{\natexlab{b}}){Laureijs}, {Amiaux}, {Arduini},
+  {Augu{\`e}res}, {Brinchmann}, {Cole}, {Cropper}, {Dabin}, {Duvet}, {Ealet},
+  {Garilli}, {Gondoin}, {Guzzo}, {Hoar}, {Hoekstra}, {Holmes}, {Kitching},
+  {Maciaszek}, {Mellier}, {Pasian}, {Percival}, {Rhodes}, {Saavedra Criado},
+  {Sauvage}, {Scaramella}, {Valenziano}, {Warren}, {Bender}, {Castander},
+  {Cimatti}, {Le F{\`e}vre}, {Kurki-Suonio}, {Levi}, {Lilje}, {Meylan},
+  {Nichol}, {Pedersen}, {Popa}, {Rebolo Lopez}, {Rix}, {Rottgering},
+  {Zeilinger}, {Grupp}, {Hudelot}, {Massey}, {Meneghetti}, {Miller}, {Paltani},
+  {Paulin-Henriksson}, {Pires}, {Saxton}, {Schrabback}, {Seidel}, {Walsh},
+  {Aghanim}, {Amendola}, {Bartlett}, {Baccigalupi}, {Beaulieu}, {Benabed},
+  {Cuby}, {Elbaz}, {Fosalba}, {Gavazzi}, {Helmi}, {Hook}, {Irwin}, {Kneib},
+  {Kunz}, {Mannucci}, {Moscardini}, {Tao}, {Teyssier}, {Weller}, {Zamorani},
+  {Zapatero Osorio}, {Boulade}, {Foumond}, {Di Giorgio}, {Guttridge}, {James},
+  {Kemp}, {Martignac}, {Spencer}, {Walton}, {Bl{\"u}mchen}, {Bonoli},
+  {Bortoletto}, {Cerna}, {Corcione}, {Fabron}, {Jahnke}, {Ligori}, {Madrid},
+  {Martin}, {Morgante}, {Pamplona}, {Prieto}, {Riva}, {Toledo}, {Trifoglio},
+  {Zerbi}, {Abdalla}, {Douspis}, {Grenet}, {Borgani}, {Bouwens}, {Courbin},
+  {Delouis}, {Dubath}, {Fontana}, {Frailis}, {Grazian}, {Koppenh{\"o}fer},
+  {Mansutti}, {Melchior}, {Mignoli}, {Mohr}, {Neissner}, {Noddle}, {Poncet},
+  {Scodeggio}, {Serrano}, {Shane}, {Starck}, {Surace}, {Taylor},
+  {Verdoes-Kleijn}, {Vuerli}, {Williams}, {Zacchei}, {Altieri}, {Escudero
+  Sanz}, {Kohley}, {Oosterbroek}, {Astier}, {Bacon}, {Bardelli}, {Baugh},
+  {Bellagamba}, {Benoist}, {Bianchi}, {Biviano}, {Branchini}, {Carbone},
+  {Cardone}, {Clements}, {Colombi}, {Conselice}, {Cresci}, {Deacon}, {Dunlop},
+  {Fedeli}, {Fontanot}, {Franzetti}, {Giocoli}, {Garcia-Bellido}, {Gow},
+  {Heavens}, {Hewett}, {Heymans}, {Holland}, {Huang}, {Ilbert}, {Joachimi},
+  {Jennins}, {Kerins}, {Kiessling}, {Kirk}, {Kotak}, {Krause}, {Lahav}, {van
+  Leeuwen}, {Lesgourgues}, {Lombardi}, {Magliocchetti}, {Maguire}, {Majerotto},
+  {Maoli}, {Marulli}, {Maurogordato}, {McCracken}, {McLure}, {Melchiorri},
+  {Merson}, {Moresco}, {Nonino}, {Norberg}, {Peacock}, {Pello}, {Penny},
+  {Pettorino}, {Di Porto}, {Pozzetti}, {Quercellini}, {Radovich}, {Rassat},
+  {Roche}, {Ronayette}, {Rossetti}, {Sartoris}, {Schneider}, {Semboloni},
+  {Serjeant}, {Simpson}, {Skordis}, {Smadja}, {Smartt}, {Spano}, {Spiro},
+  {Sullivan}, {Tilquin}, {Trotta}, {Verde}, {Wang}, {Williger}, {Zhao},
+  {Zoubian}, and {Zucca}]{2011arXiv1110.3193L}
+{Laureijs}, R; {Amiaux}, J; {Arduini}, S; {Augu{\`e}res}, JL; {Brinchmann}, J;
+  {Cole}, R; {Cropper}, M; {Dabin}, C; {Duvet}, L; {Ealet}, A; {Garilli}, B;
+  {Gondoin}, P; {Guzzo}, L; {Hoar}, J; {Hoekstra}, H; {Holmes}, R; {Kitching},
+  T; {Maciaszek}, T; {Mellier}, Y; {Pasian}, F; {Percival}, W; {Rhodes}, J;
+  {Saavedra Criado}, G; {Sauvage}, M; {Scaramella}, R; {Valenziano}, L;
+  {Warren}, S; {Bender}, R; {Castander}, F; {Cimatti}, A; {Le F{\`e}vre}, O;
+  {Kurki-Suonio}, H; {Levi}, M; {Lilje}, P; {Meylan}, G; {Nichol}, R;
+  {Pedersen}, K; {Popa}, V; {Rebolo Lopez}, R; {Rix}, HW; {Rottgering}, H;
+  {Zeilinger}, W; {Grupp}, F; {Hudelot}, P; {Massey}, R; {Meneghetti}, M;
+  {Miller}, L; {Paltani}, S; {Paulin-Henriksson}, S; {Pires}, S; {Saxton}, C;
+  {Schrabback}, T; {Seidel}, G; {Walsh}, J; {Aghanim}, N; {Amendola}, L;
+  {Bartlett}, J; {Baccigalupi}, C; {Beaulieu}, JP; {Benabed}, K; {Cuby}, JG;
+  {Elbaz}, D; {Fosalba}, P; {Gavazzi}, G; {Helmi}, A; {Hook}, I; {Irwin}, M;
+  {Kneib}, JP; {Kunz}, M; {Mannucci}, F; {Moscardini}, L; {Tao}, C; {Teyssier},
+  R; {Weller}, J; {Zamorani}, G; {Zapatero Osorio}, MR; {Boulade}, O;
+  {Foumond}, JJ; {Di Giorgio}, A; {Guttridge}, P; {James}, A; {Kemp}, M;
+  {Martignac}, J; {Spencer}, A; {Walton}, D; {Bl{\"u}mchen}, T; {Bonoli}, C;
+  {Bortoletto}, F; {Cerna}, C; {Corcione}, L; {Fabron}, C; {Jahnke}, K;
+  {Ligori}, S; {Madrid}, F; {Martin}, L; {Morgante}, G; {Pamplona}, T;
+  {Prieto}, E; {Riva}, M; {Toledo}, R; {Trifoglio}, M; {Zerbi}, F; {Abdalla},
+  F; {Douspis}, M; {Grenet}, C; {Borgani}, S; {Bouwens}, R; {Courbin}, F;
+  {Delouis}, JM; {Dubath}, P; {Fontana}, A; {Frailis}, M; {Grazian}, A;
+  {Koppenh{\"o}fer}, J; {Mansutti}, O; {Melchior}, M; {Mignoli}, M; {Mohr}, J;
+  {Neissner}, C; {Noddle}, K; {Poncet}, M; {Scodeggio}, M; {Serrano}, S;
+  {Shane}, N; {Starck}, JL; {Surace}, C; {Taylor}, A; {Verdoes-Kleijn}, G;
+  {Vuerli}, C; {Williams}, OR; {Zacchei}, A; {Altieri}, B; {Escudero Sanz}, I;
+  {Kohley}, R; {Oosterbroek}, T; {Astier}, P; {Bacon}, D; {Bardelli}, S;
+  {Baugh}, C; {Bellagamba}, F; {Benoist}, C; {Bianchi}, D; {Biviano}, A;
+  {Branchini}, E; {Carbone}, C; {Cardone}, V; {Clements}, D; {Colombi}, S;
+  {Conselice}, C; {Cresci}, G; {Deacon}, N; {Dunlop}, J; {Fedeli}, C;
+  {Fontanot}, F; {Franzetti}, P; {Giocoli}, C; {Garcia-Bellido}, J; {Gow}, J;
+  {Heavens}, A; {Hewett}, P; {Heymans}, C; {Holland}, A; {Huang}, Z; {Ilbert},
+  O; {Joachimi}, B; {Jennins}, E; {Kerins}, E; {Kiessling}, A; {Kirk}, D;
+  {Kotak}, R; {Krause}, O; {Lahav}, O; {van Leeuwen}, F; {Lesgourgues}, J;
+  {Lombardi}, M; {Magliocchetti}, M; {Maguire}, K; {Majerotto}, E; {Maoli}, R;
+  {Marulli}, F; {Maurogordato}, S; {McCracken}, H; {McLure}, R; {Melchiorri},
+  A; {Merson}, A; {Moresco}, M; {Nonino}, M; {Norberg}, P; {Peacock}, J;
+  {Pello}, R; {Penny}, M; {Pettorino}, V; {Di Porto}, C; {Pozzetti}, L;
+  {Quercellini}, C; {Radovich}, M; {Rassat}, A; {Roche}, N; {Ronayette}, S;
+  {Rossetti}, E; {Sartoris}, B; {Schneider}, P; {Semboloni}, E; {Serjeant}, S;
+  {Simpson}, F; {Skordis}, C; {Smadja}, G; {Smartt}, S; {Spano}, P; {Spiro}, S;
+  {Sullivan}, M; {Tilquin}, A; {Trotta}, R; {Verde}, L; {Wang}, Y; {Williger},
+  G; {Zhao}, G; {Zoubian}, J; {Zucca}, E. ``{Euclid Definition Study Report},''
+  {\em arXiv e-prints\/}, 2011{\natexlab{b}}, p. arXiv:1110.3193.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2011arXiv1110.3193L}
+
+\bibitem[{Masters} et~al.(2015){Masters}, {Capak}, {Stern}, {Ilbert},
+  {Salvato}, {Schmidt}, {Longo}, {Rhodes}, {Paltani}, {Mobasher}, {Hoekstra},
+  {Hildebrandt}, {Coupon}, {Steinhardt}, {Speagle}, {Faisst}, {Kalinich},
+  {Brodwin}, {Brescia}, and {Cavuoti}]{masters15}
+{Masters}, D; {Capak}, P; {Stern}, D; {Ilbert}, O; {Salvato}, M; {Schmidt}, S;
+  {Longo}, G; {Rhodes}, J; {Paltani}, S; {Mobasher}, B; {Hoekstra}, H;
+  {Hildebrandt}, H; {Coupon}, J; {Steinhardt}, C; {Speagle}, J; {Faisst}, A;
+  {Kalinich}, A; {Brodwin}, M; {Brescia}, M; {Cavuoti}, S. ``{Mapping the
+  Galaxy Color-Redshift Relation: Optimal Photometric Redshift Calibration
+  Strategies for Cosmology Surveys},'' {\em \apj\/}, v. 813, 2015, p.~53.
+  \url{http://adsabs.harvard.edu/abs/2015ApJ...813...53M}
+
+\bibitem[{Neiswanger} et~al.(2019){Neiswanger}, {Kandasamy}, {Poczos},
+  {Schneider}, and {Xing}]{2019arXiv190111515N}
+{Neiswanger}, W; {Kandasamy}, K; {Poczos}, B; {Schneider}, J; {Xing}, E.
+  ``{ProBO: a Framework for Using Probabilistic Programming in Bayesian
+  Optimization},'' {\em arXiv e-prints\/}, 2019, p. arXiv:1901.11515.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2019arXiv190111515N}
+
+\bibitem[{Newman} et~al.(2015){Newman}, {Abate}, {Abdalla}, {Allam}, {Allen},
+  {Ansari}, {Bailey}, {Barkhouse}, {Beers}, {Blanton}, {Brodwin}, {Brownstein},
+  {Brunner}, {Carrasco Kind}, {Cervantes-Cota}, {Cheu}, {Chisari}, {Colless},
+  {Comparat}, {Coupon}, {Cunha}, {de la Macorra}, {Dell'Antonio}, {Frye},
+  {Gawiser}, {Gehrels}, {Grady}, {Hagen}, {Hall}, {Hearin}, {Hildebrandt},
+  {Hirata}, {Ho}, {Honscheid}, {Huterer}, {Ivezi{\'c}}, {Kneib}, {Kruk},
+  {Lahav}, {Mandelbaum}, {Marshall}, {Matthews}, {M{\'e}nard}, {Miquel},
+  {Moniez}, {Moos}, {Moustakas}, {Myers}, {Papovich}, {Peacock}, {Park},
+  {Rahman}, {Rhodes}, {Ricol}, {Sadeh}, {Slozar}, {Schmidt}, {Stern}, {Anthony
+  Tyson}, {von der Linden}, {Wechsler}, {Wood-Vasey}, and {Zentner}]{newman15}
+{Newman}, JA; {Abate}, A; {Abdalla}, FB; {Allam}, S; {Allen}, SW; {Ansari}, R;
+  {Bailey}, S; {Barkhouse}, WA; {Beers}, TC; {Blanton}, MR; {Brodwin}, M;
+  {Brownstein}, JR; {Brunner}, RJ; {Carrasco Kind}, M; {Cervantes-Cota}, JL;
+  {Cheu}, E; {Chisari}, NE; {Colless}, M; {Comparat}, J; {Coupon}, J; {Cunha},
+  CE; {de la Macorra}, A; {Dell'Antonio}, IP; {Frye}, BL; {Gawiser}, EJ;
+  {Gehrels}, N; {Grady}, K; {Hagen}, A; {Hall}, PB; {Hearin}, AP;
+  {Hildebrandt}, H; {Hirata}, CM; {Ho}, S; {Honscheid}, K; {Huterer}, D;
+  {Ivezi{\'c}}, {\v Z}; {Kneib}, JP; {Kruk}, JW; {Lahav}, O; {Mandelbaum}, R;
+  {Marshall}, JL; {Matthews}, DJ; {M{\'e}nard}, B; {Miquel}, R; {Moniez}, M;
+  {Moos}, HW; {Moustakas}, J; {Myers}, AD; {Papovich}, C; {Peacock}, JA;
+  {Park}, C; {Rahman}, M; {Rhodes}, J; {Ricol}, JS; {Sadeh}, I; {Slozar}, A;
+  {Schmidt}, SJ; {Stern}, DK; {Anthony Tyson}, J; {von der Linden}, A;
+  {Wechsler}, RH; {Wood-Vasey}, WM; {Zentner}, AR. ``{Spectroscopic needs for
+  imaging dark energy experiments},'' {\em Astroparticle Physics\/}, v.~63,
+  2015, p. 81--100. \url{http://adsabs.harvard.edu/abs/2015APh....63...81N}
+
+\bibitem[{Newman} et~al.(2013){Newman}, {Cooper}, {Davis}, {Faber}, {Coil},
+  {Guhathakurta}, {Koo}, {Phillips}, {Conroy}, {Dutton}, {Finkbeiner}, {Gerke},
+  {Rosario}, {Weiner}, {Willmer}, {Yan}, {Harker}, {Kassin}, {Konidaris},
+  {Lai}, {Madgwick}, {Noeske}, {Wirth}, {Connolly}, {Kaiser}, {Kirby},
+  {Lemaux}, {Lin}, {Lotz}, {Luppino}, {Marinoni}, {Matthews}, {Metevier}, and
+  {Schiavon}]{newman13}
+{Newman}, JA; {Cooper}, MC; {Davis}, M; {Faber}, SM; {Coil}, AL;
+  {Guhathakurta}, P; {Koo}, DC; {Phillips}, AC; {Conroy}, C; {Dutton}, AA;
+  {Finkbeiner}, DP; {Gerke}, BF; {Rosario}, DJ; {Weiner}, BJ; {Willmer}, CNA;
+  {Yan}, R; {Harker}, JJ; {Kassin}, SA; {Konidaris}, NP; {Lai}, K; {Madgwick},
+  DS; {Noeske}, KG; {Wirth}, GD; {Connolly}, AJ; {Kaiser}, N; {Kirby}, EN;
+  {Lemaux}, BC; {Lin}, L; {Lotz}, JM; {Luppino}, GA; {Marinoni}, C; {Matthews},
+  DJ; {Metevier}, A; {Schiavon}, RP. ``{The DEEP2 Galaxy Redshift Survey:
+  Design, Observations, Data Reduction, and Redshifts},'' {\em \apjs\/}, v.
+  208, 2013, p.~5. \url{http://adsabs.harvard.edu/abs/2013ApJS..208....5N}
+
+\bibitem[{Paria} et~al.(2018){Paria}, {Kandasamy}, and
+  {P{\'o}czos}]{2018arXiv180512168P}
+{Paria}, B; {Kandasamy}, K; {P{\'o}czos}, B. ``{A Flexible Framework for
+  Multi-Objective Bayesian Optimization using Random Scalarizations},'' {\em
+  arXiv e-prints\/}, 2018, p. arXiv:1805.12168.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2018arXiv180512168P}
+
+\bibitem[{Parks} et~al.(2018){Parks}, {Prochaska}, {Dong}, and {Cai}]{parks18}
+{Parks}, D; {Prochaska}, JX; {Dong}, S; {Cai}, Z. ``{Deep learning of quasar
+  spectra to discover and characterize damped Ly{$\alpha$} systems},'' {\em
+  \mnras\/}, v. 476, 2018, p. 1151--1168.
+  \url{http://adsabs.harvard.edu/abs/2018MNRAS.476.1151P}
+
+\bibitem[{Spergel} et~al.(2015){Spergel}, {Gehrels}, {Baltay}, {Bennett},
+  {Breckinridge}, {Donahue}, {Dressler}, {Gaudi}, {Greene}, {Guyon}, {Hirata},
+  {Kalirai}, {Kasdin}, {Macintosh}, {Moos}, {Perlmutter}, {Postman},
+  {Rauscher}, {Rhodes}, {Wang}, {Weinberg}, {Benford}, {Hudson}, {Jeong},
+  {Mellier}, {Traub}, {Yamada}, {Capak}, {Colbert}, {Masters}, {Penny},
+  {Savransky}, {Stern}, {Zimmerman}, {Barry}, {Bartusek}, {Carpenter}, {Cheng},
+  {Content}, {Dekens}, {Demers}, {Grady}, {Jackson}, {Kuan}, {Kruk}, {Melton},
+  {Nemati}, {Parvin}, {Poberezhskiy}, {Peddie}, {Ruffa}, {Wallace}, {Whipple},
+  {Wollack}, and {Zhao}]{2015arXiv150303757S}
+{Spergel}, D; {Gehrels}, N; {Baltay}, C; {Bennett}, D; {Breckinridge}, J;
+  {Donahue}, M; {Dressler}, A; {Gaudi}, BS; {Greene}, T; {Guyon}, O; {Hirata},
+  C; {Kalirai}, J; {Kasdin}, NJ; {Macintosh}, B; {Moos}, W; {Perlmutter}, S;
+  {Postman}, M; {Rauscher}, B; {Rhodes}, J; {Wang}, Y; {Weinberg}, D;
+  {Benford}, D; {Hudson}, M; {Jeong}, WS; {Mellier}, Y; {Traub}, W; {Yamada},
+  T; {Capak}, P; {Colbert}, J; {Masters}, D; {Penny}, M; {Savransky}, D;
+  {Stern}, D; {Zimmerman}, N; {Barry}, R; {Bartusek}, L; {Carpenter}, K;
+  {Cheng}, E; {Content}, D; {Dekens}, F; {Demers}, R; {Grady}, K; {Jackson}, C;
+  {Kuan}, G; {Kruk}, J; {Melton}, M; {Nemati}, B; {Parvin}, B; {Poberezhskiy},
+  I; {Peddie}, C; {Ruffa}, J; {Wallace}, JK; {Whipple}, A; {Wollack}, E;
+  {Zhao}, F. ``{Wide-Field InfrarRed Survey Telescope-Astrophysics Focused
+  Telescope Assets WFIRST-AFTA 2015 Report},'' {\em arXiv e-prints\/}, 2015, p.
+  arXiv:1503.03757.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2015arXiv150303757S}
+
+\bibitem[{The LSST Dark Energy Science Collaboration} et~al.(2018){The LSST
+  Dark Energy Science Collaboration}, {Mandelbaum}, {Eifler}, {Hlo{\v{z}}ek},
+  {Collett}, {Gawiser}, {Scolnic}, {Alonso}, {Awan}, {Biswas}, {Blazek},
+  {Burchat}, {Chisari}, {Dell'Antonio}, {Digel}, {Frieman}, {Goldstein},
+  {Hook}, {Ivezi{\'c}}, {Kahn}, {Kamath}, {Kirkby}, {Kitching}, {Krause},
+  {Leget}, {Marshall}, {Meyers}, {Miyatake}, {Newman}, {Nichol}, {Rykoff},
+  {Sanchez}, {Slosar}, {Sullivan}, and {Troxel}]{2018arXiv180901669T}
+{The LSST Dark Energy Science Collaboration}; {Mandelbaum}, R; {Eifler}, T;
+  {Hlo{\v{z}}ek}, R; {Collett}, T; {Gawiser}, E; {Scolnic}, D; {Alonso}, D;
+  {Awan}, H; {Biswas}, R; {Blazek}, J; {Burchat}, P; {Chisari}, NE;
+  {Dell'Antonio}, I; {Digel}, S; {Frieman}, J; {Goldstein}, DA; {Hook}, I;
+  {Ivezi{\'c}}, {\v{Z}}; {Kahn}, SM; {Kamath}, S; {Kirkby}, D; {Kitching}, T;
+  {Krause}, E; {Leget}, PF; {Marshall}, PJ; {Meyers}, J; {Miyatake}, H;
+  {Newman}, JA; {Nichol}, R; {Rykoff}, E; {Sanchez}, FJ; {Slosar}, A;
+  {Sullivan}, M; {Troxel}, MA. ``{The LSST Dark Energy Science Collaboration
+  (DESC) Science Requirements Document},'' {\em arXiv e-prints\/}, 2018, p.
+  arXiv:1809.01669.
+  \url{https://ui.adsabs.harvard.edu/\#abs/2018arXiv180901669T}
+
+\end{thebibliography}

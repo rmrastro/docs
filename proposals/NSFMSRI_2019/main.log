@@ -1,0 +1,602 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.15)  12 FEB 2019 19:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsart.cls
+Document Class: amsart 2015/03/04 v2.20.2
+\linespacing=\dimen102
+\normalparindent=\dimen103
+\normaltopskip=\skip41
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip42
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count79
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count80
+\leftroot@=\count81
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count82
+\DOTSCASE@=\count83
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
+\dotsspace@=\muskip10
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
+\tag@help=\toks15
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip43
+\multlinetaggap=\skip44
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 388.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert233
+\abstractbox=\box28
+\listisep=\skip45
+\c@part=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\c@figure=\count97
+\c@table=\count98
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\captionindent=\dimen113
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count100
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip53
+\enit@outerparindent=\dimen116
+\enit@toks=\toks26
+\enit@inbox=\box29
+\enitdp@description=\count101
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count102
+\calc@Bcount=\count103
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count104
+\calc@Cskip=\skip56
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\AM@pagewidth=\dimen119
+\AM@pageheight=\dimen120
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box30
+\AM@toc@title=\toks27
+\c@AM@survey=\count105
+\AM@templatesizebox=\box31
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen121
+\WF@size=\dimen122
+\c@WF@wrappedlines=\count106
+\WF@box=\box32
+\WF@everypar=\toks28
+Package: wrapfig 2003/01/31  v 3.6
+)
+\c@chalno=\count107
+
+(./journaldefs.tex) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Try loading font information for U+msa on input line 184.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 184.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 184.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen123
+\scratchbox=\box33
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen124
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks30
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box34
+
+Underfull \hbox (badness 1577) in paragraph at lines 241--248
+ \OT1/cmr/m/n/10.95 1.1.\OT1/cmr/bx/n/10.95 Scientific Justification.[] \OT1/cm
+r/m/n/10.95 Led by NSF's Large Synoptic Survey Telescope (LSST[]),
+ []
+
+[1
+Non-PDF special ignored!{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/upd
+map/pdftex.map}] [2]
+<Hemmati18_Fig8_VVDS_spec.png, id=19, 1262.7175pt x 666.49pt>
+File: Hemmati18_Fig8_VVDS_spec.png Graphic file (type png)
+
+<use Hemmati18_Fig8_VVDS_spec.png>
+Package pdftex.def Info: Hemmati18_Fig8_VVDS_spec.png used on input line 373.
+(pdftex.def)             Requested size: 462.52756pt x 244.13634pt.
+ [3 <./Hemmati18_Fig8_VVDS_spec.png>]
+[4] <Parks18_Fig7_fig_labels.pdf, id=29, 433.62pt x 578.16pt>
+File: Parks18_Fig7_fig_labels.pdf Graphic file (type pdf)
+
+<use Parks18_Fig7_fig_labels.pdf>
+Package pdftex.def Info: Parks18_Fig7_fig_labels.pdf used on input line 476.
+(pdftex.def)             Requested size: 231.26378pt x 308.35536pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5] <CannonLAMOST.jpg, id=33, 737.75626pt x 450.68375pt>
+File: CannonLAMOST.jpg Graphic file (type jpg)
+
+<use CannonLAMOST.jpg>
+Package pdftex.def Info: CannonLAMOST.jpg used on input line 607.
+(pdftex.def)             Requested size: 462.52756pt x 282.55pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./Parks18_Fig7_fig_labels.pdf>] [7 <./CannonLAMOST.jpg>]
+Underfull \hbox (badness 1436) in paragraph at lines 857--866
+\OT1/cmr/m/n/10.95 Preliminary Design for the Keck-FOBOS instrumentation, infor
+med in part by refining
+ []
+
+[8] <FOBOSatKeck_v1.pdf, id=102, 1027.84pt x 770.88pt>
+File: FOBOSatKeck_v1.pdf Graphic file (type pdf)
+
+<use FOBOSatKeck_v1.pdf>
+Package pdftex.def Info: FOBOSatKeck_v1.pdf used on input line 875.
+(pdftex.def)             Requested size: 277.51935pt x 208.14038pt.
+
+Underfull \hbox (badness 6510) in paragraph at lines 875--875
+[]\OT1/cmr/bx/n/10 Figure ??: \OT1/cmr/m/n/10 Rendering of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 875--875
+\OT1/cmr/m/n/10 FOBOS instrument
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 875--875
+\OT1/cmr/m/n/10 the FOBOS spectrographs
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 875--875
+\OT1/cmr/m/n/10 can maintain access to the
+ []
+
+
+LaTeX Warning: Reference `fig:layout' on page 9 undefined on input line 887.
+
+[9 <./FOBOSatKeck_v1.pdf>] [10] [11] [12] [13] (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16])
+[17] <FOBOS_HighLevel_Schedule_v1.pdf, id=152, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf used on input line 129
+8.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+ <use FOBOS_HighLevel_Schedule_v1.pdf>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf used on input line 129
+8.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+
+<FOBOS_HighLevel_Schedule_v1.pdf, id=155, page=1, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 1>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page1 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 1>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page1 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 1>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page1 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 1>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page1 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [18]
+<FOBOS_HighLevel_Schedule_v1.pdf, id=159, page=2, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 2>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page2 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 2>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page2 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 1>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page1 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [19 <./FOBOS_HighLevel_Schedule_v1.pdf, page is rotated 90 degrees>]
+<FOBOS_HighLevel_Schedule_v1.pdf, id=369, page=3, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 3>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page3 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 3>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page3 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 2>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page2 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [20 <./FOBOS_HighLevel_Schedule_v1.pdf, page is rotated 90 degrees>]
+<FOBOS_HighLevel_Schedule_v1.pdf, id=534, page=4, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 4>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page4 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 4>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page4 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 3>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page3 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [21 <./FOBOS_HighLevel_Schedule_v1.pdf, page is rotated 90 degrees>]
+<FOBOS_HighLevel_Schedule_v1.pdf, id=667, page=5, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 5>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page5 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 5>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page5 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 4>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page4 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [22 <./FOBOS_HighLevel_Schedule_v1.pdf, page is rotated 90 degrees>]
+<FOBOS_HighLevel_Schedule_v1.pdf, id=860, page=6, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 6>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page6 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 6>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page6 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 5>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page5 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [23 <./FOBOS_HighLevel_Schedule_v1.pdf, page is rotated 90 degrees>]
+<FOBOS_HighLevel_Schedule_v1.pdf, id=1000, page=7, 794.97pt x 614.295pt>
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 7>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page7 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 7>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page7 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 6>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page6 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [24 <./FOBOS_HighLevel_Schedule_v1.pdf, page is rotated 90 degrees>]
+File: FOBOS_HighLevel_Schedule_v1.pdf Graphic file (type pdf)
+
+<use FOBOS_HighLevel_Schedule_v1.pdf, page 7>
+Package pdftex.def Info: FOBOS_HighLevel_Schedule_v1.pdf, page7 used on input l
+ine 1298.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [25 <./FOBOS_HighLevel_Schedule_v1.pdf, page is rotated 90 degrees>] (./main.a
+ux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4891 strings out of 493089
+ 66990 string characters out of 6134841
+ 163457 words of memory out of 5000000
+ 8119 multiletter control sequences out of 15000+600000
+ 14345 words of font info for 60 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 40i,18n,46p,2582b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (25 pages, 1458767 bytes).
+PDF statistics:
+ 1207 PDF objects out of 1440 (max. 8388607)
+ 610 compressed objects within 7 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
