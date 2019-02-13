@@ -195,8 +195,7 @@
 
 \vspace*{-1.5cm}
 
-%\textbf{\textsf{Training LSST with Keck-FOBOS:\\ Comprehensive, Data-Driven Models of a Universe in Transition}}
-% \textbf{\textsf{Training for Big Astronomical Data with Keck-FOBOS:\\ Comprehensive, Data-Driven Models of a Universe in Transition}}
+ % \textbf{\textsf{Mid-scale RI-1 (M1:DP): Training for Big Astronomical Data with Keck-FOBOS}}
 
 % This should be moved to the supplementary document listing the
 % personnel and team roles
@@ -222,23 +221,25 @@
 % \section{Project Summary}
 % \label{sec:summary}
 
+\centerline{\textsf {\Large Mid-scale RI-1 (M1:DP): Training for Big Astronomical Data with Keck-FOBOS}}
+\centerline{\textsf {\large Project Summary}}
+% \vspace{-1cm}
+\centerline{\emph{{\small For review by the Division of Astronomical Sciences (AST)}}}
+
 % \noindent\comment{1 pg, doesn't count towards 10-pg limit}
 
-% \noindent {\bf Overview:}
+\noindent {\bf Overview:} This Mid-scale RI-1 (M1:DP) \emph{Design} proposal...
 % (activity that would result and methods)
 
-% \noindent {\bf Intellectural Merit:}
+\noindent {\bf Intellectural Merit:}
 
-% \noindent {\bf Broader Impacts:}
+\noindent {\bf Broader Impacts:}
 
-% \clearpage
-
-% \noindent\comment{10-page limit, excluding references.}
-
+\clearpage
 \section{Intellectual Merit}
 \label{sec:im}
-Division of Astronomical Sciences (AST)
 
+% \noindent\comment{10-page limit, excluding references.}
 \subsection{Scientific Justification} 
 % \noindent \comment{3/4 page}
 
@@ -348,9 +349,9 @@ than 5\% of the LSST budget.  The urgent case for spectroscopic redshift trainin
 publications \citep[e.g.,][]{laureijs11,masters15, hemmati18}.
 
 Meanwhile, the astronomy community recognizes that the coming era of ``Big Data'' astronomy culminating in LSST
-necessitates ``harnessing the data revolution.''  Widespread community interest in advanced data science techniques
-continues to grow amidst calls for educational programs, conference series, and research funding to support the
-growth of a new field, ``Astroinformatics,'' which exploits the interface between astrophysics and statistics
+necessitates ``\textbf{harnessing the data revolution}.''  Widespread community interest in advanced data science
+techniques continues to grow amidst calls for educational programs, conference series, and research funding to support
+the growth of a new field, ``Astroinformatics,'' which exploits the interface between astrophysics and statistics
 \citep{borne09}.  Astronomy's largest organizations, including the American Astronomical Society and the International
 Astronomical Union, have supported active working groups on astroinformatics and astrostatistics since 2015.  LSST
 itself has built the Informatics and Statistics Science Collaboration and partnered with NSF to fund the Data Science
@@ -373,13 +374,9 @@ We identify ambitious ``data science challenges'' for the LSST era that would ad
 core topics.  By simulating future wide-field imaging data as well as Keck-FOBOS spectroscopy, we will develop
 astrostatistics techniques and applications over the proposal period that will refine the Keck-FOBOS instrument
 requirements, inform the emerging design and operational modes, and define required training sets.  Tackling these
-challenges requires a community-wide effort and will deliver wide-spread benefits.  Our specific purpose with this
+challenges requires a community-wide effort and will deliver wide-spread benefits.  Our goal with this
 proposal is to establish community priorities and success metrics and to coordinate the various groups working in this
 area---many represented among our Senior Personnel.
-
-\subsubsection{Enhancing Dark Energy Probes via Precision Cosmic Distances}
-\label{sec:cosmology}
-% \noindent \comment{1 page}
 
 % \caption{\small \emph{Left:} A Self-Organizing Map (SOM) from
 % \citet{hemmati18} visualizing the relationship between galaxy
@@ -463,6 +460,11 @@ mission beyond the photo-$z$ application.}
 %%
 %\end{wrapfigure}
 
+\subsubsection{Enhancing Dark Energy Probes via Precision Cosmic Distances}
+\label{sec:cosmology}
+~\medskip
+% \noindent \comment{1 page}
+
 The 2011 Nobel Prize in Physics was awarded for the discovery that the
 expansion of the universe has been accelerating instead of slowing down
 due to gravity as previously expected, starting when it was roughly half
@@ -535,9 +537,11 @@ eliminating the need for expensive, space-based near-IR spectroscopy.
 %
 \chal{photozs}
 %
-\noindent {\bf Data-Science Challenge \ref{photozs}: Enable
-High-Precision LSST Photometric Redshifts ($\sigma_z/(1+z) \lesssim
-0.02$ at i(AB) $<$ 25.3) with Targeted Training Spectroscopy}.
+
+ \begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+
+\item[] {\textsf {\large Data-Science Challenge \ref{photozs}: Enable
+High-Precision LSST Photometric Redshifts with Targeted Training Spectroscopy}}.
 Delivering optimal photo-$z$s with minimal errors per object will
 require sets with $>10,000$ spectra.  These data allow for training
 purely machine-learning-based algorithms, appropriately expand our
@@ -572,6 +576,7 @@ color-space coverage is a time-consuming task, leading us to consider
 Bayesian optimization \citep[see e.g.][]{2017arXiv170306240K,
 2018arXiv180512168P, 2019arXiv190111515N}.
 
+\end{enumerate}
 % This methodology is especially well-suited to our sample design,
 % particularly to isolate the minimal coverage of spectroscopic
 % observations that optimize sampling in color space.  As the 
@@ -606,20 +611,6 @@ Bayesian optimization \citep[see e.g.][]{2017arXiv170306240K,
 %followup.
 % JAN: That does not change the math for direct calibration, which the SOM fundamentally is doing..
 
-\subsubsection{A Comprehensive Picture of the Proto-galaxy Ecosystem}
-\label{sec:galaxies}
-
-Roughly 4 billion years after the Big Bang ($z \sim 2$), the universe
-entered a key epoch in which proto-galaxies transitioned from
-interacting, gas-rich systems into the more ordered, star-dominated
-structures that populate the universe today.  This period marks the peak
-of global star formation rate and galaxy assembly history.   To
-understand it, we must not only study the galaxy population at this
-epoch but the entire galaxy ``ecosystem'' which includes their
-gas-filled environments.  The goal is to build a comprehensive picture
-of the physical processes that fuel proto-galaxy growth, shape their
-internal structure, and influence their environment.
-
 \begin{wrapfigure}{r}{0.45\textwidth}\small
 %
 \includegraphics[width=0.45\textwidth]{Parks18_Fig7_fig_labels.pdf}
@@ -636,19 +627,34 @@ redshift data sets.}
 %
 \end{wrapfigure}
 
+\subsubsection{A Comprehensive Picture of the Proto-galaxy Ecosystem}
+\label{sec:galaxies}
+~\medskip
+
+Roughly 4 billion years after the Big Bang ($z \sim 2$), the universe
+entered a key epoch in which proto-galaxies transitioned from
+interacting, gas-rich systems into the more ordered, star-dominated
+structures that populate the universe today.  This period marks the peak
+of global star formation rate and galaxy assembly history.   To
+understand it, we must not only study the galaxy population at this
+epoch but the entire galaxy ``ecosystem'' which includes their
+gas-filled environments.  The goal is to build a comprehensive picture
+of the physical processes that fuel proto-galaxy growth, shape their
+internal structure, and influence their environment.
+
 LSST's panoramic imaging will detect huge numbers of galaxies at this
 epoch.  Targeted followup with Keck-FOBOS will allow us to ascribe
 detailed galaxy and environmental information from deep spectroscopic
 training samples to the much larger cosmic volumes surveyed with
 broad-band imaging.
 
-\medskip
-%
+
+\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+
 \chal{phot}
-%
-\noindent {\bf Data-Science Challenge \ref{phot}: Apply Deep Learning to
+\item[] {\textsf {\large Data-Science Challenge \ref{phot}: Apply Deep Learning to
 infer star formation rates and formation histories, dust content, wind
-properties, and stellar masses from $z \sim 2$ photometry}.  The range
+properties, and stellar masses from $z \sim 2$ photometry}}.  The range
 of observed spectral types is remarkably constrained by broad-band
 imaging (Figure \ref{fig:SOM}, right panel), suggesting a far greater
 potential for imaging data to reveal physical properties with sufficient
@@ -662,12 +668,16 @@ wave-bands (e.g., LSST plus Euclid plus WFIRST).  The exercise will
 define requirements for Keck-FOBOS instrument performance and the FOBOS
 Public Survey design.
 
-\medskip
+\end{enumerate}
+
+% \medskip
+
+\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
 %
 \chal{uv}
 %
-\noindent {\bf Data-Science Challenge \ref{uv}: Enable label transfer
-from rest-frame optical to UV stellar and ISM indicators}.  There are
+\item[] {\textsf {\large Data-Science Challenge \ref{uv}: Enable label transfer
+from rest-frame optical to UV stellar and ISM indicators}}.  There are
 many powerful gas and stellar spectral features just redward of the
 Lyman-$\alpha$ line at 1216 \AA.  By combining Keck-FOBOS UV and near-IR
 spectroscopy (e.g., from PFS) at $z \sim 2$, we can transfer ``labels''
@@ -682,14 +692,17 @@ Survey to constrain the sources responsible for ``reionization'' at $z
 extent of label transfer that is possible and set requirements on
 training samples.
 
+\end{enumerate}
 
-\medskip
+% \medskip
 %
+
+\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
 \chal{lowsnr}
 %
-\noindent {\bf Data-Science Challenge \ref{lowsnr}: Train short
+\item[] {\textsf {\large Data-Science Challenge \ref{lowsnr}: Train short
 spectroscopic exposures in combination with LSST photometry to provide
-environmental diagnostics for 1M galaxies at $z=1$--$2$}.  Photometric
+environmental diagnostics for 1M galaxies at $z=1$--$2$}}.  Photometric
 redshifts, while acceptable in large cosmological analyses, wash out
 information about the local position of galaxies with respect to one
 another.  To characterize a galaxy's local environment and identify its
@@ -705,7 +718,7 @@ would enable an SDSS-like environmental study of 1M galaxies at
 $z=1$--$2$ in just 20 nights of 10 m telescope time, making it a
 compelling sub-component of the Keck-FOBOS Public Survey.
 
-
+\end{enumerate}
 
 
 
@@ -780,6 +793,7 @@ accurate and astrophysically plausible.}
 
 \subsubsection{Unraveling the Formation History of our Local Group of Galaxies}
 \label{sec:localgroup}
+~\medskip
 
 Our Local Group of galaxies --- composed of the Milky Way (MW) Galaxy,
 the Magellanic Clouds, the nearby Andromeda (M31) and Triangulum (M33)
@@ -835,9 +849,15 @@ successes, both in terms of application of these machine-learning
 techniques to new data sets and development of new techniques as we
 discuss below.
 
-\medskip \chal{mwhalo} \noindent {\bf Data-Science Challenge
+
+
+\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+
+\chal{mwhalo} 
+
+\item[] {\textsf {\large  Data-Science Challenge
 \ref{mwhalo}: The chemical evolution and assembly history of the MW
-stellar halo.} LSST and WFIRST will reveal a trove of substructure in
+stellar halo.}} LSST and WFIRST will reveal a trove of substructure in
 both the MW and M31 halo.  We will design an observational program that
 would employ Keck-FOBOS to observe main-sequence turn-off and red-giant
 stars in these substructures within the MW.  These and additional data
@@ -848,8 +868,10 @@ These will be combined with dynamical data and compared with
 cosmological simulations to build a generative model for the assembly
 history of the MW stellar halo.
 
-\medskip \chal{m31} \noindent {\bf Data-Science Challenge \ref{m31}: The
-differential chemical evolution of M31 and MW.}  A natural extension of
+\medskip
+\chal{m31} 
+\item[] {\textsf {\large Data-Science Challenge \ref{m31}: The
+differential chemical evolution of M31 and MW.}}  A natural extension of
 Data-Science Challenge \ref{m31} is to perform the same analysis for the
 halo of M31.  However, we cannot expect to obtain high-quality spectra
 of individual main-sequence stars at the distance of M31 with
@@ -863,8 +885,10 @@ data will drive a machine-learning algorithm that combines a model of
 the MW halo with results from cosmological hydrodynamical simulations to
 constrain the differential history of the MW and M31 stellar halos.
 
-\medskip \chal{gaia} \noindent {\bf Data-Science Challenge \ref{gaia}:
-Stellar parameter determinations for a billion stellar spectra.} While
+\medskip
+\chal{gaia} 
+\item[] {\textsf {\large Data-Science Challenge \ref{gaia}:
+Stellar parameter determinations for a billion stellar spectra.}} While
 providing on-sky motions and photometry for 1.7 billion stars in the MW,
 fewer than 10\% of stars will have a full complement of
 three-dimensional space motions, fewer than 0.3\% will have basic
@@ -881,6 +905,7 @@ will allow us to isolate coeval populations in the Galactic disk that
 can be combined with very high-resolution simulations of the Milky Way
 to provide a detailed evolutionary history of our Galactic home.
 
+\end{enumerate}
 
 % Deeper in their potential wells, the shorter dynamical times mean that
 % on-sky density is insufficient to isolate coeval and/or comoving
