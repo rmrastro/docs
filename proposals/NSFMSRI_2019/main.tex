@@ -209,6 +209,8 @@
 \noindent {\bf Broader Impacts:}
 
 \clearpage
+\setcounter{page}{1}
+
 \section{Intellectual Merit}
 \label{sec:im}
 
@@ -433,6 +435,7 @@ mission beyond the photo-$z$ application.}
 %%
 %\end{wrapfigure}
 
+%-----------------------------------------------------------------------
 \subsubsection{Enhancing Dark Energy Probes via Precision Cosmic Distances}
 \label{sec:cosmology}
 ~\medskip
@@ -570,6 +573,7 @@ redshift data sets.}
 %
 \end{wrapfigure}
 
+%-----------------------------------------------------------------------
 \subsubsection{A Comprehensive Picture of the Proto-galaxy Ecosystem}
 \label{sec:galaxies}
 ~\medskip
@@ -734,6 +738,7 @@ accurate and astrophysically plausible.  (Xiang et al., in prep), \citep{2019ApJ
 %
 \end{figure}
 
+%-----------------------------------------------------------------------
 \subsubsection{Unraveling the Formation History of our Local Group of Galaxies}
 \label{sec:localgroup}
 ~\medskip
@@ -859,130 +864,8 @@ detailed evolutionary history of our Galactic home.
 
 \end{enumerate}
 
-
-% Deeper in their potential wells, the shorter dynamical times mean that
-% on-sky density is insufficient to isolate coeval and/or comoving
-% stellar groups.  However, simulations show that stars born within
-% stellar clusters that then diffuse into, e.g., the disk of the Milky
-% Way maintain their coherency in phase space over long timescales.
-% Therefore, gy grouping stars by the chemical makeup of their stellar
-% atmospheres --- a procedure called chemical tagging, we can isolate
-% coeval stellar groups.
-
-% Existing and ongoing surveys, like SEGUE, RAVE, and APOGEE, and
-% planned surveys, like WEAVE and 4MOST (refs), provide critical
-% supplementary observations, but these efforts only just begin to
-% fulfill the potential of the Gaia astrometric data.  Directly
-% observing the all 1.7 billion stars is simply untenable for the
-% foreseeable future.
-
-
-% To realize the full potential of the Gaia astrometric catalog, one
-% needs the full 6D phase space for each star and its chemical abundance
-% pattern.  Although anything more than simple total metallicity
-% measurements are out of reach for FOBOS, a strategically developed
-% training set observed at high S/N can be used for kinematics and
-% simple stellar parameter determination.
-
-% The use of FOBOS to compare the chemodynamical evolution of the M31
-% and MW halos.
-
-% \medskip \chal{gaia} \noindent {\bf Data-Science Challenge \ref{gaia}:
-% Stellar parameter determinations for a billion stellar spectra.}  To
-% realize the full potential of the Gaia astrometric catalog, one needs
-% the full 6D phase space for each star and its chemical abundance
-% pattern.  Although anything more than simple total metallicity
-% measurements are out of reach for FOBOS, a strategically developed
-% training set observed at high S/N can be used for kinematics and
-% simple stellar parameter determination.
-
-% Each survey chooses to balance the two key limitations of such surveys
-% in different ways, favoring either on-sky area covered (e.g., our
-% Milky Way galaxy fills the entire sky) or smaller areas to greater
-% depth.
-
-% (e.g., SDSS, SEGUE, APOGEE, Rave, Pan-STARRS, PAndAS, PHAT, Gaia)
-
-% While only a single realization of the galaxy-formation process, our
-% Local Group provide unparalleled opportunities to study galaxies in
-% exquisite detail, by virtue of being able to spatially resolve their
-% constituent parts.
-
-% Instead, a growing number of studies aim to infer the necessary
-% measurements using novel applications of machine-learning.  For
-% example, Ness et al.\ have developed {\it The Cannon}, a supervised
-% learning algorithm that uses spectra with known stellar parameters to
-% label spectra where those parameters are unknown.  In one application,
-% they determined three fundamental parameters for 55000 APOGEE spectra
-% using a 1\% training sample.  Additionally, Ting et al.\ have
-% developed {\it The Payne}, which uses a neural network and theoretical
-% stellar spectra to determine 25 stellar labels.  In both of these
-% applications, careful attention has to be given to the limitations of
-% the training sample, similar to the SOM example provided in Figure 1.
-% At their core, machine-learning algorithms, particularly supervised
-% learning, are only as good as the parameter space spanned by their
-% training sets.
-
-% Notes from Yuan-Sen:
-%   - One has to check the survey coverage more carefully. I believe
-%     most surveys that you mentioned are focusing the disk, and FOBOS
-%     will be a great complementary survey.
-%   - This might be too details for such proposals, but it might useful
-%     to mention that low-resolution spectroscopy (i.e., fitting the
-%     full spectra) is only recently made possible by The Cannon and The
-%     Payne.  And at low-resolution, ab initio spectral models are
-%     typically not good enough, and one might want to resort to
-%     data-driven model.  Having large (ideally, high S/N) empirical
-%     library will be very useful. And FOBOS might provide that.
-%   - Complementing Gaia with spectra are not only about chemical
-%     abundances or simply RV. Knowing stellar parameters are *crucial*
-%     to get very precise distances. Gaia parallax suffers from the fact
-%     that the errors grows quadratically with distance. So Gaia
-%     typically does not give good distances. But combining stellar
-%     spectroscopic parameters + parallax, we will be able to predict
-%     the absolute magnitude of stars, and hence gives much more precise
-%     distances -- Hogg, Eiler, Rix+ 18, Ting, Hawkins, Rix+ 18. I think
-%     simply having spectra for all halo stars Gaia survey will be a
-%     tremendous service of Gaia. And this might be a good sell.
-%   - "Although anything more than simple total metallicity measurements
-%     are out of reach for FOBOS, a strategically developed training set
-%     observed at high S/N can be used for kinematics and simple stellar
-%     parameter determination." Actually, that's the whole point of The
-%     Payne -- we can measure > 16 elemental abundances now from LAMOST
-%     (R=1800, optical full range, S/N=30). So having FOBOS + smart way
-%     (The Cannon/The Payne) should give amazing chemical information.
-%   - Then combined with the fact that Gaia + FOBOS (stellar parameters
-%     + parallax -> stellar absolute magnitude -> distance to ~10\%),
-%     and TESS/PLATO + FOBOS which should give you stellar ages from
-%     stellar spectra (you can get stellar ages to 0.1 dex with LAMOST
-%     spectra -- Ting & Rix, 2018), we would have (a) 20+ elemental
-%     abundances, (b) distances to ~10\%, (c) stellar ages to 0.1 dex
-%     (20\%).  And this should tell us tremendously much on the Galactic
-%     halo. But how to frame it as a "challenge" might be tricky.
-%   - Abundance recovery of GALAH using LAMOST (FOBOS-like resolution)
-%     spectra.  Figure provided.
-%   - MW rotation curve measurements from Eilers et al.  Gaia+spectral
-%     distances.
-%   - Age determination from LAMOST, Ting & Rix 2018.
-
-% Why couldn't we do the rotation curve using DEIMOS + Gaia.  anything
-% unique about fobos?
-
-% Beyond its internal chemodynamical history, LSST will also reveal
-% hundreds of faint Milky Way satellites, as well as discover new
-% satellites of the Andromeda and Triangulum galaxies, extending the
-% census of these galaxies.  These faint galaxies provide critical tests
-% of the hierarchical formation of the Local Group.
-
-% \medskip \noindent {\bf Data-Science Challenge 7: Dynamics of newly
-% discovered Ultra-Faint dwarfs.}
-
-% \subsubsection{Time Domain}
-% \label{sec:timedomain}
-% \noindent \comment{1/2 page}
-
-
-
+%-----------------------------------------------------------------------
+%-----------------------------------------------------------------------
 \section{Project Implementation}
 \label{sec:project}
 
@@ -1277,11 +1160,13 @@ contribution to this course.
 % {\bf no more than 2 pages for references}
 
 \clearpage
+\setcounter{page}{1}
 \bibliographystyle{nsf}
 \bibliography{references}
 
 
 \newpage
+\setcounter{page}{1}
 
 % \noindent{\bf Budget and Budget Justification}
 
@@ -1384,6 +1269,8 @@ Keck-FOBOS conceptual design work has proceeded in parallel with a fiber-based, 
 
 \end{itemize}
 
+\end{document}
+
 \newpage
 \noindent{\bf Supplementary Documents:}
 
@@ -1453,7 +1340,6 @@ the role of each in the project;
 
 %\includepdf[pages=-,landscape=true]{FOBOS_V05_export.pdf}
 
-\end{document}
 
 Proto-galaxy:
 
