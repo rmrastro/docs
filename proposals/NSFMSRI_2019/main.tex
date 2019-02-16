@@ -1,135 +1,3 @@
-
-% Outline: 28 Jan 2019
-%   - 0. Summary (PAPPG guidlines) - 1p
-%   - 1. Project Description - 10 pp
-%   - 1.1 Intellectual Merit:
-%       - 1.1.1 Background \& Motivation
-%           - LSST cost NSF ~ \$1B
-%               - LSST Science goals
-%           - Can think of LSST as the next generation SDSS
-%               - But it doesn't have spectroscopy!
-%           - SDSS was an Imaging + Spectroscopy survey
-%               - SDSS the most cited survey ever
-%               - SDSS science milestones
-%               - Spectroscopy was a key aspect for the success of SDSS
-%                 (MPA-JHU)
-%               - Public release of data also key
-%           - What would it look like to perform SDSS-like spectroscopy
-%             for the LSST imagine survey?
-%               - Fraction of observed objects
-%               - Cost
-%               - currently an intractible problem
-%                   - link to photonics development?
-%               - Need new techniques (machine learning) to infer
-%                 statistically accurate population characteristics with
-%                 small training sets
-%           - LSST Science themes
-%           - Science enabled by LSST spectroscopy, lay groundwork for
-%             later science discussion.
-%
-%       - 1.1.2 Research Community Priority
-%           - Review Astro2010
-%               - LSST
-%           - Preview of or predictions for astro2020
-%           - Big data initiatives:
-%               - Moore-Sloan Data-Science Environments
-%                   - Berkeley institute for data science, NYU, UW
-%               - Using subsets of training data to understand a
-%                 population
-%                   - Hogg's AAS talk...
-%
-%           - Spectroscopy of LSST sources to get photozs provides key
-%             advantages to Cosmology/Dark Energy
-%           - Time domain astrophysics
-%               - AGN, CVs, stars (astroseismology)
-%
-%       - 1.1.3 Astrophysics and Data Science Goals
-%           - A Universe in transition
-%               - Gravity to Dark Energy:
-%                   - Precise cosmology with LSST and trained photozs
-%               - Gas to stellar dominated: The Galactic Ecosystem at z~2
-%                   - environment (Cooper)
-%                   - absorption-line systems (Prochaska)
-%                   - stellar populations (Shapely, Siana)
-%                       - Bootstrap z~2 properties to higher redshift (z~7)
-%               - Neutral to ionized gas: The heterogeneity of
-%                 Reionization
-%                   - environment and neutral fractions (Becker)
-%                   - Ly continuum (photon budget) at z~5-7 (Siana)
-%           - The Chemodynamical history of the Local Group
-%               - Chemical tagging of GAIA spectra on the far side of
-%                 the Milky Way (Yuan-Sen)
-%                   - What's gained in 0.31-0.4 range (unavailable to
-%                     PFS)
-%               - MW/M31/M33 (Raja, Connie)
-%               - Life cycle of stellar clusters
-%           - Time Domain (Foley)
-%
-%       - 1.1.4 FOBOS
-%           - How does FOBOS meet the science goals?
-%           - Instrument description as of conceptual design
-%           - Development from concept to final design
-%               - Sketch of timeline
-%           - Public survey design
-%               - Key science programs
-%               - AI-informed targeting system
-%               - Robust DRP and DAP
-%               - Public release schedule
-%           - Longer-term strategy for public release of *any* FOBOS
-%             data
-%               - 18-month proprietary period for PI data
-%               - Observatory queue for opportunistic use of "free"
-%                 fibers
-%
-%       - 1.2 Broader Impacts
-%           - Student Training
-%           - ISEE, AKAMAI (Lisa Hunter)
-%           - New UCSC Astrophysics major with Data Science emphasis
-%               - New course, summer projects
-%   
-%   - 2. References (2-page max)
-%
-%   - 3. Biographical Sketches (2 pages each), required for PI, co-PIs,
-%     and any additional senior personnel (see PAPPG)
-%
-%   - 4. Budget and Budget Justification: "For preliminary proposals
-%     cost estimates may be preliminary estimates with the Basis of
-%     Estimates (BoE) included. Copies of vendor quotations should not
-%     be included in preliminary proposals. If the budget includes
-%     contingency, that contingency should cover the 'known unknowns'
-%     and be used to mitigate identified risks."
-%
-%   - 5. Facilities, Equipment, and Other Resources: "In order for NSF,
-%     and its reviewers, to assess the scope of a proposed project, all
-%     organizational resources necessary for, and available to a
-%     project, must be described in this section of the proposal.
-%     Proposers should describe only those resources that are directly
-%     applicable. The description should be narrative in nature and must
-%     not include any quantifiable financial information. Proposers
-%     should include a description of the internal and external
-%     resources (both physical and personnel) that are expected to be
-%     available to the project.  Such information must be provided in
-%     this section, in lieu of other parts of the proposal (e.g., Budget
-%     Justification, Project Description)."
-%
-%   - 6. Supplementary Documents:
-%           - A list of the major team members, their affiliations, and
-%             their role in the project
-%           - A list of Partner Organizations to be funded via
-%             subawards, and the role of each in the project
-%           - An outline of the Project Execution Plan (PEP) . See the
-%             LFM/MFG. Greater detail will be required in invited full
-%             proposals should that occur.
-%
-%         "No other items or appendices should be included. Information
-%         pertaining to 'Results from Prior NSF Support', 'Current and
-%         Pending Support', 'Data Management Plan', and 'Postdoctoral
-%         Mentoring Plan' is not required for preliminary proposals and
-%         should not be included. Preliminary proposals containing items
-%         other than those required above will be returned without
-%         review.
-
-
 %\documentclass[11pt,letterpaper]{article}
 \documentclass[oneside,11pt]{amsart}
 
@@ -200,30 +68,41 @@
 
 % \noindent\comment{1 pg, doesn't count towards 10-pg limit}
 
-\noindent {\bf Overview:} In this Mid-scale RI-1 (M1:DP) \emph{Design} submission, we propose to dramatically enhance the power of imminent panoramic deep-imaging from the Large Synoptic Survey Telescope (LSST), Wide-Field
-Infrared Survey Telescope (WFIRST), Euclid, and other facilities in order to address key questions in the areas of Dark
-Energy, the galaxy ecosystem at $z\sim2$, and the assembly history of the Milky Way and Local Group Galaxies.  We will
-design the astrostatistics, instrumentation, and software solutions required over the next decade to provide optimized
-spectroscopic training sets and to unlock \emph{physically meaningful} information (e.g., redshifts, galaxy star
-formation histories, stellar metallicities) from deep photometry alone.  Applying machine learning to ambitious Data
-Science Challenges using simulated data, we will set requirements on future spectroscopic training sets.  These
-requirements will guide the preliminary design of FOBOS, a powerful new spectrograph to deploy in 2026 on the 10 m
-Keck II Telescope.  FOBOS will provide publicly-available deep, high-multiplex spectroscopy with high target
-sampling and flexibility uniquely matched to the ``Big Data'' training problem.
+\noindent {\bf Overview:} In this Mid-scale RI-1 (M1:DP) \emph{Design}
+submission, we propose to dramatically enhance the power of imminent
+panoramic deep-imaging from the Large Synoptic Survey Telescope (LSST),
+Wide-Field Infrared Survey Telescope (WFIRST), Euclid, and other
+facilities in order to address key questions in the areas of Dark
+Energy, the galaxy ecosystem at $z\sim2$, and the assembly history of
+the Milky Way and Local Group Galaxies.  We will design the
+astrostatistics, instrumentation, and software solutions required over
+the next decade to provide optimized spectroscopic training sets and to
+unlock \emph{physically meaningful} information (e.g., redshifts, galaxy
+star formation histories, stellar metallicities) from deep photometry
+alone.  Applying machine learning to ambitious Data Science Challenges
+using simulated data, we will set requirements on future spectroscopic
+training sets.  These requirements will guide the preliminary design of
+FOBOS, a powerful new spectrograph to deploy in 2026 on the 10 m Keck II
+Telescope.  FOBOS will provide publicly-available deep, high-multiplex
+spectroscopy with high target sampling and flexibility uniquely matched
+to the ``Big Data'' training problem.
 
 
 % (activity that would result and methods)
 
-\noindent {\bf Intellectual Merit:} High-multiplex spectroscopic followup of LSST and other panoramic deep-imaging
-surveys is a widely recognized necessity.  Reports in 2015 and 2016 by the National Research Council and National
-Optical Astronomical Observatory specifically recommend that the NSF support construction of required spectroscopic
-facilities because none currently exist or are planned at U.S.\ observatories.  FOBOS satisfies these deep,
-high-multiplex spectroscopic needs at relatively low cost by utilizing the existing 10 m Keck II Telescope, a
-highly-successful U.S.-led large telescope.  However, given the size of ``Big Data'' photometric surveys in the LSST
-era, applying data science applications using the necessarily-limited spectroscopic
-followup to ``train'' imaging data will be critical.  This proposal coordinates development of new techniques to design
-
-
+\noindent {\bf Intellectual Merit:} High-multiplex spectroscopic
+followup of LSST and other panoramic deep-imaging surveys is a widely
+recognized necessity.  Reports in 2015 and 2016 by the National Research
+Council and National Optical Astronomical Observatory specifically
+recommend that the NSF support construction of required spectroscopic
+facilities because none currently exist or are planned at U.S.\
+observatories.  FOBOS satisfies these deep, high-multiplex spectroscopic
+needs at relatively low cost by utilizing the existing 10 m Keck II
+Telescope, a highly-successful U.S.-led large telescope.  However, given
+the size of ``Big Data'' photometric surveys in the LSST era, applying
+data science applications using the necessarily-limited spectroscopic
+followup to ``train'' imaging data will be critical.  This proposal
+coordinates development of new techniques to design
 
 \noindent {\bf Broader Impacts:}
 
@@ -400,8 +279,8 @@ proposal is to establish community priorities and success metrics and to
 coordinate the various groups working in this area---many represented
 among our Senior Personnel.
 
-\comment{modify the motivation here to reflect our funding request; move
-away from being LSST centric}
+% \comment{modify the motivation here to reflect our funding request;
+% move away from being LSST centric}
 
 \begin{figure}[h!]
 %
@@ -434,7 +313,6 @@ photo-$z$ application.}
 \subsubsection{Enhancing Dark Energy Probes via Precision Cosmic Distances}
 \label{sec:cosmology}
 ~\medskip
-% \noindent \comment{1 page}
 
 The 2011 Nobel Prize in Physics was awarded for the discovery that the
 expansion of the universe is accelerating due to the mysterious ``dark
@@ -488,23 +366,27 @@ optimal design space.
 
 \end{enumerate}
 
-\begin{wrapfigure}{r}{0.45\textwidth}\small
+%-----------------------------------------------------------------------
+\begin{wrapfigure}{r}{0.5\textwidth}\small
 %
-\includegraphics[width=0.45\textwidth]{figs/Parks18_Fig7_fig_labels.pdf}
+\includegraphics[width=0.5\textwidth]{figs/Parks_fig.pdf}
 %
-\caption{Example of machine-learning applied to absorption
-features in rest-frame UV spectroscopy to detect two intervening gas
-clouds along the line-of-sight \citep[from][]{parks18}.  A spectrum is
-shown at top with lower panels indicating associated labels conveying
-physical information.  FOBOS will provide a rich set of similar
-features and the opportunity to transfer labels to imaging and higher
-redshift data sets.}
+\caption{Application of machine learning to find and quantify the
+physical parameters of absorption by neutral hydrogen gas in spectra
+taken along quasar sight lines \citep[adapted from Figs 7 and 14
+from][]{parks18}.  Two absorption systems in the spectrum (top-left) are
+identified (middle-left) and then labelled with an HI column density
+($N_{\rm HI}$) (bottom-left) using a convolutional neural network.
+Distributions for the differences in redshift, $z$, (top-right) and
+$N_{\rm HI}$ (bottom-right) between the results of the CNN and direct
+derivations by experts are in excellent agreement.  FOBOS will provide
+rich data sets for similar transfer of physical-parameter labels to
+photometric and spectroscopic data.}
 %
 \label{fig:absorber}
 %
 \end{wrapfigure}
 
-%-----------------------------------------------------------------------
 \subsubsection{A Comprehensive Picture of the Proto-galaxy Ecosystem}
 \label{sec:galaxies}
 ~\medskip
@@ -533,45 +415,53 @@ redshift data sets.}
 % - More excited to hear about how the FOBOS spectra will be used for
 %   science directly, instead of support for LSST
 
-Roughly three billion years after the Big Bang ($z \sim 2$), the
+Roughly three billion years after the Big Bang ($z$$\sim$2), the
 universe entered a key epoch in which proto-galaxies transitioned from
 turbulent, gas-rich systems into the more ordered, star-dominated
-structures that populate the universe today.  This period marks the peak
-of global star formation rate and galaxy assembly history.   To
-understand it, we must not only study the galaxy population at this
-epoch but the entire galaxy ``ecosystem,'' which includes their
+structures that populate the universe today.  This period marks the
+cosmic peak of star formation and galaxy assembly.   A full physical
+picture of this epoch must include studies of the entire galaxy
+``ecosystem,'' including the galaxies themselves as well as their
 gas-filled environments.  The goal is to build a comprehensive picture
 of the physical processes that fuel proto-galaxy growth, shape their
 internal structure, and influence their environment.
 
-LSST's panoramic imaging will detect huge numbers of galaxies at this
-epoch.  Targeted followup with FOBOS will allow us to ascribe
-detailed galaxy and environmental information from deep spectroscopic
-training samples to the much larger cosmic volumes surveyed with
-broad-band imaging.
+Although machine-learning applied to the dark-energy equation-of-state
+emphasizes the power of photo-$z$ training, detailed physical parameters
+can also be inferred from combining multiple imaging datasets (e.g.,
+LSST, Euclid, WFIRST) and/or lower quality spectra with well designed,
+high-S/N training sets (cf., Fig.~\ref{fig:absorber}).  A central theme
+of the following data-science challenges is to build SDSS-like
+statistics for galaxies at this key cosmic epoch.  In all of these
+challenges, we will use simulated data sets to isolate uncertainties and
+biases in various training-set design strategies, including the benefits
+of additional imaging information like morphology and size from a wide
+range of wave-bands (e.g., combining LSST, Euclid, WFIRST).  The
+exercise will define requirements for FOBOS instrument performance and
+the optimal training sample delivered publicly.
+
+% LSST's panoramic imaging will detect huge numbers of galaxies at this
+% epoch.  Targeted followup with FOBOS will allow us to ascribe detailed
+% galaxy and environmental information from deep spectroscopic training
+% samples to the much larger cosmic volumes surveyed with broad-band
+% imaging.
 
 \begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
-
+%
 \chal{phot}
-\item[] {\textsf {\large Data-Science Challenge \ref{phot}: Apply Deep Learning to
-infer star formation rates and formation histories, dust content, wind
-properties, and stellar masses from $z \sim 2$ photometry}}.  The range
-of observed spectral types is remarkably constrained by broad-band
-imaging (Figure \ref{fig:SOM}, right panel), suggesting a far greater
-potential for imaging data to reveal physical properties with sufficient
-training than conventional modeling of spectral energy distributions
-(SEDs) would suggest.  Applying machine learning, our challenge is to
-deliver SDSS-like information for millions of imaged galaxies at $z \sim
-2$.  With simulated data sets, we will investigate derived uncertainties
-and biases and explore benefits from incorporating additional imaging
-information like morphology, structure, and size from a wide range of
-wave-bands (e.g., LSST plus Euclid plus WFIRST).  The exercise will
-define requirements for FOBOS instrument performance and the \comment{FOBOS
-Public Survey} design.
-
+%
+\item[] {\textsf {\large Data-Science Challenge \ref{phot}: Apply deep-
+learning algorithms to infer physical properties of galaxies at
+$z$$\sim$2 using using photometry.}} The range of observed spectral
+types is well-constrained by broad-band imaging (Figure \ref{fig:SOM}),
+suggesting a far greater potential for imaging data to reveal physical
+properties with sufficient training than conventional modeling of
+spectral energy distributions (SEDs) would suggest.  We will use machine
+learning to deliver SDSS-like information --- star-formation histories,
+stellar-population properties, dust content, inflow/outflow properties,
+and stellar masses --- for millions of imaged galaxies at $z$$\sim$2.
+%
 \end{enumerate}
-
-% \medskip
 
 \begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
 %
@@ -581,100 +471,50 @@ Public Survey} design.
 and ISM indicators in UV spectra from rest-frame optical spectra}}.
 There are many powerful gas and stellar spectral features just redward
 of the Lyman-$\alpha$ line at 1216\AA.  By combining FOBOS UV and
-near-IR spectroscopy (e.g., from PFS) at $z \sim 2$, we can transfer
-``labels'' best modeled in the rest-frame optical to spectra at UV
-wavelengths, at least for certain types of galaxies \comment{be
-specific?}.  This ``label transfer'' will dramatically enhance
-interpretation of JWST discoveries of the first galaxies ($z \sim 10$)
-for which rest-frame UV imaging and spectroscopy will be most
-accessible.  A similar application can ascribe the escape fraction of
-Lyman continuum radiation observed in the \comment{FOBOS Public Survey} to
-constrain the sources responsible for ``reionization'' at $z \sim 6$
-\citep[cf.]{2018ApJ...869..123S}.  With simulated spectral observations,
-we will determine the extent of label transfer that is possible and set
-requirements on training samples.
+existing near-IR spectroscopy at $z$$\sim$2, we can transfer physical
+``labels'' determined in the rest-frame optical to spectra at UV
+wavelengths, which will dramatically enhance interpretation of JWST
+discoveries of the first galaxies ($z$$\sim$10) for which rest-frame UV
+imaging and spectroscopy will be most accessible.  A similar application
+can ascribe the escape fraction of Lyman-continuum radiation observed in
+FOBOS spectra to constrain the sources responsible for ``reionization''
+at $z$$\sim$6 \citep[cf.]{2018ApJ...869..123S}.
+
+% With simulated spectral observations, we will determine the extent of
+% label transfer that is possible and set requirements on training
+% samples.
 
 \end{enumerate}
 
-% \medskip
-%
-
 \begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+%
 \chal{lowsnr}
 %
-\item[] {\textsf {\large Data-Science Challenge \ref{lowsnr}: Train short
-spectroscopic exposures in combination with LSST photometry to provide
-environmental diagnostics for 1M galaxies at $z=1$--$2$}}.  Photometric
+\item[] {\textsf {\large Data-Science Challenge \ref{lowsnr}: Train
+short spectroscopic exposures in combination with photometry to provide
+environmental diagnostics for 1M galaxies at $z$=1--2}}.  Photometric
 redshifts, while acceptable in large cosmological analyses, wash out
 information about the local position of galaxies with respect to one
 another.  To characterize a galaxy's local environment and identify its
 neighbors requires (observationally expensive) spectroscopic redshifts
 (spec-$z$s).  However, with improved photometric redshifts available
 from Challenge \ref{photozs} and strong priors on spectral types
-(Challenge \ref{phot}), machine learning techniques can yield
-\emph{spectroscpic} redshifts at much lower signal-to-noise than
+(Challenge \ref{phot}), machine-learning techniques can yield
+\emph{spectroscopic} redshifts at much lower signal-to-noise than
 conventional redshift measurements. Specifically, our challenge is to
-develop a methodology that can measure 300 km s$^{-1}$ accuracy
-spec-$z$s on spectra obtained in just 10 minutes with FOBOS.  This
-would enable an SDSS-like environmental study of 1M galaxies at
-$z=1$--$2$ in just 20 nights of 10 m telescope time, making it a
-compelling sub-component of the \comment{FOBOS Public Survey}.
+develop a methodology that can measure $z$ to 300 km s$^{-1}$ accuracy
+from spectra obtained in just 10 minutes with FOBOS.  This would enable
+an SDSS-like environmental study of 1M galaxies at $z=1$--$2$ in just 20
+nights of 10m telescope time, making it a compelling FOBOS program to
+serve publicly.
 
 \end{enumerate}
-
-
-
-
-%\begin{wrapfigure}{r}{0.6\textwidth}\small
-%%
-%\includegraphics[width=0.6\textwidth]{TestBench.jpg}
-%%
-%\caption{\label{fig:testbench} A schematic of the current UCO fiber test
-%bench.  The components to the right of the first fiber positioner will
-%be repackaged and delivered to Keck for our on-sky experiment; the
-%fibers themselves will be fed light from Keck after being plugged into a
-%DEIMOS mask.  Image Credit: Jaren Ashcroft.}
-%%
-%\end{wrapfigure}
-
-
-% \begin{wrapfigure}{r}{0.5\textwidth}
-%  \includegraphics[width=0.5\textwidth]{madau_plot.pdf}
-%  \caption{\small From Madau \& Dickinson (2014) }\label{fig:Madau_plot}
-% \end{wrapfigure}
-
-%A critical transition in evolution of galaxies in our Universe emerges
-%when one considers the volumetric star-formation rate as a function of
-%cosmic time 
-%
-% - cosmic star-formation rate shows the unique phases of the growth of
-% galaxies in the Universe
-%
-% - the detailed cause for the decline in the CSFR since z~2 remains
-% unclear, but it could be thought of as the starvation of galaxies from
-% the rapid gas accretion they enjoyed in the early universe.
-%
-% - the outbreak of star-formation sparked by free-falling accretion of
-% gas is now stymied by the size of the galaxies themselves.
-%
-% - a number of fundamental properties of galaxies have emerged over the
-% past ~30 years: mass, size, metallicity, star-formation rate, angular
-% momentum, and gas fraction.  Environment
-%
-%
-%The rate at which stars have been born in the Universe has varied
-%dramatically over cosmic history.  At roughly half its current age, the
-%Universe was on average forming 10 stars for every one star formed
-%today \comment{ref}.  At these epochs, galaxies looked rather different
-%then they do now, dominated by all-consuming star-formation regions
-%\comment{ref}.  These morphologies are only seen in rare star-burst
-%galaxies in the Local Volume \comment{ref}.  The 
 
 \begin{figure}[h!]
 %
 \vskip -0.1in
 %
-\includegraphics[width=\textwidth]{figs/LGplots} %figs/CannonLAMOST.jpg}
+\includegraphics[width=\textwidth]{figs/LGplots}
 %
 \caption{{\it Left}: Validation of {\it The Cannon} measurements of
 stellar effective temperature, $T_{\rm eff}$, and surface gravity, $\log
