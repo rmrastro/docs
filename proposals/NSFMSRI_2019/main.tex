@@ -337,10 +337,10 @@ therefore critical to the success of {\it all} imaging surveys in this
 respect. It would not only \emph{increase the dark energy
 figure-of-merit in LSST by 40\%} \citep{newman15} but, importantly,
 provide vital confidence in cosmological results.  FOBOS is particularly
-powerful in this application because it has no redshift desert.  It has
-a unique ability to measure spectroscopic redshifts above $z > 1.5$ via
-rest-frame UV features, eliminating the need for expensive, space-based
-near-IR spectroscopy.
+powerful in this application because it has no ``redshift desert.'' thanks to its unique ability to measure spectroscopic redshifts above $z > 1.5$ via
+rest-frame UV features.  This eliminates the need for expensive, space-based\footnote{Ground-based near-IR
+spectroscopy is too contaminated by sky-line emission to provide spec-$z$s at the required level of completeness
+\citep{newman15}.} near-IR spectroscopy.
 
 \chal{photozs}
 %
@@ -363,8 +363,8 @@ Self-Organizing Maps (SOM, Fig.~\ref {fig:SOM}) provide a
 state-of-the-art representation of a high-dimensional input space in
 projected 2D grid cells, allowing us to benchmark sampling of the
 photometric color space under various training set designs.  We will use
-Bayesian Optimization techniques to evaluate training success for
-cosmological parameters, which enable extremely rapid exploration of the
+Bayesian Optimization techniques to evaluate the success of simulated training sets against the fidelity of full  
+cosmological analyses that employ them.  This will enable extremely rapid exploration of the
 optimal design space.
 
 \end{enumerate}
@@ -378,12 +378,12 @@ optimal design space.
 physical parameters of absorption by neutral hydrogen gas in spectra
 taken along quasar sight lines \citep[adapted from Figs 7 and 14
 from][]{parks18}.  Two absorption systems in the spectrum (top-left) are
-identified (middle-left) and then labelled with an HI column density
-($N_{\rm HI}$) (bottom-left) using a convolutional neural network.
+identified (middle-left) and then ``labeled'' with an HI column density
+($N_{\rm HI}$) (bottom-left) using a convolutional neural network (CNN).
 Redshift, $z$, (top-right) and $N_{\rm HI}$ (bottom-right) measurements
 obtained the CNN are in excellent agreement with derivations by experts.
 FOBOS will provide rich data sets for similar transfer of
-physical-parameter labels to photometric and spectroscopic data.}
+physical parameter labels to photometric and spectroscopic data.}
 %
 \label{fig:absorber}
 %
@@ -420,26 +420,26 @@ Roughly three billion years after the Big Bang ($z$$\sim$2), the
 universe began a key epoch in which proto-galaxies transitioned from
 turbulent, gas-rich systems into the more ordered, star-dominated
 structures that populate the universe today.  This period marks the
-cosmic peak of star formation and galaxy assembly.   A full physical
-picture of this epoch must include studies of the entire galaxy
-``ecosystem,'' including the galaxies themselves as well as their
+cosmic peak of star formation and galaxy assembly.   To understand it we must study the entire galaxy
+``ecosystem,'' including not only the galaxies themselves but their
 gas-filled environments.  The goal is to build a comprehensive picture
 of the physical processes that fuel proto-galaxy growth, shape their
 internal structure, and influence their environment.
 
-Although machine-learning applied to the dark-energy equation-of-state
-emphasizes the power of photo-$z$ training, detailed physical parameters
-can also be inferred from combining multiple imaging datasets (e.g.,
-LSST, Euclid, WFIRST) and/or lower quality spectra with well designed,
-high-S/N training sets (cf., Fig.~\ref{fig:absorber}).  A central theme
-of the following data-science challenges is to build SDSS-like
-statistics for galaxies at this key cosmic epoch.  In all of these
-challenges, we will use simulated data sets to isolate uncertainties and
-biases in various training-set design strategies, including the benefits
-of additional imaging information like morphology and size from a wide
-range of wave-bands (e.g., combining LSST, Euclid, WFIRST).  The
-exercise will define requirements for FOBOS instrument performance and
-the optimal training sample delivered publicly.
+Although our first challenge emphasized photo-$z$ training, here we will apply machine learning more broadly to infer
+physical parameters from multi-wavelength photometry as well as lower quality spectra trained with high-S/N data sets 
+(cf., Fig.~\ref{fig:absorber}).  Given the cost of deep spectroscopy, a central goal is to extract the maximum
+information from photometry and shallower spectroscopy so that more statistically powerful samples over larger cosmic
+volumes can be studied.
+
+%  build SDSS-like
+% statistics for galaxies at this key cosmic epoch.  In all of these
+% challenges, we will use simulated data sets to isolate uncertainties and
+% biases in various training-set design strategies, including the benefits
+% of additional imaging information like morphology and size from a wide
+% range of wave-bands (e.g., combining LSST, Euclid, WFIRST).  The
+% exercise will define requirements for FOBOS instrument performance and
+% the optimal training sample delivered publicly.
 
 % LSST's panoramic imaging will detect huge numbers of galaxies at this
 % epoch.  Targeted followup with FOBOS will allow us to ascribe detailed
@@ -464,28 +464,28 @@ and stellar masses --- for millions of imaged galaxies at $z$$\sim$2.
 %
 \end{enumerate}
 
-\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
-%
-\chal{uv}
-%
-\item[] {\textsf {\large Data-Science Challenge \ref{uv}: Infer stellar
-and ISM indicators in UV spectra from rest-frame optical spectra}}.
-There are many powerful gas and stellar spectral features just redward
-of the Lyman-$\alpha$ line at 1216\AA.  By combining FOBOS UV and
-existing near-IR spectroscopy at $z$$\sim$2, we can transfer physical
-``labels'' determined in the rest-frame optical to spectra at UV
-wavelengths, which will dramatically enhance interpretation of JWST
-discoveries of the first galaxies ($z$$\sim$10) for which rest-frame UV
-imaging and spectroscopy will be most accessible.  A similar application
-can ascribe the escape fraction of Lyman-continuum radiation observed in
-FOBOS spectra to constrain the sources responsible for ``reionization''
-at $z$$\sim$6 \citep[cf.]{2018ApJ...869..123S}.
+% \begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+% %
+% \chal{uv}
+% %
+% \item[] {\textsf {\large Data-Science Challenge \ref{uv}: Infer stellar
+% and ISM indicators in UV spectra from rest-frame optical spectra}}.
+% There are many powerful gas and stellar spectral features just redward
+% of the Lyman-$\alpha$ line at 1216\AA.  By combining FOBOS UV and
+% existing near-IR spectroscopy at $z$$\sim$2, we can transfer physical
+% ``labels'' determined in the rest-frame optical to spectra at UV
+% wavelengths, which will dramatically enhance interpretation of JWST
+% discoveries of the first galaxies ($z$$\sim$10) for which rest-frame UV
+% imaging and spectroscopy will be most accessible.  A similar application
+% can ascribe the escape fraction of Lyman-continuum radiation observed in
+% FOBOS spectra to constrain the sources responsible for ``reionization''
+% at $z$$\sim$6 \citep[cf.]{2018ApJ...869..123S}.
 
-% With simulated spectral observations, we will determine the extent of
-% label transfer that is possible and set requirements on training
-% samples.
+% % With simulated spectral observations, we will determine the extent of
+% % label transfer that is possible and set requirements on training
+% % samples.
 
-\end{enumerate}
+% \end{enumerate}
 
 \begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
 %
@@ -497,17 +497,12 @@ environmental diagnostics for 1M galaxies at $z$=1--2}}.  Photometric
 redshifts, while acceptable in large cosmological analyses, wash out
 information about the local position of galaxies with respect to one
 another.  To characterize a galaxy's local environment and identify its
-neighbors requires (observationally expensive) spectroscopic redshifts
-(spec-$z$s).  However, with improved photometric redshifts available
+neighbors requires (observationally expensive) spectroscopic redshifts.  However, with improved photo-$z$s available
 from Challenge \ref{photozs} and strong priors on spectral types
-(Challenge \ref{phot}), machine-learning techniques can yield
-\emph{spectroscopic} redshifts at much lower signal-to-noise than
-conventional redshift measurements. Specifically, our challenge is to
-develop a methodology that can measure $z$ to 300 km s$^{-1}$ accuracy
-from spectra obtained in just 10 minutes with FOBOS.  This would enable
-an SDSS-like environmental study of 1M galaxies at $z=1$--$2$ in just 20
-nights of 10m telescope time, making it a compelling FOBOS program to
-serve publicly.
+(Challenge \ref{phot}), the challenge here is to push machine-learning techniques to deliver
+\emph{spectroscopic} redshifts (with 300 km s$^{-1}$ accuracy) at the lowest signal-to-noise possible.  Reductions by
+factors of 4--5 in exposure time would enable FOBOS to complete a 1M galaxy environment survey at $z=1$--$2$ in just
+20-30 nights.
 
 \end{enumerate}
 
@@ -537,43 +532,27 @@ the most precise measurements to date \citep{2019ApJ...871..120E}.}
 \subsubsection{Unraveling the Formation History of our Local Group of Galaxies}
 \label{sec:localgroup}
 
-Our Local Group of galaxies --- composed of the Milky Way (MW) Galaxy,
-the Magellanic Clouds, the nearby Andromeda (M31) and Triangulum (M33)
-Galaxies, and a multitude of satellite galaxies --- is just one
-realization of the galaxy-formation process, but it is the one that we
-can study in the greatest detail.  Large-scale imaging surveys, like
-SDSS and Pan-STARRS, have unveiled numerous stellar streams and other
-halo substructures in both the MW and M31, and we expect a hundredfold
-growth in this census via the upcoming LSST and WFIRST surveys.
-Follow-up spectroscopy of Local Group member stars allow us to, e.g.,
-constrain the orbits of stellar streams and the present-day enclosed
-mass of the galaxies they orbit \citep{2017ApJ...836..234S}, as well as
-the age and chemical composition of their stellar populations
-\citep{2019MNRAS.484.3425M}.  At the same time, cosmological
-simulations, like IllustrisTNG \citep{2018MNRAS.475..648P}, can now
-simulate the full chemo-dynamical evolution of Local-Group-like
-overdensities in the Universe to which data can be meaningfully
-compared.  Finally, the Gaia satellite is currently revolutionizing our
-understanding of the MW by providing distances and on-sky motions for
-more than a billion stars spanning the full extent of its disk.  This
-simultaneous maturation of both the theoretical and observational data
-will allow us to form physically motivated models for the formation
-history of the Local Group and its constituents.
+Our Local Group of galaxies---the Milky Way (MW),
+the Magellanic Clouds, Andromeda (M31) and Triangulum (M33)
+Galaxies, and a multitude of satellite galaxies---allows us to study one
+realization of the galaxy formation process in superb detail.  In the next decade, LSST and WFIRST will increase the
+census of stellar streams and halo substructure in these galaxies by a hundredfold.  Follow-up \emph{stellar}
+spectroscopy will constrain stream orbits and the total mass they enclose \citep{2017ApJ...836..234S} as well as
+the associated age and chemical composition
+\citep{2019MNRAS.484.3425M}.  As theoretical modeling also advances, these new data promise exciting insights on the formation
+history of the Local Group.
 
-Programs to measure the radial velocities of stars in the MW halo or the
-M31 disk using DEIMOS at Keck require observations of up to 10 hours,
-depending on the population being probed \citep{2012ApJ...752...45T,
-2018arXiv180904082C}.  Such long integration times is one motivatation
-for FOBOS's push to maximize the number of targets observed in a single
-pointing.  However, one can also appeal to machine-learning algorithms
-to infer the relevant physical quantities statistically from both
+Radial velocity studies of stars in the MW halo or the
+M31 disk require observations of up to 10 hours on large telescopes \citep[e.g.,][]{2018arXiv180904082C}.  This again
+motivates machine-learning algorithms
+to extract physical quantities from both
 multi-band imaging and lower quality spectra (low resolution and S/N)
-using a relatively small, yet high-S/N, training set.  For example,
+using relatively small, yet high-S/N, training sets.  For example,
 \citet{2015ApJ...808...16N} have developed {\it The Cannon}, a
-supervised learning algorithm that uses spectra with known stellar
+supervised learning approach that uses spectra with known stellar
 parameters to label spectra where those parameters are unknown
 (Fig.~\ref{fig:Cannon}).  Additionally, \citet{2018arXiv180401530T} have
-developed {\it The Payne}, which they show can determine 16
+developed {\it The Payne} which can infer 16
 stellar-abundance labels from low-resolution spectra using a neural
 network and theoretical stellar spectra.  Finally,
 \citet{2018arXiv180803278T} have combined Kepler-based astroseismology
@@ -586,9 +565,8 @@ lines of inquiry based on these successes.
 \chal{mwhalo} 
 %
 \item[] {\textsf {\large  Data-Science Challenge \ref{mwhalo}: The
-chemical evolution and assembly history of the MW stellar halo.}} LSST
-and WFIRST will reveal a trove of substructure in both the MW and M31
-halo.  We will design a FOBOS program to observe main-sequence turn-off
+chemical evolution and assembly history of the MW stellar halo.}}  Using current MW halo models, we will simulate FOBOS
+stellar spectroscopy of main-sequence turn-off
 and red-giant stars in these substructures within the MW that also
 leverages existing data from, e.g., APOGEE and H3.  We will build
 data-driven models based on these data to measure stellar parameters
@@ -603,7 +581,7 @@ history of the MW stellar halo.
 %
 \item[] {\textsf {\large Data-Science Challenge \ref{m31}: The
 differential chemical evolution of M31 and MW.}}  A natural extension of
-Data-Science Challenge \ref{m31} is to perform the same analysis for the
+Data-Science Challenge \ref{mwhalo} is to perform the same analysis for the
 halo of M31.  However, we cannot expect to obtain high-quality spectra
 of individual main-sequence stars at the distance of M31 with FOBOS.
 Moreover, training a chemical evolution model using spectra of Milky Way
