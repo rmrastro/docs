@@ -177,20 +177,31 @@ promising path is encapsulated in one of NSF's ``10 Big Ideas,'' \emph{Harnessin
 the information content of LSST and other imaging facilities via machine learning from optimally designed spectroscopic
 training sets.
 
-This proposal presents a coordinated framework with three critical components necessary for success in
-this endeavor: 1) Using simulated spectroscopic$+$imaging data to define the training sets required to address
-ambitious data-science challenges in Cosmology, Galaxy Formation, and Local Group Archaeology in the LSST era; 2)
-Preliminary design of FOBOS\footnote{FOBOS: Fiber-Optic Broadband Optical Spectrograph}, a state-of-the-art
-spectroscopic facility for WMKO\footnote{WMKO: W.~M.\ Keck Observatory operates the two twin 10m Keck Telescopes on
-Maunakea, Hawaii.}, optimized for providing critical training data using one of the world's largest telescopes; 3)
-Preliminary design of the coordinated FOBOS observations required as well as the systems needed to serve training data
-publicly.  This {\bf MSRI-1 Design} proposal lays out the path for maximizing panoramic imaging from LSST,
-WFIRST\footnote{WFIRST is NASA's space-based Wide-Field Infrared Survey Telescope, expected to launch in the mid
-2020's.}, Euclid\footnote{Euclid is led by the European Space Agency with significant NASA involvement and will launch
-in 2021. Its primary mission is a 15,000 deg$^2$ imaging survey in optical and near-IR wavebands.}, and other
-facilities with spectroscopic follow-up unparalleled in depth and sampling density.  Through a subsequent MSRI proposal
-we will deliver on our goals with an instrument deployment in 2026, an array of spectroscopic programs, and associated
-public-ready training data.%\comment{comment on machine learning vs.\ instrument funding}
+This proposal presents a coordinated framework with three critical
+components necessary for success in this endeavor: 1) Using simulated
+spectroscopic$+$imaging data to define the training sets required to
+address ambitious data-science challenges in Cosmology, Galaxy
+Formation, and Local Group Archaeology in the LSST era; 2) Preliminary
+design of FOBOS,\footnote{FOBOS: Fiber-Optic Broadband Optical
+Spectrograph} a state-of-the-art spectroscopic facility for
+WMKO,\footnote{WMKO: W.~M.\ Keck Observatory operates the two twin 10m
+Keck Telescopes on Maunakea, Hawaii.} optimized for providing critical
+training data using one of the world's largest telescopes; 3)
+Preliminary design of the coordinated FOBOS observations required as
+well as the systems needed to serve training data publicly.  This {\bf
+MSRI-1 Design} proposal lays out the path for maximizing panoramic
+imaging from LSST, WFIRST,\footnote{WFIRST is NASA's space-based
+Wide-Field Infrared Survey Telescope, expected to launch in the mid
+2020's.} Euclid,\footnote{Euclid is led by the European Space Agency
+with significant NASA involvement and will launch in 2021. Its primary
+mission is a 15,000 deg$^2$ imaging survey in optical and near-IR
+wavebands.} and other facilities with spectroscopic follow-up
+unparalleled in depth and sampling density.  Through a subsequent MSRI
+proposal we will deliver on our goals with an instrument deployment in
+2026, an array of spectroscopic programs, and associated public-ready
+training data.
+
+%\comment{comment on machine learning vs.\ instrument funding}
 
 \subsection{Research Community Priority} 
 \label{sec:community}
@@ -341,10 +352,10 @@ LSST, WFIRST, and Euclid \citep[see][] {newman15}.  Applying
 machine-learning, template-based, and hybrid photo-$z$ estimators to
 simulated data, we will build a methodology for designing FOBOS training
 sets that minimize observing time while maintaining adequate
-parameter-space sampling\footnote{
+parameter-space sampling.\footnote{
 %
 Of course, the design of this sample also benefits the data-science
-challenges we detail in Section \ref{sec:galaxies}.}.
+challenges we detail in Section \ref{sec:galaxies}.}
 %
 Self-Organizing Maps (SOM, Fig.~\ref {fig:SOM}) provide a
 state-of-the-art representation of a high-dimensional input space in
@@ -555,8 +566,8 @@ successes.
 samples for resolved Milky Way and Local Group studies.}}  As in our other challenges, the key driver here is the
 ability to extract maximum information from photometry, in this case stellar parameters.  Our goal is to reach
 magnitudes significantly fainter than the detection limit of current and upcoming spectroscopic surveys of the Milky
-Way including Gaia, APOGEE\footnote{APOGEE, the Apache Point Observatory Galaxy Evolution Experiment has observed in
-both SDSS-III and SDSS-IV.}, the SDSS-V Milky Way Mapper, planned programs with 4MOST\footnote{4MOST: 4-meter
+Way including Gaia, APOGEE,\footnote{APOGEE, the Apache Point Observatory Galaxy Evolution Experiment has observed in
+both SDSS-III and SDSS-IV.} the SDSS-V Milky Way Mapper, planned programs with 4MOST\footnote{4MOST: 4-meter
 Multi-object Spectroscopic Telescope.} and the Dark Energy Spectroscopic Instrument (DESI) Milky Way Survey, among
 others. Inferring
 stellar parameters beyond V$\sim$18 will open up studies of the Milk Way's outer halo, the halo of M31, and stellar
@@ -565,8 +576,8 @@ populations in local dwarf galaxies.
 The immediate challenge is to design an optimized, nested set of training samples that connect data from the surveys
 above.  This nested set will span high-S/N to low-S/N and high spectral resolution to low spectral resolution for
 sufficiently large, overlapping stellar samples.  Subsets will have astroseismology from TESS\footnote{TESS is NASA's
-Transiting Exoplanet Survey Satellite.} and PLATO\footnote{PLATO is ESA's PLAnetary Transits and Oscillations
-mission.}.  Using simulated spectra with known input parameters, we will test methods for ``label transfer'' from
+Transiting Exoplanet Survey Satellite.} and PLATO.\footnote{PLATO is ESA's PLAnetary Transits and Oscillations
+mission.}  Using simulated spectra with known input parameters, we will test methods for ``label transfer'' from
 information-rich spectra to information-poor spectra as we work down to fainter magnitudes, landing eventually at
 multi-band photometry alone. Within this nested set, low-resolution FOBOS data will fill in gaps at both high-S/N,
 where we will be training FOBOS data on higher resolution spectroscopy, as well as lower-S/N where we will be training
@@ -833,7 +844,7 @@ release of FOBOS training data \citep[e.g.,][]{newman13}.
 Powered by Starbugs fiber positioners, FOBOS will enable fast, dynamic
 reallocation of fibers.  To efficiently determine the best options given
 a wide range of possible targets and desired observing outcomes, we will
-develop a preliminary design for MAISTRO\footnote{MAISTRO: Modular
+develop a preliminary design for MAISTRO,\footnote{MAISTRO: Modular
 Artificial Intelligence System for Target Reallocation and Observing.}
 an ``artificial intelligence'' (AI) targeting system that will learn
 optimization strategies for assigning targets from a database of
