@@ -324,7 +324,7 @@ therefore critical to the success of {\it all} imaging surveys in this
 respect. It would not only \emph{increase the dark energy
 figure-of-merit in LSST by 40\%} \citep{newman15} but, importantly,
 provide vital confidence in cosmological results.  FOBOS is particularly
-powerful in this application because it has no ``redshift desert.'' thanks to its unique ability to measure spectroscopic redshifts above $z > 1.5$ via
+powerful in this application because it has no ``redshift desert'' thanks to its unique ability to measure spectroscopic redshifts above $z > 1.5$ via
 rest-frame UV features.  This eliminates the need for expensive, space-based\footnote{Ground-based near-IR
 spectroscopy is too contaminated by sky-line emission to provide spec-$z$s at the required level of completeness
 \citep{newman15}.} near-IR spectroscopy.
@@ -403,14 +403,11 @@ physical parameter labels to photometric and spectroscopic data.}
 % - More excited to hear about how the FOBOS spectra will be used for
 %   science directly, instead of support for LSST
 
-Roughly three billion years after the Big Bang ($z$$\sim$2), the
-universe began a key epoch in which proto-galaxies transitioned from
-turbulent, gas-rich systems into the more ordered, star-dominated
-structures that populate the universe today.  This period marks the
-cosmic peak of star formation and galaxy assembly.   To understand it we must study the entire galaxy
-``ecosystem,'' including not only the galaxies themselves but their
-gas-filled environments.  The goal is to build a comprehensive picture
-of the physical processes that fuel proto-galaxy growth, shape their
+Roughly three billion years after the Big Bang ($z$$\sim$2), the universe began a key epoch in which proto-galaxies
+transitioned from turbulent, gas-rich systems into the more ordered, star-dominated structures that populate the
+universe today.  This period marks the peak of cosmic star formation and galaxy assembly.   To understand it, we must
+study the entire galaxy ``ecosystem,'' including not only the galaxies themselves but their gas-filled environments.
+The goal is to build a comprehensive picture of the physical processes that fuel proto-galaxy growth, shape their
 internal structure, and influence their environment.
 
 Although our first challenge emphasized photo-$z$ training, here we will apply machine learning more broadly to infer
@@ -444,10 +441,10 @@ $z$$\sim$2 using using photometry.}} The range of observed spectral
 types is well-constrained by broad-band imaging (Figure \ref{fig:SOM}),
 suggesting a far greater potential for imaging data to reveal physical
 properties with sufficient training than conventional modeling of
-spectral energy distributions (SEDs) would suggest.  We will use machine
-learning to deliver SDSS-like information --- star-formation histories,
+spectral energy distributions (SEDs) would suggest.  The challenge here is to identify the extent to which machine
+learning can deliver SDSS-like information --- e.g., star-formation histories,
 stellar-population properties, dust content, inflow/outflow properties,
-and stellar masses --- for millions of imaged galaxies at $z$$\sim$2.
+and stellar masses --- and determine design parameters for future training sets that will enable such inferences for millions of imaged galaxies at $z$$\sim$2.
 %
 \end{enumerate}
 
@@ -575,7 +572,7 @@ multi-band photometry alone. Within this nested set, low-resolution FOBOS data w
 where we will be training FOBOS data on higher resolution spectroscopy, as well as lower-S/N where we will be training
 photometry on FOBOS spectroscopy.  The success of this multi-layered label transfer depends not only on the size of the
 training sets we can access or observe, but on how representative they are.  Label transfer to WFIRST imaging of the
-M31 halo or Local Group dwarfs in either hemisphere is a particular concern.  We will test it by evaluating label
+M31 halo, or Local Group dwarfs in either hemisphere, is a particular concern.  We will test it by evaluating label
 recovery on simulated stellar spectra with cosmologically-informed formation histories for M31 and dwarf galaxies,
 suitably differentiated from the Milky Way stars that anchor the training network.
 
