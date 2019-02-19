@@ -1,0 +1,71 @@
+%\documentclass[11pt,letterpaper]{article}
+\documentclass[oneside,11pt]{amsart}
+
+%\usepackage{a4wide}
+%\usepackage{epsfig}
+%\usepackage{psfig}
+\usepackage{graphicx}
+\usepackage{natbib,latexsym,url,enumitem,pdfpages}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{caption}
+
+\captionsetup{
+    justification=justified,
+    margin=0pt,
+    font=small}
+
+% Some fancy commenting
+\definecolor{todo}{RGB}{200,0,0}
+\newcommand{\comment}[2][todo]{{\color{#1}[[{\bf #2}]]}}
+
+% Challenge counter
+\newcounter{chalno}
+\newcommand{\chal}[1]{\refstepcounter{chalno}\label{#1}}
+
+% User commands
+\input{journaldefs}
+
+\DeclareRobustCommand{\gtrsim}{%
+\mathrel{\hskip-.5em\begin{array}{c}>\\[-8pt]\sim\end{array}\hskip-.5em}}
+\DeclareRobustCommand{\lesssim}{%
+\mathrel{\hskip-.5em\begin{array}{c}<\\[-8pt]\sim\end{array}\hskip-.5em}}
+
+\pretolerance=10000
+\textwidth=6.4in
+\textheight=8.95in
+\voffset = 0.in
+%\voffset = -0.3in  % For my printer
+\topmargin=0.0in
+\headheight=0.00in
+\hoffset = 0.0in
+%\hoffset = 0.33in  %  For my printer
+\headsep=0.00in
+\oddsidemargin=0in
+\evensidemargin=0in
+\parindent=2em
+\parskip=0.2ex
+ 
+\renewcommand{\baselinestretch}{1.03}
+
+\special{papersize=8.5in,11in}
+
+\newcommand{\markus}{\textcolor{green}}
+
+\setlength{\parskip}{0.6 ex plus 0.4ex minus 0.2ex} \flushbottom
+\pagestyle{plain} 
+
+\begin{document}
+% \thispagestyle{empty}
+
+\pagenumbering{arabic}
+
+\vspace*{-1.5cm}
+
+\section*{Partner Organizations}
+
+\noindent No subawards are requested for any partner organizations in this proposal.
+
+\end{document}
+
+
