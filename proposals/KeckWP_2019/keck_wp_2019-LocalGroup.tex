@@ -1,0 +1,120 @@
+%%%%
+% -- Local Group Science Cases
+% --     FOBOS Keck White Paper 2019
+%%%%
+
+\subsection{Unraveling the Formation History of our Local Group of Galaxies}
+\label{sec:localgroup}
+
+Our Local Group of galaxies---the Milky Way (MW), the Magellanic Clouds,
+Andromeda (M31) and Triangulum (M33) Galaxies, and a multitude of
+satellite galaxies---allows us to study one realization of the galaxy
+formation process in superb detail.  In the next decade, LSST and WFIRST
+will increase the census of stellar streams and halo substructure in
+these galaxies by a hundredfold.  Follow-up \emph{stellar} spectroscopy
+will constrain stream orbits and the total mass they enclose
+\citep{2017ApJ...836..234S} as well as the associated age and chemical
+composition (see below).
+%\citep{2019MNRAS.484.3425M}.
+As theoretical modeling also advances, these new data promise exciting
+insights on the formation history of the Local Group.
+
+Radial velocity studies of stars in the MW halo or the M31 disk require
+observations of up to 10 hours on large telescopes
+\citep[e.g.,][]{2018arXiv180904082C}.  This again motivates
+machine-learning algorithms to extract physical quantities from both
+multi-band imaging and lower quality spectra (low resolution and S/N)
+using relatively small, yet high-S/N, training sets.  For example,
+\citet{2015ApJ...808...16N} have developed {\it The Cannon}, a
+supervised learning approach that uses spectra with known stellar
+parameters to label spectra where those parameters are unknown
+(Fig.~\ref{fig:Cannon}).  Additionally, \citet{2018arXiv180401530T} have
+developed {\it The Payne} which can infer 16 stellar-abundance labels
+from low-resolution spectra using a neural network and theoretical
+stellar spectra.  Finally, \citet{2018arXiv180803278T} have combined
+Kepler-based astroseismology measurements with APOGEE spectra to
+determine stellar age to $\sim$25\% precision using a neural network.
+Our proposed effort builds on new lines of inquiry based on these
+successes.
+
+\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+
+\chal{stellar} 
+%
+\item[] {\textsf {\large  Data-Science Challenge \ref{stellar}: A nested network of stellar parameter training
+samples for resolved Milky Way and Local Group studies.}}  As in our other challenges, the key driver here is the
+ability to extract maximum information from photometry, in this case stellar parameters.  Our goal is to reach
+magnitudes significantly fainter than the detection limit of current and upcoming spectroscopic surveys of the Milky
+Way including Gaia, APOGEE,\footnote{APOGEE, the Apache Point Observatory Galaxy Evolution Experiment has observed in
+both SDSS-III and SDSS-IV.} the SDSS-V Milky Way Mapper, planned programs with 4MOST\footnote{4MOST: 4-meter
+Multi-object Spectroscopic Telescope.} and the Dark Energy Spectroscopic Instrument (DESI) Milky Way Survey, among
+others. Inferring
+stellar parameters beyond V$\sim$18 will open up studies of the Milk Way's outer halo, the halo of M31, and stellar
+populations in local dwarf galaxies.
+
+The immediate challenge is to design an optimized, nested set of training samples that connect data from the surveys
+above.  This nested set will span high-S/N to low-S/N and high spectral resolution to low spectral resolution for
+sufficiently large, overlapping stellar samples.  Subsets will have astroseismology from TESS\footnote{TESS is NASA's
+Transiting Exoplanet Survey Satellite.} and PLATO.\footnote{PLATO is ESA's PLAnetary Transits and Oscillations
+mission.}  Using simulated spectra with known input parameters, we will test methods for ``label transfer'' from
+information-rich spectra to information-poor spectra as we work down to fainter magnitudes, landing eventually at
+multi-band photometry alone. Within this nested set, low-resolution FOBOS data will fill in gaps at both high-S/N,
+where we will be training FOBOS data on higher resolution spectroscopy, as well as lower-S/N where we will be training
+photometry on FOBOS spectroscopy.  The success of this multi-layered label transfer depends not only on the size of the
+training sets we can access or observe, but on how representative they are.  Label transfer to WFIRST imaging of the
+M31 halo, or Local Group dwarfs in either hemisphere, is a particular concern.  We will test it by evaluating label
+recovery on simulated stellar spectra with cosmologically-informed formation histories for M31 and dwarf galaxies,
+suitably differentiated from the Milky Way stars that anchor the training network.
+
+
+
+% \chal{mwhalo} 
+% %
+% \item[] {\textsf {\large  Data-Science Challenge \ref{mwhalo}: The
+% chemical evolution and assembly history of the MW stellar halo.}}  Using current MW halo models, we will simulate FOBOS
+% stellar spectroscopy of main-sequence turn-off
+% and red-giant stars in these substructures within the MW that also
+% leverages existing data from, e.g., APOGEE and H3.  We will build
+% data-driven models based on these data to measure stellar parameters
+% (temperature, surface gravity, metallicity, and alpha-element abundance)
+% for all halo stars with LSST+2MASS+WISE+WFIRST multi-band photometry,
+% allowing us to reconstruct the star-formation history of each disrupted
+% satellite. These will be combined with dynamical data and compared with
+% cosmological simulations to build a generative model for the assembly
+% history of the MW stellar halo.
+
+% \chal{m31} 
+% %
+% \item[] {\textsf {\large Data-Science Challenge \ref{m31}: The
+% differential chemical evolution of M31 and MW.}}  A natural extension of
+% Data-Science Challenge \ref{mwhalo} is to perform the same analysis for the
+% halo of M31.  However, we cannot expect to obtain high-quality spectra
+% of individual main-sequence stars at the distance of M31 with FOBOS.
+% Moreover, training a chemical evolution model using spectra of Milky Way
+% stars may lead to systematic errors:  The Milky Way and Andromeda have
+% distinct evolutionary histories \citep[e.g.][]{2005MNRAS.356.1071R},
+% despite being relatively similar in many other respects.  We will
+% therefore obtain deep observations of giant stars in the M31 halo to
+% drive a machine-learning algorithm that combines a model of the MW halo
+% with results from cosmological hydrodynamical simulations to constrain
+% the differential history of the MW and M31 stellar halos.
+
+% \chal{gaia} 
+% %
+% \item[] {\textsf {\large Data-Science Challenge \ref{gaia}: Stellar
+% parameter determinations for a billion stellar spectra.}} While
+% providing on-sky motions and photometry for 1.7 billion stars in the MW,
+% fewer than 10\%, 0.3\%, and 0.1\% of stars will have a full complement
+% of astrometrics and kinematics, basic stellar parameters, and chemical
+% abundances, respectively.  Moreover, Gaia distance errors increase
+% quadratically with distance.  To realize Gaia's full potential, we will
+% design FOBOS training sets that, when combined with high-resolution
+% datasets from, e.g., APOGEE, WEAVE, will allow us to build data-driven
+% models of the absolute magnitude (yielding distance modulus),
+% temperature, surface-gravity, and stellar abundance for {\it all} stars
+% in the Gaia dataset.  These data will allow us to isolate coeval
+% populations in the Galactic disk that can be combined with very
+% high-resolution simulations of the Milky Way to provide a detailed
+% evolutionary history of our Galactic home.
+
+\end{enumerate}
