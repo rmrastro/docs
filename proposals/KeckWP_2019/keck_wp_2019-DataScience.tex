@@ -3,7 +3,7 @@
 % --     FOBOS Keck White Paper 2019
 %%%%
 
-\subsubsection{FOBOS as an ideal spectroscopic training instrument}
+\section{FOBOS as an ideal spectroscopic training instrument}
 \label{sec:datascience}
 
 \begin{figure}[h!]
@@ -72,55 +72,9 @@ recovery on simulated stellar spectra with cosmologically-informed formation his
 suitably differentiated from the Milky Way stars that anchor the training network.
 
 
-\subsection{Addressing Data Science Challenges and Designing FOBOS Training Sets}
-\label{sec:survey}
-
-
-Our team includes leading experts on data science applications to
-astronomy and, specifically, LSST.  We will also use our established
-connections to LSST's Informatics and Statistics Science Collaboration
-(ISSC) to advertise, recruit, and coordinate efforts to tackle the Data
-Science Challenges described in Section \ref{sec:goals}.  Our proposal
-request includes two community workshops to motivate progress and discuss
-results. At the end of the proposal period, we will publish the results
-and developed software packages.
-
-Our data-science challenges require work on simulated
-imaging$+$spectroscopic data sets where input physical properties (e.g.,
-redshift) can be compared to output recovered values.  Simulated imaging
-data (e.g., from LSST and WFIRST) are in-hand, while mock spectroscopy
-will be provided by a FOBOS instrument simulator, an initial version of
-which has already been developed.  Further advances to be supported by
-this proposal include improved error modeling and simulating systematic
-effects from detector artifacts, image quality aberrations informed by
-the emerging detailed optical design, and variable observing conditions.
-
-The resulting success in addressing each data-science challenge will
-define a level of readiness and set requirements on desired FOBOS
-training sets, including number of sources, pointings, magnitude limits,
-signal-to-noise thresholds, and observing conditions.  Preliminary
-observing design and a description of required operational modes to
-efficiently observe these training sets will begin with this proposal.
-Operational modes will set requirements on target aggregation and
-prioritization systems, field acquisition speed, field rotation range,
-zenith avoidance zone, reconfiguration time, calibrations, read-out
-time, quick-look reduction software and processing rates.  We will
-develop integrated program concepts that efficiently combine required
-observations.  Detailed survey and execution plans will be completed in
-the next phase of this project (MSRI-2).  Roughly 20\% of Keck observing
-time is open to the public, and as in previous federally-funded
-projects, we fully expect that Senior Personnel at Keck institutions
-will be successful in collaborative efforts to secure significant
-amounts of additional telescope observing time to enable rapid, public
-release of FOBOS training data \citep[e.g.,][]{newman13}.
-
-\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
-%
-\chal{phot}
-%
-\item[] {\textsf {\large Data-Science Challenge \ref{phot}: Apply deep-
+Apply deep-
 learning algorithms to infer physical properties of galaxies at
-$z$$\sim$2 using using photometry.}} The range of observed spectral
+$z$$\sim$2 using using photometry. The range of observed spectral
 types is well-constrained by broad-band imaging (Figure \ref{fig:SOM}),
 suggesting a far greater potential for imaging data to reveal physical
 properties with sufficient training than conventional modeling of
@@ -128,8 +82,7 @@ spectral energy distributions (SEDs) would suggest.  The challenge here is to id
 learning can deliver SDSS-like information --- e.g., star-formation histories,
 stellar-population properties, dust content, inflow/outflow properties,
 and stellar masses --- and determine design parameters for future training sets that will enable such inferences for millions of imaged galaxies at $z$$\sim$2.
-%
-\end{enumerate}
+
 
 \begin{figure}[h!]
 %
