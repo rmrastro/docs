@@ -15,57 +15,12 @@ these galaxies by a hundredfold.  Follow-up \emph{stellar} spectroscopy
 will constrain stream orbits and the total mass they enclose
 \citep{2017ApJ...836..234S} as well as the associated age and chemical
 composition (see below).
-%\citep{2019MNRAS.484.3425M}.
-As theoretical modeling also advances, these new data promise exciting
-insights on the formation history of the Local Group.
 
-Radial velocity studies of stars in the MW halo or the M31 disk require
-observations of up to 10 hours on large telescopes
-\citep[e.g.,][]{2018arXiv180904082C}.  This again motivates
-machine-learning algorithms to extract physical quantities from both
-multi-band imaging and lower quality spectra (low resolution and S/N)
-using relatively small, yet high-S/N, training sets.  For example,
-\citet{2015ApJ...808...16N} have developed {\it The Cannon}, a
-supervised learning approach that uses spectra with known stellar
-parameters to label spectra where those parameters are unknown
-(Fig.~\ref{fig:Cannon}).  Additionally, \citet{2018arXiv180401530T} have
-developed {\it The Payne} which can infer 16 stellar-abundance labels
-from low-resolution spectra using a neural network and theoretical
-stellar spectra.  Finally, \citet{2018arXiv180803278T} have combined
-Kepler-based astroseismology measurements with APOGEE spectra to
-determine stellar age to $\sim$25\% precision using a neural network.
-Our proposed effort builds on new lines of inquiry based on these
-successes.
+Dwarf galaxies
 
-\begin{enumerate}[rightmargin=0.2cm,leftmargin=0.2cm]
+M31
 
-\chal{stellar} 
-%
-\item[] {\textsf {\large  Data-Science Challenge \ref{stellar}: A nested network of stellar parameter training
-samples for resolved Milky Way and Local Group studies.}}  As in our other challenges, the key driver here is the
-ability to extract maximum information from photometry, in this case stellar parameters.  Our goal is to reach
-magnitudes significantly fainter than the detection limit of current and upcoming spectroscopic surveys of the Milky
-Way including Gaia, APOGEE,\footnote{APOGEE, the Apache Point Observatory Galaxy Evolution Experiment has observed in
-both SDSS-III and SDSS-IV.} the SDSS-V Milky Way Mapper, planned programs with 4MOST\footnote{4MOST: 4-meter
-Multi-object Spectroscopic Telescope.} and the Dark Energy Spectroscopic Instrument (DESI) Milky Way Survey, among
-others. Inferring
-stellar parameters beyond V$\sim$18 will open up studies of the Milk Way's outer halo, the halo of M31, and stellar
-populations in local dwarf galaxies.
-
-The immediate challenge is to design an optimized, nested set of training samples that connect data from the surveys
-above.  This nested set will span high-S/N to low-S/N and high spectral resolution to low spectral resolution for
-sufficiently large, overlapping stellar samples.  Subsets will have astroseismology from TESS\footnote{TESS is NASA's
-Transiting Exoplanet Survey Satellite.} and PLATO.\footnote{PLATO is ESA's PLAnetary Transits and Oscillations
-mission.}  Using simulated spectra with known input parameters, we will test methods for ``label transfer'' from
-information-rich spectra to information-poor spectra as we work down to fainter magnitudes, landing eventually at
-multi-band photometry alone. Within this nested set, low-resolution FOBOS data will fill in gaps at both high-S/N,
-where we will be training FOBOS data on higher resolution spectroscopy, as well as lower-S/N where we will be training
-photometry on FOBOS spectroscopy.  The success of this multi-layered label transfer depends not only on the size of the
-training sets we can access or observe, but on how representative they are.  Label transfer to WFIRST imaging of the
-M31 halo, or Local Group dwarfs in either hemisphere, is a particular concern.  We will test it by evaluating label
-recovery on simulated stellar spectra with cosmologically-informed formation histories for M31 and dwarf galaxies,
-suitably differentiated from the Milky Way stars that anchor the training network.
-
+Milkway halo
 
 
 % \chal{mwhalo} 
@@ -117,4 +72,3 @@ suitably differentiated from the Milky Way stars that anchor the training networ
 % high-resolution simulations of the Milky Way to provide a detailed
 % evolutionary history of our Galactic home.
 
-\end{enumerate}
