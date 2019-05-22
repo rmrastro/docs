@@ -6,12 +6,17 @@
 \section{Proposed Work}
 \label{sec:design}
 
-FOBOS will complete its current conceptual design phase in fall 2019. Funding from this proposal will support the next
-phase of Preliminary Design.  A schedule of milestones and additional information is provided in the Project
-Execution Plan (PEP).  Major components of the Preliminary Design effort are described below.
+\subsection{Instrument Design Work}
+
+FOBOS will complete its current conceptual design phase in fall 2019
+\comment{check this}. Funding from this proposal will support the
+next phase of Preliminary Design. A schedule of milestones and
+additional information is provided in the Project Execution Plan
+(PEP). Major components of the Preliminary Design effort are
+described below.
 
 \noindent \textbf{Atmospheric Dispersion Compensator (ADC):} The
-opto-mechanical design, tolerancing, lens cell design, motion systems,
+optomechanical design, tolerancing, lens cell design, motion systems,
 and software-control design of the ADC will be completed.  
 
 \noindent \textbf{Focal Plane System:} Mechanical design, including flexure analysis and
@@ -51,24 +56,25 @@ and systems for thermal management will be designed.
 \subsection{MAISTRO: Target Allocation with Artificial Intelligence}
 \label{sec:targeting}
 
-Powered by Starbugs fiber positioners, FOBOS will enable fast, dynamic
-reallocation of fibers.  To efficiently determine the best options given
-a wide range of possible targets and desired observing outcomes, we will
-develop a preliminary design for MAISTRO,\footnote{MAISTRO: Modular
-Artificial Intelligence System for Target Reallocation and Observing.}
-an ``artificial intelligence'' (AI) targeting system that will learn
-optimization strategies for assigning targets from a database of
-overlapping observing programs with pre-defined priorities.  The AI
-package will aggregate data quality using a quick-look reduction
-package, science-driven performance metrics, {\it and real-time
-assessments of the observing conditions} to make dynamic targeting
-recommendations.  For example, if conditions are slightly less than
-optimal, MAISTRO would reconfigure Starbugs to brighter objects in a
-field or implement a different program prioritization.  MAISTRO will
-incorporate updated target lists and priorities from the active observer
-and could easily be over-ridden at any time.   Fractions of the full
-FOBOS multiplex might also be reserved ``manual targeting'' as required
-by the program PI.  
+\comment{keep this?} Powered by Starbugs fiber positioners, FOBOS
+will enable fast, dynamic reallocation of fibers. To efficiently
+determine the best options given a wide range of possible targets and
+desired observing outcomes, we will develop a preliminary design for
+MAISTRO,\footnote{MAISTRO: Modular Artificial Intelligence System for
+Target Reallocation and Observing.} an ``artificial intelligence''
+(AI) targeting system that will learn optimization strategies for
+assigning targets from a database of overlapping observing programs
+with pre-defined priorities. The AI package will aggregate data
+quality using a quick-look reduction package, science-driven
+performance metrics, {\it and real-time assessments of the observing
+conditions} to make dynamic targeting recommendations. For example,
+if conditions are slightly less than optimal, MAISTRO would
+reconfigure Starbugs to brighter objects in a field or implement a
+different program prioritization. MAISTRO will incorporate updated
+target lists and priorities from the active observer and could easily
+be over-ridden at any time. Fractions of the full FOBOS multiplex
+might also be reserved ``manual targeting'' as required by the
+program PI.
 
 %   - maintains a database with observational progress on individual
 %     targets in the survey and
@@ -85,21 +91,28 @@ by the program PI.
 % enough design effort, this lends itself to a machine-learning
 % application.
 
-
 \subsection{Automated Data Products}
 \label{sec:DAP}
 
-While the FOBOS data simulator is required for our data-science challenges, it also forms the basis of a delivered data
-reduction pipeline (DRP) for this instrument.  This software will provide both the quick reduction assessments needed
-for dynamic targeting, as well as full reductions for scientific analysis.  In the proposal period, we will also
-develop a preliminary design for a data analysis pipeline (DAP).  Unique among Keck instruments, the FOBOS DAP will
-take advantage of the fixed spectral format and common target classes to provide high-level data products, including
-Doppler shift, emission-line strengths, and template continuum fits (cf., Westfall et al.; SDSS-IV MaNGA DAP).  The DAP
-will also produce results from relevant machine-learning applications (e.g., redshifts at low-S/N).
+\comment{edit this} While the FOBOS data simulator is required for
+our data-science challenges, it also forms the basis of a delivered
+data reduction pipeline (DRP) for this instrument. This software will
+provide both the quick reduction assessments needed for dynamic
+targeting, as well as full reductions for scientific analysis. In the
+proposal period, we will also develop a preliminary design for a data
+analysis pipeline (DAP). Unique among Keck instruments, the FOBOS DAP
+will take advantage of the fixed spectral format and common target
+classes to provide high-level data products, including Doppler shift,
+emission-line strengths, and template continuum fits (cf., Westfall
+et al.; SDSS-IV MaNGA DAP). The DAP will also produce results from
+relevant machine-learning applications (e.g., redshifts at low-S/N).
 
-Raw data, reduced spectra, and high-level DAP science products will be
-publicly delivered via user-friendly platforms built on the Keck Observatory Archive.  After associated
-proprietary periods, data will be served for {\it all} FOBOS observations, creating a rich legacy data set for the astronomical community.  Both program PIs
-and the larger community will be encouraged to develop the DRP and DAP
-to meet the needs of specific science applications.  These software
-packages will be open source and publicly served (e.g., using GitHub).
+Raw data, reduced spectra, and high-level DAP science products will
+be publicly delivered via user-friendly platforms built on the Keck
+Observatory Archive. After associated proprietary periods, data will
+be served for {\it all} FOBOS observations, creating a rich legacy
+data set for the astronomical community. Both program PIs and the
+larger community will be encouraged to develop the DRP and DAP to
+meet the needs of specific science applications. These software
+packages will be open source and publicly served (e.g., using
+GitHub).
