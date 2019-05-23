@@ -30,62 +30,96 @@ deployed on the TAIPAN instrument.}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Mounted at the Nasmyth focus of Keck II Telescope at WMKO, FOBOS
-(Figure \ref{fig:layout}) will be one of the most powerful
-spectroscopic facilities deployed in the next decade. FOBOS includes
-a compensating lateral atmospheric dispersion corrector (CLADC, not
-pictured) to ensure that target light from all wavelengths falls on
-allocated fibers while also correcting image aberrations at the edges
-of the 20-arcmin diameter Keck field. Each of the CLADC lenses is 946
-mm in diameter, the first two are closely spaced with lateral
-relative motions enabled by three barrel-mounted actuators. The final
-CLADC lens surface translates to track focal plane tilt, and it
-serves as the vertical mounting plate for roaming Starbugs fiber
-positioners \comment{ref}. Starbugs patrol a large on-sky area
-($\sim$1 arcmin), enabling flexible and dynamic targeting
-configurations with adjacent fibers as close as 10 arcsec.
+Mounted at the Nasmyth focus of Keck II Telescope at WMKO, FOBOS (Figure
+\ref{fig:layout}) will be one of the most powerful spectroscopic
+facilities deployed in the next decade. FOBOS includes a compensating
+lateral atmospheric dispersion corrector (CLADC, not pictured) to ensure
+that target light from all wavelengths falls on allocated fibers while
+also correcting image aberrations at the edges of the 17~arcmin diameter
+Keck field. Each of the CLADC lenses is $\sim$700~mm in diameter, the
+first two are closely spaced with lateral relative motions of element
+one supplied by a single axis of motion acting along a curve equal to
+the radius of curvature of the first lens surface (1028~mm). Total
+offset of this lens is rather small at $\sim1$00~mm.  The final CLADC
+lens translates by $\sim$50~mm and tilts slightly to track focal plane
+shift. This last element acts to correct the telecentricy error into the
+fiber system and acts as the drive surface for the StarBug positioning
+system \comment{ref}. Starbugs patrol a large on-sky area
+($\sim$1~arcmin), enabling flexible and dynamic targeting configurations
+with adjacent fibers as close as 10~arcsec.  
 
-% How much do we go into risks?
+% Reni- Can you check my numbers on the CLADC motion? - NKM
+% How much do we go into risks?  How about this - NKM
 
-A total of 1800 fibers with 150-$\mu$m core diameter are deployed at
-the curved focal plane. Microlens fore-optics convert the f/15 Keck
-input beam to a faster f/3 focal ratio, which both demagnifies the
-entrance aperture and allows for better coupling to the fiber
-numerical aperture by minimizing losses from focal ratio degradation.
-The focal-plane plate rotates and translates to follow image
-positions as the telescope tracks across the sky. The fiber run is
-kept at less than 10m to maintain high throughput at UV wavelengths
-(a 10m Polymicro Silica fiber transmits $\sim$70\% and $\sim$85\% of
-light at 310nm and 350nm, respectively). Special care is given to
-stress-relief cabling to minimize instabilities (e.g., variable focal
-ratio degradation) over the fiber run.
+Starbugs, first proposed in 2004 \citep{2004SPIE.5495..600M}, and
+later perfected by AAO for use on TAIPAN \citep{2016SPIE.9912E..1WS}
+are a truly remarkable fiber positioning system. They move by {\it
+walking} on the focal plane using a pair of piezo tube actuators. A
+light vacuums adheres the Starbugs to the surface of the field plate
+and provides the frictional normal forces needed to allow for the
+walking action of the piezo tubes. Positional feed back is provided
+by way of a camera imaging back illuminated fibers on the focal
+plane. This system allows for a highly configurable focal plane both
+in terms of target densities and configuration of the fibers within
+an individual actuator. The Starbugs may be used with a single fiber
+or with a bundle of fiber making up an IFU. The TIPAN instrument,
+currently on sky conducting a large galaxy survey, is the proof test
+for the reediness of this technology. It is worth noting that the
+well Starbugs are the baseline and preferred positioning technology
+for FOBOS no aspect of the current front end design precludes using a
+zonal system similar to those used for MOONS, PFS, or DESI. The last
+element of the CLADC can be eliminated and replaced with a zonal
+actuator bed which conforms to the focal plane shape. Telecentricy
+can be maintained by alignment of the actuator axis to the incoming
+beam as is currently being designed for the SDSS-V robotic
+focal-plane system.
 
-Sets of 600 fibers feed each of three identical spectrographs (Fig
+A total of 1800 fibers with 150-$\mu$m core diameter are deployed at the
+curved focal plane. Microlens fore-optics convert the f/15 Keck input
+beam to a faster f/3 focal ratio, which both demagnifies the entrance
+aperture and allows for better coupling to the fiber numerical aperture
+which minimizes losses from focal ratio degradation.  The focal-plane
+plate rotates and translates to follow image positions as the telescope
+tracks across the sky. The fiber run is kept as short as possible, less
+than 10~m, to maintain high throughput at UV wavelengths (a 10~m
+Polymicro Silica fiber transmits $\sim$70\% and $\sim$85\% of light at
+310~nm and 350~nm, respectively). Special care is given to stress-relief
+cabling to minimize instabilities (e.g., variable focal ratio
+degradation) over the fiber run. In order to maintain the highest
+possible transition efficiency there are no connectors used within the
+fiber run.  When FOBOS is not in use the focal plane unit detaches from
+the front end module that houses the ADC and associated robotics.  The
+focal plane unit is then stored with the spectrographs on the Nasmyth
+platform allowing the front end module to be transferred to any of the
+instrument park positions.  All other Keck-II instruments can still be
+used without modification.
+
+Sets of 600 fibers each, feed three identical spectrographs (Fig
 \ref{fig:layout}). Each spectrograph uses a series of dichroics to
-divide the 259mm-diameter collimated beam into four wavelength
-channels, providing an instantaneous broad-band coverage from 0.31--1
-$\mu$m. Fused-silica etched (FSE) gratings provide mid-channel
-spectral resolutions of $R \sim 3500$ at high diffraction efficiency
-in each channel. The dispersed light is focused by an f/1.1
-catadioptric camera\footnote{Based on the camera design for the
-Multi-Object Optical and Near-infrared Spectrograph (MOONS) on the
-Very Large Telescope (VLT).} and recorded by an on-axis 4k$\times$4k
-CCD mounted at the center of the first camera lens element.
-Spectrographs are mounted in a permanent temperature-controlled
-housing on the Nasmyth deck, whereas the focal-plane system can be
-unmounted and stowed alongside existing Keck instruments. The
-end-to-end instrument throughput peaks at 60\% and is greater than
-30\% at {\it all} wavelengths.
+divide the 259~mm collimated beam into four wavelength channels,
+providing an instantaneous broad-band coverage from 0.31--1 $\mu$m.
+Fused-silica etched (FSE) gratings provide mid-channel spectral
+resolutions of $R\sim3500$ at high diffraction efficiency in each
+channel. The dispersed light is focused by an f/1.1 catadioptric
+camera\footnote{Based on the camera design for the Multi-Object Optical
+and Near-infrared Spectrograph (MOONS) on the Very Large Telescope
+(VLT).} and recorded by an on-axis 4k$\times$4k CCD mounted at the
+center of the first camera lens element.  Spectrographs are mounted in a
+permanent temperature-controlled housing on the Nasmyth deck, whereas
+the focal-plane system can be unmounted and stowed alongside existing
+Keck instruments. The end-to-end instrument throughput peaks at 60\% and
+is greater than 30\% at {\it all} wavelengths.
 
-FOBOS includes observatory level systems for precise instrument
-calibration using dome-interior screen illumination, a metrology
-system for accurate fiber positioning, and guide cameras for field
-acquisition and guiding. \comment{make the following consistent with
-what we say in the summary}. Initial deployment of the focal-plane
-will focus on a single-fiber format, with a secondary deployment of
-multi-format fiber bundles to follow. Additional instrument upgrades
-include integration of fibers that feed additional spectographs ---
-these spectrographs could provide increased multiplex capacity,
-higher spectral resolution, and/or observe different spectral regions
---- and additional front-end sensing equipment that fully support and
-benefit from image corrections with Ground-Layer Adaptive Optics.
+FOBOS will include observatory level systems for precise instrument
+calibration using dome-interior screen illumination, a metrology system
+for accurate fiber positioning, and guide cameras for field acquisition
+and guiding. \comment{make the following consistent with what we say in
+the summary}. Initial deployment of the focal-plane will focus on a
+single-fiber format, with a secondary deployment of multi-format fiber
+bundles to follow. Additional instrument upgrades include integration of
+fibers that feed additional spectrographs --- these spectrographs could
+provide increased multiplex capacity, higher spectral resolution, and/or
+observe different spectral regions --- and additional front-end sensing
+equipment that fully support and benefit from image corrections with
+Ground-Layer Adaptive Optics.
+
