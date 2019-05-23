@@ -6,7 +6,19 @@
 \subsection{FOBOS as an ideal spectroscopic training instrument}
 \label{sec:datascience}
 
-\comment{this should point to science drivers in the previous three sections or be integrated there}
+FOBOS will provide observations that directly lead to invaluable
+science. However, FOBOS will also allow teams of Keck scientists to
+quickly build spectoscopic samples purposely designed to be used in
+training machine-learning algorithms. These data will allow us to
+statistically infer physical properties from upcoming large-scale
+broad-band imaging surveys (e.g., LSST, WFIRST, Euclid) that are only
+directly accessible via spectroscopy and complement more shallow
+spectroscopic surveys made with FOBOS or surveys using smaller
+aperture facilities (e.g., APOGEE, DESI). Keying off one of NSF's ten
+Big Ideas, we highlight a few ways that FOBOS can be used to "harness
+the data revolution."
+
+\comment{these sections need to be shortened}
 
 \begin{figure}[h!]
 %
@@ -30,6 +42,7 @@ the most precise measurements to date \citep{2019ApJ...871..120E}.}
 %
 \end{figure}
 
+\subsubsection{The chemical evolution of Milky Way stellar populations}
 Radial velocity studies of stars in the MW halo or the M31 disk require
 observations of up to 10 hours on large telescopes
 \citep[e.g.,][]{2018arXiv180904082C}.  This again motivates
@@ -48,78 +61,97 @@ determine stellar age to $\sim$25\% precision using a neural network.
 Our proposed effort builds on new lines of inquiry based on these
 successes.
 
+A nested network of stellar parameter training samples for resolved
+Milky Way and Local Group studies via extracting maximum information
+from photometry, in this case stellar parameters. Our goal is to
+reach magnitudes significantly fainter than the detection limit of
+current and upcoming spectroscopic surveys of the Milky Way including
+Gaia, APOGEE,\footnote{APOGEE, the Apache Point Observatory Galaxy
+Evolution Experiment has observed in both SDSS-III and SDSS-IV.} the
+SDSS-V Milky Way Mapper, planned programs with 4MOST\footnote{4MOST:
+4-meter Multi-object Spectroscopic Telescope.} and the Dark Energy
+Spectroscopic Instrument (DESI) Milky Way Survey, among others.
+Inferring stellar parameters beyond V$\sim$18 will open up studies of
+the Milk Way's outer halo, the halo of M31, and stellar populations
+in local dwarf galaxies.
 
- A nested network of stellar parameter training
-samples for resolved Milky Way and Local Group studies via extracting maximum information from photometry, in this case stellar parameters.  Our goal is to reach
-magnitudes significantly fainter than the detection limit of current and upcoming spectroscopic surveys of the Milky
-Way including Gaia, APOGEE,\footnote{APOGEE, the Apache Point Observatory Galaxy Evolution Experiment has observed in
-both SDSS-III and SDSS-IV.} the SDSS-V Milky Way Mapper, planned programs with 4MOST\footnote{4MOST: 4-meter
-Multi-object Spectroscopic Telescope.} and the Dark Energy Spectroscopic Instrument (DESI) Milky Way Survey, among
-others. Inferring
-stellar parameters beyond V$\sim$18 will open up studies of the Milk Way's outer halo, the halo of M31, and stellar
-populations in local dwarf galaxies.
+The immediate challenge is to design an optimized, nested set of
+training samples that connect data from the surveys above. This
+nested set will span high-S/N to low-S/N and high spectral resolution
+to low spectral resolution for sufficiently large, overlapping
+stellar samples. Subsets will have astroseismology from
+TESS\footnote{TESS is NASA's Transiting Exoplanet Survey Satellite.}
+and PLATO.\footnote{PLATO is ESA's PLAnetary Transits and
+Oscillations mission.} Using simulated spectra with known input
+parameters, we will test methods for ``label transfer'' from
+information-rich spectra to information-poor spectra as we work down
+to fainter magnitudes, landing eventually at multi-band photometry
+alone. Within this nested set, low-resolution FOBOS data will fill in
+gaps at both high-S/N, where we will be training FOBOS data on higher
+resolution spectroscopy, as well as lower-S/N where we will be
+training photometry on FOBOS spectroscopy. The success of this
+multi-layered label transfer depends not only on the size of the
+training sets we can access or observe, but on how representative
+they are. Label transfer to WFIRST imaging of the M31 halo, or Local
+Group dwarfs in either hemisphere, is a particular concern. We will
+test it by evaluating label recovery on simulated stellar spectra
+with cosmologically informed formation histories for M31 and dwarf
+galaxies, suitably differentiated from the Milky Way stars that
+anchor the training network.
 
-The immediate challenge is to design an optimized, nested set of training samples that connect data from the surveys
-above.  This nested set will span high-S/N to low-S/N and high spectral resolution to low spectral resolution for
-sufficiently large, overlapping stellar samples.  Subsets will have astroseismology from TESS\footnote{TESS is NASA's
-Transiting Exoplanet Survey Satellite.} and PLATO.\footnote{PLATO is ESA's PLAnetary Transits and Oscillations
-mission.}  Using simulated spectra with known input parameters, we will test methods for ``label transfer'' from
-information-rich spectra to information-poor spectra as we work down to fainter magnitudes, landing eventually at
-multi-band photometry alone. Within this nested set, low-resolution FOBOS data will fill in gaps at both high-S/N,
-where we will be training FOBOS data on higher resolution spectroscopy, as well as lower-S/N where we will be training
-photometry on FOBOS spectroscopy.  The success of this multi-layered label transfer depends not only on the size of the
-training sets we can access or observe, but on how representative they are.  Label transfer to WFIRST imaging of the
-M31 halo, or Local Group dwarfs in either hemisphere, is a particular concern.  We will test it by evaluating label
-recovery on simulated stellar spectra with cosmologically-informed formation histories for M31 and dwarf galaxies,
-suitably differentiated from the Milky Way stars that anchor the training network.
+\comment{Raja, Ting: Help with shortening/refocusing the above}
 
+\subsubsection{The $z$$\sim$2 Galaxy Population}
 
-Apply deep-
-learning algorithms to infer physical properties of galaxies at
-$z$$\sim$2 using using photometry. The range of observed spectral
-types is well-constrained by broad-band imaging (Figure \ref{fig:SOM}),
-suggesting a far greater potential for imaging data to reveal physical
-properties with sufficient training than conventional modeling of
-spectral energy distributions (SEDs) would suggest.  The challenge here is to identify the extent to which machine
-learning can deliver SDSS-like information --- e.g., star-formation histories,
-stellar-population properties, dust content, inflow/outflow properties,
-and stellar masses --- and determine design parameters for future training sets that will enable such inferences for millions of imaged galaxies at $z$$\sim$2.
+For decades, we have used the spectral information encoded in
+broad-band photometry to infer properties of galaxies beyond their
+color and brightness. The most common application is to estimate the
+galaxy redshift from its broad-band colors, i.e. photometric
+redshifts (photo-$z$s). However, as demonstrated in Figure
+\ref{fig:SOM}, the range of observed spectral types is
+well-constrained by broad-band imaging, suggesting a far greater
+potential for imaging data to reveal physical properties with
+sufficient training of deep-learning algorithms.  These properties go beyond what conventional modeling of spectral energy
+distributions (SEDs) would suggest. The challenge here is to identify
+the extent to which machine learning can deliver SDSS-like
+information --- e.g., star-formation histories, stellar-population
+properties, dust content, inflow/outflow properties, and stellar
+masses --- and determine design parameters for future training sets
+that will enable such inferences for millions of imaged galaxies at
+$z$$\sim$2.
 
-
-\begin{figure}[h!]
-%
-\vskip -0.1in
-%
-\includegraphics[width=\textwidth]{figs/Hemmati18_Fig8_VVDS_spec.png}
-%
-\caption{\small {\it Left}: A Self-Organizing Map
-\citep[SOM;][]{1990Natur.346...24K} from \citet{hemmati18} encoding the
-relation between colors in an LSST+WFIRST-like color space and redshift,
-$z$.  Position in the SOM is associated with a position in the
-multi-dimensional broad-band color space of galaxies.  Galaxies observed
-in this space are assigned $z$ values based on the median photo-$z$ of
-galaxies from the CANDELS survey \citep[color
-bar;][]{2011ApJS..197...35G}.  Such SOMs can be used to optimally define
-spectroscopic training samples for use with imaging surveys.  {\it
-Right}: Galaxy spectra from VVDS \citep{2005A&A...439..845L}; black
-crosses near the top and bottom of the SOM are plotted in the top and
-bottom panels, respectively.  Note the similarity of the high-resolution
-spectra associated within the SOM, suggesting that a systematic
-spectroscopic exploration of the LSST color space would have
-far-reaching benefits to the science return of the mission beyond the
-photo-$z$ application.}
-%
-\label{fig:SOM}
-%
-\end{figure}
-
-Self-Organizing Maps (SOM, Fig.~\ref {fig:SOM}) provide a
+Self-Organizing Maps (SOM, Figure \ref{fig:SOM}) provide a
 state-of-the-art representation of a high-dimensional input space in
 projected 2D grid cells, allowing us to benchmark sampling of the
-photometric color space under various training set designs.  We will use
-Bayesian Optimization techniques to evaluate the success of simulated training sets against the fidelity of full  
-cosmological analyses that employ them.  This will enable extremely rapid exploration of the
-optimal design space.
+photometric color space under various training set designs. We will
+also use Bayesian Optimization techniques to evaluate the success of
+simulated training sets against the fidelity of full cosmological
+analyses that employ them. This will enable extremely rapid
+exploration of the optimal design space.
+
+\comment{Master, Mandelbaum, Rau, Schafer}
+
+\begin{figure}[h!]
+\vskip -0.1in
+\includegraphics[width=\textwidth]{figs/Hemmati18_Fig8_VVDS_spec.png}
+\caption{\small {\it Left}: A Self-Organizing Map
+\citep[SOM;][]{1990Natur.346...24K} from \citet{hemmati18} encoding
+the relation between colors in an LSST+WFIRST-like color space and
+redshift, $z$. Position in the SOM is associated with a position in
+the multi-dimensional broad-band color space of galaxies. Galaxies
+observed in this space are assigned $z$ values based on the median
+photo-$z$ of galaxies from the CANDELS survey \citep[color
+bar;][]{2011ApJS..197...35G}. Such SOMs can be used to optimally
+define spectroscopic training samples for use with imaging surveys.
+{\it Right}: Galaxy spectra from VVDS \citep{2005A&A...439..845L};
+black crosses near the top and bottom of the SOM are plotted in the
+top and bottom panels, respectively. Note the similarity of the
+high-resolution spectra associated within the SOM, suggesting that a
+systematic spectroscopic exploration of the LSST color space would
+have far-reaching benefits to the science return of the mission
+beyond the photo-$z$ application.}
+\label{fig:SOM}
+\end{figure}
 
 % The complete photo-$z$ training survey described in \citet{newman15}
 % would require 15 independent pointings, each spanning 0.1 deg$^2$ with
