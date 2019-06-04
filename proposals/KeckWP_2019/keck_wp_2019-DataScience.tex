@@ -46,22 +46,21 @@ more on large telescopes \citep[e.g.,][]{2018arXiv180904082C}.
 However, machine-learning algorithms can be used to extract physical
 quantities from both multi-band imaging and lower quality spectra
 (low resolution and S/N) using relatively small, high-S/N, training
-sets (see Figure \ref{fig:Cannon} for some examples). The goal of
-such applications is to reach magnitudes significantly fainter than
-the detection limit of current and upcoming spectroscopic surveys by
-designing an optimized, nested set of FOBOS training samples. This
-nested set will vary in S/N and spectral resolution for sufficiently
-large, overlapping stellar samples, and a subset will have
-astroseismology from TESS and PLATO. Within this nested set,
-low-resolution FOBOS data will fill in gaps at both high-S/N, where
-we can train FOBOS data on higher resolution spectroscopy, as well as
-lower-S/N, where we will be training photometry on FOBOS
-spectroscopy. The success of this multi-layered inference depends not
-only on the size of the training sets we can access or observe, but
-on how representative they are. For example, inference of M31 halo
-stellar properties from WFIRST photometry based on a MW-trained set
-of FOBOS spectroscopy will require accuracy assessments using
-simulated data.
+sets (e.g., Fig.~\ref{fig:Cannon}). The goal of such applications is
+to reach magnitudes significantly fainter than the detection limit of
+current and upcoming spectroscopic surveys by designing an optimized,
+nested set of FOBOS training samples. This nested set will vary in
+S/N and spectral resolution for sufficiently large, overlapping
+stellar samples, and include astroseismology from TESS and PLATO for
+some subset. Within this nested set, low-resolution FOBOS data will
+fill gaps at both high-S/N, where we can train FOBOS data on
+higher resolution spectroscopy, and low-S/N, where we will
+be training photometry on FOBOS spectroscopy. The success of this
+multi-layered inference depends not only on the size of the training
+sets we can access or observe, but on how representative they are.
+For example, inference of M31 halo stellar properties from WFIRST
+photometry based on a MW-trained set of FOBOS spectroscopy will
+require accuracy assessments using simulated data.
 
 % For example, \citet{2015ApJ...808...16N} have developed {\it The
 % Cannon}, a supervised learning approach that uses spectra with known
