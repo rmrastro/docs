@@ -105,6 +105,74 @@ the Keck Observatory Archive for serving raw data, reduced spectra, and DAP scie
 \noindent \textbf{Operations.} Powered by Starbugs fiber positioners, FOBOS
 will enable fast, dynamic reallocation of fibers.  We will develop an initial target allocation simulator to determine efficiencies for various science programs and explore options for program combination and optimization under different observing scenarios.  This work requires planning interfaces with the fiber positioning control software and the Keck user.
 
+% \begin{deluxetable}{lcccccccc}
+% \tablecaption{MGE Parameters}
+% \tabletypesize{\footnotesize}
+% \tablewidth{0pt}
+% \tablecolumns{9}
+% \tablehead{
+% \multicolumn{1}{c}{} & \multicolumn{2}{c}{$\Sigma_{\rm Exp}$} & \multicolumn{2}{c}{$\Sigma_{\rm deV}$} & \multicolumn{2}{c}{$\Sigma_{\rm Exp}^{\rm SDSS}$} & \multicolumn{2}{c}{$\Sigma_{\rm deV}^{\rm SDSS}$} \\
+% \cline{2-3} \cline{4-5}  \cline{6-7}  \cline{8-9} \\
+% \colhead{N$_{\rm terms}$} & \colhead{$\sigma_j$} & \colhead{$A_{j}$} & \colhead{$\sigma_j$} & \colhead{$A_{j}$} & \colhead{$\sigma_j$} & \colhead{$A_{j}$} & \colhead{$\sigma_j$} & \colhead{$A_{j}$} \\
+% %\cline{1-12} \\
+% %\multicolumn{12}{c}{EGS Field}
+% }
+
+% \startdata
+% 1  &  5.1  &  0.45  &  0.1  &  328.94  &  3.5  &  0.31  &  1.5  &  30.33  \\
+% \enddata
+% \label{table:mge}
+% \tablecomments{The components are normalized so that the sum yields $\Sigma(R_e) \equiv \Sigma_e = 1.0$ in arbitrary units of surface flux density.  The units
+%   of $\sigma_j$ are $0.01 R_e$.}
+% \end{deluxetable}
+
+
+\begin{table}[h!]
+\centering
+\footnotesize
+\caption{FOBOS Instrument Specifications and Status}
+\label{tab:specs}
+\vspace*{-10pt}
+\begin{tabular}{l r l}
+Component                     & Current Value & Notes \\
+\hline
+ADC \\
+\hline
+\hspace{0.2cm} ADC Type & CLADC & Enhance image quality, telecentricity; Starbugs surface \\
+\hspace{0.2cm} FoV & 17$^\prime$ & 20$^\prime$ goal \\
+\hspace{0.2cm} Diameter & 0.8 m & \\
+\hline
+Fore-optics \\
+\hline
+\hspace{0.2cm} Type & TBD & Both focal-plane and pupil imaging designs in-hand \\
+\hspace{0.2cm} Sampling & 0.9$^{\prime\prime}$ & Single-fiber; optimize against FWHM distribution \\
+\hspace{0.2cm} Diameter & 1 mm & \\
+\hspace{0.2cm} Coupling loss & 10\% & Assumed; Phase-A testing in lab and on-sky\\
+\hspace{0.2cm} Micro-lens array & TBD & Phase-A conceptual design for IFU modes \\
+\hspace{0.2cm} Lab test bench & Yes & DESI lab; UCO fiber tester needs calibration \\
+\hline
+Positioners \\
+\hline
+\hline
+Fiber System \\
+\hline
+\hline
+Spectrographs \\
+\hline
+\hline
+Detectors \\
+\hline
+\hline
+Structure \\
+\hline
+\hline
+
+
+
+\end{tabular}
+\end{table}
+
+
 % To efficiently
 % determine the best options given a wide range of possible targets and
 % desired observing outcomes, we will develop a conceptual design for
