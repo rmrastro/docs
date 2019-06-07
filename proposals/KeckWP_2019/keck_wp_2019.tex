@@ -9,6 +9,7 @@
 \usepackage{color}
 \usepackage{wrapfig}
 \usepackage{caption}
+\usepackage{setspace}
 
 \captionsetup{
     justification=justified,
@@ -77,13 +78,14 @@
 \pagenumbering{arabic}
 
 \vspace*{-1.5cm}
-\hspace*{-0.15in}
-\begin{minipage}{6in}
+\hspace*{0.05in}
+\begin{minipage}{5.5in}
     \centering
     \raisebox{-0.5\height}{\includegraphics[width=0.42\textwidth]{figs/FOBOS_LOGO_v1.png}}
-    \hspace*{.03in}
+    \hspace*{.1in}
     \raisebox{-0.5\height}{\includegraphics[width=0.53\textwidth]{figs/FOBOS_inst_v2.pdf}}
 \end{minipage}
+\smallskip
 
 % \centerline{\includegraphics[width=0.5\textwidth, height=5cm, keepaspectratio]{figs/FOBOS_LOGO_v1.png}
     % \includegraphics[width=0.5\textwidth, height=5cm, keepaspectratio]{figs/FOBOS_inst_v2.pdf}}
@@ -91,7 +93,7 @@
 \smallskip
 \centerline{\large\it Keck's next-generation spectroscopic facility}
 \smallskip
-\begin{center}
+\noindent\begin{center}\mbox{\parbox{0.99\linewidth}{\setstretch{0.9}
 {\footnotesize K.~Bundy (PI, UCO/UCSC), K.~Westfall (Project Scientist,
 UCO), N.~MacDonald (Lead Engineer, UCO), R.~Kupke (Instrument
 Scientist, UCO), M.~Savage (Project Manager, UCO), C.~Poppett (Fiber
@@ -104,7 +106,8 @@ R.~M.~Rich (UCLA), A.~Romanowsky (SJSU/UCSC), C.~Rockosi (UCSC),
 D.~Schlegel (LBNL), A.~Shapley (UCLA), B.~Siana (UCR), D.~Weisz
 (UCB), M.~White (UCB/LBNL), B.~Williams (UW), G.~Wilson (UCR),
 M.~Wilson (LBNL), \& R.~Yan (UK)}
-\end{center}
+}}\end{center}
+\medskip
 
 %% Executive Summary and Overview
 \input{keck_wp_2019-Overview}
