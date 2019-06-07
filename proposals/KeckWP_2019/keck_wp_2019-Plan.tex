@@ -129,7 +129,7 @@ will enable fast, dynamic reallocation of fibers.  We will develop an initial ta
 
 \begin{table}[h!]
 \centering
-\footnotesize
+\scriptsize
 \caption{FOBOS Instrument Specifications and Status}
 \label{tab:specs}
 \vspace*{-10pt}
@@ -145,20 +145,42 @@ ADC \\
 Fore-optics \\
 \hline
 \hspace{0.2cm} Type & TBD & Both focal-plane and pupil imaging designs in-hand \\
-\hspace{0.2cm} Sampling & 0.9$^{\prime\prime}$ & Single-fiber; optimize against FWHM distribution \\
+\hspace{0.2cm} Sampling & 0.9$^{\prime\prime}$ & Single-fiber; Phase-A optimize against FWHM distribution \\
+\hspace{0.2cm} f/\# & f/3.2 & Demagnification factor of 4.7 \\
 \hspace{0.2cm} Diameter & 1 mm & \\
 \hspace{0.2cm} Coupling loss & 10\% & Assumed; Phase-A testing in lab and on-sky\\
 \hspace{0.2cm} Micro-lens array & TBD & Phase-A conceptual design for IFU modes \\
-\hspace{0.2cm} Lab test bench & Yes & DESI lab; UCO fiber tester needs calibration \\
+\hspace{0.2cm} Lab test bench & Yes & DESI lab; UCO fiber test bench built (calibration required) \\
 \hline
 Positioners \\
 \hline
+\hspace{0.2cm} Type & Starbugs & Starbugs are baselined; but trade study in Phase-A \\
+\hspace{0.2cm} Config time & 2 min &  \\
+\hspace{0.2cm} Accuracy & 0.02$^{\prime\prime}$ &  \\
+\hspace{0.2cm} Collision radius & 10$^{\prime\prime}$ &  \\
+\hspace{0.2cm} Metrology & TBD & Conceptual design of metrology system in Phase-A \\
 \hline
 Fiber System \\
 \hline
+\hspace{0.2cm} Wrap & IGUS & IGUS energy chain or similar \citep[e.g.,][]{poppett16}  \\
+\hspace{0.2cm} Length & $<10$ m & Preserve UV throughput  \\
+\hspace{0.2cm} Cabling & Planetary & Heritage from \citet{soukup10}  \\
+\hspace{0.2cm} Fiber & 155 $\mu m$ core & Polymicro FBP \\
 \hline
 Spectrographs \\
 \hline
+\hspace{0.2cm} Number & 3 & Driven by desired on-sky fiber density \\
+\hspace{0.2cm} Fibers & 3 $\times$ 600 & ``Slit density'' to be set by image quailty, simulated extractions \\
+\hspace{0.2cm} Channels & 4 & Three channels may be possible (Phase-A study) \\
+\hspace{0.2cm} Resolution & $R \sim 3500$ & Measured at each channel's central wavelength \\
+\hspace{0.2cm} Gratings & FSE & Grating efficiency $>$80\% at all $\lambda$, used in Littrow \\
+\hspace{0.2cm} Pseudoslit length & 150 mm & Slit heritage from DESI and MaNGA \\
+\hspace{0.2cm} Collimator & f/3 & Accepts f/3.2 fiber beam with FRD margin \\
+\hspace{0.2cm} $\Delta\lambda$ & 0.31-1.0 $\mu m$ &  \\
+\hspace{0.2cm} Cameras &  &  \\
+\hspace{0.3cm} Type & Catadioptric & Schmidt; Study refractive solutions in Phase-A \\
+\hspace{0.3cm} Obscuration loss & 15-20\% &  \\
+\hspace{0.3cm} Diameter & $\approx$1 m &  \\
 \hline
 Detectors \\
 \hline
