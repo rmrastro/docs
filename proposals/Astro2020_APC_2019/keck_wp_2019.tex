@@ -1,0 +1,188 @@
+%\documentclass[11pt,letterpaper]{article}
+\documentclass[oneside,11pt]{amsart}
+
+%\usepackage{a4wide}
+%\usepackage{epsfig}
+%\usepackage{psfig}
+\usepackage{graphicx}
+\usepackage{natbib,latexsym,url,enumitem,pdfpages,multicol}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{setspace}
+
+\captionsetup{
+    justification=justified,
+    margin=0pt,
+    font=small}
+
+% Some fancy commenting
+\definecolor{todo}{RGB}{200,0,0}
+\newcommand{\comment}[2][todo]{{\color{#1}[[{\bf #2}]]}}
+
+% Challenge counter
+\newcounter{chalno}
+\newcommand{\chal}[1]{\refstepcounter{chalno}\label{#1}}
+
+% User commands
+\input{journaldefs}
+
+\DeclareRobustCommand{\gtrsim}{%
+\mathrel{\hskip-.5em\begin{array}{c}>\\[-8pt]\sim\end{array}\hskip-.5em}}
+\DeclareRobustCommand{\lesssim}{%
+\mathrel{\hskip-.5em\begin{array}{c}<\\[-8pt]\sim\end{array}\hskip-.5em}}
+
+\pretolerance=10000
+\textwidth=6.4in
+\textheight=8.95in
+\voffset = 0.in
+%\voffset = -0.3in  % For my printer
+\topmargin=0.0in
+\headheight=0.00in
+\hoffset = 0.0in
+%\hoffset = 0.33in  %  For my printer
+\headsep=0.00in
+\oddsidemargin=0in
+\evensidemargin=0in
+\parindent=2em
+\parskip=0.2ex
+ 
+\renewcommand{\baselinestretch}{1.03}
+
+\special{papersize=8.5in,11in}
+
+\newcommand{\markus}{\textcolor{green}}
+\newcommand{\request}{\$386k}
+
+\setlength{\parskip}{0.6 ex plus 0.4ex minus 0.2ex} \flushbottom
+\pagestyle{plain} 
+
+% From the call:
+%
+% For Phase A system design proposals, the project description should
+% be no more than 10 pages devoted to science cases, conceptual
+% designs, and a preliminary budget and schedule for the full build of
+% the instrument. Up to two additional pages are allowed for the Phase
+% A system design budget, milestones, deliverables, and references for
+% the proposed work. For both proposal types, the requested budget
+% should be in summary form identifying how the money will be spent on
+% major study costs. To gain an initial understanding of technical
+% issues such as existing instrument configurations, observatory
+% interfaces, and guidelines for the standard WMKO instrument
+% development process, proposers are strongly encouraged to contact the
+% WMKO Instrument Program Manager, Marc Kassis.
+
+\begin{document}
+% \thispagestyle{empty}
+
+\pagenumbering{arabic}
+
+\vspace*{-1.5cm}
+\hspace*{0.05in}
+\begin{minipage}{5.5in}
+    \centering
+    \raisebox{-0.5\height}{\includegraphics[width=0.42\textwidth]{figs/FOBOS_LOGO_v1.png}}
+    \hspace*{.1in}
+    \raisebox{-0.5\height}{\includegraphics[width=0.53\textwidth]{figs/FOBOS_inst_v2.pdf}}
+\end{minipage}
+\smallskip
+
+% \centerline{\includegraphics[width=0.5\textwidth, height=5cm, keepaspectratio]{figs/FOBOS_LOGO_v1.png}
+    % \includegraphics[width=0.5\textwidth, height=5cm, keepaspectratio]{figs/FOBOS_inst_v2.pdf}}
+\centerline{\textsc {\Large FOBOS: The Fiber-Optic Broadband Optical Spectrograph}}
+\smallskip
+\centerline{\large\it Keck's next-generation spectroscopic facility}
+\smallskip
+\noindent\begin{center}\mbox{\parbox{0.99\linewidth}{\setstretch{0.9}
+{\footnotesize K.~Bundy (PI, UCO/UCSC), K.~Westfall (Project
+Scientist, UCO), N.~MacDonald (Lead Engineer, UCO), R.~Kupke
+(Instrument Scientist, UCO), M.~Savage (Project Manager, UCO),
+C.~Poppett (Fiber System Lead, UCB/SSL), A.~Alabi (UCSC), G.~Becker
+(UCR), J.~Burchett (UCSC), P.~Capak (Caltech), A.~Coil (UCSD),
+M.~Cooper (UCI), D.~Cowley (UCO), W.~Deich (UCO), D.~Dillon (UCO),
+J.~Edelstein (LBNL), P.~Guhathakurta (UCSC), J.~Hennawi (UCSB),
+K.-G.~Lee (IPMU), D.~Masters (JPL), T.~Miller (UCB/SSL), J.~Newman
+(Pitt), J.~X.~Prochaska (UCSC), J.~Rhodes (JPL), R.~M.~Rich (UCLA),
+C.~Rockosi (UCSC), A.~Romanowsky (SJSU/UCSC), D.~Schlegel (LBNL),
+A.~Shapley (UCLA), B.~Siana (UCR), Y.-S.~Ting (IAS), D.~Weisz
+(UCB), M.~White (UCB/LBNL), B.~Williams (UW), G.~Wilson (UCR),
+M.~Wilson (LBNL), \& R.~Yan (UK)}
+}}\end{center}
+\medskip
+
+%% Executive Summary and Overview
+\input{keck_wp_2019-Overview}
+
+
+%-----------------------------------------------------------------------
+% Section 1
+\section{Science Drivers}
+\label{sec:goals}
+
+\subsection{FOBOS's unique capabilities.} FOBOS occupies a unique
+space among existing and forthcoming facilities on 8--10m telescopes.
+Compared to Subaru Prime Focus Spectrograph (PFS), FOBOS does not
+extend into the near-IR, but does reach far bluer, maintaining
+sensitivity at 310 nm while PFS stops at 380 nm. This UV sensitivity
+emphasizes a key historical strength of Keck spectroscopy. FOBOS is
+also optimized for ``deep-drilling'' on faint targets. In the LSST
+era where target densities to $i_{\rm AB} = 25$ will be routine and
+reach 42 arcmin$^{-2}$, FOBOS yields an average, on-sky sampling
+density of 6 arcmin$^{-2}$, similar to the DEEP2 Survey target
+density of 9 arcmin$^{-2}$. Close packing of Starbugs would allow a
+maximum target density of $\sim$30 arcmin$^{-2}$ over small portions
+of its full FOV. The more sparse and wide-field PFS instrument with
+2400 fixed-format zonal positioners achieves 0.6 arcmin$^{-2}$.
+Defining survey speed as sensitivity $\times$ multiplex, FOBOS is
+1.7$\times$ faster than PFS at overlapping wavelengths. With Starbugs
+positioners, FOBOS will provide single-fiber and multiplexed IFU
+modes plus targeting flexibility and fast reconfiguration times that
+will enable multiple, simultaneous science programs. The science
+cases below take advantage of these unique aspects of FOBOS.
+
+% Although alreaady achieved with existing Keck instruments
+% \citep[e.g., Halo7D with DEIMOS;][]{2018arXiv180904082C}, the
+% integration of multiple science programs with FOBOS will lose far
+% less to management overhead and be able to respond dynamically to
+% observatory conditions {\it on the night(s) data are taken}. 
+
+% For example, although Subaru-PFS has a higher multiplex, the
+% combination of its larger FOV and positioning system yield an
+% instantaneous targeting density that is an order of magnitude below
+% that of Keck-FOBOS.
+
+\input{keck_wp_2019-LocalGroup}
+\input{keck_wp_2019-Galaxies}
+\input{keck_wp_2019-Cosmology}
+\input{keck_wp_2019-DataScience}
+
+% Section 2
+\input{keck_wp_2019-Description}
+
+% Section 3
+\input{keck_wp_2019-Progress}
+
+% Section 4
+\input{keck_wp_2019-Plan}
+
+
+\begin{multicols}{2}
+\scriptsize
+\bibliographystyle{apj}
+\bibliography{references}
+\end{multicols}
+%-----------------------------------------------------------------------
+
+% Everything after this limited to two pages.
+\newpage
+
+
+% Section 5
+\input{keck_wp_2019-Budget}
+
+% \setcounter{page}{1}
+
+
+\end{document}
+
+

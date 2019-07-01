@@ -1,0 +1,113 @@
+% \documentclass[12pt]{article}
+\documentclass[oneside,12pt]{amsart}
+
+\usepackage{times}
+\usepackage{geometry}
+\geometry{letterpaper, portrait, margin=1in}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem,amssymb}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{natbib,latexsym,url,enumitem,pdfpages,multicol}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{setspace}
+\newlist{thematic}{itemize}{8}
+\setlist[thematic]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+% User commands
+\input{journaldefs}
+
+\begin{document}
+\raggedright
+\huge
+Astro2020 APC White Paper \linebreak
+
+FOBOS: A Next-Generation Spectroscopic Facility \linebreak
+\normalsize
+
+\noindent \textbf{Thematic Areas:} Project Paper
+  
+\textbf{Principal Author:}
+
+Name:	Kevin Bundy
+ \linebreak						
+Institution:  University of California, Observatories
+ \linebreak
+Email:  kbundy@ucolick.org
+ \linebreak
+Phone:  831-459-3539
+ \linebreak
+ 
+\textbf{Co-authors:} {\footnotesize K.~Bundy (PI, UCO/UCSC), K.~Westfall (Project
+Scientist, UCO), N.~MacDonald (Lead Engineer, UCO), R.~Kupke
+(Instrument Scientist, UCO), M.~Savage (Project Manager, UCO),
+C.~Poppett (Fiber System Lead, UCB/SSL), A.~Alabi (UCSC), G.~Becker
+(UCR), J.~Burchett (UCSC), P.~Capak (Caltech), A.~Coil (UCSD),
+M.~Cooper (UCI), D.~Cowley (UCO), W.~Deich (UCO), D.~Dillon (UCO),
+J.~Edelstein (LBNL), P.~Guhathakurta (UCSC), J.~Hennawi (UCSB),
+K.-G.~Lee (IPMU), D.~Masters (JPL), T.~Miller (UCB/SSL), J.~Newman
+(Pitt), J.~X.~Prochaska (UCSC), J.~Rhodes (JPL), R.~M.~Rich (UCLA),
+C.~Rockosi (UCSC), A.~Romanowsky (SJSU/UCSC), D.~Schlegel (LBNL),
+A.~Shapley (UCLA), B.~Siana (UCR), Y.-S.~Ting (IAS), D.~Weisz
+(UCB), M.~White (UCB/LBNL), B.~Williams (UW), G.~Wilson (UCR),
+M.~Wilson (LBNL), \& R.~Yan (UK)}
+  \linebreak
+
+\textbf{Abstract:} 
+
+High-multiplex and deep spectroscopic followup of upcoming panoramic deep-imaging surveys like LSST is a widely
+recognized and increasingly urgent necessity.  No current or planned facility with the sensitivity, multiplex, and
+rapid response time needed to exploit future datasets exists at a U.S.~observatory.  FOBOS is a near-term fiber-based
+facility that addresses these spectroscopic needs by optimizing depth over area and exploiting the aperture advantage
+of the existing 10 m Keck II Telescope.  The result is a uniquely blue-sensitive, high-multiplex instrument with
+order-of-magnitude greater sampling density and a factor 1.7 greater survey speed than Subaru's Prime Focus
+Spectrograph (PFS). In the LSST era, FOBOS will excel at building the deep, spectroscopic reference data sets needed to
+interpret vast imaging data. At the same time, its flexible focal plane, including deployable integral-field units
+(IFUs), enables an expansive range of scientific investigations.  Its key programmatic areas include, 1) dramatic
+enhancements in cosmological constraints thanks to precise photometric redshifts and determined redshift distributions,
+2) a complete description of the gaseous and galaxy environments leading up to the peak era of galaxy formation ($z
+\approx 2$--5), 3) nested stellar parameter training sets that enable fossibl studies of the Milky Way and M31 halo
+sub-structure as well as local group dwarf galaxies, 4) rapid transient follow-up with a fixed-format IFU that, in
+combination with Keck I instrumentation, provides instant access to medium resolution spectroscopy with full coverage
+from the UV to the K-band.
+
+
+
+\pagebreak
+
+
+%% Executive Summary and Overview
+\input{Astro2020-Overview}
+
+\input{Astro2020-LocalGroup}
+\input{Astro2020-Galaxies}
+\input{Astro2020-Cosmology}
+\input{Astro2020-DataScience}
+
+
+\input{Astro2020-Description}
+
+\input{Astro2020-Programmatic}
+
+
+% \pagebreak
+\clearpage
+\begin{multicols}{2}
+\scriptsize
+\bibliographystyle{apj}
+\bibliography{references}
+\end{multicols}
+
+% \textbf{References}
+
+
+
+\end{document}

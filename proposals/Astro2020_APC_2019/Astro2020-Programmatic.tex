@@ -1,0 +1,98 @@
+%%%%
+% -- Proposed Work and Budget
+% --     FOBOS Keck White Paper 2019
+%%%%
+
+% ========================================================================
+% - leverage experience from Shane prime focus ADC; Harland design; Matt
+%   Radovan may know; Dave Cowley probably best person to talk to
+
+\subsection{Technology Drivers}
+\label{sec:design}
+
+FOBOS will provide key deseriables in the near-term thanks to deployment at the existing Keck II telescope.  While it carries a comparatively modest cost compared to future proposed facilities (e.g., MSE, SpecTel), it helps lay the groundwork for the realization of those facilities.
+
+
+
+\noindent \textbf{Spectrograph Cost:} Here we make the case that FOBOS is a platform for figuring out how to build future dedicated spectroscopic telescopes like SpecTel cheaper.  With flexible focal plane deployment, FOBOS can serve as a platform for cost-cutting technology development.  Fixed-format instruments like PFS and DESI do not support such development.
+
+\noindent \textbf{Starbugs fiber positioners:} Starbugs are a
+positioning technology developed and deployed by the Australian
+Astronomical Optics (AAO), which has partnered with our team to
+generate a conceptual design for use of Starbugs by FOBOS. Starbugs
+are currently being tested on-sky with the TAIPAN instrument at UK
+Schmidt Telescope and published results on their performance are
+expected in summer 2019. An AAO contract included in this request
+(\$60k) will yield the performance details, quantitative risk
+assessment, and project planning required for our proposal for full
+design funding via NSF's MSIP program. During a recent visit to UCO,
+Jon Lawrence, AAO's Head of Technology, agreed to support the rapid
+MSIP proposal schedule.
+
+
+\noindent \textbf{Data Systems:} We will develop the requirements and
+initial concept for the FOBOS data simulator following instrument
+forward-modeling techniques developed by DESI. The simulator will
+enable tests of potential FOBOS science cases (e.g., exposure time
+estimates, redshifting success). For the MSIP proposal, we will
+construct a detailed plan for evolving the data simulator into
+data-reduction and data-analysis pipelines. The FOBOS data-analysis
+pipeline (DAP) will take advantage of the fixed spectral format and
+common target classes to provide high-level data products, including
+Doppler shifts, emission-line strengths, and template continuum fits
+(cf., Westfall et al.; SDSS-IV MaNGA DAP). Planning will include
+development of user-friendly platforms built on the Keck Observatory
+Archive for serving raw data, reduced spectra, and DAP science
+products.
+
+
+\subsection{Current Status}
+
+FOBOS has been awarded Phase-A funding by WMKO Observatory and received the full endorsement of the Keck Science Steering Committee....
+
+
+\subsection{Cost Estimates}
+
+% \noindent \textbf{Operations:} Powered by Starbugs fiber positioners,
+% FOBOS will enable fast ($<$2 minute), dynamic reallocation of fibers. We will
+% develop an initial target allocation simulator to determine
+% efficiencies for various science programs and explore options for
+% program combination and optimization under different observing
+% scenarios. This work requires planning interfaces with the fiber
+% positioning control software and the Keck user.
+
+
+% To efficiently
+% determine the best options given a wide range of possible targets and
+% desired observing outcomes, we will develop a conceptual design for
+% MAISTRO,\footnote{MAISTRO: Modular Artificial Intelligence System for
+% Target Reallocation and Observing.} an ``artificial intelligence''
+% (AI) targeting system that will learn optimization strategies for
+% assigning targets from a database of overlapping observing programs
+% with pre-defined priorities. The AI package will aggregate data
+% quality using a quick-look reduction package, science-driven
+% performance metrics, {\it and real-time assessments of the observing
+% conditions} to make dynamic targeting recommendations. For example,
+% if conditions are slightly less than optimal, MAISTRO would
+% reconfigure Starbugs to brighter objects in a field or implement a
+% different program prioritization. MAISTRO will incorporate updated
+% target lists and priorities from the active observer and could easily
+% be over-ridden at any time. Fractions of the full FOBOS multiplex
+% might also be reserved ``manual targeting'' as required by the
+% program PI.
+
+%   - maintains a database with observational progress on individual
+%     targets in the survey and
+%   - dynamically reallocates fibers based on real-time assessments of
+%     the aggregate S/N of each target to meet the specific need of each
+%     science case.
+
+% This requires significant design and testing of a combined software
+% package and hardware interface.  Specific considerations involve (1)
+% fast and robust reduction procedures (cf. MaNGA DOS) that can assess
+% the aggregate data and (2) a responsive database with a schema
+% optimized for real-time decision making to select targets for
+% (re)acquisition while accounting for collision limitations.  Provided
+% enough design effort, this lends itself to a machine-learning
+% application.
+
