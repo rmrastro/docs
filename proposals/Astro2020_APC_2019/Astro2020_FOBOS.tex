@@ -21,9 +21,19 @@
 \newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
 \hspace{-2.5pt}}
 \newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+%\usepackage[pagestyles]{titlesec}
+%\titlespacing{\section}{0pt}{*0}{*0}
+%\titlespacing{\subsection}{0pt}{0}{0}
+%\titlespacing{\subsubsection}{0pt}{0}{0}
+
+% Some fancy commenting
+\definecolor{todo}{RGB}{200,0,0}
+\newcommand{\comment}[2][todo]{{\color{#1}[[{\bf #2}]]}}
 
 % User commands
 \input{journaldefs}
+
+\setlength{\parskip}{3pt}
 
 \begin{document}
 \raggedright
@@ -63,23 +73,32 @@ M.~Wilson (LBNL), \& R.~Yan (UK)}
 
 \textbf{Abstract:} 
 
-High-multiplex and deep spectroscopic followup of upcoming panoramic deep-imaging surveys like LSST is a widely
-recognized and increasingly urgent necessity.  No current or planned facility with the sensitivity, multiplex, and
-rapid response time needed to exploit future datasets exists at a U.S.~observatory.  FOBOS is a near-term fiber-based
-facility that addresses these spectroscopic needs by optimizing depth over area and exploiting the aperture advantage
-of the existing 10 m Keck II Telescope.  The result is a uniquely blue-sensitive, high-multiplex instrument with
-order-of-magnitude greater sampling density and a factor 1.7 greater survey speed than Subaru's Prime Focus
-Spectrograph (PFS). In the LSST era, FOBOS will excel at building the deep, spectroscopic reference data sets needed to
-interpret vast imaging data. At the same time, its flexible focal plane, including deployable integral-field units
-(IFUs), enables an expansive range of scientific investigations.  Its key programmatic areas include, 1) dramatic
-enhancements in cosmological constraints thanks to precise photometric redshifts and determined redshift distributions,
-2) a complete description of the gaseous and galaxy environments leading up to the peak era of galaxy formation ($z
-\approx 2$--5), 3) nested stellar parameter training sets that enable fossibl studies of the Milky Way and M31 halo
-sub-structure as well as local group dwarf galaxies, 4) rapid transient follow-up with a fixed-format IFU that, in
-combination with Keck I instrumentation, provides instant access to medium resolution spectroscopy with full coverage
-from the UV to the K-band.
-
-
+High-multiplex and deep spectroscopic follow-up of upcoming panoramic
+deep-imaging surveys like LSST is a widely recognized and
+increasingly urgent necessity. No current or planned facility at a
+U.S.~observatory meets the sensitivity, multiplex, and rapid-response
+time needed to exploit these future datasets. FOBOS, the Fiber-Optic
+Broadband Optical Spectrograph, is a near-term fiber-based facility
+that addresses these spectroscopic needs by optimizing depth over
+area and exploiting the aperture advantage of the existing 10m Keck
+II Telescope. The result is a uniquely blue-sensitive, high-multiplex
+instrument with order-of-magnitude greater sampling density and a
+factor 1.7 greater survey speed than Subaru's Prime Focus
+Spectrograph (PFS). In the LSST era, FOBOS will excel at building the
+deep, spectroscopic reference data sets needed to interpret vast
+imaging data. At the same time, its flexible focal plane, including
+deployable integral-field units (IFUs), enables an expansive range of
+scientific investigations. Its key programmatic areas include, (1)
+dramatic enhancements in cosmological constraints thanks to precise
+photometric redshifts and determined redshift distributions, (2) a
+complete description of the gaseous and galaxy environments leading
+up to the peak era of galaxy formation ($z \approx 2$--5), (3) nested
+stellar-parameter training sets that enable studies of the Milky Way
+and M31 halo sub-structure, as well as local group dwarf galaxies,
+and (4) rapid transient follow-up with a fixed-format IFU that, in
+combination with Keck I instrumentation, provides instant access to
+medium-resolution spectroscopy with full coverage from the UV to the
+K-band.
 
 \pagebreak
 
