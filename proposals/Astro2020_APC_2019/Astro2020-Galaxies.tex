@@ -3,9 +3,85 @@
 % --     FOBOS Keck White Paper 2019
 %%%%
 
+\subsection{A Comprehensive Picture of Galaxy Formation}
+
+With both single-fiber and multiplexed IFU observations, FOBOS will produce rich and comprehensive data sets at faint source magnitudes.  Its blue sensitivity affords UV absorption studies down to $z \sim 1.5$, enabling detailed mapping of the baryonic environment at the peak formation epoch.  Samples at $z=1$--$2$ will not only characterize how this environment and its impact on galaxies evolves but will also provide large training sets that can be used to extract spectroscopic-like information from the billion-plus galaxy samples observed in all-sky surveys.  These data will be used in concert with large samples of spatially-resolved FOBOS observations (in IFU mode) to set the context for highly-detailed studies of targeted samples with James Webb Space Telescope and the U.S.~Extremely Large Telescopes.  Finally, FOBOS can tie evolutionary behavior seen at early times to the present day by faint sub-structure and dynamical tracers in nearby galaxies.
+
+\subsubsection{The $z$$\sim$2 galaxy ecosystem}
+\label{sec:z2galaxies}
+
+With surveys like MOSDEF \citep{kriek15} and KBSS
+\citep{steidel14}, MOSFIRE has provided powerful new
+insights into early galaxies at the $z$$\sim$2 peak-formation epoch.
+However, a complete picture of the galaxy ``ecosystem'' at this key
+epoch must also consider the gas-filled environments. Using
+Ly$\alpha$ absorption in background galaxies, a tomographic map of
+the intergalactic medium (IGM) in regions surveyed by MOSDEF and KBSS
+is a key first step. The promise of this approach, demonstrated at
+Keck by \citet{lee14}, motivates FOBOS's UV sensitivity, target
+flexibility, and multiplex for tomographic mapping of large-scale
+structure, including protoclusters \citep{lee16}, voids
+\citep{krolewski18}, and filaments \citep{horowitz19}.
+\citet{2018arXiv181005156S} take IGM tomography in a new direction,
+demonstrating with simulated observations that quasar ``light echos''
+--- spatial signatures of the expanding ionization front of a newly
+activated quasar --- can be detected and used to infer opening angles
+and deconstruct the quasar's accretion history (see Fig
+\ref{fig:LightEcho}). The required FOBOS spectra can simultaneously
+constrain the CIV mass density (via $\lambda\lambda$1548,1550 \AA)
+and patterns of CIV enrichment on both IGM and circumgalactic scales,
+revealing the imprint of galaxy fueling and feedback processes
+\citep[e.g.,][]{tumlinson17}.
+
+% TODO: May be too small...
+\begin{wrapfigure}{l}{0.6\textwidth}
+%
+\includegraphics[width=0.6\textwidth]{figs/qso_LightEcho_v1.pdf}
+%
+\caption{{\it Top}: Quasar ``Light Echos'' revealed in a simulated
+tomographic IGM map in the immediate environs of a quasar (gold star)
+with several sightlines indicated
+\citep[from][]{2018arXiv181005156S}. {\it Bottom}: The ionizing flux
+within the echo's extent enhances transmission of Ly$\alpha$ photons
+impinging on absorbers along the line-of-sight.}
+\label{fig:LightEcho}
+\end{wrapfigure}
+
+\subsubsection{Role of environment at $z=1$--$2$ }
+
+At later times, the IGM is increasingly confined to galaxies and their dark matter halos but these halos increasingly
+merge to form larger structures.  FOBOS will be particularly important for mapping out environmental effects at
+$z=1$--$2$ on galaxy evolution at the group scale ($\mathcal{M_\ast/M_\odot} \lesssim 10^{13}$).  With sufficient
+exposure time, tens of thousands of satellites down to sub-L$^*$ luminosities can be mapped and characterized. Thanks
+to deep, wide-field imaging surveys, like LSST, a 1M-object environmental survey at $z=1$--$2$ may then be possible
+using improved photo-$z$s, strong priors on spectral types, and new machine-learning techniques to deliver {\it
+spectroscopic} redshifts (with $\lesssim$300 km/s accuracy) at the lowest signal-to-noise possible (exposure times
+reduced by factors of 4--5).
+
+\subsubsection{Internal structure of galaxies at intermediate redshift}
+
+MaNGA \citep{bundy15} and other large IFU surveys are defining the
+$z=0$ benchmark for how internal structure is organized across the
+galaxy population. To understand and test ideas for how this internal
+structure emerged, we require spatially-resolved observations at $z =
+1$--2, just after the peak formation epoch. Indeed, Keck has
+pioneered such observations \citep[e.g.,][]{erb04, miller11,law09}.
+Samples have so far been limited to a few hundred sources; however,
+FOBOS will obtain resolved spectroscopy for thousands of galaxies
+using its multiplex IFU-mode. Bright optical emission-line tracers
+for this unprecedented sample of galaxies will reveal their gas-phase
+and kinematic structure. Stacking restframe $\lambda \approx 4500$
+spectra will enable radial stellar population analyses to constrain
+how stellar components formed and assembled. Although initially
+limited to coarse spatial scales, ground-layer adaptive optics (GLAO)
+in combination with FOBOS would be transformative for this science. A
+corrected FWHM of 0.2-0.3 arcsec would enable fine-sampling IFUs to
+probe smaller galaxies and study sub-structure on 1--2 kpc scales.
+
+
 \subsubsection{The dark and luminous content of nearby galaxies}
 
-Using globular cluster and planetary nebulae as tracers, FOBOS will
+Environmental effects and evolutionary processes evident at higher redshift have consequences that can be tested in present-day galaxies.  Using globular cluster and planetary nebulae as tracers, FOBOS will
 dramatically advance dynamical studies of nearby galaxies with
 $\mathcal{M_\ast/M_\odot} \lesssim 10^{11}$, capturing the majority
 of the $\sim$1000 GCs located within $\sim$50 kpc of typical hosts
@@ -38,39 +114,6 @@ and Virgo.
 % galaxies, enabling us to associate internal structures/properties of
 % the galaxies with their host cluster.
 
-\subsubsection{Internal structure of galaxies at intermediate redshift}
-
-MaNGA \citep{bundy15} and other large IFU surveys are defining the
-$z=0$ benchmark for how internal structure is organized across the
-galaxy population. To understand and test ideas for how this internal
-structure emerged, we require spatially-resolved observations at $z =
-1$--2, just after the peak formation epoch. Indeed, Keck has
-pioneered such observations \citep[e.g.,][]{erb04, miller11,law09}.
-Samples have so far been limited to a few hundred sources; however,
-FOBOS will obtain resolved spectroscopy for thousands of galaxies
-using its multiplex IFU-mode. Bright optical emission-line tracers
-for this unprecedented sample of galaxies will reveal their gas-phase
-and kinematic structure. Stacking restframe $\lambda \approx 4500$
-spectra will enable radial stellar population analyses to constrain
-how stellar components formed and assembled. Although initially
-limited to coarse spatial scales, ground-layer adaptive optics (GLAO)
-in combination with FOBOS would be transformative for this science. A
-corrected FWHM of 0.2-0.3 arcsec would enable fine-sampling IFUs to
-probe smaller galaxies and study sub-structure on 1--2 kpc scales.
-
-\subsubsection{Role of environment at $z=1$--$2$ }
-
-Its increased multiplex and high sampling density will allow FOBOS to
-map out environmental effects on galaxy evolution at the group scale
-($\mathcal{M_\ast/M_\odot} \lesssim 10^{13}$) and, with sufficient
-exposure time, for tens of thousands of satellites down to sub-L$^*$
-luminosities. Thanks to deep, wide-field imaging surveys, like LSST,
-a 1M-object environmental survey at $z=1$--$2$ may then be possible
-using improved photo-$z$s, strong priors on spectral types, and new
-machine-learning techniques to deliver {\it spectroscopic} redshifts
-(with $\lesssim$300 km/s accuracy) at the lowest signal-to-noise
-possible (exposure times reduced by factors of 4--5).
-
 %, 2011AJ....142...72E, 2017AJ....154...28B}
 
 % \noindent\comment{Cooper, further comments?}
@@ -87,46 +130,6 @@ possible (exposure times reduced by factors of 4--5).
 %%
 %\end{figure}
 
-
-% TODO: May be too small...
-\begin{wrapfigure}{l}{0.6\textwidth}
-%
-\includegraphics[width=0.6\textwidth]{figs/qso_LightEcho_v1.pdf}
-%
-\caption{{\it Top}: Quasar ``Light Echos'' revealed in a simulated
-tomographic IGM map in the immediate environs of a quasar (gold star)
-with several sightlines indicated
-\citep[from][]{2018arXiv181005156S}. {\it Bottom}: The ionizing flux
-within the echo's extent enhances transmission of Ly$\alpha$ photons
-impinging on absorbers along the line-of-sight.}
-\label{fig:LightEcho}
-\end{wrapfigure}
-
-\subsubsection{The $z$$\sim$2 galaxy ecosystem}
-\label{sec:z2galaxies}
-
-With surveys like MOSDEF \citep{kriek15} and KBSS
-\citep{steidel14}, MOSFIRE has provided powerful new
-insights into early galaxies at the $z$$\sim$2 peak-formation epoch.
-However, a complete picture of the galaxy ``ecosystem'' at this key
-epoch must also consider the gas-filled environments. Using
-Ly$\alpha$ absorption in background galaxies, a tomographic map of
-the intergalactic medium (IGM) in regions surveyed by MOSDEF and KBSS
-is a key first step. The promise of this approach, demonstrated at
-Keck by \citet{lee14}, motivates FOBOS's UV sensitivity, target
-flexibility, and multiplex for tomographic mapping of large-scale
-structure, including protoclusters \citep{lee16}, voids
-\citep{krolewski18}, and filaments \citep{horowitz19}.
-\citet{2018arXiv181005156S} take IGM tomography in a new direction,
-demonstrating with simulated observations that quasar ``light echos''
---- spatial signatures of the expanding ionization front of a newly
-activated quasar --- can be detected and used to infer opening angles
-and deconstruct the quasar's accretion history (see Fig
-\ref{fig:LightEcho}). The required FOBOS spectra can simultaneously
-constrain the CIV mass density (via $\lambda\lambda$1548,1550 \AA)
-and patterns of CIV enrichment on both IGM and circumgalactic scales,
-revealing the imprint of galaxy fueling and feedback processes
-\citep[e.g.,][]{tumlinson17}.
 
 %The volume density and chemistry of gas in between galaxies
 %\noindent\comment{Hennawi, KG, Prochaska, Burchett: comments? further material to add?}
