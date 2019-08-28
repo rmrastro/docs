@@ -56,11 +56,10 @@
 \parindent=20pt
 \parskip=4pt
 
-\title{SDSS-IV MaNGA Science Requirements Document}
+\title{FOBOS Science Requirements Document}
 
-\author{MaNGA Team, v7.0}
+\author{FOBOS Team, v1.0}
 
-%\author{Renbin Yan (Survey Scientist) \\ Composition Strategic Committee ~~ Kinematics Strategic Committee \\ MaNGA Team}
 
 \begin{document}
 
@@ -77,108 +76,58 @@
 \section{Introduction}
 \label{srd:intro}
 
-Our understanding of galaxy formation has significantly advanced in
-the last decade thanks to SDSS surveys at low redshift, a variety of
-higher redshift surveys and observations, and improvements in
-simulating non-linear structure formation.  While at the present day
-the largest dark matter halos continue to grow from the ``bottom-up''
-by merging with smaller halos, the galaxies living in these halos
-experienced peak star formation rates at $z \sim 1$--3.  From this
-time on, activity steadily declined while galaxies continued to grow
-via mergers and star formation fueled by the accretion of fresh gas.
-Eventually, star formation was somehow shut down.  This quenching
-process, a kind of ``galaxy death,'' increasingly affects lower mass
-systems with time and may soon be the fate of our own Milky
-Way. Present-day galaxies less massive than the Milky Way formed their
-stars continuously over all cosmic epochs. In fact, the majority of
-the stars in galactic disks formed in the last 7-9 billion years.
+High-multiplex and deep spectroscopic follow-up of upcoming panoramic deep-imaging surveys like LSST, Euclid, and
+WFIRST is a widely recognized and increasingly urgent necessity. No current or planned facility at a U.S.~observatory
+meets the sensitivity, multiplex, and rapid-response time needed to exploit these future datasets. FOBOS, the
+Fiber-Optic Broadband Optical Spectrograph, is a near-term fiber-based facility that addresses these spectroscopic
+needs by optimizing depth over area and exploiting the aperture advantage of the existing 10m Keck II Telescope. The
+result is an instrument with a uniquely blue-sensitive wavelength range (0.31--1.0 $\mu$m) at $R \sim 3500$,
+high-multiplex (1800 fibers), and a factor 1.7 greater survey speed and order-of-magnitude greater sampling density
+than Subaru's Prime Focus Spectrograph (PFS). In the era of panoramic deep imaging, FOBOS will excel at building the
+deep, spectroscopic reference data sets needed to interpret vast imaging data. At the same time, its flexible focal
+plane, including a mode with 25 deployable integral-field units (IFUs) across a 20 arcmin diameter field, enables an
+expansive range of scientific investigations. Its key programmatic areas include (1) nested stellar-parameter training
+sets that enable studies of the Milky Way and M31 halo sub-structure, as well as local group dwarf galaxies, (2) a
+comprehensive picture of galaxy formation thanks to detailed mapping of the baryonic environment at $z \sim 2$ and
+statistical linking of evolving populations to the present day, and (3) dramatic enhancements in cosmological
+constraints via precise photometric redshifts and determined redshift distributions.  In combination with Keck I
+instrumentation, FOBOS also provides instant access to medium-resolution spectroscopy for transient sources with full
+coverage from the UV to the K-band.
 
-In spite of significant progress in delineating this basic picture,
-important pieces of the puzzle remain to be understood.  Very
-importantly, we still seek {\em the physical origin} of the patterns
-of evolution described above.  Gravitational collapse is only one of
-many processes at work in the formation of a galaxy. Gas dissipation
-and infall, star formation, heating and ejection of gas by supernova
-explosions, galaxy merging, the redistribution of material due to internal processes, and associated growth of central black
-holes are all key processes that remain poorly understood.
+% With its high multiplex and Keck's large aperture, FOBOS will enable significant progress in multiple science areas by
+% providing much-needed large and deep spectroscopic samples.  These unprecedented data sets will be scientific gold
+% mines for the U.S.~community in their own right, but when combined with novel observations from forthcoming facilities,
+% transformational advances are possible.  These include 1) charting the assembly history of the Milky Way, M31, and
+% Local Group dwarf galaxies by combining deep FOBOS spectroscopy with wide spectroscopic campaigns (e.g., DESI
+% Bright-Time Survey and SDSS-V Milky Way Mapper), GAIA data, and panoramic imaging from LSST, Euclid, and WFIRST; 2)
+% mapping the baryonic ecosystem at $z \sim 2$--3 and linking it to evolving populations at lower redshifts by training
+% photometric diagnostics that transfer detailed spectroscopic knowledge to billion-plus galaxy samples provided by
+% future all sky surveys; 3) dramatically enhancing cosmological probes using panoramic deep imaging and
+% cross-correlation techniques with Stage-IV CMB observations thanks to precise calibration of photometric redshifts and
+% redshift distributions.
 
-In the following sections we lay out MaNGA's key goals in understanding the physics driving the life cycle of galaxies and show
-how these goals motivate survey requirements.  Late-time growth of galaxies can be studied directly from maps of mean stellar age, gas-phase
-metallicity, and 2D kinematics, which provides clues about mergers and accretion events.  By mapping local star formation rates
-compared to the accretion rate onto central supermassive black holes, MaNGA will seek the processes that quench star formation in
-galaxies.  Finally, clues to the early formation history of galaxy subcomponents (bulge, disk, halo) are encoded in their
-present-day two-dimensional structure and composition, which MaNGA will capture.
+FOBOS addresses these goals by achieving high multiplex while optimizing for sensitivity over area.  Future imaging
+data will routinely reach $i_{\rm AB} = 25$, yielding target densities of 42 arcmin$^{-2}$.  FOBOS achieves a
+single-pass on-sky sampling density of 6 arcmin$^{-2}$ on average, and close packing would allow a maximum target density of
+$\sim$30 arcmin$^{-2}$.  These capabilities allow FOBOS to collect large samples of very faint sources with highly
+efficient observing strategies.
 
-%This is just for testing citations\citep{weijmans09, sales11}.
 
-\noindent{\bf MaNGA's Key Science Questions:}
+\noindent{\bf FOBOS's Key Science Questions:}
 \begin {enumerate} 
 
-\item How are galactic disks growing at the present day through
-  accretion of gas, and how does this depend on the mass of the dark
-  matter halo in which the galaxy is located?  {\em (Section
-    \ref{sec:disk_growth})}
+\item What is the nature of the assembly histories of the Milky Way, M31, and Local Group dwarfs?  {\em (Section
+    \ref{sec:LocalGroup})}
 
-\item What are the relative roles of stellar accretion, major mergers,
-  and disk instabilities in contributing to the present-day growth of
-  galactic bulges? {\em (Section \ref{sec:growth_bulges})}
+\item What are the key processes driving the late-time evolution of galaxies from $z\sim 1$ to the present day? {\em (Section \ref{sec:galaxies})}
 
-%\item Is star formation in present-day galaxies quenched by energetic
-%  input from accreting black holes, from star formation, or from some
-%  combination of the two? {\em (Section \ref{sec:winds})}
+\item How is the baryonic environment at $z \sim 2$--3 influenced by forming galaxies and how does it drive their formation {\em (Section \ref{sec:galaxies})}
 
-%\item How is the shutdown of star formation regulated by
-%  externally-driven processes in massive groups and clusters? {\em
-%    (Section \ref{sec:high-density})}
+\item What is the nature of Dark Energy and the growth of cosmic structure at high redshift? {\em (Section \ref{sec:cosmology})}
 
-\item How is the shutdown of star formation regulated by
-  internal processes within the galaxy, and by externally-driven processes 
-  in different environments from isolated systems to massive groups and clusters? {\em (Section \ref{sec:high-density})}
-  
-\item How was angular momentum distributed among baryonic and
-  non-baryonic subcomponents as the galaxy formed? {\em (Section
-    \ref{sec:dyn_scaling})}
-
-\item How do baryons and stars trace and influence the shape of the
-  dark matter halos in which they reside? {\em (Section
-    \ref{sec:weighing})}
-
-% \item Does galaxy growth at low and high redshifts proceed in the same
-%   way? {\em (Section \ref{sec:high-z})} {\bf what happened to this section?}
 \end {enumerate}
 
-MaNGA's ability to address this broad array of topics stems from the
-advantages of resolved spectroscopy and the statistically powerful
-sample size of 10,000 galaxies.  No existing or planned spectroscopic
-survey is competitive, either because 2D spectroscopic data is
-lacking, or because samples are small, incomplete, and not
-representative of all galaxy types and environments.  The MaNGA sample
-will be selected from the well-characterized SDSS-DR7 main sample
-using only redshift and absolute magnitude cuts. Most redshifts fall
-in the range 0.02--0.04 and the stellar mass ranges from $10^9$ to
-$10^{12}~\Msun$.  All environments from isolated to extremely dense
-will be sampled. Such a large representative sample of galaxies with
-spatially-resolved optical spectroscopy also enable strong synergies
-with future wide-field deep imaging, \HI, and X-ray surveys.  For all
-of these reasons, MaNGA represents a significant advance and will help
-shape our future understanding of the evolution of baryons in the
-Universe.
-
-We also describe the basic requirements for a stellar spectral library to be
-obtained in bright-time with the MaNGA fibers, co-observing with
-APOGEE. The availability of a spectral stellar library is essential
-for the analysis of galaxy spectra as obtained in MaNGA
-observations. A stellar library is needed for the construction of
-stellar population models used for fitting galaxy spectra, and are
-therefore essential for stellar kinematical studies and the extraction
-of emission lines. While existent libraries can be used, there are
-significant advantages to one that matches the spectral coverage and
-instrumental resolution of the galaxy observations. Such a library
-will greatly leverage the legacy value of the MaNGA data products. %At
-%this time, we have only just begun to formulate the observational plan
-%to acquire the stellar library. If indeed this can be accomplished
-%during bright time, we are confident our hardware design is adequate
-%for the task.
+The ability to address these questions depends both on the FOBOS instrument design and the design of possible observing programs to be carried out within each science area.  This Science Requirements Document seeks to outline possible key science programs whose goals can flow down to specific instrument requirements.
 
 Throughout this document, we adopt a consistent signal-to-noise (S/N)
 definition for the stellar continuum, which is the median S/N per
@@ -210,184 +159,55 @@ accuracy.
 In what follows, we collect the high-level science requirements for
 each of the key science questions in Section~\ref{sec:key_science} and
 present the flow-down into underlying requirements in terms of direct
-observables (Section~\ref{sec:key_observables}), the MaNGA sample
-selection (Section~\ref{sec:sample_selection}), spatial sampling
-(Section~\ref{sec:spatial_sampling}), spectro-photometric calibration
+observables (Section~\ref{sec:key_observables}), the program definition (Section~\ref{sec:programs}), spectro-photometric calibration
 (Section~\ref{sec:spectrophotometry}), guiding and PSF metrology
 (Section~\ref{sec:guiding}), data reduction
-(Section~\ref{sec:data_reduction_pipeline}), the MaNGA
-data products (Section~\ref{sec:data_products}), and finally the MaNGA stellar spectral library (Section~\ref{sec:stellar_library}).
+(Section~\ref{sec:data_reduction_pipeline}), the FOBOS
+data products (Section~\ref{sec:data_products}).
 
 
 
 %% ----------------------------------------------------------------------------------------------------
-%%   MaNGA Key Science Requirements
+%%   FOBOS Key Science Requirements
 %% ----------------------------------------------------------------------------------------------------
 \newpage
-\section{MaNGA Science Goals} \label{sec:key_science}
+\section{FOBOS Science Goals} \label{sec:key_science}
 
-\subsection{Gas accretion and the growth of disks}
-\label{sec:disk_growth}
+\subsection{Cosmology: Precision Cosmic Distances}
+\label{sec:cosmology}
 
 \subsubsection{Science Goals}
 
-MaNGA will place important constraints on disk fueling and recent gas
-accretion by measuring the spatially-dependent star formation rate and
-gas-phase metallicities of disk galaxies.  At large radius, recent
-accretion may manifest itself through an abrupt drop in the
-metallicity gradient \citep{moran12}.  At smaller radii, if cold gas
-is accreting along filaments, one might expect to find localized
-regions in the disk with close-to-primordial metallicities
-\citep[e.g.][]{spitoni11, mott13}. Such features have already been
-detected in small samples of galaxies at high redshift
-\citep{cresci10,troncoso13}. If the accretion is from a surrounding
-hot corona, then recent star formation might be expected to be
-distributed more evenly throughout the disk or concentrated more
-towards the center.  If the disk is growing through re-accretion of
-gas that has been ejected out of the galaxy by supernovae or active
-galactic nuclei (AGN), then the star-forming regions would be expected
-to have relatively high metallicities
-\citep[e.g.][]{bresolin12,spitoni13}.
-%Finally, the strength of metallicity gradients in disk galaxies will
-%provide important constraints on recent gas accretion processes.
-% 
-The investigation of metallicity gradients through IFU surveys of a 
-few hundreds of galaxies have already revealed interesting scaling 
-relations suggesting secular evolutionary process as responsible for 
-the the bulk of disk gaseous growth
-\citep{rosales10,rosales11,sanchez13}. Integral-field spectroscopic 
-observations have also made it possible to identify violent gas 
-accretion events through the detection of strongly shocked regions 
-in interacting or merging systems \citep{rich13,monreal10}.
+Dark energy is one of
+the most fundamental, unsolved problems in both cosmology and particle
+physics.  It has inspired enormous world-wide efforts --- culminating in
+LSST, Euclid, and WFIRST --- that seek highly precise measures of cosmic
+structure to constrain the evolving dark-energy equation-of-state.
 
-% This section could use some references
-Stellar absorption lines will constrain the timescales over which
-disks have formed their stars, as well as the relative roles of
-asymptotic giant branch populations and different types of supernovae
-in enriching the disk. The results will provide additional measures of
-the gas accretion and merging history, and constrain radial stellar transport
-mechanisms that shape the outer disk. %By stacking samples of several
-%hundred edge-on galaxies, a chemical decomposition of thick and thin
-%disks may be possible for the first time outside the Local
-%Group. 
-Finally, late-time accretion can be characterized by the
-incidence of counter-rotating components in the velocity profiles of
-the stars and gas.
+These measures utilize angular correlations of galaxy positions, their
+gravitational lensing shear, and the cross-correlation between the two.
+Unfortunately, photometric distances (via photometric redshifts, or
+``photo-$z$s'') are significantly less precise than spectroscopic
+redshifts (spec-$z$s), introducing significant biases.  The
+spectroscopic validation of photo-$z$s we propose with FOBOS is
+therefore critical to the success of {\it all} imaging surveys in this
+respect. It would not only \emph{increase the dark energy
+figure-of-merit in LSST by 40\%} \citep{newman15} but, importantly,
+provide vital confidence in cosmological results.  FOBOS is particularly
+powerful in this application because it has no ``redshift desert'' thanks to its unique ability to measure spectroscopic redshifts above $z > 1.5$ via
+rest-frame UV features.  This eliminates the need for expensive, space-based\footnote{Ground-based near-IR
+spectroscopy is too contaminated by sky-line emission to provide spec-$z$s at the required level of completeness
+\citep{newman15}.} near-IR spectroscopy.
 
-\subsubsection{Requirements on measured galaxy physical properties}
+\subsubsection{Requirements on photo-$z$ training sample and data}
 
 \begin{description}
 
-\item[P1.1] Gas ionization diagnostics (primarily [N~II]/H$\alpha$
-  vs.\ [O~III]/H$\beta$, but also [S~II]/H$\alpha$ and [O~I]/H$\alpha$)
-  to separate gas that is photoionized by stars from gas that is
-  shocked or ionized by an AGN \citep{baldwin81, kauffmann03} . The
-  required precision in the log of the line ratios is $\pm0.1$ dex to
-  minimize classification uncertainty, especially for transition
-  objects, and to detect the signature of shocks.
+\item[P1.1] Redshift precision: S/N, wavelength range, instrumental dispersion
 
-\item[P1.2] Measure the radial gradients in gas phase metallicity ($\log (O/H)$) to 0.04 dex per \Reff\ using the ``strong line'' methods \citep{kewley02,
-  tremonti04} based on [O~II]~$\lambda3727$, H$\beta$,
-  [OIII]$\lambda\lambda4959,5007$, [N~II]$\lambda\lambda6548,6584$,
-  H$\alpha$, [S~II]$\lambda\lambda 6717,6731$, and
-  [S~III]$\lambda\lambda 9069,9532$. This requires measuring the metallicity per binned fiber annulus to better than 0.05 dex.  %This requirement is driven by the goal of
-%  measuring metallicity gradients to 0.04 dex per \Reff. 
-  %\citep[$\sim0.04$~dex per kpc][]{vanZee1996}. 
-  Recent results from CALIFA suggest that non-interacting disk galaxies
-  have near universal gradients of $0.10\pm0.09$~dex/\Reff\ \citep{sanchez13}. 
+\item[P1.2] Sample size 
 
-\item[P1.3] Nebular metallicity measurements in three or more equally
-  spaced annuli per galaxy to ensure the systematics on the measured 
-  gradients due to annular binning to better than $\sim30$\%. %For a typical gradient of 0.1~dex/\Reff, this would give
-  %an uncertainty of 0.03~dex/\Reff, better than the required 0.04~dex/\Reff.
-  %This will require spatial sampling by a minimum
-%  of 3 fibers in the radial direction. 
-  This number is based on the simulations of \citet{yuan13}. When there are six
-  or more independent annuli, the systemtics lower to 10\%.
-
-
-\item[P1.4] To trace azimuthal (arm-interam) and radial variations of
-  the star formation rate (SFR) and to identify even the weak \HII\
-  regions, the SFR surface density $\rm \Sigma _{SFR}$ (form
-  H$\alpha$) has to be determined to a precision of 0.2~dex per
-  spatial resolution elements when there are significant emission
-  lines.  This is not a driving science case but is needed to
-  facilitate the interpretation of the gas metallicity variations and
-  to remove systematics in gas metallicity measurement due to
-  resolution issues.
- 
-\item [P1.5] An accurate determination of the dust extinction is needed 
-to accurately correct the spatially resolved star formation rates inferred 
-from H$\alpha$, but also to properly map the dust distribution and 
-investigate whether the scaling relations observed for the integrated 
-properties of galaxies \citep{garn10} originate on sub-galactic scales 
-or, on the contrary, break down. Since dust accounts for roughly half of 
-the metal content in galaxies, this would be an independent proxy of the 
-metal distribution. The above $\rm \Sigma_{SFR}$ requirement requires the extinction 
-$E(B-V)$ to be determined to better than 0.2. 
-
-\item [P1.6] Mean stellar age gradients in star-forming galaxies and newly quenched galaxies 
-measured to 0.1~dex/\Reff.
-Recent work on CALIFA disk galaxies shows that gradients
-range from +0.4 to -0.7 dex/\Reff\ \citep{gonzalez_delgado13}.
-%  from 
-%  better than $\pm0.05$ dex per radial bin.  This requirement is motivated
-%  by simulations \citep[e.g.,][]{lackner12} which suggest that
-%  accreted stars are older and more metal-poor than stars formed in-situ 
-%  by approximately 0.15 dex.  % Actully these simulations were for 
-  % early type galaxies
-   
-%\item[P1.6] Measurements of gas and star velocities in individual
-%  fibers %with errors of less than 25~km~s$^{-1}$ 
-%  to enable identification of counter-rotating components in galaxies
-
-\item[P1.7] Spatial coverage out to at least 1.5$R_e$ to cover the
-  bulk of the stellar light (75\% for exponential and 60\% for de
-  Vaucouleurs face-on profiles) and to allow a long baseline for
-  gradient measurements.
-%, and to probe an under-explored regime in galaxies.
-
-%  This enables measurements of accretion processes (gas and
-%  stars/satellites) and their effect on the stellar population
-%  gradients. 
-%The choice of 1.5~$R_e$ is a compromise between what is
-%  interesting and what is realistic for stellar population studies 
-%  given the steeply declining surface brightness profile.
-
-\item[P1.8] Spatial coverage out to 2.5$R_e$ for a fraction of the
-  sample.  This will enable gas properties to be explored in the very
-  outer regions of disks where accretion signatures may be strongest.
-  Indeed, recent results have found a variety of different behaviors
-  of the metallicity gradient beyond 2$R_e$, both a flattening of the
-  metallicities \citep{bresolin12, sanchez13}, suggesting accretion of
-  metal-rich gas \citep[either from galactic fountains or from
-  externally enriched gas in rich environments;][]{peng13}, or
-  metallicity drops \citep{moran12}, suggesting accretion of pristine
-  gas in galaxy outskirts.
-% Moran finds most of the action at R>R90 = 2.85 R_e 
-
-\item[P1.9] A large, representative sample of star-forming galaxies, at least 4500,
-  to 1) enable statistical determination of age/metallicity gradients and
-  their dependencies on galaxy physical properties such as mass,
-  concentration, bulge-to-disk ratio, and environment; and 2) enable
-  the detection of short-lived accretion signatures such as gas-phase
-  metallicity anomalies.  To fulfill goal number 1 we wish to be able
-  to divide galaxies into $\sim0.2$ dex mass bins to enable
-  measurements of properties like environment at fixed galaxy mass
-  \citep[c.f.,][]{peng13}. The total sample size is motivated by the
-  desire to have roughly 250 galaxies in each of 12 mass bins in our
-  1.5R$_e$\ sample and 125 galaxies per bin in the 2.5R$_e$ samples 
-  to enable each mass bin to be further
-  subdivided by galaxy properties of interest.  We can estimate the
-  numbers needed to satisfy goal number 2 based on the study of
-  \citet{moran12} who found accretion signatures in roughly 10\% of
-  galaxies.  For this study we will primarily rely on the 2.5R$_e$
-  sample.  With 1500 star-forming galaxies in this sample, we anticipate $\sim150$
-  galaxies with signs of recent accretion.  A sample of this size will
-  allow us to explore correlations between recent accretion and other
-  properties of interest such as the star formation rate and stellar mass.
-
-% Some statistics from Moran 2012
+\item[P1.2] 10 independent fields of minimum 20\arcmin{} diameter.
 
 \end{description}
 
@@ -768,10 +588,10 @@ less than 0.3~$\Msun$ (e.g., \citealt{spiniello2012}).
 
 
 %% ----------------------------------------------------------------------------------------------------
-%%   MaNGA Key Observables
+%%   FOBOS Key Observables
 %% ----------------------------------------------------------------------------------------------------
 
-\section{MaNGA Key Observables}\label{sec:key_observables}
+\section{FOBOS Key Observables}\label{sec:key_observables}
 
 \begin{figure*}
 \begin{center}
@@ -789,11 +609,11 @@ less than 0.3~$\Msun$ (e.g., \citealt{spiniello2012}).
 \end{center}
 \end{figure*}
 
-We have described how MaNGA's success in addressing the key questions
+We have described how FOBOS's success in addressing the key questions
 above relies on the ability to obtain an array of measurements of
 derived physical properties at targeted levels of precision.  We now
 detail how achieving these measurements translates into specific
-observational requirements for the survey. We provide two flowcharts
+observational requirements. We provide two flowcharts
 to illustrate the key requirements with an emphasis on observing depth
 (Figure~\ref{fig:srd_flowchart_depth}) and on sample design
 (Figure~\ref{fig:srd_flowchart_sample}), respectively.
@@ -829,30 +649,6 @@ intrinsic line sigma of 50km/s or EW of 5\AA\ for an intrinsic line
 sigma of 160km/s. We chose \Hbeta\ because it is often the weakest
 emission line of all and is the limiting factor in determining
 extinction and SFR.
-
-%To estimate the emission line S/N in the outer parts of 
-%galaxies, we use the SDSS-I spectra of potential targets and make 
-%the conservative assumption that the EWs are constant
-%with radius.  (In practice, they are likey increase with radius.)  
-
-%In most (but not all) science cases it is wise to limit
-%analysis to galaxies or parts of galaxies where the H$\beta$ EW is
-%greater than 2.5~\AA.  H$\beta$ is crucial for diagnostics of dust
-%attenuation, star formation, and metallicity, but it suffers from
-%strong underlying stellar absorption.  This will be corrected for by
-%fitting and removing the stellar continuum before measuring the
-%nebular lines, but this can be a significant source of uncertainty in
-%low EW lines.  In the following we therefore assume EW(H$\beta$)
-%$>2.5$~\AA\, which roughly corresponds to EW(H$\alpha$) $> 10$~\AA.
-%Since the spectrograph has a dispersion of 69 km~s$^{-1}$~pix$^{-1}$
-%and we will be spatially resolving galaxy rotation curves, we assume
-%that most of the nebular flux will be concentrated in a single pixel.
-%Thus, the flux in a pixel centered on emission line will be $f_{line}
-%= f_{cont}*EW$ and the S/N of the line will be $S/N_{line} = \sqrt EW
-%\times S/N_{cont}$.  To achieve a given S/N on a H$\beta$ line with
-%EW = 2.5~\AA\ therefore requires $S/N_{cont} = S/N_{line}/\sqrt EW =
-%0.63~S/N_{line}$.
-
 
 The high-level science requirements from \S\ref{sec:key_science} can be distilled to the following two:
 
