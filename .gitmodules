@@ -1,6 +1,3 @@
 [submodule "proposals/KeckWP_2018"]
 	path = proposals/KeckWP_2018
 	url = https://git.overleaf.com/15600261fykfjpznsdpz
-[submodule "design/science_drivers"]
-	path = design/science_drivers
-	url = https://git.overleaf.com/15611483cdhzxxhmcbps
