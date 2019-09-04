@@ -32,6 +32,7 @@
 \newcommand{\erg}{{\rm erg}}
 \newcommand{\yr}{{\rm yr}}
 \newcommand{\cm}{{\rm cm}}
+\newcommand{\kms}{{\rm km s^{-1}}}
 \newcommand{\s}{{\rm s}}
 \newcommand{\Mpc}{{\rm Mpc}}
 \newcommand{\Halpha}{{H$\alpha$}}
@@ -171,12 +172,12 @@ data products (Section~\ref{sec:data_products}).
 %%   FOBOS Key Science Requirements
 %% ----------------------------------------------------------------------------------------------------
 \newpage
-\section{FOBOS Science Goals} \label{sec:key_science}
+\section{FOBOS Cosmology Key Program} \label{sec:cosmology}
 
-\subsection{Cosmology: Precision Cosmic Distances}
-\label{sec:cosmology}
+\subsection{Photometric Redshift Training for Dark Energy Surveys}
+\label{sec:photoz}
 
-\subsubsection{Science Goals}
+See DESC Google Doc of Desiridata: \url{https://docs.google.com/document/d/1SgST0eiQC2WmVFWyu6HUBpFN7EERZhC5t\_7OXrwRMJg/edit\#heading=h.olp0r1g70nxf}
 
 Dark energy is one of
 the most fundamental, unsolved problems in both cosmology and particle
@@ -199,106 +200,99 @@ rest-frame UV features.  This eliminates the need for expensive, space-based\foo
 spectroscopy is too contaminated by sky-line emission to provide spec-$z$s at the required level of completeness
 \citep{newman15}.} near-IR spectroscopy.
 
-\subsubsection{Requirements on photo-$z$ training sample and data}
+
+\emph{From DESC Collaboration}: resolve the [OII] 3727 angstrom doublet (R > 4000), on a large-aperture telescope (>6m if at all possible), with modestly large field of view (>20 arcmin diameter) preferred
+
+
+\subsubsection{Science Requirements for Redshift Training Samples}
 
 \begin{description}
 
-\item[P1.1] Redshift precision: S/N, wavelength range, instrumental dispersion
+\item[P1.1] Redshift precision of 150 \kms{} or better.  Explanation...
 
-\item[P1.2] Sample size 
+\item[P1.]  Redshift success rate of 75\% measured in a magnitude bin of width 0.5 mag up to the magnitude limit.  Explanation...
 
-\item[P1.2] 10 independent fields of minimum 20\arcmin{} diameter.
+\item[P1.2] Magnitude limit of $i_{\rm AB} = 25.3$.  This limit corresponds to the expected depth of LSST lensing samples (REF).
+
+\item[P1.2] Minimum sample size of 15,000, required for sufficient coverage of the photometric color space and for training statistics (REF).
+
+\item[P1.3] 10 independent fields of minimum 20\arcmin{} diameter in order to average over systematics in the galaxy population owing to sample variance.
+
+\item[P1.4] Redshift range of $z = $[0.1, 3.5], spanning the distribution of LSST and WFIRST cosmology samples (REF).
 
 \end{description}
 
 
-\subsection{The present-day assembly of spheroids and galactic bulges}
-\label{sec:growth_bulges}
 
-\subsubsection{Science Goals}
+\subsection{Redshift Distributions of CMB Lensing Cross-Correlation Photometric Samples}
 
-MaNGA will measure radially-averaged ages, metallicities, and element
-abundance ratios as a function of mass, structure, and environment.
-The age distribution of the stars in a galaxy trace the main epochs of
-star formation activity, while stellar metallicities carry information
-about the efficiency of star formation and the history of gas
-accretion and outflows. The element abundance ratios supply additional
-constraints on the chemical enrichment history of the galaxy, as well
-as the timescale over which stars were formed.  With these
-measurements, it will be possible to estimate the ratio of
-``accreted'' material compared to the ``in situ'' component, since
-accreted stars dominate at large radius and have older ages and
-lower metallicities \citep{lackner12}. This
-ratio is predicted to be a strong function of halo mass, with
-ellipticals in high mass halos undergoing more merging at earlier
-times than those in lower mass halos.  MaNGA will test and quantify
-this mass dependence.
+High-S/N CMB maps from next-generation CMB observatories (e.g., Simons Observatory and CMB-S4) will provide a cosmic
+``reference background'' for measurements of gravitational lensing induced by matter along the line of sight.  After
+cross-correlating with Lyman Break Galaxy (LBG) samples, a relatively flat lensing ``kernel'' with power at $z = 2$--5
+enables powerful constraints on the Inflation-sensitive matter power spectrum, Horizon-scale General Relativity, cosmic
+curvature and neutrino masses, and early Dark Energy \citep{ferraro19}.  \citet{wilson19} explore these constraints in
+detail and highlight the need for spectroscopic determination of accurate redshift distributions for the employed LBG
+samples. FOBOS would address this need in two ways.  First, several deep-drilling fields targeting $\sim$1000 LBGs BX,
+$u$, $g$, and $r$ drop-out candidates per pointing ($\sim$10,000 deg$^{-2}$) would establish the interloper rate and
+intrinsic redshift distribution of LBG samples to sufficient precision (this program would likely overlap with the
+photo-$z$ program described above).  Second, $\sim$200 LBGs per pointing (2000 deg$^{-2}$) could be included as a
+background program when FOBOS observes other sources across the sky, eventually building a 50-100 deg$^2$ data set of
+sparse high-$z$ spectroscopy for LBG dN/d$z$ calibration via clustering redshifts \citep[see][]{wilson19}.
 
-MaNGA will also provide the first {\em kinematic} census of merging
-galaxies in a mass-limited sample.  The observations will be compared
-to suites of hydrodynamical merger simulations to test new statistical
-metrics of 2D merger kinematics that are aimed at diagnosing the
-merger phase and the mass ratio of the interacting galaxies (e.g.,
-\citealt{bellocchi2012}).  Because major mergers are relatively rare events
-($\sim$ 4\%; \citealt{bundy2009}), we require large samples
-for these kinds of analyses.
-
-Finally, many galaxy formation models invoke disk instabilities and
-bar formation, in addition to mergers, to build galaxy bulges. 
- MaNGA will test whether bars are indeed associated with unstable disks
-satisfying the standard Toomre Q-parameter. 
-MaNGA will quantify the dynamical effect of the bar on the 
-velocity dispersion profile of the galaxy and perform studies of 
-stellar populations in bars and bulges, thus providing 
-insight on their formation histories.  By correlating non-circular 
-motions and gas flows in galactic disks with the presence or lack 
-of bars and spiral structure observed in SDSS and deep imaging data, 
-MaNGA will further constrain secular evolution processes and their 
-driving mechanisms.
-
-\subsubsection{Requirements on measured galaxy physical properties}
+\subsubsection{Science Requirements for CMB Lensing Calibration}
 
 \begin{description}
 
-\item[P2.1] Measure stellar ages and heavy element abundances gradients to better
-  than $0.1$~dex per decade in \Reff. This requirement is driven by the desire 
-  to measure age gradients which range typically from -0.1 to 0.4~dex per decade in R$_e$ \citep{mehlert03,kuntschner10, spolaor10} and 
-  abundance gradients which range from -0.5 to 
-  +0.2~dex per decade in R$_e$ \citep{mehlert03,spolaor10, koleva11}.
-%derived from analysis of absorption indices \citep[e.g.][]{johansson12} 
+\item[P1.1] Redshift precision of 150 \kms{} or better.  Explanation...
 
-\item[P2.2] Mean stellar ages to better than $0.1$ dex measured 
-from the inner few fibers to study the stellar populations in bars 
-and bulges.  
+\item[P1.]  Redshift success rate of 75\% measured in a magnitude bin of width 0.5 mag up to the magnitude limit.  Explanation...
 
-%\item[P2.3] Measurements of gas and star velocities and velocity
-%  dispersions in individual fibers with errors of less than
-%  25~km~s$^{-1}$ to enable kinematic merger identification and the
-%  study of non-circular motions and gas flows in disks.
+\item[P1.2] Photometric selections of various LBG samples...
 
-%\item[P2.3] Measurements of the Toomre Q-parameter to better than
-%  \red{$\pm$ XX } to test whether bars are associated with unstable
-%  disks.  To achieve this requires measurements of the stellar velocity
-%  dispersion in individual fibers to better than \red{XX\%} and
-%  measurement of the local surface density to \red{ XX\%}.
+\item[P1.2] Minimum sample size of 
 
-\item[P2.3] Spatial coverage out to 1.5 $R_e$ sampled by a minimum of
-  2.5~fibers in the radial direction to enable measurements of radial
-  gradients in age and metal enrichment (P2.1) and provide adequate
-  sampling of the 2D kinematics (P4.5)
+\item[P1.3] 10 independent fields of minimum 20\arcmin{} diameter in order to average over systematics in the galaxy population owing to sample variance.
 
-\item[P2.4] Spatial resolution of better than 1.5 kpc for a large
-  fraction of the sample in order to spatially resolve large bars and
-  bulges (the typical size of bars in $z\sim$0 galaxies is in excess
-  of 2 kpc \citep{hoyle2011}, while the typical size of bulges is
-  $\sim$1~kpc \citep{fisher2010}). 
+\item[P1.4] Redshift range of $z = $[2, 5], spanning the peak power of the CMB lensing kernel.
 
-\item[P2.5] A total sample size of $\sim$10,000 galaxies to 1) enable
-  statistical determination of the dependence of age/metallicity
-  gradients on galaxy physical properties such as mass, concentration,
-  and environment; 2) enable a statistical sample of galaxy mergers
-  which are relatively rare phenomena, making up less than 4\% of
-  galaxies in the local Universe.
+\end{description}
+
+\newpage
+\section{FOBOS Galaxy Evolution Key Program} \label{sec:galaxies}
+
+With both single-fiber and multiplexed IFU observations, FOBOS will produce rich and comprehensive data sets at faint source magnitudes.  Its blue sensitivity affords UV absorption studies down to $z \sim 1.5$, enabling detailed mapping of the baryonic environment at the peak formation epoch.  Samples at $z=1$--$2$ will not only characterize how this environment and its impact on galaxies evolves but will also provide large training sets that can be used to extract spectroscopic-like information from the billion-plus galaxy samples observed in all-sky surveys.  These data will be used in concert with large samples of spatially-resolved FOBOS observations (in IFU mode) to set the context for highly-detailed studies of targeted samples with James Webb Space Telescope and the U.S.~Extremely Large Telescopes.  Finally, FOBOS can tie evolutionary behavior seen at early times to the present day by observing faint sub-structure and dynamical tracers in nearby galaxies.
+
+\subsection{Photometric Galaxies Properties from Spectroscopic Training}
+\label{sec:cosmology}
+
+Apply deep-
+learning algorithms to infer physical properties of galaxies at
+$z$$\sim$2 using using photometry. The range of observed spectral
+types is well-constrained by broad-band imaging,
+suggesting a far greater potential for imaging data to reveal physical
+properties with sufficient training than conventional modeling of
+spectral energy distributions (SEDs) would suggest.  Machine
+learning techniques will require training sets with well measured star-formation histories,
+stellar-population properties, dust content, inflow/outflow properties,
+and stellar masses --- and determine design parameters for future training sets that will enable such inferences for millions of imaged galaxies at $z$$\sim$2.
+
+\subsubsection{Requirements on derived galaxy physical properties}
+
+\begin{description}
+
+\item[P3.1] Light-weighted stellar ages and metallicities with precision of 0.1 dex in appropriate bins of color space.
+
+\item[P3.1] Star formation rate uncertainties from strong emission lines of 0.1 dex in appropriate bins of color space.
+
+\item[P3.1] Redshift precision of at least 30 \kms{} to allow for accurate stacked spectra in specific color bins.
+
+
+Gas ionization diagnostics ([N II]/H$\alpha$ vs.\ 
+%[O III]/H$\beta$) to separate gas that is photoionized from gas 
+%that is shocked or ionized by an AGN. The required precision in 
+%the log of the line ratios is ±0.2 dex to minimize classification 
+%uncertainty.
+
 
 \end{description}
 
@@ -593,21 +587,21 @@ less than 0.3~$\Msun$ (e.g., \citealt{spiniello2012}).
 
 \section{FOBOS Key Observables}\label{sec:key_observables}
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=1.1\textwidth]{figures/srd_flowchart_depth.pdf}
-\caption{Key science requirements flowdown structure. The red boxes above indicate the five categories of science questions we want to address; the green boxes indicate the high level science requirements; the blue boxes near the bottom indicate the resulting technical requirements on {\it observing depth and flux calibration}. The flowchart only contains the major requirements. The text provides a more complete list of requirements.}
-\label{fig:srd_flowchart_depth}
-\end{center}
-\end{figure*}
+% \begin{figure*}
+% \begin{center}
+% \includegraphics[width=1.1\textwidth]{figures/srd_flowchart_depth.pdf}
+% \caption{Key science requirements flowdown structure. The red boxes above indicate the five categories of science questions we want to address; the green boxes indicate the high level science requirements; the blue boxes near the bottom indicate the resulting technical requirements on {\it observing depth and flux calibration}. The flowchart only contains the major requirements. The text provides a more complete list of requirements.}
+% \label{fig:srd_flowchart_depth}
+% \end{center}
+% \end{figure*}
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=1.1\textwidth]{figures/srd_flowchart_sample.pdf}
-\caption{Key science requirements flowdown structure. The red boxes above indicate the five categories of science questions we want to address, with the addition of protecting the discovery potential for unforeseen science; the green boxes indicate the high level science requirements; the blue boxes near the bottom indicate the resulting technical requirements on {\it sample selection}. The flowchart only contains the major requirements. The text provides a more complete list of requirements.}
-\label{fig:srd_flowchart_sample}
-\end{center}
-\end{figure*}
+% \begin{figure*}
+% \begin{center}
+% \includegraphics[width=1.1\textwidth]{figures/srd_flowchart_sample.pdf}
+% \caption{Key science requirements flowdown structure. The red boxes above indicate the five categories of science questions we want to address, with the addition of protecting the discovery potential for unforeseen science; the green boxes indicate the high level science requirements; the blue boxes near the bottom indicate the resulting technical requirements on {\it sample selection}. The flowchart only contains the major requirements. The text provides a more complete list of requirements.}
+% \label{fig:srd_flowchart_sample}
+% \end{center}
+% \end{figure*}
 
 We have described how FOBOS's success in addressing the key questions
 above relies on the ability to obtain an array of measurements of
@@ -1067,28 +1061,28 @@ velocities $>60$~km/s. In the 19-fiber bundles, the errors can still
 be better than 20\%, but additional systematic errors stemming from
 poor spatial resolution may become dominant.
 
-\begin{figure*}[htb]
-\begin{center}
-\includegraphics[width=\textwidth]{figures/kinematic.png}
-\vspace*{0cm}
-\caption{\small Projected kinematics (left) and a prediction of 
-  possible mass-precision with JAM (right) for the MaNGA Primary sample. The left panel
-  illustrates the expected distribution of {\it projected} rotation
-  speed at a radius enclosing 80\% of the $i$-band light, V80,  based on the
-  baryonic Tully-Fisher relation from \citet{reyes2011}. The instrumental resolution
-  of $\sigma \sim 63$ km/s is shown (blue, vertical line). Different curves
-  show subsets observed in different bundle sizes. Roughly
-  80\% of all MaNGA galaxies are expected to have a projected V80
-  above the instrumental resolution. The right panel shows the fraction
-  of galaxies which will be available for high-precision mass-decompositions, using JAM (i.e. having $V80>63$ km/s and not in the smallest bundle) . 
-  Lower-mass galaxies will have
-  lower-precision dynamical estimates of their stellar mass on
-  average, but at least 30-40\% of even the lowest-mass galaxies in
-  the survey may be able to yield stellar mass estimates to better
-  than 10\% (random error).}
-\label{srd:kinematics.fig}
-\end{center}
-\end{figure*}
+% \begin{figure*}[htb]
+% \begin{center}
+% \includegraphics[width=\textwidth]{figures/kinematic.png}
+% \vspace*{0cm}
+% \caption{\small Projected kinematics (left) and a prediction of 
+%   possible mass-precision with JAM (right) for the MaNGA Primary sample. The left panel
+%   illustrates the expected distribution of {\it projected} rotation
+%   speed at a radius enclosing 80\% of the $i$-band light, V80,  based on the
+%   baryonic Tully-Fisher relation from \citet{reyes2011}. The instrumental resolution
+%   of $\sigma \sim 63$ km/s is shown (blue, vertical line). Different curves
+%   show subsets observed in different bundle sizes. Roughly
+%   80\% of all MaNGA galaxies are expected to have a projected V80
+%   above the instrumental resolution. The right panel shows the fraction
+%   of galaxies which will be available for high-precision mass-decompositions, using JAM (i.e. having $V80>63$ km/s and not in the smallest bundle) . 
+%   Lower-mass galaxies will have
+%   lower-precision dynamical estimates of their stellar mass on
+%   average, but at least 30-40\% of even the lowest-mass galaxies in
+%   the survey may be able to yield stellar mass estimates to better
+%   than 10\% (random error).}
+% \label{srd:kinematics.fig}
+% \end{center}
+% \end{figure*}
 
 %III. The third requirement above translates to a S/N per pixel of XX in one quarter of the ourter ring at 1.5\Reff.This is met by XX\% of the baseline Primary sample. It also requires the 1\Reff radius is sampled by at least two spatial resolution elements. 
 
