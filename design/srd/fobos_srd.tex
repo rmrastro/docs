@@ -168,11 +168,11 @@ data products (Section~\ref{sec:data_products}).
 
 
 
-%% ----------------------------------------------------------------------------------------------------
-%%   FOBOS Key Science Requirements
-%% ----------------------------------------------------------------------------------------------------
+%% ----------------------------------------------------------------------------------------
+%% Cosmology Program
+%% ----------------------------------------------------------------------------------------
 \newpage
-\section{FOBOS Cosmology Key Program} \label{sec:cosmology}
+\section{FOBOS Key Science: Cosmology } \label{sec:cosmology}
 
 \subsection{Photometric Redshift Training for Dark Energy Surveys}
 \label{sec:photoz}
@@ -210,15 +210,15 @@ spectroscopy is too contaminated by sky-line emission to provide spec-$z$s at th
 
 \item[P1.1] Redshift precision of 150 \kms{} or better.  Explanation...
 
-\item[P1.]  Redshift success rate of 75\% measured in a magnitude bin of width 0.5 mag up to the magnitude limit.  Explanation...
+\item[S1.]  Redshift success rate of 75\% measured in a magnitude bin of width 0.5 mag up to the magnitude limit.  Explanation...
 
-\item[P1.2] Magnitude limit of $i_{\rm AB} = 25.3$.  This limit corresponds to the expected depth of LSST lensing samples (REF).
+\item[S1.2] Magnitude limit of $i_{\rm AB} = 25.3$.  This limit corresponds to the expected depth of LSST lensing samples (REF).
 
-\item[P1.2] Minimum sample size of 15,000, required for sufficient coverage of the photometric color space and for training statistics (REF).
+\item[S1.2] Minimum sample size of 15,000, required for sufficient coverage of the photometric color space and for training statistics (REF).
 
-\item[P1.3] 10 independent fields of minimum 20\arcmin{} diameter in order to average over systematics in the galaxy population owing to sample variance.
+\item[S1.3] 10 independent fields of minimum 20\arcmin{} diameter in order to average over systematics in the galaxy population owing to sample variance.
 
-\item[P1.4] Redshift range of $z = $[0.1, 3.5], spanning the distribution of LSST and WFIRST cosmology samples (REF).
+\item[S1.4] Redshift range of $z = $[0.1, 3.5], spanning the distribution of LSST and WFIRST cosmology samples (REF).
 
 \end{description}
 
@@ -243,27 +243,32 @@ sparse high-$z$ spectroscopy for LBG dN/d$z$ calibration via clustering redshift
 
 \begin{description}
 
-\item[P1.1] Redshift precision of 150 \kms{} or better.  Explanation...
+\item[S2.1] Redshift precision of 150 \kms{} or better.  Explanation...
 
-\item[P1.]  Redshift success rate of 75\% measured in a magnitude bin of width 0.5 mag up to the magnitude limit.  Explanation...
+\item[S2.]  Redshift success rate of 75\% measured in a magnitude bin of width 0.5 mag up to the magnitude limit.  Explanation...
 
-\item[P1.2] Photometric selections of various LBG samples...
+\item[S2.2] Photometric selections of various LBG samples...
 
-\item[P1.2] Minimum sample size of 
+\item[S2.2] Minimum sample size of 
 
-\item[P1.3] 10 independent fields of minimum 20\arcmin{} diameter in order to average over systematics in the galaxy population owing to sample variance.
+\item[S2.3] 10 independent fields of minimum 20\arcmin{} diameter in order to average over systematics in the galaxy population owing to sample variance.
 
-\item[P1.4] Redshift range of $z = $[2, 5], spanning the peak power of the CMB lensing kernel.
+\item[S2.4] Redshift range of $z = $[2, 5], spanning the peak power of the CMB lensing kernel.
 
 \end{description}
 
+
+
+%% ----------------------------------------------------------------------------------------
+%% Galaxy Evolution Program
+%% ----------------------------------------------------------------------------------------
 \newpage
-\section{FOBOS Galaxy Evolution Key Program} \label{sec:galaxies}
+\section{FOBOS Key Science: Understanding Galaxy Evolution} \label{sec:galaxies}
 
 With both single-fiber and multiplexed IFU observations, FOBOS will produce rich and comprehensive data sets at faint source magnitudes.  Its blue sensitivity affords UV absorption studies down to $z \sim 1.5$, enabling detailed mapping of the baryonic environment at the peak formation epoch.  Samples at $z=1$--$2$ will not only characterize how this environment and its impact on galaxies evolves but will also provide large training sets that can be used to extract spectroscopic-like information from the billion-plus galaxy samples observed in all-sky surveys.  These data will be used in concert with large samples of spatially-resolved FOBOS observations (in IFU mode) to set the context for highly-detailed studies of targeted samples with James Webb Space Telescope and the U.S.~Extremely Large Telescopes.  Finally, FOBOS can tie evolutionary behavior seen at early times to the present day by observing faint sub-structure and dynamical tracers in nearby galaxies.
 
-\subsection{Photometric Galaxies Properties from Spectroscopic Training}
-\label{sec:cosmology}
+\subsection{1B Galaxy Samples from Spectroscopic Training}
+\label{sec:1Bgalaxies}
 
 Apply deep-
 learning algorithms to infer physical properties of galaxies at
@@ -276,348 +281,102 @@ learning techniques will require training sets with well measured star-formation
 stellar-population properties, dust content, inflow/outflow properties,
 and stellar masses --- and determine design parameters for future training sets that will enable such inferences for millions of imaged galaxies at $z$$\sim$2.
 
-\subsubsection{Requirements on derived galaxy physical properties}
+\subsubsection{Science Requirements for the 1B Galaxy Sample}
 
 \begin{description}
 
-\item[P3.1] Light-weighted stellar ages and metallicities with precision of 0.1 dex in appropriate bins of color space.
+\item[S3.1] Light-weighted stellar ages and metallicities with precision of 0.1 dex in appropriate bins of color space.
 
-\item[P3.1] Star formation rate uncertainties from strong emission lines of 0.1 dex in appropriate bins of color space.
+\item[S3.1] Star formation rate uncertainties from strong emission lines of 0.1 dex in appropriate bins of color space.
 
-\item[P3.1] Redshift precision of at least 30 \kms{} to allow for accurate stacked spectra in specific color bins.
+\item[S3.1] Redshift precision of at least 30 \kms{} to allow for accurate stacked spectra in specific color bins.
+
+\end{description}
 
 
-Gas ionization diagnostics ([N II]/H$\alpha$ vs.\ 
-%[O III]/H$\beta$) to separate gas that is photoionized from gas 
-%that is shocked or ionized by an AGN. The required precision in 
-%the log of the line ratios is ±0.2 dex to minimize classification 
-%uncertainty.
+\subsection{The Galaxy Environment and Ecosystem}
+\label{sec:ecosystem}
+
+With publicly-accessible surveys like MOSDEF \citep{kriek15}, the Keck MOSFIRE instrument has provided powerful new
+insights into early galaxies at the $z$$\sim$2 peak-formation epoch \citep[also see KBSS,][]{steidel14}. However, a
+complete picture of the galaxy ``ecosystem'' at this key epoch must also consider the gas-filled environments. Using
+Ly$\alpha$ absorption in background galaxies, a tomographic map of the intergalactic medium (IGM) in regions surveyed
+by MOSDEF and KBSS is a key first step. The promise of this approach, demonstrated at Keck by \citet{lee14}, motivates
+FOBOS's UV sensitivity, target flexibility, and multiplex for tomographic mapping of large-scale structure, including
+protoclusters \citep{lee16,kartaltepe19}, voids \citep{krolewski18}, and filaments \citep{horowitz19}.
+\citet{2018arXiv181005156S} take IGM tomography in a new direction, demonstrating with simulated observations that
+quasar ``light echoes''
+--- spatial signatures of the expanding ionization front of a newly
+activated quasar --- can be detected and used to infer opening angles
+and deconstruct the quasar's accretion history (see Fig
+\ref{fig:LightEcho}). The required FOBOS spectra can simultaneously
+constrain the CIV mass density (via $\lambda\lambda$1548,1550 \AA)
+and patterns of CIV enrichment on both IGM and circumgalactic scales,
+revealing the imprint of galaxy fueling and feedback processes
+\citep[e.g.,][]{tumlinson17}.
+
+At later times, as IGM material becomes more confined to galaxies and their dark matter halos, these halos
+increasingly merge to form larger structures.  FOBOS will be particularly important for mapping out environmental
+effects at $z=1$--$2$ on galaxy evolution at the group scale ($\mathcal{M_\ast/M_\odot} \lesssim 10^{13}$) and
+statistically linking galaxies to their host dark matter halos \citep{behroozi19}.  Tens
+of thousands of satellites down to sub-L$^*$ luminosities will be mapped and characterized. Thanks to deep, wide-field
+imaging surveys, like LSST, a 1M-object environmental survey at $z=1$--$2$ may then be possible using improved
+photo-$z$s, strong priors on spectral types, and new machine-learning techniques to deliver {\it spectroscopic}
+redshifts (with $\lesssim$300 km/s accuracy) at the lowest signal-to-noise possible (exposure times reduced by factors
+of 4--5).
+
+\subsubsection{Science Requirements for the Galaxy Ecosystem}
+
+\begin{description}
+
+\item[S4.1] Detection of key IGM/ISM lines like... probing what densities.
+
+\item[S4.2] Redshift precision of at least 300 \kms{} to enable satellite membership
+
+
+\item[S4.] Errors on the measured outflow velocity of less than
+ 20~km~s$^{-1}$.  Outflows speeds of $\sim100 -- 200$~km~s$^{-1}$ are
+ expected in most star forming galaxies where interstellar Na~I can
+ be detected in absorption (Chen et al.~2010).
+
+
+\item[S4.?] ...
 
 
 \end{description}
 
 
-%\subsection{The relationship between quenching, AGN, and star formation}
-%\label{sec:winds}
+\subsection{Internal Structure of Galaxies}
+\label{sec:content}
+
+MaNGA \citep{bundy15} and other large IFU surveys are defining the
+$z=0$ benchmark for how internal structure is organized across the
+galaxy population. To understand and test ideas for how this internal
+structure emerged, we require spatially-resolved observations at $z =
+1$--2, just after the peak formation epoch. Indeed, Keck has
+helped pioneer such observations \citep[e.g.,][]{erb04, miller11,law09}.
+With only one galaxy observed at a time, samples have so far been limited to a few hundred sources; however,
+FOBOS will obtain resolved spectroscopy for thousands of galaxies
+using its IFU-mode with a 25 deployed IFUs. Bright optical emission-line tracers
+for this unprecedented sample of galaxies will reveal their gas-phase
+and kinematic structure. Stacking restframe $\lambda \approx 4500$
+spectra will enable radial stellar population analyses to constrain
+how stellar components formed and assembled. Although initially
+limited to coarse spatial scales, ground-layer adaptive optics (GLAO)
+in combination with FOBOS would be transformative for this science. A
+corrected FWHM of 0.2-0.3 arcsec would enable fine-sampling IFUs to
+probe smaller galaxies and study sub-structure on 1--2 kpc scales.
+
+Environmental effects and evolutionary processes evident at higher redshift have consequences that can be tested in present-day galaxies.  Using globular cluster and planetary nebulae as tracers, FOBOS will
+dramatically advance dynamical studies of nearby galaxies with
+$\mathcal{M_\ast/M_\odot} \lesssim 10^{11}$, capturing the majority
+of the $\sim$1000 GCs located within $\sim$50 kpc of typical hosts
+\citep[see][]{2013ApJ...772...82H} and tightly constraining their
+dark matter halos. FOBOS's multi-IFU mode will additionally provide
+powerful insight on the origin of dwarf galaxies, both compact and
+ultra-diffuse (UDGs), in the field and in nearby clusters like Coma
+and Virgo.
 
-%\subsubsection{Science goals}
-
-%Galactic winds driven by massive stars, supernovae, and accreting
-%supermassive black holes play a key role in regulating and quenching
-%star formation and polluting the intergalactic medium.  Outflows
-%powered by accreting black holes should be centrally concentrated in
-%the galactic bulge with outflow velocities that scale with some
-%measure of the accretion rate onto the black hole (for example the
-%[OIII] line luminosity).  Outflows powered by star formation can be
-%generated throughout the disk, and the outflow velocities might be
-%expected to scale with the {\em local} star formation rate. MaNGA will
-%measure gas outflows by comparing the kinematics of the
-%Na~I~D~$\lambda\lambda5890, 5896$ interstellar medium absorption lines
-%to the kinematics of the stars in systems that are within 60$^{\circ}$
-%of face-on (e.g., Chen et al. 2010).  Recent work has indicated that
-%outflows traced by Na~I~D track outflows observed in the molecular
-%component of galaxies remarkably well (Rupke et al.\ 2012).
-
-%A stretch goal will be to detect outflows in edge-on systems by 
-%measuring faint emission from ionized gas in the outflow above an
-%below the plane of the disk. BPT ionization maps will be used to identify 
-%shocked gas and thereby discriminate between extended disk emission 
-%and gas in the wind.  The faintness of the ionized gas emission 
-%will necessitate using stacked spectra. \red{Remove or actually put
-%in some requirements on this - personally I think this falls in the 
-%'would be cool' but not essential category.}
-
-%\subsubsection{Requirements on measured galaxy physical properties}
-
-%\begin{description}
-
-%\item[P3.1] Ionized gas velocities measured to better than 
-%10 km~s$^{-1}$ in individual fibers.  This will make it possible to 
-%accurately align spectra in velocity space before co-adding.
-
-%\item[P3.2] Errors on the measured outflow velocity of less than
-%  20~km~s$^{-1}$.  Outflows speeds of $\sim100 -- 200$~km~s$^{-1}$ are
-%  expected in most star forming galaxies where interstellar Na~I can
-%  be detected in absorption (Chen et al.~2010).
-
-%\item[P3.3] Errors on the star formation surface density (SFRD) of 
-%$<0.1$~dex.  This will provide adequate sampling of the  
-%order-of-magnitude range in SFRD over which we expect to detect
-%outflows (Chen et al.~2010).  
-
-%\item[P3.4] Gas ionization diagnostics ([N II]/H$\alpha$ vs.\ 
-%[O III]/H$\beta$) to separate gas that is photoionized from gas 
-%that is shocked or ionized by an AGN. The required precision in 
-%the log of the line ratios is ±0.2 dex to minimize classification 
-%uncertainty.
-
-%\end{description}
-
-%\subsubsection{Requirements on observables}
-
-%\begin{description}
-
-%\item[R3.1] S/N > 10 in the H$\alpha$ emission lines in individual
-%fibers for the sample used in outflow analysis.  Based on analysis 
-%of SDSS-I spectra, this S/N will enable use to meet the 10~km~s$^{-1}$
-%requrement on gas velocity measurements (P3.1). 
-
-%\item[R3.3] S/N $>3$ on [O~III], H$\beta$, [NII], and H$\alpha$
-%  emission lines to enable gas ionization diagnostics and SFR
-%  measurements from the nebular lines.
-
-%\item[R3.4] Relative spectrophotometry accurate to better than 2.5\%
-%  between H$\beta$ and H$\alpha$ to insure that calibration errors do
-%  not dominate the error budget on SFR measurements (P3.2).
-
-%\item[R3.5] Median S/N of 300 per pixel in radially binned stacked
-%  spectra in order to measure Na~I~D velocities as described in
-%  P3.1. (This is due to the fact that typical Na~D EWs from the
-%  outflow are tiny (0.2 - 1 \AA; Chen et al.~2010.)
-
-%\item[R3.6] Sample size of at least 1500 galaxies with on-going star
-%  formation or AGN activity, low inclination ($i < 60^{\circ}$), and
-%  moderately strong dust attenuation ($A_V > 1$~mag).  Chen et
-%  al. 2010 find that the later requirement is important because Na~I
-%  is easily ionized in the absence of dust shielding.  The 1500 number
-%  comes from assuming that we will need to stack spectra of roughly
-%  150 galaxies to achieve our desired S/N.  We wish to divide the
-%  sample into at least 10 bins in galaxy physical properties (for
-%  instance, five mass bins subdivided into SFR and AGN-dominated galaxies.)
-%\end{description}
-
-\subsection{Star formation quenching in central and satellite galaxies}
-\label{sec:high-density}
-
-\subsubsection{Science goals}
-
-Processes that quench a central galaxy are thought to be mainly
-internal to the galaxy, including AGN feedback and morphological
-quenching.  SDSS data have shown that a dense bulge is a necessary
-condition to quench the central galaxies in the local Universe
-(e.g. \citealt{fang2013}).  For satellite galaxies, however, quenching
-is primarily driven by external processes occuring within their host
-groups/clusters such as ram-pressure stripping and tidal
-harassment. The removal of \HI\ gas by ram-pressure stripping has been
-directly observed in spirals residing in nearby clusters such as
-Virgo. In some of these objects, IFU spectra have been obtained that
-show strong Balmer absorption lines in the outer regions of the
-galaxy.
-
-MaNGA will map the radial dependence of the star formation history for
-a large number of quenched galaxies, allowing us to statistically
-determine to what extent and under what conditions quenching occurs
-from the outside-in or the inside-out. MaNGA will allow this to be
-done for both central galaxies and satellite galaxies in dark matter
-halos spanning a wide range of mass. The MaNGA sample will be large
-enough to ascertain 1) the relative role of gas heating (through
-starburst and/or AGN feedback), disk stabilization (through central
-bulge growth) and shock heating of halo gas (effective in massive
-halos) in quenching the central galaxies, 2) whether stripping-induced
-truncation events are ubiquitous in satellite galaxies, 3) the typical
-cluster-centric radius at which the truncation is occurring and how
-this radius depends on galaxy properties, halo mass, and
-cluster-centric radius.
-
-\subsubsection{Requirements on measured galaxy physical properties}
-
-\begin{description}
-
-\item[P3.1] Characterization of galaxy halo mass, local environment
-  density, and central/satellite classification.  This will require
-  targeting sky regions previously covered by the SDSS MAIN sample so
-  that cluster/group catalogs and local density measurements are
-  available.  (Note that we will avoid the SDSS survey edges, to the
-  extent possible, by $\sim$2 Mpc in the transverse direction and
-  $\sim$10 Mpc in the redshift direction.)
-
-\item[P3.2] Measurements of mean stellar ages to $\pm0.1$~dex and Balmer absorption lines (H$\delta$ and H$\gamma$ EW) to $\pm$1~\AA\ in an outer radial bin---from 1.1\Reff\ to 1.5\Reff---to investigate
-  radial trends and evidence for outside-in quenching.
-
-\item[P3.3] Measurements of the H$\alpha$ emission line equivalent
-  width (EW) to better than 0.5 \AA\ to trace abrupt changes in the
-  ratio of present to past-average star formation.
-
-\item[P3.4] Overlap with current/planned \HI\ surveys for a certain
-fraction of the sample to explore the impact of neutral gas stripping.
-
-\item[P3.5] Spatial resolution of better than 1.5 kpc for a large
-  fraction of the central galaxies in the sample in order to spatially
-  resolve bulges (the typical size of bulges is $\sim$1~kpc, \citealt{fisher2010}).
-
-
-\end{description}
-
-
-\subsection{Measuring the distribution and transfer of angular momentum}
-\label{sec:dyn_scaling}
-
-\subsubsection{Science goals}
-
-The distribution and transfer of angular momentum between the forming
-disk, bulge, and halo components of galaxies ultimately define their
-present-day sizes and dynamical states.  Different formation channels
-from dissipative collapse to fueling by cold streams, as well as tidal
-forces from mergers or instabilities, have varying effects on the
-angular momentum distribution as observed today.  This ``fossil
-record'' remains poorly understood, however, in large part because
-robust measures of rotation have not been possible for large samples.
-MaNGA's 2D velocity maps will address this problem by providing
-detailed insight on dynamical scaling relations that describe how the
-sizes $R$, velocities $V_{\rm max}$, dispersions $\sigma$, and
-stellar masses of galaxy components relate to one another.  The shape
-of these relations encodes information about how subcomponents have
-formed, interacted, and distributed their angular momentum. 
-
-Global and detailed dynamical modelling taking into account the two-dimensional
-kinematics extracted from the MaNGA datasets will also provide
-strong constraints on the internal stellar dynamics and therefore 
-be a direct benchmark to test plausible formation scenarios including
-a re-distribution of the angular momentum (e.g., bulges forming via mergers
-or from secular evolution, transfer of angular momentum in the outer part of the disk via density waves).
-
-Apart from global kinematical properties, the survey will allow a
-census of spin, ordered and unordered motion in the stellar and
-gaseous subcomponents at the spatial scales on which the kinematics
-can be extracted. Many subcomponents can only be uniquely indentified
-by measuring their kinematics, e.g., bars, bulges,
-kinematically-decoupled cores \citep{vandenbosch2008}, or
-counter-rotators (``two-sigma'' galaxies; \citealt{krajnovic11}), and
-misaligned gaseous disks.
-
-%Once again, a sample size of
-%roughly 10,000 galaxies is required to firmly detect and characterize
-%the predicted differences.
-
-\subsubsection{Requirements on measured galaxy physical properties}
-
-\begin{description}
-\item [P4.1] A characterization of the dynamical mass, angular momentum,
-  dynamical temperature, and regularity (e.g., axisymmetry) for the majority (80\%) of the sample.
-
-\item [P4.2] In disk-dominated galaxies, a significant fraction covered to at least 2.2 disk scalelength for Tully-Fisher studies, as $V_{2.2}$ yields the smallest scatter in the Tully-Fisher relation \citep{courteau97}. (According to bulge-disk decomposition of SDSS galaxies \citep{lackner12a}, 1.5~\Reff\ corresponds to a median of 2.5 disk scalelength).
-
-%\item [P4.1] Determine the amount of energy in ordered and unordered
-%  motion and the specific angular momentum over the range of stellar
-%  mass probed by MaNGA to within 10\% for most of the galaxy sample.
-\item [P4.3] Measurement of the specific angular momentum parameter, $\lambda_R$, to 10\% within 1.5\Reff\ for quiescent galaxies in order to
-  differentiate fast and slow rotators.
-
-%\item [P4.3] Determine the enclosed gravitating mass within 1.5R$_e$ to 10\%.
-
-\item [P4.4] The ability to distinguish counter-rotating components
-  that contribute at least 25\% of the luminosity (in $r$-band) and a
-  velocity difference of at least 100 km/s at 1.5\Reff.
-
-\item [P4.5] Resolve the bulk of the baryons by having at least 2
-  spatial resolution elements across the half-light radius.
-
-%\item [P4.2] Measurements of galaxy size, environment, gas fraction, 
-%etc., to correlate dynamical results with. 
-
-\end{description}
-
-\subsection{Weighing galaxy subcomponents}
-\label{sec:weighing}
-
-\subsubsection{Science goals}
-
-The relationship between the baryonic and dark matter masses of
-galaxies is key to understanding their formation history. However, no
-single method can uniquely decompose the mass profile of a galaxy into
-dark matter and stars. Dynamical methods can measure the total mass
-enclosed, but not determine the nature of the gravitating mass.
-Spectrophotometry can constrain the baryonic mass\footnote{The gas
-  mass, $M_{\rm gas}$, must also be accounted for although in most
-  cases $M_*$ dominates. $M_{\rm gas}$ estimates will come from \HI\
-  surveys and assumptions based on observed SFRs.}. However, as an
-unfortunate result of the unknown shape of the IMF, $M_*$ estimates
-are systematically uncertain at the same level as the expected signal
-from baryonic contraction. MaNGA can help overcome this dark
-matter--IMF degeneracy and shed light on both problems by enabling
-detailed modeling of the full suite of mass probes available and by
-discriminating trends in how these models depend on total mass and
-other properties.
-
-MaNGA will explore variations in the low-mass end of the IMF by
-comparing high S/N stacked spectra to predictions of stellar
-population synthesis models \citep{conroy2012}.  Particular
-attention will be paid to the TiO$_2$ $\lambda6230$ and Na~I
-$\lambda8190$ features which are very sensitive to stars with masses
-less than 0.3~$\Msun$ (e.g., \citealt{spiniello2012}).
-
-%Strong evidence has been found for an IMF which becomes
-%increasingly ``bottom-heavy'' with increasing stellar velocity
-%dispersion (e.g., Ferreras et al. 2013).  MaNGA will provide a fresh
-%angle on this question by enabling the study of IMF variations 
-%\emph{within} galaxies. 
-
-\subsubsection{Requirements on measured galaxy physical parameters}
-
-\begin{description}
-
-%\item[P5.1] Determine the dynamical baryonic mass-to-light ratio from the from the gas (late types) or stellar kinematics (early types) to 10\% for the majority of the sample (see [P5.4]).
-
-\item[P5.1] Determine the enclosed gravitating mass within 1.5\Reff\
-  to
-  10\%. %(i.e. inside the radius where bins with S/N of ~10 can be achieved. This would have to be explained in section 3)
-
-\item[P5.2] Determine the dark matter fraction within 1.5\Reff\ and 2.5\Reff\ in
-  bulge-dominated, gas-poor galaxies to 10\%.
-
-\item[P5.3] Determine the stellar mass-to-light ratio in
-  bulge-dominated, gas-poor galaxies (gas fraction less than 10\%) via
-  dynamical modeling to 15-25\% to investigate IMF variations.  This
-  constraint is driven by the fact that the maximum M/L difference
-  attributed to the IMF is roughly a factor of two (e.g., \citealt{conroy2012}). This will be met if both P5.1 and P5.2 are
-  met.
-
-%\item[P5.1] Determine the dynamical baryonic mass-to-light ratio from the from the gas (late types) or stellar kinematics (early types) to 10\% for the majority of the sample (see [P5.4]).
-
-\item[P5.4] Measure masses for the halo from weak lensing (using overlapping deep
-  imaging) to a factor of $\sim 2$ from stacks of $\sim 300$ galaxies.
-
-
-\end{description}
-
-
-%% ----------------------------------------------------------------------------------------------------
-%%   FOBOS Key Observables
-%% ----------------------------------------------------------------------------------------------------
-
-\section{FOBOS Key Observables}\label{sec:key_observables}
-
-% \begin{figure*}
-% \begin{center}
-% \includegraphics[width=1.1\textwidth]{figures/srd_flowchart_depth.pdf}
-% \caption{Key science requirements flowdown structure. The red boxes above indicate the five categories of science questions we want to address; the green boxes indicate the high level science requirements; the blue boxes near the bottom indicate the resulting technical requirements on {\it observing depth and flux calibration}. The flowchart only contains the major requirements. The text provides a more complete list of requirements.}
-% \label{fig:srd_flowchart_depth}
-% \end{center}
-% \end{figure*}
-
-% \begin{figure*}
-% \begin{center}
-% \includegraphics[width=1.1\textwidth]{figures/srd_flowchart_sample.pdf}
-% \caption{Key science requirements flowdown structure. The red boxes above indicate the five categories of science questions we want to address, with the addition of protecting the discovery potential for unforeseen science; the green boxes indicate the high level science requirements; the blue boxes near the bottom indicate the resulting technical requirements on {\it sample selection}. The flowchart only contains the major requirements. The text provides a more complete list of requirements.}
-% \label{fig:srd_flowchart_sample}
-% \end{center}
-% \end{figure*}
-
-We have described how FOBOS's success in addressing the key questions
-above relies on the ability to obtain an array of measurements of
-derived physical properties at targeted levels of precision.  We now
-detail how achieving these measurements translates into specific
-observational requirements. We provide two flowcharts
-to illustrate the key requirements with an emphasis on observing depth
-(Figure~\ref{fig:srd_flowchart_depth}) and on sample design
-(Figure~\ref{fig:srd_flowchart_sample}), respectively.
-
-\subsection{The interstellar medium}\label{sec:reqirements_ism}
-
-\subsubsection{High-level science requirements}
-
-The MaNGA survey will include a large number of late-type,
-star-forming galaxies with high S/N ratio emission lines.
 Measurements of [O~II], [O~III], \Halpha, \Hbeta\, [N~II] and [S~II]
 will determine nebular gas metallicities, ionization parameter, and
 gas densities with high confidence. Measurements of \Halpha\ and
@@ -628,10 +387,6 @@ galaxies on the BPT diagram. [O~I] and [S~II] along with the BPT lines
 as a function of position within the galaxy differentiate between
 shocks in the interstellar medium, ionization by post-AGB stars, or
 the presence of a ``low-ionization'' active galactic nucleus.
-
-The requirements on the accuracy of our gas ionization diagnostics,
-metallicities, and star formation rate measurements can be found in
-P1.1, P1.2, P1.3, P1.4, and P3.3.
 
 One complication in placing requirements on nebular emission lines is
 that we expect a wide variation in line equivalent widths (EWs) in our
@@ -644,44 +399,44 @@ sigma of 160km/s. We chose \Hbeta\ because it is often the weakest
 emission line of all and is the limiting factor in determining
 extinction and SFR.
 
-The high-level science requirements from \S\ref{sec:key_science} can be distilled to the following two:
+The stellar populations in a galaxy represent a record of the galaxy's star formation and chemical enrichment history.   For quiescent galaxies
+ages, metallicities, and abundances ratios are typically been measured
+using line indices \citep[e.g.][]{johansson12}.  More recently, methods have been developed that make use of the full spectrum \citep{conroy14}.  For late-type galaxies, constraints the mean stellar age and the presence of recent bursts come from the 4000~\AA\ break and the high order Balmer lines \citep[e.g.][]{kauffmann03a}.
 
-\begin{itemize}
-\item Determine star formation rate surface density to 0.2 dex per
-  spatial resolution element ($\sim2.5\arcsec$ FWHM) at 1.5\Reff\ when
-  the peak amplitude of H$\beta$ is at least 70\% of its continuum,
-  and determine its dependence on stellar mass, gas content, and
-  environment.
+FOBOS's wide
+spectral range (3500--10,000~\AA) captures a large range of
+absorption features, from blue indices such as D4000, Ca H$+$K, and
+higher-order Balmer lines, through classical optical absorption
+features such as \Hbeta, Mg{\it b}, and Fe5270/Fe5335, to red,
+gravity-sensitive features such as the Ca triplet at $8600$~\AA.
+These features encode a great deal of information about star formation
+histories and the IMF, and can be used to measure element abundance
+ratios like [Mg/Fe], [N/Fe], [C/Fe] and [Ca/Fe].
 
-\item Measure the gas metallicity (O/H) gradient to 0.04 dex per
-  \Reff\ when the peak amplitude of H$\beta$ is at least 70\% of its
-  continuum throughout the galaxy, and determine its dependence on
-  mass, stellar age, morphology, and environment.
-\end{itemize}
-
-\subsubsection{Summary of technical requirements}
+\subsubsection{Science Requirements for Galaxy Structure with IFUs}
 
 \begin{description}
 
-\item [R1.1] The minimum spectral coverage should enable the
-  observation of the main strong nebular lines which are used to
-  measure the gas metallicity, ionization parameter, gas density and
-  diagnostic diagrams.  In particular, at the blue end of the spectrum
-  the [O~II]~$\lambda~3727$ doublet is crucial to measure both the
-  metallicity and ionization parameter.  At the red end the
-  [S~II]$\lambda\lambda~6717,6731$ doublet is needed both to measure
-  the gas metallicity and to provide a tool to diagnose the presence
-  of AGNs or shocks, in alternative to [N~II]. The [S~III] 9069,9521
-  doublet is also another valuable AGN/shock diagnostic
-  \citep{osterbrock92} and a density tracer of gas in higher
-  ionization stages than [S~II].
+\item[S5.1] Gas ionization diagnostics ([N II]/H$\alpha$ vs.\ 
+[O III]/H$\beta$) to separate gas that is photoionized from gas 
+that is shocked or ionized by an AGN. The required precision in 
+the log of the line ratios is ±0.2 dex to minimize classification 
+uncertainty.
 
-\item [R1.2] A spectral resolution $\rm R=\lambda/\Delta \lambda$ of
+\item[S5.2] Spatial resolution of better than XXX kpc for a large
+  fraction of the central galaxies in the sample in order to spatially
+  resolve?
+
+\item[S5.?] Per-fiber S/N limits for dwarf galaxies, both compact and
+ultra-diffuse (UDGs), in the field and in nearby clusters like Coma
+and Virgo.
+
+\item [S?] A spectral resolution $\rm R=\lambda/\Delta \lambda$ of
   at least 1,500 is needed to properly subtract the H$\beta$ stellar
   absorption from the corresponding nebular emission, to fully resolve
   the [NII] doublet from H$\alpha$, and to resolve the [SII] doublet.
 
-\item [R1.3] Stellar continuum $S/N > 7$ per pixel near \Hbeta\ per
+\item [S] Stellar continuum $S/N > 7$ per pixel near \Hbeta\ per
   spatial resolution element so that we can constrain E(B-V) to 0.2
   and achieve a ${\rm \Sigma_{SFR}}$ estimate of 0.2 dex. In the
   current baseline sample design and observing strategy, we can
@@ -691,7 +446,7 @@ The high-level science requirements from \S\ref{sec:key_science} can be distille
   galaxies will have ${\rm \Sigma_{SFR}}$ constrained to better than
   0.2 dex per spatial resolution element.
 
-\item [R1.4] An A/N of $>7$ on the key nebular lines [O~II], H$\beta$, and
+\item [S] An A/N of $>7$ on the key nebular lines [O~II], H$\beta$, and
   [O~III] is needed to measure the gas metallicity with an accuracy
   better than 0.05~dex per elliptical annulus at 1.5\Reff. This translates
   to a continuum $S/N > 10$ per pixel near \Hbeta.
@@ -703,103 +458,84 @@ The high-level science requirements from \S\ref{sec:key_science} can be distille
   on [N~II] will also allow the determination of the [N/O] abundance
   ratio with an accuracy better than 0.1 dex.  % Individual fibers!
 
-%What fraction of the sample is required to meet this?
-% Show Roberto's diagram  
+\item[S] Galaxies should be sampled by a minimum of 2.5 fibers per 1.5\Reff\
+ to enable measurements of metallicity gradients 
 
-\item[R1.5] Spatial coverage out to 1.5~R$_e$ for 2/3 of the sample to
-enable higher resolution and higher S/N measurements of the radial
-gradients in age/metallicity. Spatial coverage to 2.5~R$_e$ for 1/3 of the
-sample to probe the outer regions of disks where recent accretion signatures  
-will be strongest. (See P1.7 and P1.8)
+\item[S5.3] Spectral stacking?
 
-\item[R1.6] Galaxies should be sampled by a minimum of 2.5 fibers per 1.5\Reff\
- to enable precise measurements of age/abundance gradients (See P2.3)
+\item[S5.2] For tracer studies, determine the dark matter fraction within 1.5\Reff\ and 2.5\Reff\ to 10\% (?)
 
-%\item [R3.2.4] To explore radii between 1.5 and $2.5~R_e$ we need 
-%to achieve the same S/N constraints in radially averaged bins. 
-%% FI
 
-\item[R1.7] Relative spectrophotometry accurate to better than 7\%
-  from [O~II]~$\lambda3727$ to H$\alpha$ and to better than 2.4\%
-  between H$\beta$ and H$\alpha$ to ensure that calibration errors do
-  not dominate the error budget on galaxy SFRs and nebular
-  metallicities.
+\item [S4.5] (\emph{From MaNGA, how close do we get to this with FOBOS?}) Resolve the bulk of the baryons by having at least 2
+  spatial resolution elements across the half-light radius.
 
-\item[R1.8] To explore radial trends in SFR, ionization, and metallicity
-  with galaxy physical properties such as mass, concentration, and 
-  environment and to identify outliers that might signal accretion 
-  events requires a sample size of $\sim5000$ galaxies that reach 
-  the above S/N threshold. (See P1.9)
-% Something about sample dynamic range
+\item[S]  Gas kinematics will use standard tracers such as the Balmer
+  lines (\Hbeta, \Halpha), [OI], [OII], [OIII], [NII] and [SII],
+  sometimes fitted simultaneously. 
 
-% \item[R1.9] At least 5\% of the emission-line sample should be at 
-%  declinations less than 20$^{\circ}$ to enable ALMA follow-up
+\item[S]  Emission-line tracers will be continuum corrected to account for
+  associated absorption lines, the kinematics of which will derived
+  independently from absorption lines that are not heavily contaminated
+  by emission.
+
+\item[S] Gas velocity accuracy of 6-10~km/s and dispersion to
+  ~30 km/s for lines with peak S/N $>$10.  Equivalently, $k_1$ (the
+  kinemetric first moment) from emission-line tracers, will be
+  determined to an accuracy of $<$ 5~km/s for amplitude-over-noise
+  $A/N>5$ and $<$ 10~km/s for $A/N<5$. This applies only to galaxies
+  with line-emission, that are rotation dominated, and have at least 5
+  spatial resolution elements across the major axis.
+
 
 \end{description}
 
 
-\subsection{Stellar populations}\label{sec:requirements_stellar_pops}
-
-\subsubsection{High-level science requirements}
-%The stellar populations in a galaxy represent a record of the galaxy's
-%star formation history. The age distribution of the stars in a galaxy
-%trace the main epochs of star formation activity, while stellar
-%metallicities carry information about the efficiency of star formation
-%as well as the history of gas accretion and outflows of gas and heavy
-%elements. Finally, the element abundance ratios in stars can be used
-%to constrain the chemical enrichment history of the galaxy, as well as
-%the timescale over which stars were formed.
-
-The stellar populations in a galaxy represent a record of the galaxy's star formation and chemical enrichment history.   For quiescent galaxies
-ages, metallicities, and abundances ratios are typically been measured
-using line indices \citep[e.g.][]{johansson12}.  More recently, methods have been developed that make use of the full spectrum \citep{conroy14}.  For late-type galaxies, constraints the mean stellar age and the presence of recent bursts come from the 4000~\AA\ break and the high order Balmer lines \citep[e.g.][]{kauffmann03a}.
-
-A unique feature of MaNGA compared to current IFU surveys is its large
-spectral range (3500--10,000~\AA) which captures a large range of
-absorption features, from blue indices such as D4000, Ca H$+$K, and
-higher-order Balmer lines, through classical optical absorption
-features such as \Hbeta, Mg{\it b}, and Fe5270/Fe5335, to red,
-gravity-sensitive features such as the Ca triplet at $8600$~\AA.
-These features encode a great deal of information about star formation
-histories and the IMF, and can be used to measure element abundance
-ratios like [Mg/Fe], [N/Fe], [C/Fe] and [Ca/Fe].
-
-% Some text about IMF here
-
-The required precision on our stellar population measurements is  
-outlined in P1.5, P2.1, and P3.2. It can be summrized as the following:
-%The high-level science requirements from \S\ref{sec:key_science} can be distilled to the following two:
-
-%For much of the planned  analysis we wish to measure mean stellar age and 
-%metallicity to $\pm0.15$~dex, and relative abundances, (e.g., 
-%[O/Fe]) to $\pm0.1$~dex.  To achive these constraints in the outer
-%regions of galaxies will require azimuthal binning.  To effectively
-%measure age/metallcity gradients (which we expect to be about 0.4 
-%dex) will require at least four radial bins.
-% Constraints on gradients from simulations 
 
 
-\begin{itemize}
-\item Measure the stellar age in star-forming and newly-quenched galaxies
- to 0.10 dex per \Reff, and determine its dependence on mass, morphology,
- and environment.
+%% ----------------------------------------------------------------------------------------
+%% Local Group Program
+%% ----------------------------------------------------------------------------------------
+\newpage
+\section{FOBOS Key Science: The Milky Way and its Local Group} \label{sec:local}
 
-\item Measure the stellar age, metallicity, and abundance gradient to
-  0.10 dex per decade in \Reff\ in quiescent galaxies, and determine
-  its dependence on mass, morphology, and environment.
+A calculation of how the abundance precision (as represented by the Cramer-Rao bound) suffers as you decrease the resolving power of the UV channel while maintaining R~3500 for the other channels (see attached). This is assuming a full spectrum fitting approach for an RGB star at [Fe/H]=-1.0 and -2.0 with a constant S/N=30. As expected, the precision decreases, but not dramatically so. A comparison at fixed integration time would result in slightly smaller differences between the different options.
 
-%\item Measure the stellar metallicity gradient to 0.10 dex per decade in Re, and determine its dependence on mass, morphology, and environment.
 
-\end{itemize}
 
-\subsubsection{Summary of requirements}
+%% ----------------------------------------------------------------------------------------------------
+%%   FOBOS Key Observables
+%% ----------------------------------------------------------------------------------------------------
 
-\begin{description} 
+\section{FOBOS Key Programs}\label{sec:keyPrograms}
 
-\item[R2.1] Spectral coverage of all 40 Lick Indices and the
-   Na~I$\lambda8190$ absorption feature used for IMF studies.  
-   This is met by the existing BOSS spectrographs.
+We have described how FOBOS's success in addressing the key questions
+above relies on the ability to obtain an array of measurements of
+derived physical properties at targeted levels of precision.  We now
+detail how achieving these measurements translates into specific
+observational requirements for possible key programs.
 
+\subsection{Cosmology Key Program}
+
+\begin{description}
+
+\item[P1.] Sample size
+\item[P1.] Selection 
+\item[P1.] Instrument configuration 
+\item[P1.] Exposure time
+\item[P1.] Duration
+
+\end{description}
+
+\subsubsection{Cosmology Survey Success Metric and Completeness Metrics}
+
+What are they?
+
+
+\subsection{Galaxy Evolution Key Program}
+
+\subsubsection{IFU Program}
+
+\begin{description}
  \item[R2.2] A median S/N of $>33$ per pixel in the r-band continuum
    (spatially binned, if necessary) to achieve the required mean
    stellar age ($\pm0.12$~dex), metallicity ($\pm0.1$~dex), and
@@ -829,819 +565,36 @@ outlined in P1.5, P2.1, and P3.2. It can be summrized as the following:
    for quiescent galaxies and R1.3 for star-forming galaxies) in the
    co-added spectra in at least three radial bins.
 
-%\item[R1.5] To look for evidence of abrupt star formation quenching 
-%  (P3.2), a S/N of $>16$ per pixel is required 
-%  to measure the stellar Balmer absorption lines to $\pm1$ \AA.  
-%  (Galaxies in the midst of quenching typically have H$\delta$ = 5-10 \AA.)
-%  These numbers have been derived from analysis of SDSS-I spectra.
-%  At least 80\% of the sample should reach this S/N in the co-added
-%  spectra of the outermost radial bin to have significant statistics
-%  to explore correlations with environment. (Environment is one of 
-%  the noisiest parameters.)
-
 \item[R2.5] A median S/N of $>400$ in radially binned stacked spectra
   is required in order to probe IMF variations \citep{ferreras2013}.
   This will necessitate co-adding the radially binned spectra of 50 to
   100 galaxies.  Thus, a total sample size of several thousand is desired
   for this analysis.
 
-\item[R2.6] Poisson-limited sky subtraction, especially in the
+\end{description}
+
+\begin{description}
+
+\item[P2.] Sample size
+\item[P2.] Selection 
+\item[P2.] Instrument configuration 
+\item[P2.] Exposure time
+\item[P2.] Duration
+
+\item[P2.] Poisson-limited sky subtraction, especially in the
   8,000-10,000\AA\ range, in order to stack hundreds of galaxies
   together to analyze the weak IMF-sensitive stellar absorption
   features.
 
-%\item additional spectral features in the red, at least TiO ($\sim
-%  6600$~\AA), CN bandheads ($>7000$~\AA), NaI doublet (8190~\AA), and
-%  the Ca Triplet (8600~\AA). S/N requirements are given by the flux
-%  variation due to IMF variability being of the order of a few per
-%  cent. This requires extremely high S/N of $\sim$400 (Ferreras et
-%  al.\ 2012, based on SDSS stacked spectra). For the analysis of IMF
-%  gradients, this implies stacking of ~100 objects after azimuthal
-%  stacking assuming the S/N criterion above.
 
+\item[R1.7] Relative spectrophotometry accurate to better than 7\%
+  from [O~II]~$\lambda3727$ to H$\alpha$ and to better than 2.4\%
+  between H$\beta$ and H$\alpha$ to ensure that calibration errors do
+  not dominate the error budget on galaxy SFRs and nebular
+  metallicities.
+
+  
 \end{description}
-
-Note that these requirements are robust, based on experience
-with SDSS and analysis of the MaNGA test run observations.
-
-\subsection{Dynamics} \label{sec:dynamical_state}
-
-\subsubsection{High-level science requirements}
-
-%The dynamical state of galaxy components provide key insight into their formation and assembly history as well as estimates of their total mass.  Various techniques exist to extract information from galaxy kinematics, from simple identification of if the galaxy is velocity dispersion or rotation dominated, to complex dynamical modelling such as Jeans Anisotropic (JAM) modeling \citep{cappellari2008}, kinemetry, line-of-sight velocity distribution function (LOSVD). %which solves the Jeans equations. MaNGA plans to apply JAM where appropriate and where the MaNGA data has sufficient spatial resolution (see below). 
-
-%% changes from Eric Emsellem:
-%%The dynamical state of galaxy components provide key insight into their formation and assembly history as well as estimates of their total mass. Various techniques exist to extract information from galaxy kinematics, from simple identification of if the galaxy is velocity dispersion or rotation dominated, to complex dynamical modelling.
-%
-%% The MaNGA datasets will provide the critical input for detailed Jeans Anisotropic (JAM) modeling (Cappellari 2008, MNRAS, 390, 71) which solves the Jeans equations via a generalised form for the anisotropy and are based on flexible modelling of the surface photometry with the MGE formalism (Monnet et al., 1992, Emsellem et al. 1994). These models will lead to a robust measurement of the stellar mass-to-light-ratios (M/L) of galaxies in the regions probed by the IFUs, the stellar anisotropy (orbital structure), and the specific baryonic (stellar) angular momentum. The mapping of the velocity moments and beyond, as with the stellar Line-Of-Sight Velocity Distributions (LOSVDs), will be a strong leverage to characterise merging systems (e.g., via offset kinematical components), probe Kinematically Decoupled Cores or Counter-rotation ("2-sigma" galaxies, Krajnovic et al. 2012).
-%
-
-%
-%In addition and complementary to JAM, kinemetry allows for a non-parametric characterization of galaxy kinematics that can be used
-%to diagnose disturbances, irregularities, and kinematic characteristics of merging galaxies. These will also provide a robust
-%measurement of the stellar mass-to-light-ratios (M/L) of galaxies in the regions probed by the IFUs, the stellar anisotropy
-%(orbital structure), and the specific baryonic (stellar) angular momentum.
-%
-%In many cases, the line-of-sight velocity distribution function (LOSVD) will not be well described by a Gauss-Hermite function (as assumed by kinemetry) but would have several components (double Gaussian or even more complex profiles). Stellar LOSVDs are useful for characterizing the kinematics of merging systems (offset kinematic components with overlapping
-%spatial coverage).  LOSVDs are also potentially useful to indicate trends in orbital bias (e.g. radial, tangential or isotropic stellar
-%orbits), with more information than the $h_3$ and $h_4$ parameters from kinemetry. 
-%%This will be relevant for MaNGA on spatial scales of $\sim$1kpc, similar to that required for detecting kinematally-decoupled cores (KDCs), but requiring high S/N. We will have the ability to infer major KDC or counter-rotation (``two-sigma'' galaxies; Kraijnovic et al. 2012) with mass-ratio 1:1 - 3:1, as long as there are significant differences in stellar populations and/or kinematics (Coccato et al. 2011). Our senstivity limits clearly will be limited by spatial resolution and mass-ratio, but these limits are determinable for our well-defined sample.
-%
-%Finally, the characteristic stellar velocity dispersion, $\sigma_{\rm e}$, or circular velocity is crucial as mass
-%estimator where more complex modeling is not possible; it will be the primary indicator for a global M/L. %Structure on Mass-$\sigma_{\rm e}$ plane at this level is paramount.
-%
-%
-%Gas kinematics and LOSVDs will provide incidence of substructure, such as KDCs, twists, etc. as evidence of mergers, interactions, and the relative importance of non-axsymmetric structure (e.g., spiral arms). Gas kinematics in MaNGA data will come from the ionized
-%component, and this will be linked, wherever possible, to the neutral
-%gas content of the galaxies. This will be achieved by maximizing
-%overlap of the MaNGA survey with current and future \HI surveys. (ideallyaperture-synthesis e.g. the Westerbork medium-deep survey - APERTIF MDS; Verheijen et
-%al. 2013). 
-%%Neutral-hydrogen maps will also serve as an important constraint for the circular velocity profiles derived from optical data, and will further constrain the dynamical mass estimates in connection with JAM and non-parametric schemes.
-%
- % The higher physical resolution of the tertiary sample (described below) will enable more complex line profiles diagnostics for the study of AGNs, disk heating, non-circular motion, and outflows. The requirement on the 1.5~kpc resolution scale for the Primary sample comes from the need to resolve the steep rotation curves in the centers of more massive disks (e.g. Giovanelli \& Haynes 2002 show a characteristic scale of 1.7kpc), e.g., the typical scale of bulges and bars, as well as small (low-mass) disks.
-
-%\subsubsection{Summary of requirements}
-
-
-%\medskip
-The high-level science requirements for dynamics from
-\S\ref{sec:key_science} can be distilled to the following list:
-
-\begin{itemize}
-
-%\item[R2.2] A median S/N of $>6$ per pixel to measure velocities and
-%  velocity dispersions to $\pm25$ km~s$^{-1}$ as outlined in P2.3.
-%  This constraint has been derived from analysis of SDSS-I spectra.
-
-\item[I.] Measure the baryonic specific angular momentum $\lambda_R$ within 1.5\Reff\ to 0.1.
-
-\item[II.] Measure the enclosed gravitating mass within 1.5\Reff\ to 10\% precision. 
-
-\item[III.] Determine the dark matter fraction within 1.5 and 2.5\Reff\ to
-  10\% precision for dispersion-dominated axisymmetric galaxies with
-  velocity dispersion comparable to or larger than the instrumental
-  resolution. Combining this with the above item will lead to a
-  precision on baryonic M/L of 15-25\%, depending on the actual dark
-  matter fraction.
-
-\end{itemize}
-
-\medskip
-\noindent In all items above, the precision includes only measurement
-uncertainties but not systematics due to modeling assumptions, such as
-departures from axisymmetry, spatial variations in stellar M/L, and
-the shape and tilt of the stellar velocity ellipsoid with radius and
-height within each galaxy.
-%\item  Uncertainties in these dynamical characterizations will not be
-%  limited by measurement precision or spatial coverage, but by
-%  systematics in the dynamical assumptions inherent to the modeling,
-%  e.g., departures from axisymmetry, spatial variations in stellar M/L
-%  and the shape and tilt of the stellar velocity ellipsoid with radius
-%  and height within each galaxy.
-
-%\item Systematics in the dynamical models will be testable to the
-%  extent possible with state-of-the-art dynamical theory and modern
-%  observations at the BOSS spectrograph resolution providing:
-
-%\item Distinguish counter-rotating components contributing at least 20\% of the r-band luminosity and a velocity difference of at least 100 km/s. This is needed to provide a kinematic census of dry mergers.
-
-\subsubsection{\bf Technical requirements flow-down}
-The MaNGA survey is constrained by the instrumental resolution of the
-BOSS spectrographs, which is a function of wavelength (see Figure 36
-in \citealt{smee12}). In the critical region between 450-700 nm where
-most of the significant kinematic tracers in emission and absorption
-are, the mean resolution is $\lambda/d\lambda \sim 2000$, or $\sigma
-\sim 63$ km/s. For [O~II]3727 the resolution is $\sigma \sim 100$
-km/s, while for the CaII near-infrared triplet near 860 nm, the
-resolution peaks at $\sigma \sim 50$ km/s.
-
-Here we translate the above high-level requirements into a more
-specific set of requirements on observables, modeling, and the
-kinematic tracers. We focus on stellar kinematics as it yields more
-stringent criteria. Strong emission lines will often provide an easier
-tracer but they are not always available.
-
-\noindent {\bf I.} For the first requirement, the $\lambda_R$
-measurement depends on the flux profile of the galaxy, the velocity
-field, and the velocity dispersion ($\sigma$) field. According to
-\cite{emsellem07},
-\begin{equation}
-\lambda_R = {\sum_{i=1}^{i=N_p} F_i R_i |V_i| \over \sum_{i=1}^{i=N_p} F_i R_i \sqrt{V_i^2+\sigma_i^2}} ,
-\end{equation} 
-where $F_i$, $R_i$, $V_i$, and $\sigma_i$ are the flux, center
-distance, velocity, velocity dispersion in the $i$-th spatial bin. In
-order to make a simple estimate, we assume a quiescent galaxy with
-uniform $\sigma$ throughout and a flat rotation curve that sharply
-decreases to zero in the center. In this case, $\sum_{i=1}^{i=N_p} F_i
-R_i$ can be cancelled out in the above equation and it becomes easier
-to tie the uncertainty on $\lambda_R$ to the uncertainties on $V$ and
-$\sigma$. The relation is
-\begin{equation}
-\Delta_\lambda = \lambda (1-\lambda^2) \sqrt{\left({\Delta_V \over V}\right)^2+\left({\Delta_\sigma \over \sigma}\right)^2}
-\end{equation}
-The limiting case happens at $\lambda_R$ between 0.55 and 0.6 when the
-requirements on the fractional error of $V$ and $\sigma$ are the
-tightest. For a $\lambda_R=0.6$ galaxy with $\sigma$ equal to our best
-instrumental resolution ($\sigma=50 {\rm km/s}$, $V=38{\rm km/s}$), to
-achieve $\lambda_R$=0.1, we need a S/N per bin of at least 14 per
-pixel, according to the velocity and dispersion uncertainty achieved
-in the test-run data (L. Coccato). The galaxy also needs to be
-reasonably well resolved in order to measure the $V$ and $\sigma$
-maps. According to experience, we require approximately 20 spatial
-bins in order to have a reliable measurement. Therefore, the final
-technical requirement is at least 20 spatial bins with S/N per pixel
-of at least 14. This requirement can be reached for the majority of
-the 1.5\Reff\ sample.
-
-\noindent {\bf II.} For the second requirement, the flow-down
-technical requirements are different for dispersion-dominated galaxies
-(ellipticals) and rotation-dominated galaxies (spirals). The following
-flowdowns are derived using the virial theorem ($M\propto
-(V^2+\sigma^2) R$). For a system dominated by dispersion, we require
-no more than a 7\% uncertainty on velocity dispersion and a 3\%
-uncertainty on \Reff\ to get a 10\% mass measurement.  For a system
-with a central velocity dispersion of 100km/s, given our instrumental
-resolution at Ca II triplet of 50~km/s, to get 7\% uncertainty on
-velocity dispersion, we require a S/N of 17 per pixel in one quarter
-of an outer annulus (1.1--1.5\Reff).
-
-For a system dominated by rotation, we also need to consider the
-uncertainty on inclination. Here, considering a pure disk galaxy with
-an axis ratio of b/a=0.5 or less, we can expect 7\% uncertainty on
-inclination (based on a range in intrinsic galaxy shapes,
-e.g. \citealt{padilla08}).  This implies a required uncertainty on
-radial velocity of 5\% and a 3\% measurement of \Reff.  In practice,
-the measurment uncertainty on \Reff\ for our target galaxies is much
-better than 3\% as the galaxies are relatively large. For the
-precision on the velocity and velocity dispersion measures, we use
-empirical relations derived from the test-run data.  A 5\% uncertainty
-on velocity for a rotational velocity of 100km/s requires a S/N of
-17.4 per pixel in one quarter of an outer (binned) annulus at
-1.5\Reff.  Just less than half of the 1.5\Reff\ sample achieves this
-requirement, although we note that more easily detected emission line
-velocity tracers are expected for most disk-dominated galaxies.
-
-
-%Given the current Primary sample and bundle allocation, for rotation-dominated galaxies, 64\% of the Primary sample can have circular velocity recovered to better than 5\%. 
-
-%XX\% of the early-type galaxies in the Primary sample can have velocity dispersion at 1.5\Reff recovered to better than 7\%. 
-
-%To meet the second requirement above, we need to measure the velocity and dispersion field to AA\% and BB\% precision, respectively, in at least XX spatial elements  (e.g. Voronoi bins). According to the test-run data, we need an r-band S/N per pixel of 20 to measure the velocity to 4.7km/s and velocity dispersion to 7.4km/s. Given the 50km/s instrumental resolution around [Ca~II] triplet, this means for galaxies with velocity greater than CC km/s and dispersion greater than DD km/s at 1.5Re, we need a S/N of 20 per pixel at 1.5\Reff to reach 10\% precision on dark matter fraction.
-
-\noindent {\bf III.} From the third requirement above, ideally, we
-would determine the number of spatial elements needed and the
-precision needed on velocity and velocity dispersion in each element,
-which can then be turned into a spatial coverage requirement and a
-signal-to-noise requirement. However, the real situation is rather
-complex.  The precision on velocity and velocity dispersion
-measurement not only depends on the S/N of the spectra, but also
-depends on the strength of the absorption features (hence metallicity
-of the galaxy). The number of spatial elements (e.g. Voronoi bins with
-a threshold S/N, as described in \citealt{cappellari2003}) one can
-construct depends on the surface brightness profile of the
-galaxy. Even if these factors are fixed, the precision of the dark
-matter fraction we can achieve also depends on the complexity of the
-kinematic structure of the galaxy. Therefore, it is difficult to link
-the measurement precision of the dark matter (DM) fraction with the
-parameters of the observation.
-
-Therefore, we assess whether we can meet this requirement using
-simulated galaxies assuming our baseline sample and observing
-strategy. Such simulations in conjunction with the MaNGA test data
-show that it is possible to recover dynamical estimates of the dark
-matter fraction within 1\Reff\ with anisotropic Jeans mass modelling
-(JAM: \citealt{cappellari2008}) to better than 10\% in galaxies with
-resolved ($>$60km/s) projected velocities, and bundle sizes larger
-than 19 fibers (so that their velocity fields are also well-resolved
-spatially). More than 80\% of the sample {\em in every stellar mass
-  bin} falls into the latter category. As shown in Figure
-\ref{srd:kinematics.fig}, the distribution of bundle sizes shows that
-more than 75\% of galaxies in each bundle size have projected
-velocities $>60$~km/s. In the 19-fiber bundles, the errors can still
-be better than 20\%, but additional systematic errors stemming from
-poor spatial resolution may become dominant.
-
-% \begin{figure*}[htb]
-% \begin{center}
-% \includegraphics[width=\textwidth]{figures/kinematic.png}
-% \vspace*{0cm}
-% \caption{\small Projected kinematics (left) and a prediction of 
-%   possible mass-precision with JAM (right) for the MaNGA Primary sample. The left panel
-%   illustrates the expected distribution of {\it projected} rotation
-%   speed at a radius enclosing 80\% of the $i$-band light, V80,  based on the
-%   baryonic Tully-Fisher relation from \citet{reyes2011}. The instrumental resolution
-%   of $\sigma \sim 63$ km/s is shown (blue, vertical line). Different curves
-%   show subsets observed in different bundle sizes. Roughly
-%   80\% of all MaNGA galaxies are expected to have a projected V80
-%   above the instrumental resolution. The right panel shows the fraction
-%   of galaxies which will be available for high-precision mass-decompositions, using JAM (i.e. having $V80>63$ km/s and not in the smallest bundle) . 
-%   Lower-mass galaxies will have
-%   lower-precision dynamical estimates of their stellar mass on
-%   average, but at least 30-40\% of even the lowest-mass galaxies in
-%   the survey may be able to yield stellar mass estimates to better
-%   than 10\% (random error).}
-% \label{srd:kinematics.fig}
-% \end{center}
-% \end{figure*}
-
-%III. The third requirement above translates to a S/N per pixel of XX in one quarter of the ourter ring at 1.5\Reff.This is met by XX\% of the baseline Primary sample. It also requires the 1\Reff radius is sampled by at least two spatial resolution elements. 
-
-\subsubsection{Summary of technical requirements}
-
-%\begin{itemize}
-\noindent{Requirements on observing depth and sample selection:}
-
-\begin{description}
-
-\item [R3.1] Stellar continuum S/N of 17 per pixel in one quarter of
-  the outer ring at 1.5\Reff.
-
-\item [R3.2] Have at least 20 Voronoi bins with S/N greater than 14
-  per bin within 1.5\Reff.
-
-\item [R3.3] Spatial coverage out to at least $1.5R_e$ for most of the
-  sample to probe the region of the galaxies where dark matter becomes
-  important.
-
-\item [R3.4] Two spatial resolution elements inside a $1.0R_e$ radius
-  to resolve the bulk of the baryons.
-
-%\item[R3.8] To resolve the bulk of the baryons the IFU observation needs to resolve the half-light radius of the galaxies with at least 3 spatial resolution elements in 80\% of galaxies in both the Primary and Secondary sample.
-\item [R3.5] The sample needs to be unbiased with respect to apparent ellipticity (inclination).
-
-\item [R3.6] To enable a comparison of the stellar and ionized gas distribution and kinematics with the distribution and dynamics of neutral gas, the majority of the MaNGA sample need to overlap with current or planned \HI\ observations. 
-\end{description}
-
-\noindent{Requirements on the data analysis pipeline:}
-
-\begin{description}
-
-%\item[R3.6] Velocity fields, $V$, dispersion fields, $\sigma$, and higher
-%  moments shall be measured for ionized-gas and stellar tracers down
-%  to the instrumental and S/N limits of the survey.
-
-\item[R3.7]  Dynamical masses shall be derived using Jeans Anisotropic
-  Modeling (JAM; assumes axisymmetry) and other more general dynamical modeling
-  techniques where applicable.
-
-\item[R3.8] Non-axisymmetric features shall be characterized by
-  kinemetry \citep{krajnovic2006}.
-
-\item[R3.9]  The line-of-sight velocity distribution (LOSVD) with bins of 60 km/s will be constructed when
-  adequate S/N (30-50 per angstrom) is available.
-
-\item[R3.10]  Stellar kinematics:
-
-\begin{description}
-
-\item[R3.10.1]  Velocity and velocity dispersion fields, and in general
-  stellar kinematics will be derived on $\sim$~1.5~kpc scales, using
-  various absorption line tracers including: Balmer lines (e.g.,
-  \Hbeta, \Halpha), metallic lines (e.g., Fe5270, \Mgb, around the
-  5200~\AA\ window, and Ca at 8500~\AA).
-
-\item[R3.10.2]  Higher-order moments (e.g., the Gauss-Hermite $h_3$ and $h_4$)
-  will be measured with uncertainties around 0.03 for galaxies where
-  $\sigma \sim 150$~km/s and continuum S/N per \AA\ $\sim$40
-  (Cappellari et al. 2011A). For lower dispersion, such higher order
-  moments will not be robust, with uncertainties increasing rapidly
-  for dispersions approaching the instrumental resolution (50~km/s).
-
-\end{description}
-
-\item[R3.11]  Gas kinematics:
-
-\begin{description}
-
-\item[R3.11.1]  Gas kinematics will use standard tracers such as the Balmer
-  lines (\Hbeta, \Halpha), [OI], [OII], [OIII], [NII] and [SII],
-  sometimes fitted simultaneously. 
-
-\item[R3.11.2]  Emission-line tracers will be continuum corrected to account for
-  associated absorption lines, the kinematics of which will derived
-  independently from absorption lines that are not heavily contaminated
-  by emission.
-
-\item[R3.11.3] Gas velocity accuracy of 6-10~km/s and dispersion to
-  ~30 km/s for lines with peak S/N $>$10.  Equivalently, $k_1$ (the
-  kinemetric first moment) from emission-line tracers, will be
-  determined to an accuracy of $<$ 5~km/s for amplitude-over-noise
-  $A/N>5$ and $<$ 10~km/s for $A/N<5$. This applies only to galaxies
-  with line-emission, that are rotation dominated, and have at least 5
-  spatial resolution elements across the major axis.
-
-\end{description}
-%\item quantifiable measures of axisymmetry.
-\end{description}
-
-
-
-\section{MaNGA Sample Requirements} \label{sec:sample_selection}
-%The above science requirements flow down to the following list of technical requirements on the sample design. 
-
-The majority of the science cases require a large, representative sample of galaxies of the order of 5,000-10,000 out to 1.5\Reff.
-Some of the science cases require we go out to 2.5\Reff\ with a weaker S/N requirement. A simple binning argument provides a
-convenient way to evaluate requirements on the sample size.  We first argue that the galaxy population can be divided into three
-``principal components,'' namely stellar mass, SFR (or morphology), and environment (e.g., halo mass).  One way to express the statistical power of a large
-sample is the ability to simultaneous bin the sample across these three quantities.
-
-The number of galaxies required in each bin can be estimated by assuming the common situation in which the
-single-measurement precision is roughly equal to the expected difference in signal from bin to bin. For example, MaNGA aims for a
-precision in derived stellar age gradients of $0.1$~dex per decade in \Reff, which is on par with the typical variation in this
-quantity among galaxies studied to date. In such cases, the significance of a detected
-difference between bins is equal to $\sqrt{n/2}$, where $n$ is the number of galaxies in each bin. If we demand a 5$\sigma$
-detection, we arrive at a requirement of $n=50$. 
-
-We now ask how many bins are required along each principal component.  The maximum number of bins is set by the avilable dynamic
-range and typical precision on the quantity that defines each axis.  For $M_*$, the dynamic range in our sample is three orders of
-magnitude, with a precision that demands a bin size of $\sim$0.3 dex for a total of 10 bins.  For SFR, the range is somewhat more than
-one order of magnitude, again with precision that suggests a $\sim$0.3 dex bin size, or 4 bins.  $M_{\rm halo}$ ranges over $\sim$3 orders
-of magnitude but with greater uncertainty suggesting bins of size 0.5 dex, or 5 bins.  Multiplying the number of bins together,
-$10 \times 4 \times 5 = 200$ bins in this 3D parameter space.  With $n=50$, we arrive at a full, ideal sample size of 10,000.
-
-In practice, however, we are willing to compromise on this ideal size when it comes to constructing smaller sub-samples in order to
-access other, unexplored aspects of the observables, namely radial coverage.  So, we additionally define a ``minimal'' sub-sample size
-of 3000 galaxies (10 $M_*$ bins, 3 SFR bins, two environmental bins) and an ``acceptable'' sub-sample size of 6000 galaxies (10
-$M_*$ bins, 4 SFR bins, three environmental bins).  
-
-With this in mind, we have chosen as the baseline design, to allocate $\sim$6000 bundles over the course of the survey to the
-1.5\Reff\ sample (Primary sample) and $\sim$3000 bundles to the 2.5\Reff\ sample (Secondary sample), reserving $\sim$1000 for
-ancillary programs.  In the sections below we describe why we have chosen the 2-to-1 ratio in sample size between
-the Primary and the Secondary samples, the risk of this decision, and how we are going to mitigate the risk.
-
-\subsection{Pros and Cons of the Secondary sample}
-
-First, we present more detail on the pros and cons of the Secondary sample in relation to the Primary sample.  
-
-\subsubsection{Pros of the 2.5\Reff\ Secondary Sample (opportunities offered)}
-
-The biggest advantage of the 2.5\Reff\ sample is that it offers great
-discovery potential. The outskirts of galaxies have not been well
-explored, especially by large IFU surveys. SAURON \citep{dezeeuw2002}
-and ATLAS3D \citep{cappellari2011} are
-mostly limited to 1\Reff\ in radius. CALIFA \citep{sanchez2012} and
-SAMI \citep{Croom2012} are going to
-provide samples covered to 2.5\Reff\ but have different spectral
-coverage and resolutions from MaNGA. There is great discovery
-potential at large radius. We list some of these possibilities here,
-from the most certain to pure speculations.
-
-\begin{description}
-\item[Reaching the flat part of the rotation curve:] The spatial
-  coverage of 1.5\Reff\ is not large enough to reach the peak
-  rotational velocity for most disk galaxies. \cite{courteau97} shows
-  that the median radius where peak rotational velocity is reached is
-  3.2 disk scalelength (1.9\Reff). A 2.5\Reff\ sample would reach the
-  peak velocity in the majority of galaxies. This is very useful for
-  Tully-Fisher applications.
-
-\item[Behavior of gas metallicity gradient at large radius:]
-
-  There is already tentative evidence that gas-phase metallicity shows interesting behaviour beyond 2\Reff\ \citep{moran12,sanchez13}. The two papers
-  cited here are also in interesting tension with each other, giving yet more reason to target this regime.
-
-\item[Probing the dark matter distribution:] The dark matter fraction
-  inside 1\Reff\ is small. At 1.5Re, we expect both baryons and dark
-  matter contribute significantly, allowing us to probe the dark
-  matter distribution beyond a simple fraction. However, it could also
-  be the worst point where you get maximal degeneracy between the
-  effect of M/L, orbital anisotropy, and dark halo parameters. Going
-  to 2.5\Reff\ offers a probe to much larger scale where dark matter
-  dominates.
-
-\item[Stellar population at large radius:] The stellar population
-  gradient may deviate at large radius from simple extrapolation of
-  the inner region. The IMF at large radius maybe also be different
-  from the inner region. This is a completely unexplored territory.
-\end{description}
-
-\subsubsection{Cons of the 2.5\Reff\ sample (risks)}
-
-\begin{description}
-\item[Poor spatial resolution:] The effective point spread function
-  (PSF) of the instrument and seeing will be about 2.5\arcsec. From
-  the smallest to the largest bundle, we will have 2.5 to 6.5
-  resolution elements across the radius of the bundle. Covering out to
-  2.5\Reff\ while resolving 1\Reff\ radius by at least two elements
-  (P4.5) require we have 5 resolution elements per radius. This means
-  we will not meet the resolution requirements in $\sim60\%$ of the
-  2.5\Reff\ targets. The poor resolution could also bring large
-  systematics to gas metallcity measurements \citep{yuan13,mast13}.
-
-\item[Poor continuum S/N:] The steep surface brightness profile in
-  galaxies leads to substantial reduction in the continuum S/N from
-  1.5\Reff\ to 2.5\Reff.This hampers the application for some of the
-  science cases, such as stellar kinematics modeling. Voronoi binning
-  tests on the baseline sample shows that at a S/N threshold of 25 per
-  pixel, the Secondary sample will have only 7 spatial bins on average
-  while the Primary sample will have 23 spatial bins on average. On
-  the other hand, science cases that rely on emission lines are not affected
-  by the poor continuum S/N.
-\end{description}
-
-Both the Primary and the Secondary samples have their own merit. Both
-could yield exciting science results and provide additional insight
-when analyzed together. It is difficult to judge the appropriate
-balance between the two without having data in hand as there are
-significant uncertainties about what we will find, especially in the
-Secondary sample. Both also carry their own risks. Before we have the
-observations to test this, we believe that poor S/N and spatial
-resolution would limit the Secondary sample to fewer science
-applications than the Primary sample.  Therefore we choose to allocate
-bundles in a 2-to-1 ratio.  We will reevaluate the situation after we
-have obtained one year of data.
-
-%\subsection{Baseline Sample Design and the Risk Mitigation Strategy} 
-
-%\subsection{Risk of focusing on 1.5\Reff\ only}
-
-%In many of our science cases, there is a tension between spatial coverage and spatial resolution. Large spatial coverage allows us to explore galaxy outskirts which are not well studied. However, by going to large radius, the spatial resolution would suffer given the fixed bundle size and fiber diameter. For the main science cases, we aim at covering 1.5 effective radius. This is a compromise between what is desirable and what is achievable. For composition science, going to larger radius yields larger differences in gas metallicity, stellar age, stellar abundance, etc., and probes star formation and gas flows on the outer regions. However, the stellar continuum signal-to-noise would be much lower, limiting certain science applications; the poor spatial resolution could hide small-scale variations in star-formation rate and lead to systematics in gas metallicity measurements. For kinematic science, larger coverage probes into the flat part of the rotation curve, provides more information about the dark matter halos, and measures dynamical mass on larger scales. However, the poor resolution could lead to worse beam smearing and the lower signal-to-noise could make the data useless for kinematics altogether. 
-
-%Science cases that require high continuum S/N push us towards high signal-to-noise central regions of galaxies --- 1\Reff.However, this region has been well studied by previous IFU surveys, such as SAURON and ATLAS3D. Also, there are tentative evidence that interesting composition and kinematic science happen just beyond 1\Reff (REF). Therefore, we arrive at 1.5 effective radius which is a compromise between what is interesting and what is realistic. 
-
-
-%This design for the Primary sample has the following risks. 
-%\begin{enumerate}
-
-%\item One interesting discovery about gas metallicity is that some galaxies show an abrupt metallicity drop at large radii (R90), which seems correlated with the \HI fraction \citep{moran12}. Just focusing on 1.5\Reff would miss this science.  
-
-%\item The dark matter fraction inside 1\Reff is small. At 1.5Re, we expect both baryons and dark matter contribute significantly, allowing us to probe the dark matter distribution beyond a simple fraction. However, it could also be the worst point where you get maximal degeneracy between the effect of M/L, orbital anisotropy, and dark halo parameters. One may has to go to even larger radius to probe the dark matter halo.
-
-%\item The stellar population gradient may deviate at large radius from simple extrapolation of the inner region. The IMF at large radius maybe also be different from the inner region. This is a completely unexpolored territory. We do not want to miss this discovery potential.
-
-%\item There could be interesting emission-line science at large radii. (What are they?)
-%\item Risk of getting too low a spatial resolution to resolve the central regions. 
-%
-%\item The current Primary sample design leads to a stellar-mass-dependent spatial resolution in physical unit. \cite{yuan13} and \cite{mast13} have recently emphasized the impact of spatial resolution on gas metallicity measurement. This may lead to stellar-mass-dependent systematics. 
-%
-%\item Risk of not having galaxies with very different masses to be selected from the same physical volume.
-%\end{enumerate}
-
-%\subsection{Risk Mitigation Strategy}
-
-%The last three risk items will be mitigated through ancillary samples and simulation using CALIFA data. 
-
-%To mitigate the other four risks, we are going to devote about 30\% of the fiber bundles to a Secondary sample that goes out to 2.5 effective radius. This will probe the abrupt gas metallicity drop in 10\% of the galaxies, cover the peak of the rotation curve, provide larger scale kinematics to probe the dark matter halo profile, and allow the study of stellar population and IMF variation in the outskirts. The spatial resolution of this sample would be nearly a factor of two lower than the Primary sample. Thus, in all bundles smaller than the 91-fiber bundle, the central 1\Reff would not be resolved by more than two resolution elements (per radius). 
-
-%There are two obvious risks for the Secondary sample. First, it may have too low a spatial resolution. Second, the steep surface brightness drop in galaxies means the Secondary sample have significantly lower signal-to-noise in the outskirts. Voronoi binning test shows that if the required signal-to-noise threshold per bin is set to 10 per pixel, the Secondary sample would have on average just 4 Voronoi bins beyond 1.5\Reff.If the threshold is set to 20 per pixel, then there will no bins that can satisfy this beyond 1.5\Reff.
-
-%Therefore, some kinematics applications that rely on stellar continuum will not gain from going to larger radius. Though there could be substantial gain to be made from emission line kinematics and for composition science, for which one could make annular bins and the emission lines could get stronger on the outskirts. However, as this is largely an unexplored territory, we do not know exactly what we will get. Therefore, we propose to re-evaluate the science benefit after 1 year of observation. 
-
-
-\subsection{First-year Evaluation Plan of the Primary/Secondary Sample Balance}
-
-Below we describe our evaluation plan. There are four primary reasons
-for going to 2.5\Reff: probing the gas metallicity drop, probing
-stellar population variations, probing the flat part of the rotation
-curve, and probing dark matter distribution. 
-
-After one year, we will have obtained about 1000 Primary sample
-galaxies and 500 Secondary sample galaxies. We will carry out the
-following evaluation to assess whether the 2-to-1 ratio in bundle
-allocation between the Primary and the Secondary samples should be
-adjusted, whether 2.5\Reff\ is the right coverage, and whether we shall
-concentrate the Secondary sample on a subpopulation preselected
-according to color and mass.
-
-\begin{enumerate}
-\item Evaluate the application of peak rotational velocity in
-  Tully-Fisher relation, as compared to other velocity proxies
-  available in the Primary sample with or without extrapolation. Then
-  compare all of these to \HI\ velocity widths. Does the larger
-  spatial coverage help provide tighter Tully-Fisher relations or
-  better correlation with \HI\ velocity width?
-
-\item Evaluate what fraction of Secondary sample has significant
-  emission lines detectable between 1.5 and 2\Reff\ and between 2 and
-  2.5\Reff. Does it depend on stellar mass and color? 
-
-\item Evaluate if the poor spatial resolution of the Secondary sample
-  significantly hampers the ability to detect the gas metallicity drop
-  or hurt the fidelity of the detected metallicity gradient. This
-  needs to be evaluated earlier by simulation using CALIFA data.
-
-\item Evaluate what fraction of the sample shows unexpected gas
-  metallicity behavior---i.e., deviations from the extrapolation of
-  the inner region (1.5\Reff). Does this depend on stellar mass and
-  color?
-
-\item Evaluate if the more edge-on disk galaxies in the Primary sample
-  could allow opportunities to probe larger radius along their minor
-  axes, which could eliminate the need for a Secondary sample.
-
-\item Evaluate the precision of the stellar population parameters one
-  could derive for 1.5-2\Reff\ and for 2-2.5\Reff, given their lower
-  signal-to-noise. How does this depend on stellar mass?
-
-\item Evaluate what fraction of the sample has stellar population
-  parameters that deviate from extrapolations from inner regions.
-
-\item Evaluate the stellar continuum information obtainable for
-  $r>1.5$\Reff\ from the Primary sample and check if it supersedes the
-  Secondary sample.
-
-\item Using kinematics modeling, evaluate the precision one can obtain
-  on the enclosed gravitating mass, DM fraction, specific angular
-  momentum, baryonic M/L within 1\Reff\ and 2\Reff. How does this depend on stellar mass and color?
-\end{enumerate}
-
-At the same time, the Primary sample should be evaluated against all the science requirements. From these evaluations, we will arrive at the following two metrics: 
-\begin{itemize}
-\item How many and which science cases are made feasible with the Secondary sample but unfeasible with the Primary sample?
-\item How many and which science cases can be done better with the Secondary sample than with the Primary sample, and vice versa?
-\end{itemize}
-
-These two metrics will provide a guide of whether we shall modify the
-ratio between Primary and Secondary sample sizes, whether we shall
-change the spatial coverage, and whether we should preselect the
-Secondary sample by color and mass.
-%% ----------------------------------------------------------------------------------------------------
-%%   MaNGA Sample Selection
-%% ----------------------------------------------------------------------------------------------------
-
-\subsection{Summary of Requirements on Sample Selection}
-
-Having described the reasoning for the proportion between the 1.5\Reff\ sample and the 2.5\Reff\ sample, we now summarize all the requirements on sample selection. %how the science requirements shape the other requirements on our sample selection.
-
-% why sample galaxies uniformly in units of \Reff --- characteristic scale of a galaxy's size, most physical processes in galaxies scale with \Reff.
-% why flat mass --- representative, to allow enough sampling at massive end
-% why simple selection --- discovery potential for unforeseen science, legacy dataset
-% why color-enhanced sample --- rare populations, quick evolution stages
-% environment --- environment impact on galaxy evolution  
-% \HI overlap --- probe the neutral gas phase that is unobservable from optical spectra
-
-%These science requirements are:
-
-%MaNGA survey galaxies are selected primarily from the SDSS DR7 MAIN galaxy sample to span and well-sample a large range of stellar mass and environment. The sample aims to satisfy a disparate set of science-driven requirements to achieve (i) spatial coverage and
-%adequate S/N out to 1.5 to 2.5 \Reff, {\it and} (ii) spatial resolution of 1 to 2 kpc within the context of a $\sim$ 10,000 galaxy survey within a 6-year SDSS-IV program. 
-
-%Because all galaxy scales are correlated, more luminous galaxies are physically larger,
-%and hence must be observed at higher redshift for a fixed range of IFU sizes, unless IFU observations are rastered. Such rastering
-%is inefficient and therefore incompatible with our survey size and S/N criterion.  The redshift--mass correlation inherent to any
-%sample constrained by angular coverage and resolution also leads to incomplete volume coverage over a wide range of
-%mass. 
-
-%Consequently, these high-level requirements have led us to develop a three-tiered sample that trade between coverage and
-%resolution, and also enable us to sample all masses within a single volume. These sub-samples have the following detailed
-%requirements:
-
-\begin{description}
-\item [S4.1] The sample selection needs to be simple and reproducible so that one can 
-easily reproduce the statistical distribution of any galaxy property for a volume-limited
-sample down to a certain stellar mass. 
-\item [S4.2] The sample needs to be representative at all stellar
-  masses in order to have enough statistical power to study high mass
-  galaxies equally well as low mass galaxies.
-\item [S4.3] The selection shall also give more weight to galaxies with rare color-mass combination in order to have enough statistical power to sample these rare galaxies or short stages of evolution. 
-\item [S4.4] The spatial coverage in all target galaxies must be
-  uniform in units of \Reff. Galaxies in a Primary sample will have
-  their 1.5~\Reff\ subtended by at least 2.5 fibers
-  ($\approx$5\arcsec), corresponding to a minimum IFU size of 19
-  hexagonally packed fibers. Galaxies in a Secondary sample will have
-  their 2.5~\Reff\ subtended by at least 2.5 fibers.
-%\item the selected sample distribution in stellar mass in the primary
-%  and Secondary samples independently will be flat over the range
-%  $10^9\ \Msun < {\rm M}_* < 10^{12}\ \Msun$ so that neither sub-sample
-%  is dominated by more-numerous low-mass galaxies;,
-%\item galaxies in a tertiary sample will be within a volume-limit to
-%  obtain constant physical resolution of 1 kpc at the expense of
-%  radial coverage;
-\item [S4.5] The sample should maximize spatial resolution given the above requirements.
-%\item [S4.6] The $r$-band continuum S/N of the fiber spectra at $r =
-%  1.5$~\Reff\ must be greater than 3 (per pixel) for $>$ 80\% of
-%  the galaxies in a given stellar mass bin for the Primary and
-%  Secondary samples.%, and equivalent depth at smaller radii for the
-%%  tertiary sample;
-\item [S4.6] The nominal sizes of the Primary, Secondary, and ancillary sample
-  shall be 6000, 3000, and 1000 galaxies, respectively. The final
-  distribution will be re-evaluated after one year and adjusted if necessary. 
-\item [S4.7] The combined sub-samples need to have a sky surface-density high
-  enough to enable efficient allocation of IFU bundles.
-\item [S4.8] The majority of the sample needs to have environment
-  information available, and the allocation of bundles needs to be
-  unbiased w.r.t. to environment.
-\item [S4.9] A significant fraction of the sample needs to overlap
-  past and future \HI\ observations. Attention shall also be paid to
-  other ancillary data of interest, such as deep imaging in optical
-  and near-IR.
-%\item [S4.10] At least 5\% of the survey needs to be in fields accessible from ALMA.
-\end{description}
-
-As detailed in the technical publication draft on survey target selection (Wake et al.), 
-these requirements lead to the Primary and
-Secondary samples selected in the redshift range $0.01 < z < 0.15$,
-with more massive galaxies being targeted at progressively higher
-redshift and a larger range in redshift (to increase volume in order
-to flatten the mass-distribution).%; and a volume-limited sample at
-%roughly the redshift of Coma.
-
-%\medskip
-%We require the sample selection, broadly defined above, to adhere to
-%the following specific principles:
-
-%\begin{itemize}
-%\item the survey field selection shall pay attention to the
-%  availability of ancillary data of interest to MaNGA, in particular
-%  wide area and intereferometric radio data,
-%\item stellar masses shall be well defined and reproducible from the
-%  DR7 parent sample, and based on a low-order polynomial function of (a
-%  subset) of the SDSS ugriz magnitude and their colors,
-%\item random selection shall be deterministic, e.g., determined
-%  by intermediate-significance bits in the DR7 coordinates of the
-%  object (not by a non-reproducible random number generator);
-%\item the sample shall be unbiased and representative w.r.t. to environment;
-%\item environmental density statistics shall be derivable for all
-%  sample galaxies using the DR7 parent sample, i.e., we will avoid the
-%  DR7 edges as much as possible.
-
-%\end{itemize}
-
-\medskip
-
-Finally, we require observational acquisition of a suitable stellar
-library to complement our galaxy survey. Such a library will greatly enhance studies of both stellar composition, nebular
-diagnostics (i.e., continuum correction), and kinematics. We discuss
-the desiderata in further detail in \S\ref{sec:stellar_library} below. 
-
-
-\subsection{Additional Science Justification}
-
-Having a simple and reproducible selection function is crucial for the
-legacy value of the survey. MaNGA will be the largest nearby galaxy
-IFU survey in a few years. Thus it offers the best chance to study the
-overall statistical distribution of any galaxy properties that require
-spatially-resolved spectroscopy.  On the other hand, the achievable
-10,000 galaxy sample is tiny compared to the size of the SDSS main
-galaxy survey. We cannot afford to target a pure volume-limited sample
-down to a stellar mass or magnitude limit. Therefore, we require the
-sample to be representative at all stellar masses (i.e., flat
-distribution in log mass).  As long as the selection is simple enough
-and does not depend on properties with large measurement uncertainty,
-we can always reproduce the statistical distribution of a
-volume-limited sample. Furthermore, galaxies with rare color-mass
-combinations could be short and critical evolutionary stages of galaxy
-evolution and should be given priority in targeting. Although this
-requirement is in tension with the requirement of simple selection, we
-have found a solution to be able to satisfy both requirements. See the
-technical publication draft on target selection (Wake et al.) for
-detail.
-
-The requirements for spatial coverage and resolution, motivated for
-understanding composition and kinematic gradients, properties of galaxy
-outskirts, and to well-sample internal structure, are covered in
-earlier sections. Here we describe the motivation for the overall
-survey size. Statistically robust analyses of gradients (e.g., in age,
-element abundances) in galaxies as function of {\em mass, galaxy type,
-  and environment} require a sample of $\sim$10,000
-galaxies. Characterizing {\em trends} in such gradients in detail will
-require 5 $M_*$ bins, 5 bins to probe the kinematic state of the
-galaxy, and 5 bins in environmental density or halo mass. Binning on
-rare subsamples (mergers, AGN, post-starbursts, galaxies with strong
-outflows) that account for $< 10$\% of the population requires a
-parent sample of 10,000 galaxies. Detecting differences in baryonic
-contraction and angular momentum transport during galaxy formation
-imprinted as offsets in dynamical scaling relations at the level of
-current uncertainties requires parent samples of the order of 10,000
-sources.  Likewise, accurately characterizing properties in 3 bins for
-two observables (e.g., $M_{dyn}$ and $M_*$) requires a parent sample
-of similar size.
-
-%We have chosen the SDSS DR7 MAIN galaxy sample because of its
-%photometric and spectroscopic quality in terms of uniformity and
-%completeness. For galaxies with $z < 0.055$ we use the NASA-Sloan Atlas
-%(NSA), which features improved background subtraction and so more
-%accurate size and luminosity measurements for large galaxies, as well
-%as a $\sim 30\%$ improvement in completeness over the standard SDSS
-%spectroscopic catalog for the very brightest sources. At higher $z$ we
-%use the standard NYU VAGC.
-
-%While the sample selection above seems complicated, it is actually the
-%direct consequence of two very simple principles: radial coverage to
-%1.5 (2.5) \Reff\ and a flat stellar mass distribution.  The purpose of
-%the Secondary sample is to study the physical properties of disks out
-%to large radii, albeit at lower continuum S/N, with a view to
-%understanding gas accretion mechanisms. The rationale for the third
-%sample is twofold. First, it serves as a higher (and constant as a
-%function of stellar masss) resolution comparison sample to check for
-%biases as a function of spatial resolution. Second, it guarantees
-%sampling of galaxies in the same environment, for example both members
-%of pairs.
-
-%Since it is crucial that our samples be complete in stellar mass we
-%apply no physical size or surface-brightness cuts. We also avoid cuts
-%on inclination to keep the sample as broad as possible in its science
-%return. For example, circular bundles placed on highly inclined
-%sources will recover information about the galaxy outskirts near the
-%minor axis, and unique lines-of-sight far off-plane.  Instead, we
-%apply the redshift-dependent stellar mass cuts that maximize the
-%number of galaxies in our sample that achieve our size and S/N
-%requirements, and provide a flat mass distribution, as shown in
-%section 5. Note that while stellar masses remain systematically
-%uncertain at the 0.2--0.3 dex level, they are well defined and
-%reproducible from the DR7 parent sample.
-
-
-%% ----------------------------------------------------------------------------------------------------
-%%   Spatial Sampling
-%% ----------------------------------------------------------------------------------------------------
-\section{Spatial Sampling} \label{sec:spatial_sampling}
-
-\subsection{Requirements}
-
-Spatial sampling and resolution is constrained by fiber cores which
-must be 2\arcsec\ (120 microns) in diameter. This constraint comes
-from our requirement to not degrade spectral resolution while
-remaining critically sampled in wavelength with the existing BOSS
-spectrographs. In this context, sampling uniformity, resolution, and
-efficiency shall be maximized, as follows.
-
-\noindent IFU size and shape is coupled to the sample selection and requirements
-on spatial coverage:
-
-\begin{itemize}
-
-\item The shape of the IFUs will be hexagonal as a best approximation
-  of a circular aperture with natural fiber-packing and regular
-  perimeter for mechanical mounting.
-
-\item The size and number of IFUs shall be determined by the galaxy
-  sample to optimally make use of the fibers.
-
-\begin{itemize}
-
-\item As described in the technical publication draft on sample design (Wake et al.), 
-the full set of survey requirements
-  results in each cartridge having an IFU complement consisting of 2
-  IFUs with 19 fibers, 4 with 37 fibers, 4 with 61 fibers, 2 with 91
-  fibers and 5 IFUs with 127 fibers.
-
-% with
-%  fiber-numbers (IFU-numbers) of 19 (2), 37 (4), 61 (4), 91 (2), 127
-%  (5).
-
-\end{itemize}
-\end{itemize}
-
-\medskip
-\noindent The main requirement on spatial resolution is that the delivered effective PSF shall not be degraded by more than 60\% from typical site conditions at all wavelengths:
-
-\begin{itemize}
-
-\item The FWHM of unresolved (stellar) objects in the reconstructed data
-  cubes shall be 2.5\arcsec\ or less at $\lambda = 5400$ \AA\ in median
-  observing conditions (1.5\arcsec\ seeing).
-
-\item The observational PSF of the reconstructed data cube must be
-  circular at all locations to a tolerance of $b/a > 0.85$, with $b/a$
-  the observed axis ratio.
-
-\item The angular resolution of any spatial element within the
-  reconstructed data cube shall not vary by more than 10\% from the
-  average at any given wavelength, i.e., the effects of differential
-  atmospheric refraction on the sampling must be
-  wavelength-independent at this level.
-
-\end{itemize}
 
 \medskip
 \noindent To meet these PSF requirements, while maintaining adequate
@@ -1667,6 +620,7 @@ strategy, the IFU regularity, and the fiber fill-factor:
 \item Bundle fill factor of live cores shall not be less than 50\%.
 
 \end{itemize}
+
 
 \subsection{Science Justification}
 
@@ -1709,6 +663,89 @@ dead fibers in our IFUs. While we initially considered allowing up to
 proto-type development indicates the failure-rate for fibers during
 IFU fabrication is negligible, and our vendor (CTech) has accepted our
 requirement.
+
+
+\subsubsection{IFU Survey Success Metric and Completeness Metrics}
+
+What are they?
+
+
+
+\subsection{Local Group Key Program}
+
+\begin{description}
+
+\item[P3.] Sample size
+\item[P3.] Selection 
+\item[P3.] Instrument configuration 
+\item[P3.] Exposure time
+\item[P3.] Duration
+
+\end{description}
+
+\subsubsection{Local Group Survey Success Metric and Completeness Metrics}
+
+What are they?
+
+\subsection{Program Overlap and Synergies}
+
+
+%% ----------------------------------------------------------------------------------------------------
+%%   FOBOS Technical Requirements
+%% ----------------------------------------------------------------------------------------------------
+
+\section{Instrument Requirements}
+
+Summaries of Science and Program requirements and how they flow down to technical requirements.
+
+To be populated from Wiki Tables: \url{https://uco.atlassian.net/wiki/spaces/FOB/pages/15990810/Requirements}
+
+\subsection{High Level Instrument requirements}
+
+\begin{description}
+
+\item [R1.1] Wavelength range
+
+%\item [R3.2.4] To explore radii between 1.5 and $2.5~R_e$ we need 
+%to achieve the same S/N constraints in radially averaged bins. 
+%% FI
+
+
+\end{description}
+
+
+\subsection{Spatial Sampling}
+
+\medskip
+\noindent The main requirement on spatial resolution is that the delivered effective PSF shall not be degraded by more than 60\% from typical site conditions at all wavelengths:
+
+
+\begin{itemize}
+
+\item The shape of the IFUs will be hexagonal as a best approximation
+  of a circular aperture with natural fiber-packing and regular
+  perimeter for mechanical mounting.
+
+\item The size and number of IFUs shall be determined by ...
+
+\item The FWHM of unresolved (stellar) objects in the reconstructed data
+  cubes shall be 2.5\arcsec\ or less at $\lambda = 5400$ \AA\ in median
+  observing conditions (1.5\arcsec\ seeing).
+
+\item The observational PSF of the reconstructed data cube must be
+  circular at all locations to a tolerance of $b/a > 0.85$, with $b/a$
+  the observed axis ratio.
+
+\item The angular resolution of any spatial element within the
+  reconstructed data cube shall not vary by more than 10\% from the
+  average at any given wavelength, i.e., the effects of differential
+  atmospheric refraction on the sampling must be
+  wavelength-independent at this level.
+
+
+\end{itemize}
+
+
 
 %% ----------------------------------------------------------------------------------------------------
 %%   Spectrophotometry
@@ -1780,9 +817,9 @@ extraction),  we require knowledge of the PSF across the field to a similar leve
 %% ----------------------------------------------------------------------------------------------------
 %%   MaNGA Data Reduction Pipeline
 %% ----------------------------------------------------------------------------------------------------
-\section{MaNGA Data Reduction Pipeline} \label{sec:data_reduction_pipeline}
+\section{FOBOS Data Reduction Pipeline} \label{sec:data_reduction_pipeline}
 
-The MaNGA data reduction pipeline will deliver science-quality reduced
+The FOBOS data reduction pipeline will deliver science-quality reduced
 data in various formats, including meta data that can be made available
 to the public and that will be the input-level materials for
 higher-level data products. 
@@ -1794,12 +831,10 @@ The pipeline shall perform the following tasks:
   reducing crosstalk. In a further stage, it is desirable but not a
   requirement to implement ``spectro-perfectionism'' extraction.
 \item Reject cosmic rays and other detector artifacts.
-\item Perform sky subtraction on individual extracted spectra,
-  reaching Poisson-limited performance and fulfilling the requirements
-  defined in R2.6\ in Section~\ref{sec:key_observables}. 
-\item Perform flux calibration on extracted spectra fulfilling the
-  requirements on flux calibration defined in Section~\ref{sec:spectrophotometry}.
-\item Produce a data cube based on co-added spectra for each galaxy
+\item Perform sky subtraction on individual extracted spectra
+\item Perform flux calibration on extracted spectra for relevant programs as
+   defined in Section~\ref{sec:spectrophotometry}.
+\item In IFU mode, produce a data cube based on co-added spectra for each source
   that accounts for dither offsets, atmospheric refraction, etc,
   fulfilling the requirements presented in
   Section~\ref{sec:spatial_sampling}.
@@ -1818,12 +853,9 @@ steps which require interpolation shall be minimized.
 %% ----------------------------------------------------------------------------------------------------
 %%   MaNGA Dataset
 %% ----------------------------------------------------------------------------------------------------
-\section{MaNGA Data Products} \label{sec:data_products}
+\section{FOBOS Data Products} \label{sec:data_products}
 
-The MaNGA data products that will be made available to the general
-public will range from raw data cubes to sophisticated models, to
-accommodate the various needs of our users. We therefore divide the
-MaNGA data products into four categories:
+We divide the data products into four categories:
 
 \begin{itemize}
 \item low-level products, or datacubes without any
@@ -1842,202 +874,49 @@ We describe these different categories and their requirements below.
 
 \subsection{Low-Level Products} \label{sec:low_level_products}
 
-Low-level products will be used predominantly by very experienced IFU
-users, who wish to interpret the observed spectra themselves. We will
+Low-level products will be used predominantly by users to interpret the observed spectra themselves. We will
 therefore offer:
 
 \begin{itemize}
-\item spectra of fiber at each pointing (no explicit correction for
-  atmospheric dispersion);
-\item arrays of x, y, ra, dec, lambda, flux, inverse variance, data
-  quality at each pointing; (to be used by those who want to do their
-  own interpolations);
+\item Raw fiber spectra of every exposure
 \item if sky subtraction is applied, sky-subtracted spectra shall
   reference the sky spectrum that was subtracted; and
 \item if flux calibration is applied, flux-calibrated spectra shall
    reference the flux calibration vector that was applied.
 \end{itemize} 
 
-\subsubsection{Requirements}
-
-We require detailed knowledge of the spectral and spatial resolution
-to make these low-level products available. Information from the guide
-camera (such as seeing and transparency) is needed to make a good
-assessment of the data quality. Meta-data regarding IFU metrology is
-also required to enable astrometric reconstruction of the
-two-dimensional data.
-
 \subsection{Mid-Level Products} \label{sec:mid_level_products}
 
 Mid-level products are meant for those users who prefer to measure
-quantities from the datacubes themselves, or who are interested in
+quantities from the 1D reduced spectra or datacubes themselves, or who are interested in
 quantities that we do not provide directly. These products will be:
 
 \begin{itemize}
-  \item interpolated data cubes with errors;
-  \item spatially integrated spectra; and
-  \item radially binned spectra.
+  \item Interpolated 1D spectra and data cubes with errors;
+  \item For IFUs: spatially integrated spectra; and
+  \item radially-binned spectra.
 \end{itemize}
 
-The following information will also be provided:
-
-\begin{itemize}
-  \item sky-subtracted spectra shall reference the sky spectrum that
-    was subtracted; and
-  \item flux-calibrated spectra shall reference the flux calibration
-    vector that was applied.
-\end{itemize}
-
-\subsubsection{Requirements}
-
-The mid-level products require accurate sky subtraction and flux
-calibration, as well as accurate pointing information in order to
-reconstruct the data cubes. As before, any sky subtraction and
-calibration vectors applied to the data shall be provided with the
-data.
 
 \subsection{High-Level Products} \label{sec:high_level_products}
 
-High-level products contain quantities measured directly from the
-datacubes, with none or minimal modeling assumptions. These products
+High-level products contain quantities measured directly from the 1D spectra and
+datacubes, with minimal modeling assumptions. These products
 will be used by astronomers interested in the properties of the
-observed galaxies, and as input for their own analysis and modeling.
+observed sources, and as input for their own analysis and modeling.
 
 \medskip
 \noindent Stellar and ionized-gas-phase composition measurements will include
-these measures from individual fiber spectra, data cubes,
-radially-binned (azimuthally averaged) spectra and integrated spectra:
+these measures from individual 1D spectra, datacubes,
+radially-binned (azimuthally averaged) and integrated IFU datacubes:
 
 \begin{itemize}
-\item emission and absorption line-strengths and equivalent widths
-\item stellar population continuum fits (using a select set of
-  observed templates or models)
+  \item Systemic redshifts and errors via both emission line and continuum fitting
+  \item Emission and absorption line strengths and equivalent widths
+  \item Lick index measurements (where possible)
 \end{itemize}
 
-\medskip
-\noindent Kinematics will also be measured in individual apertures (0D); as
-radial profiles (1D, azimuthal averages); and as (2D) maps. We will aim to make these
-measurements for gas and stars, including errors:
 
-\begin{itemize}
-\item Gaussian fitting: velocities and velocity dispersions
-\item Gauss-Hermite fitting: velocities, velocity dispersions, $h_3$,
-  $h_4$, etc.
-\item moments: estimates of true moments of velocity distribution
-\item two-components Gauss-Hermite fitting or
-  Line-of-Sight-Velocity-Distribution (LOSVD) alternative (e.g., for
-  interactive systems)
-\item projected velocity and velocity-dispersion profiles,
-  $\lambda_R$(R), V/$\sigma$(R)
-\item kinemetry: 1D representations of 2D maps (including errors)
-\begin{itemize}
-\item analysis of stellar kinematics (e.g. kinematic position angle
-  PA$_\mathrm{kin}$, kinematic moments $k_1$
-  ... $k_n$)
-\item analysis of gas kinematics (e.g. kinematic position angle
-  PA$_\mathrm{kin}$, circular velocity, non-circular motions)
-\item kinemetric classification (e.g. regular, irregular,
-  counter-rotating,
-  disk-like)
-\end{itemize}
-\item Galaxy Zoo: by eye classification
-\end{itemize}
-
-\subsubsection{Requirements}
-
-Requirements of S/N on the continuum and emission lines have been detailed in 
-Section \ref{sec:key_observables}.
-%for each absorption and emission line are listed
-%in Table~\ref{tab:manga:observables1}, couched in terms of S/N per
-%\AA\ in the $r$-band continuum.  
-%As shown in Chapter \ref{survey}, 
-Given the current baseline sample design and observing depth, the
-        {\it median} $r$-band continuum S/N at 1.5$R_{e}$ will be
-        $\sim 6.5$ per pixel {\it per fiber}, while 80\% of the sample
-        covered to 1.5$R_{e}$ will have S/N greater than 3.6\ in the same
-        units. At 2.5$R_{e}$, S/N per fiber will be lower by roughly a
-        factor of 7. Reaching S/N $\sim$ 7 per spatial resolution elements at 1.5$R_{e}$ requires
-        little binning for most of the sample, while achieving S/N
-        $\sim$ 3 at 2.5$R_{e}$ requires binning up to 11 fibers for
-        half the sample and up to 38 fibers for 80\% of the sample.
-        To achieve S/N $\sim$ 40 at 1.5$R_{e}$ requires averaging up
-        to 38 fibers for half the sample, and up to 123 fibers for
-        80\% of the sample; these numbers reflect the distribution of
-        surface  brightness at this radius for galaxies in our
-        sample. Consequently, our most stringent S/N requirements for
-        measuring stellar ages, metallicity and abundances necessitate
-        binning galaxies as well as fibers to reach
-        1.5$R_{e}$. However, a S/N of 20 or better can be achieved for
-        80\% of the sample in the 4th quartile of radius, such that
-        gradients can be measured, albeit at somewhat reduced
-        precision, for individual galaxies.
-
-%\begin{table}[ht!]
-%\caption{MaNGA Observables, Requirements, and Science Products }
-%\small
-%\begin{tabular}{p{0.335\textwidth}p{0.02\textwidth}p{0.02\textwidth}p{0.415\textwidth}}
-%\hline\hline
-%Observable & \multicolumn{1}{c}{S/N} & \multicolumn{1}{c}{Radius} &
-%Science Products / Physical Parameters \\
-%\multicolumn{2}{r}{(\AA$^{-1}$)} & \multicolumn{1}{c}{($R_{e}$)} & \\\hline
-%%
-%{\raggedright {\bf Absorption-line kinematics}: \\ Ca H+K, complete
-%  Balmer series, \\ Fe + Mg~$b$, NaD, CaII triplet} &
-%\multicolumn{1}{c}{8} & \multicolumn{1}{c}{1.5} & stellar velocities
-%(hot and cool stars); velocity dispersions (cool stars; 10\% errors
-%per fiber for $\sigma>60$ km s$^{-1}$)\\ \hline
-%%
-%{\raggedright {\bf Absorption-line indices}: \\ D4000, complete Balmer
-%  series, \\ CN$_{1,2}$, Ca4227, Mg~$b$, Fe5270, \\ Fe5335, NaD, CaII
-%  triplet, NaI, FeH} & \multicolumn{1}{c}{8-40} & \multicolumn{1}{c}{2}
-%& stellar mass; recent star-formation history; {\it gradients} in
-%stellar age, metallicity, and element abundance ratios (0.1 dex
-%precision per galaxy) \\\hline
-%%
-%{\raggedright {\bf Emission-line kinematics}: \\ \Halpha;
-%  [O~II]$\lambda~3727$ and [O~III]$\lambda~5007$} &
-%\multicolumn{1}{c}{5} & \multicolumn{1}{c}{2.5} & disk rotation;
-%streaming; wind velocities\\\hline
-%%
-%{\raggedright {\bf Emission-line fluxes}: \\ \Halpha, \Hbeta; [O~II],
-%  [O~III], [N~II], and [S~II] doublets} & \multicolumn{1}{c}{4} &
-%\multicolumn{1}{c}{3} & BPT classification; current star formation
-%rates; gas-phase ionization, metallicities, gradients and extinction
-%(Balmer decrement)\\\hline
-%\end{tabular}
-%\label{tab:manga:observables1}
-%\end{table}
-
-\subsection{Model-derived Products} \label{sec:meta_level_products}
-
-Model-derived products contain quantities derived from our datacubes,
-which have undergone modeling. These products will be of interest to
-users who study large samples of galaxies and their properties. All
-these products will be released with clear descriptions of the models
-that were used to derive them, and the assumptions that went in.
-
-\begin{itemize}
-\item stellar population properties (including uncertainties) from
-  absorption-line indices and full spectral fitting
-  \begin{itemize}
-    \item  metallicities, dust attenuation, SFR (and associated errors)  from
- emission lines (for individual fibers, data cubes, integrated spectra
- and radially binned spectra)
-\item metallicities, mean ages, alpha abundance and stellar
-  mass-to-light ratios from the stellar continuum (for individual
-  fibers, data cubes, integrated spectra, and radially binned data) as
-  well as from select absorption-line index analysis.
-    \end{itemize}
-\item dynamical models: JAM models \citep{cappellari2008}
-  \begin{itemize}
-  \item Multi-Gaussian Expansion (MGE, \citealt{emsellem1994}; \citealt{cappellari2002}) model for each object assuming axisymmetry
-  \item best fit parameters: inclination, anisotropy, M/L, best PA
-    (which usually is a good measure of the line of nodes)
-  \item dynamical mass within a series of apertures
-   \item predicted circular velocity curve
-\item potentially alternative dynamical models not assuming axisymmetry
-   \end{itemize} 
-\end{itemize}
 
 
 \subsection{Documentation Plan} \label{sec:documentation}
@@ -2047,77 +926,31 @@ that were used to derive them, and the assumptions that went in.
 % documentation for target selection, algorithmic descriptions, data
 % usage, and data caveats.
 
-Documentation of MaNGA data products and the methodology applied in producing them is an important requirement for ensuring
-successful scientific exploitation of the MaNGA survey both internally and in promoting the legacy value of the project after the
-data become public.  MaNGA documentation falls into several categories: 1) ``technical'' publications, 2) wiki pages and the
-Technical Reference Manual, 3) website content associated with public data releases, 4) online user guides and tutorials for
-interfacing with the data, 5) versioned and repository located source code with substantial and clear internal commenting.  We
-briefly discuss our requirements and goals for each of these in turn.  A specific policy document\footnote{{\tt
-    https://trac.sdss.org/wiki/MANGA/Data/DataProductsPolicy}} describes documentation requirements for data products contributed
-by team members outside the scope of the MaNGA project effort.
+Documentation of FOBOS data products and the methodology applied in producing them is an important requirement for
+ensuring successful scientific exploitation of the FOBOS data.  Documentation falls into several categories: 1) ``technical''
+publications, 2) wiki pages and the Technical Reference Manual, 3) website content associated with public data
+releases, 4) online user guides and tutorials for interfacing with the data, 5) versioned and repository located source
+code with substantial and clear internal commenting.  
 
-\subsubsection{Technical papers}
+\subsubsection{FOBOS Wiki}
 
-MaNGA will publish a minimum set of technical papers, some of which are either already published or about to be submitted:
+The FOBOS wiki provides the most up-to-date documentation on project activities and is the primary point of contact for
+team members desiring information and collaborating on scientific analyses.  The management team will ensure that the
+wiki remains transparent with a clear hierarchical structure.  
 
-\begin{itemize}
-
-\item Project Overview: ​Bundy et al.~2015, ApJ, 798, 7
-
-\item Instrumentation: Drory et al. 2015, AJ, 149, 77
-
-\item Observing strategy: Law et al. 2015, AJ
-
-\item Software framework and data reduction pipeline: Law et al., in preparation (as of August 2015)
-
-\item Sample design: Wake et al., advanced draft (as of August 2015)
-
-\item Spectrophotometry: Yan et al., posted for collaboration review (as of August 2015)
-
-\item Survey Description: Yan et al.
-
-\item Data Analysis Pipeline: Westfall et al.
-
-\end{itemize}
-
-
-\subsubsection{MaNGA Wiki}
-
-The MaNGA wiki provides the most up-to-date documentation on project activities and is the primary point of contact for team
-members desiring information and collaborating on scientific analyses.  The management team will ensure that the wiki remains
-transparent with a clear hierarchical structure.  Of prime importance is the Data Access page which is the portal through which
-team members access data products and find associated documentation.
-
-The software team shall maintain a ``Technical Reference Manual'' (TRM) that describes the MaNGA software framework, including metadata
+The software team shall maintain a ``Technical Reference Manual'' (TRM) that describes the FOBOS software framework, including metadata
 and targeting information.  The TRM will also describe the processing
 steps and data model for the Data Reduction Pipeline (DRP) and the Data
 Analysis Pipeline (DAP).  
 
-As of August 2015, these wiki elements are all in place.
-
-\subsubsection{Website Content}
-
-Website content associated with the SDSS public data releases will be developed drawing from the wiki, the TRM, and
-additional material.  Describing the MaNGA data model is a major thrust of this effort.  The MaNGA team will work the Central Data Group to start building content about a year in advance of each
-DR.  MaNGA will also participate in the documentation writing workshop held several months before the DR.
-
-\subsubsection{Online user guides}
-
-MaNGA data is inherently challenging to work with given its high dimensionality.  The team will provide interactive tutorials
-both hosted online and conducted during team and collaboration meetings to help collaboration members learn how to access and work
-with the data products.  Several such tutorials have been posted and conducted as of August 2015.
-
-In addition MaNGA is rolling out new interface tools such as Marvin.  We shall require that these have associated online
-documentation and user guides.
 
 \subsubsection{Source Code}
 
-All software used in the design, execution, and processing of MaNGA data will be version controlled and hosted on a
-team-accessible repository.  We require that this software operates on the central computing nodes of the project and also that
-team members can download and install personal versions.  All source code will be substantially commented, thus providing an exact
-record of processing steps undertaken when carrying out the survey.  Software will eventually become publicly available during
-data releases.  Whenever possible, we will use automatic documentation-generating software (e.g., Sphinx) to provide explanatory
-materials along with code.
+All software used in the design, execution, and processing of FOBOS data will be version controlled and hosted on an
+accessible repository.  All source code will be substantially commented, thus
+providing an exact record of processing steps undertaken when carrying out the survey.  Software will eventually become
+publicly available during data releases.  Whenever possible, we will use automatic documentation-generating software
+(e.g., Sphinx) to provide explanatory materials along with code.
 
 
 
@@ -2126,28 +959,30 @@ materials along with code.
 
 
 
-\section{Survey Success Metric and Plate Completeness Metric}
+\subsubsection{Survey Success Metric and Completeness Metrics}
 
-To define a survey success metric, we concentrate on requirements relating to the {\em continuum} S/N distribution achieved for
-some number of galaxies.  Sample size arguments are presented in Section \ref{sec:sample_selection} where we motivate a {\em minimally}
-useful sub-sample size of 3000 galaxies and an {\em acceptable} size of 6000, where the sub-samples refer to the Primary (1.5
-\Reff) and Secondary (2.5 \Reff) samples.  An absolute minimum requirement on sample size that ensures MaNGA is worthwhile is
-therefore a total of 6000 galaxies, 3000 from each sub-sample.  However, {\bf success is defined by meeting the acceptable level of 6000
-galaxies for the Primary sample, and the minimal level of 3000 for the Secondary sample}.  It should be stressed that the two samples are
-tightly coupled scientifically.  A significant loss to the Secondary sample would greatly degrade our understanding of the Primary
+To define a survey success metric, we concentrate on requirements relating to the {\em continuum} S/N distribution
+achieved for some number of galaxies.  Sample size arguments are presented in Section \ref{sec:sample_selection} where
+we motivate a {\em minimally} useful sub-sample size of 3000 galaxies and an {\em acceptable} size of 6000, where the
+sub-samples refer to the Primary (1.5\Reff) and Secondary (2.5 \Reff) samples.  An absolute minimum requirement on
+sample size that ensures MaNGA is worthwhile is therefore a total of 6000 galaxies, 3000 from each sub-sample.
+However, {\bf success is defined by meeting the acceptable level of 6000 galaxies for the Primary sample, and the
+minimal level of 3000 for the Secondary sample}.  It should be stressed that the two samples are tightly coupled
+scientifically.  A significant loss to the Secondary sample would greatly degrade our understanding of the Primary
 sample simply because of the lack of information at radii beyond 1.5 \Reff.
 
 With the current tiling, 63.0\% of the bundles are assigned to the Primary+ sample, 35.5\% are assigned to the secondary sample, and 1.5\% of the bundles are left unallocated. We also plan to allocate 5\% of the bundles to ancillary programs. Therefore, to achieve the success-defining sample size above, we need to observe at least 590 plates ($6000/0.63/0.95/17.= 590$). 
 Given the current master schedule in the repository and the plate completeness threshold defined below, simulation suggests that we will be able to complete 551 plates, which is 6.6\% short. Here we have assumed a 45\% open-dome time, with 10\% of the open-dome time lost on cloudy condition or bad seeing, and 10\% lost on orphaned exposures. The slight shortfall could be well within the uncertainty of the weather and other factors. 
 
-At what S/N do we define success? First, our focus on the stellar continuum does not invalidate the importance of science requirements for studies of the
-interstellar medium (Section \ref{sec:reqirements_ism}), but enables a metric that can be easily evaluated and compared to
-expectations from imaging data.  We define this metric using a spectral S/N threshold achieved for a given $r$-band surface
-brightness.  When this single, observational threshold is met by the data, we obtain a {\em distribution} of S/N values measured in
-the outer regions of galaxies in the target sample.  We can likewise characterize that S/N distribution with a single number (e.g., a
-median) thus defining a requirement that ensures the science goals can be met for the full distrubtion.  In other words, galaxies
-with a S/N below the stated requirement will not be ``thrown out.''  They simply represent an acceptable subset of the sample with
-somewhat less precision.  
+At what S/N do we define success? First, our focus on the stellar continuum does not invalidate the importance of
+science requirements for studies of the interstellar medium (Section \ref{sec:reqirements_ism}), but enables a metric
+that can be easily evaluated and compared to expectations from imaging data.  We define this metric using a spectral
+S/N threshold achieved for a given $r$-band surface brightness.  When this single, observational threshold is met by
+the data, we obtain a {\em distribution} of S/N values measured in the outer regions of galaxies in the target sample.
+We can likewise characterize that S/N distribution with a single number (e.g., a median) thus defining a requirement
+that ensures the science goals can be met for the full distrubtion.  In other words, galaxies with a S/N below the
+stated requirement will not be ``thrown out.''  They simply represent an acceptable subset of the sample with somewhat
+less precision.
 
 The two most stringent continuum S/N requirements both require a {\em median} $r$-band S/N per pixel of 33 to be achieved in annular spectral stacks in the outer
 regions of the Primary+ sample:
