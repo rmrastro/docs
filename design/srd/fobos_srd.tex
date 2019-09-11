@@ -32,7 +32,7 @@
 \newcommand{\erg}{{\rm erg}}
 \newcommand{\yr}{{\rm yr}}
 \newcommand{\cm}{{\rm cm}}
-\newcommand{\kms}{{\rm km s^{-1}}}
+\newcommand{\kms}{{\rm km s$^{-1}$}}
 \newcommand{\s}{{\rm s}}
 \newcommand{\Mpc}{{\rm Mpc}}
 \newcommand{\Halpha}{{H$\alpha$}}
@@ -503,18 +503,10 @@ A calculation of how the abundance precision (as represented by the Cramer-Rao b
 
 
 %% ----------------------------------------------------------------------------------------------------
-%%   FOBOS Key Observables
+%%   FOBOS Key Programs
 %% ----------------------------------------------------------------------------------------------------
 
-\section{FOBOS Key Programs}\label{sec:keyPrograms}
-
-We have described how FOBOS's success in addressing the key questions
-above relies on the ability to obtain an array of measurements of
-derived physical properties at targeted levels of precision.  We now
-detail how achieving these measurements translates into specific
-observational requirements for possible key programs.
-
-\subsection{Cosmology Key Program}
+\section{Cosmology Key Program}
 
 \begin{description}
 
@@ -531,9 +523,9 @@ observational requirements for possible key programs.
 What are they?
 
 
-\subsection{Galaxy Evolution Key Program}
+\section{Galaxy Evolution Key Program}
 
-\subsubsection{IFU Program}
+\subsection{IFU Program}
 
 \begin{description}
  \item[R2.2] A median S/N of $>33$ per pixel in the r-band continuum
@@ -622,7 +614,7 @@ strategy, the IFU regularity, and the fiber fill-factor:
 \end{itemize}
 
 
-\subsection{Science Justification}
+\subsubsection{Science Justification}
 
 In typical observing conditions (seeing $\leq$ 2\arcsec), the image
 quality of the data cube is governed primarily by the fiber diameter
@@ -667,11 +659,60 @@ requirement.
 
 \subsubsection{IFU Survey Success Metric and Completeness Metrics}
 
-What are they?
+To define a survey success metric, we concentrate on requirements relating to the {\em continuum} S/N distribution
+achieved for some number of galaxies.  Sample size arguments are presented in Section \ref{sec:sample_selection} where
+we motivate a {\em minimally} useful sub-sample size of 3000 galaxies and an {\em acceptable} size of 6000, where the
+sub-samples refer to the Primary (1.5\Reff) and Secondary (2.5 \Reff) samples.  An absolute minimum requirement on
+sample size that ensures MaNGA is worthwhile is therefore a total of 6000 galaxies, 3000 from each sub-sample.
+However, {\bf success is defined by meeting the acceptable level of 6000 galaxies for the Primary sample, and the
+minimal level of 3000 for the Secondary sample}.  It should be stressed that the two samples are tightly coupled
+scientifically.  A significant loss to the Secondary sample would greatly degrade our understanding of the Primary
+sample simply because of the lack of information at radii beyond 1.5 \Reff.
+
+With the current tiling, 63.0\% of the bundles are assigned to the Primary+ sample, 35.5\% are assigned to the secondary sample, and 1.5\% of the bundles are left unallocated. We also plan to allocate 5\% of the bundles to ancillary programs. Therefore, to achieve the success-defining sample size above, we need to observe at least 590 plates ($6000/0.63/0.95/17.= 590$). 
+Given the current master schedule in the repository and the plate completeness threshold defined below, simulation suggests that we will be able to complete 551 plates, which is 6.6\% short. Here we have assumed a 45\% open-dome time, with 10\% of the open-dome time lost on cloudy condition or bad seeing, and 10\% lost on orphaned exposures. The slight shortfall could be well within the uncertainty of the weather and other factors. 
+
+At what S/N do we define success? First, our focus on the stellar continuum does not invalidate the importance of
+science requirements for studies of the interstellar medium (Section \ref{sec:reqirements_ism}), but enables a metric
+that can be easily evaluated and compared to expectations from imaging data.  We define this metric using a spectral
+S/N threshold achieved for a given $r$-band surface brightness.  When this single, observational threshold is met by
+the data, we obtain a {\em distribution} of S/N values measured in the outer regions of galaxies in the target sample.
+We can likewise characterize that S/N distribution with a single number (e.g., a median) thus defining a requirement
+that ensures the science goals can be met for the full distrubtion.  In other words, galaxies with a S/N below the
+stated requirement will not be ``thrown out.''  They simply represent an acceptable subset of the sample with somewhat
+less precision.
+
+The two most stringent continuum S/N requirements both require a {\em median} $r$-band S/N per pixel of 33 to be achieved in annular spectral stacks in the outer
+regions of the Primary+ sample:
+
+\begin{itemize}
+\item [R2.2] Stacked stellar continuum S/N of 33 per pixel in the outer annular ring between 1 \Reff\ and 1.5 \Reff\ to measure stellar age/metallicity gradients for quiescent galaxies.
+\item [R3.1] Stacked stellar continuum S/N of 17 per pixel in one quadrant of the outer annular ring between 1\Reff\ and 1.5 \Reff, corresponding to 33 across the complete outer annulus.
+\end{itemize}
+
+\noindent The continuum requirement on star-forming galaxies and newly quenched galaxies is lower: 
+\begin{itemize}
+\item[R2.3] Stacked stellar continuum S/N of 10 per pixel in the outer annular ring between 1\Reff\ and 1.5\Reff\ to measure stellar age to better than 0.1 dex in star-forming and newly-quenched galaxies. 
+\end{itemize}
+
+With 2.25 hour exposure time (3 sets of 3 dithered exposures), 70\% of the primary+ sample will achieve the S/N
+requirement above. Among ``blue'' primary+ galaxies that are centrally star-forming or newly-quenched ($D_n(4000) <
+1.8$), 61\% will reach a stacked S/N of more than 10 per pxiel (R2.3).  In total, 92\% of the sample comfortably
+satisfy at least one of these two requirements.
+
+Using the empirical relation between S/N measured in raw spectra and that of fiber magnitudes, the 2.25 hour average exposure time corresponds to the following plate completeness metric. 
+%The above metric translates to the following plate completeness metric to be used in survey operation.
+
+\begin{itemize}
+\item For galactic-extinction-corrected i-band fiber magnitude of 21, the summed $(S/N)^2$ in the i-band should be greater than 36.
+ \item For galactic-extinction-corrected g-band fiber magnitude of 22, the summed $(S/N)^2$ in the g-band should be greater than 19.
+\end{itemize}
+
+Both metric have to be satisfied before a plate is considered done. With this metric, the majority of the plates will be finished with 9 exposures taken in good conditions, with a small fraction needing 12 or 15 good exposures. 
 
 
 
-\subsection{Local Group Key Program}
+\section{Local Group Key Program}
 
 \begin{description}
 
@@ -700,19 +741,48 @@ Summaries of Science and Program requirements and how they flow down to technica
 
 To be populated from Wiki Tables: \url{https://uco.atlassian.net/wiki/spaces/FOB/pages/15990810/Requirements}
 
-\subsection{High Level Instrument requirements}
+\subsection{FOBOS.TOP: Top-Level Instrument Requirements}
 
 \begin{description}
 
-\item [R1.1] Wavelength range
+\item [TOP.REQ.A01] Field of view (FoV) shall be 17\arcmin{} diameter with a goal of the full unvignetted 20\arcmin{} diameter.  A wider FoV increases the efficiency of targeting sources with lower on-sky densities, thus expanding FOBOS's science breadth.
 
-%\item [R3.2.4] To explore radii between 1.5 and $2.5~R_e$ we need 
-%to achieve the same S/N constraints in radially averaged bins. 
-%% FI
+\item [TOP.REQ.A02] Number of single fibers shall be at least 1800.  Over a 20\arcmin{} field, this number yields an average target density of 6 arcmin$^{-2}$ which matches the desired target density of our key programs.  Note that the on-sky density of sources brighter than i$_{AB}$ $\sim$25 is $\sim$40 arcmin$^{-2}$.
 
+\item [TOP.REQ.A03] The Single-fiber on-sky aperture shall be between 0.7--1.2\arcsec{}.
+
+\item [TOP.REQ.A10] In all instrument modes, FOBOS shall deploy 12 7-fiber bundles (4 per spectrograph) to achieve simultaneous spectrophotometry \citep[see][]{yan16a}.  
+
+\item [TOP.REQ.A04] In all instrument modes, FOBOS shall deploy a fixed, central fiber-bundle IFU with an on-sky aperture of 3\arcsec{} diameter.
+
+\item [TOP.REQ.A05] For science and calibration IFUs, individual spatial sampling within the IFU shall correspond to size of 0.33\arcsec{} in order to adequately sample seeing of FWHM$ = 0.6$\arcsec.
+
+\item [TOP.REQ.A06] The 1st-light IFU mode shall deploy 25 fiber-bundle IFUs each composed of 61 fibers.  The format is fixed because galaxy samples with $z > 0.4$ have a relatively confined apparent size distribution with a median of  $\sim$1.5\arcsec{} diameter.
+
+\item [TOP.REQ.A07] The FOBOS 1st-light spectrographs shall span a wavelength range of 0.31-1.0 $\mu$m.  This ensures adequate coverage of spectral features for key program targets and makes sure that FOBOS has no ``redshift desert.''
+
+
+\item [TOP.REQ.A08] The mid-channel spectral resolution in each spectrograph channel shall reach $R = 3500$
+
+\item [TOP.REQ.A09] Excluding the telescope and atmosphere, the instrument throughput shall be greater than 30\% over 95\% of the full wavelength range.
 
 \end{description}
 
+\subsection{FOBOS.ADC: Atmospheric Dispersion Corrector Requirements}
+
+\subsection{FOBOS.AGS: Acquisition and Guiding System Requirements}
+
+\subsection{FOBOS.FPM: Focal Plane Motion System Requirements}
+
+\subsection{FOBOS.FFP: Fiber Positioning System Requirements}
+
+\subsection{FOBOS.FBR: Fiber System Optics Requirements}
+
+\subsection{FOBOS.SPEC: Spectrograph Requirements}
+\subsection{FOBOS.SUPT: Support Systems Requirements}
+\subsection{FOBOS.CAL: Calibration System Requirements}
+\subsection{FOBOS.DMS: Spectrograph Requirements}
+\subsection{FOBOS.OPS: Operations Requirements}
 
 \subsection{Spatial Sampling}
 
@@ -955,159 +1025,8 @@ publicly available during data releases.  Whenever possible, we will use automat
 
 
 
-
-
-
-
-\subsubsection{Survey Success Metric and Completeness Metrics}
-
-To define a survey success metric, we concentrate on requirements relating to the {\em continuum} S/N distribution
-achieved for some number of galaxies.  Sample size arguments are presented in Section \ref{sec:sample_selection} where
-we motivate a {\em minimally} useful sub-sample size of 3000 galaxies and an {\em acceptable} size of 6000, where the
-sub-samples refer to the Primary (1.5\Reff) and Secondary (2.5 \Reff) samples.  An absolute minimum requirement on
-sample size that ensures MaNGA is worthwhile is therefore a total of 6000 galaxies, 3000 from each sub-sample.
-However, {\bf success is defined by meeting the acceptable level of 6000 galaxies for the Primary sample, and the
-minimal level of 3000 for the Secondary sample}.  It should be stressed that the two samples are tightly coupled
-scientifically.  A significant loss to the Secondary sample would greatly degrade our understanding of the Primary
-sample simply because of the lack of information at radii beyond 1.5 \Reff.
-
-With the current tiling, 63.0\% of the bundles are assigned to the Primary+ sample, 35.5\% are assigned to the secondary sample, and 1.5\% of the bundles are left unallocated. We also plan to allocate 5\% of the bundles to ancillary programs. Therefore, to achieve the success-defining sample size above, we need to observe at least 590 plates ($6000/0.63/0.95/17.= 590$). 
-Given the current master schedule in the repository and the plate completeness threshold defined below, simulation suggests that we will be able to complete 551 plates, which is 6.6\% short. Here we have assumed a 45\% open-dome time, with 10\% of the open-dome time lost on cloudy condition or bad seeing, and 10\% lost on orphaned exposures. The slight shortfall could be well within the uncertainty of the weather and other factors. 
-
-At what S/N do we define success? First, our focus on the stellar continuum does not invalidate the importance of
-science requirements for studies of the interstellar medium (Section \ref{sec:reqirements_ism}), but enables a metric
-that can be easily evaluated and compared to expectations from imaging data.  We define this metric using a spectral
-S/N threshold achieved for a given $r$-band surface brightness.  When this single, observational threshold is met by
-the data, we obtain a {\em distribution} of S/N values measured in the outer regions of galaxies in the target sample.
-We can likewise characterize that S/N distribution with a single number (e.g., a median) thus defining a requirement
-that ensures the science goals can be met for the full distrubtion.  In other words, galaxies with a S/N below the
-stated requirement will not be ``thrown out.''  They simply represent an acceptable subset of the sample with somewhat
-less precision.
-
-The two most stringent continuum S/N requirements both require a {\em median} $r$-band S/N per pixel of 33 to be achieved in annular spectral stacks in the outer
-regions of the Primary+ sample:
-
-\begin{itemize}
-\item [R2.2] Stacked stellar continuum S/N of 33 per pixel in the outer annular ring between 1 \Reff\ and 1.5 \Reff\ to measure stellar age/metallicity gradients for quiescent galaxies.
-\item [R3.1] Stacked stellar continuum S/N of 17 per pixel in one quadrant of the outer annular ring between 1\Reff\ and 1.5 \Reff, corresponding to 33 across the complete outer annulus.
-\end{itemize}
-
-\noindent The continuum requirement on star-forming galaxies and newly quenched galaxies is lower: 
-\begin{itemize}
-\item[R2.3] Stacked stellar continuum S/N of 10 per pixel in the outer annular ring between 1\Reff\ and 1.5\Reff\ to measure stellar age to better than 0.1 dex in star-forming and newly-quenched galaxies. 
-\end{itemize}
-%. Because of the dominance of younger-aged stars and their fast evolution, it is easier to differentiate the age of the stellar population. 
-
-%r-band continuum S/N in an outer annulus between 1.1 and 1.5Re and the \Hbeta\ amplitude-to-noise ratio in the outer annulus. 
-%The most stringent among these come from requirements R1.2 (SFR per resolution element), R2.2 (stellar age/metallicity gradient), and R3.1 (gravitating mass from kinematics). These require the S/N of 33 per pixel in an annular ring between 1.1 and 1.5Re. Other science cases require less S/N to achieve. 
-
-%Because the observations are done under different conditions with different airmasses, and the galactic extinction varies from field to field, we use the following plate completeness metric in survey operation.
-
-Given the current sample and survey design, we estimate the S/N we can obtain in an outer elliptical annulus for each galaxy with
-semi-major axis between 1 and 1.5\Reff, or between 67\% and 100\% of the effective radius of the bundle\footnote{We define
-  effective radius of the bundle as the radius of an equal-area circle to the hexagonal bundle.}. This is based on the S/N
-vs. fiber magnitude relation from the first batch of MaNGA data.
-
-With 2.25 hour exposure time (3 sets of 3 dithered exposures), 70\% of the primary+ sample will achieve the S/N requirement
-above. Among ``blue'' primary+ galaxies that are centrally star-forming or newly-quenched ($D_n(4000) < 1.8$), 61\% will reach a
-stacked S/N of more than 10 per pxiel (R2.3).  In total, 92\% of the sample comfortably satisfy at least one of these two
-requirements.
-
-% The remaining 8\% of galaxies have an old stellar population and have a stacked S/N in the outer tertile that is lower than 33 per pixel in r-band. The median stacked S/N is 22.6 among them; 6/7 of them have S/N greater than 10. Although they will not have the S/N to achieve the target precision in stellar age and metallicity, they will none the less still provide useful constraints.
-
-%84.8\% of the primary+ sample will satisfy at least one of the above requirements. In detail, 48.1\% satisfy requirement M1, 67\% satisfy requirement M2, and 47.3\% are expected to satisfy requirement M3, nearly all of which also satisfy requirement M2. The number for M3 is most uncertain because the \Hbeta\ EW in the outer region is unknown. Here we assume that the \Hbeta\ EW in the outskirts is the same as the central region, which should be a conservative estimate. 
-
-%Therefore, assuming no changes on the primary/secondary split, we would claim the survey successful if we can obtain a sample of 6000 galaxies in the primary+ sample, at least 65\% of them are covered to 1.5$R_e$, and at least 65\% of them have an r-band continuum S/N in the outer elliptical tertile greater than 33 per pixel, and at least 55\% greater than 10 per pixel while having a central $D_n(4000)$ less than 1.8. %At the same time, we expect 47\% will have \Hbeta\ A/N in the outer quartile to be greater than 7.
-
-For the secondary sample, we do not set a success metric as it is quite uncertain how strong the emission line would be in the
-outer parts and what signal we would see in metallicity gradient, stellar population gradient, etc. This will be reevaluated in Summer 2015.  
-
-Using the empirical relation between S/N measured in raw spectra and that of fiber magnitudes, the 2.25 hour average exposure time corresponds to the following plate completeness metric. 
-%The above metric translates to the following plate completeness metric to be used in survey operation.
-
-\begin{itemize}
-\item For galactic-extinction-corrected i-band fiber magnitude of 21, the summed $(S/N)^2$ in the i-band should be greater than 36.
- \item For galactic-extinction-corrected g-band fiber magnitude of 22, the summed $(S/N)^2$ in the g-band should be greater than 19.
-\end{itemize}
-
-Both metric have to be satisfied before a plate is considered done. With this metric, the majority of the plates will be finished with 9 exposures taken in good conditions, with a small fraction needing 12 or 15 good exposures. 
-
-\section{Stellar Library} \label{sec:stellar_library}
-
-The MaNGA team will conduct a ``Special Ancillary Program'' to observe a new stellar library for use in stellar population modeling and kinematic studies by co-observing with
-APOGEE-2N during bright time.  The key advantage of this library over existing stellar libraries is the fact that the stellar
-spectra will be observed with the same instrumental set-up as the galaxies and thus they will have the same wavelength coverage
-and spectral resolution. A further advantage is that MaNGA's stellar library will contain a much greater number of stars than
-previous libraries, significantly improving stellar parameter coverage.  The Library will provide higher science returns for
-MaNGA, an additional legacy for SDSS-IV, and a well-motivated use of bight-time observations with the BOSS spectrographs.
-
-The ideal stellar library provides complete coverage of stellar parameter space (effective temperature T$_{eff}$, surface gravity
-log g, abundance ratios [Fe/H], [Mg/Fe], [Z/H]).  While this is possible to achieve with synthetic libraries, all such libraries
-suffer from inaccuracies due to incomplete photospheric line lists (see e.g. \citealt{korn2005}), and therefore empirical
-libraries are generally preferred.  The key challenge in constructing an empirical library is to obtain the best possible coverage
-of stellar parameters given the limitation of the available Milky Way stars.  The best existing empirical library at optical
-wavelengths is MILES (http://miles.iac.es), which contains 985 stars that were selected based on an extensive literature search
-for targets covering the widest range in stellar parameters.  
-
-% To construct MaNGA's stellar library, we will take a different
-% approach: we will observe 10,000 stars that have been color-selected to span a broad range in stellar parameters. Preliminary
-% simulations by Jes\'{u}s Falc\'{o}n-Barroso and Carlos Allende Prieto suggest that this approach will be highly successful in
-% obtaining the desired coverage of stellar parameters.
-
-In order to achieve a library of the desired size, this special program will 
-co-observe with APOGEE-2N during bright time.  Stars will be placed
-in the center of MaNGA IFU bundles to mitigate the effects of atmospheric
-dispersion and achieve the best possible spectrophotometric calibration.
-The stars will be bright ($g < 17.5$) and most of the fibers in an IFU 
-will sample sky, so good sky subtraction will be possible. Random errors 
-in spectrophotometric calibration and sky subtraction will be reduced by 
-averaging stellar spectra of the same type observed on different plates.
-
-\noindent The {\em goals} of MaNGA's stellar library are listed below:
-\begin{itemize}
-
-\item Target selection informed from a variety of existing observations including color selection and spectroscopy from other
-  facilities in order to maximize the parameter space coverage
-
-\item Observations of 8,000 stars to improve coverage of stellar 
-parameter space and to reduce random calibration errors
-
-\item A median S/N of 50 per pixel in each stellar spectrum to ensure  
-accurate stellar typing
-
-\item Observations of 10-30 MILES stars in the APOGEE-2N fields for 
-consistency checks
-
-\item Spectrophotometric accuracy comparable to or better than the 
-MILES library.  B-V colors derived from synthetic photometry of MILES spectra 
-have a 0.02 mag RMS compared to observed photometry, which translates
-into 2\% errors between 4400 and 5500~\AA.   
-
-\item Poisson-limited sky subtraction especially in the $>$ 8000-10000 \AA\
- range to enable accurate calibration of important line indices such
- as the Ca II triplet and the IMF-sensitive Na~I $\lambda8190$ feature
-
-\end{itemize}
-
-\noindent In order to realize these goals, we {\em require} the following:
-
-\begin{itemize}
-
-\item The opporunity for MaNGA co-observing on at least 500 APOGEE-2-led plates observed in cartridges with MaNGA hardware installed.
-
-\item Standard MaNGA calibration exposures obtained in conjunction with the observations as necessary.
-
-\item Coordination on plate design with the APOGEE team based on the APOGEE-2 plate observation schedule.
-
-\end{itemize}
-
-The MaNGA team will organize and make accessible all raw data obtained by Library observations.  Our aim is to fully reduce, calibrate, and
-compile the spectra into a user-friendly Library database, and we will carry out these activities on a best-effort basis.
-
-
-
 \bibliographystyle{apj}
-\bibliography{../../manga_references}  % manga_references.bib is located in svn/manga/documentation/
+\bibliography{references}  % manga_references.bib is located in svn/manga/documentation/
 
 
 \end{document}
