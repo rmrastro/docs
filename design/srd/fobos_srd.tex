@@ -6,7 +6,7 @@
 \usepackage{enumerate}
 \usepackage{epsfig, pdfpages, longtable, booktabs, pbox, pdflscape, minitoc, afterpage}
 %\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{psfig}
+\usepackage{psfig,color}
 \usepackage{graphicx}
 
 \textwidth=6.5in
@@ -42,6 +42,11 @@
 \newcommand{\Reff}{{R$_{e}$}}
 \newcommand{\HI}{{\sc H\,i}}
 \newcommand{\HII}{{\sc H\,ii}}
+\newcommand{\photoz}{photo-$z$}
+
+% Some fancy commenting
+\definecolor{todo}{RGB}{200,0,0}
+\newcommand{\edit}[2][todo]{{\color{#1}[[{\bf #2}]]}}
 
 % Enable mini table of contents
 %\dominitoc
@@ -68,7 +73,7 @@
 
 %\minitoc
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 %\setcounter{minitocdepth}{3}
 \setcounter{secnumdepth}{3}
 \tableofcontents
@@ -172,10 +177,10 @@ data products (Section~\ref{sec:data_products}).
 %% Cosmology Program
 %% ----------------------------------------------------------------------------------------
 \newpage
-\section{FOBOS Key Science: Cosmology } \label{sec:cosmology}
+\section{Science Drivers: Cosmology} \label{sci:cosmology}
 
 \subsection{Photometric Redshift Training for Dark Energy Surveys}
-\label{sec:photoz}
+\label{sci:photoz}
 
 See DESC Google Doc of Desiridata: \url{https://docs.google.com/document/d/1SgST0eiQC2WmVFWyu6HUBpFN7EERZhC5t\_7OXrwRMJg/edit\#heading=h.olp0r1g70nxf}
 
@@ -263,12 +268,12 @@ sparse high-$z$ spectroscopy for LBG dN/d$z$ calibration via clustering redshift
 %% Galaxy Evolution Program
 %% ----------------------------------------------------------------------------------------
 \newpage
-\section{FOBOS Key Science: Understanding Galaxy Evolution} \label{sec:galaxies}
+\section{Science Drivers: Galaxy Evolution} \label{sci:galaxies}
 
 With both single-fiber and multiplexed IFU observations, FOBOS will produce rich and comprehensive data sets at faint source magnitudes.  Its blue sensitivity affords UV absorption studies down to $z \sim 1.5$, enabling detailed mapping of the baryonic environment at the peak formation epoch.  Samples at $z=1$--$2$ will not only characterize how this environment and its impact on galaxies evolves but will also provide large training sets that can be used to extract spectroscopic-like information from the billion-plus galaxy samples observed in all-sky surveys.  These data will be used in concert with large samples of spatially-resolved FOBOS observations (in IFU mode) to set the context for highly-detailed studies of targeted samples with James Webb Space Telescope and the U.S.~Extremely Large Telescopes.  Finally, FOBOS can tie evolutionary behavior seen at early times to the present day by observing faint sub-structure and dynamical tracers in nearby galaxies.
 
 \subsection{1B Galaxy Samples from Spectroscopic Training}
-\label{sec:1Bgalaxies}
+\label{sci:1Bgalaxies}
 
 Apply deep-
 learning algorithms to infer physical properties of galaxies at
@@ -295,7 +300,7 @@ and stellar masses --- and determine design parameters for future training sets 
 
 
 \subsection{The Galaxy Environment and Ecosystem}
-\label{sec:ecosystem}
+\label{sci:ecosystem}
 
 With publicly-accessible surveys like MOSDEF \citep{kriek15}, the Keck MOSFIRE instrument has provided powerful new
 insights into early galaxies at the $z$$\sim$2 peak-formation epoch \citep[also see KBSS,][]{steidel14}. However, a
@@ -347,7 +352,7 @@ of 4--5).
 
 
 \subsection{Internal Structure of Galaxies}
-\label{sec:content}
+\label{sci:internal}
 
 MaNGA \citep{bundy15} and other large IFU surveys are defining the
 $z=0$ benchmark for how internal structure is organized across the
@@ -413,7 +418,7 @@ These features encode a great deal of information about star formation
 histories and the IMF, and can be used to measure element abundance
 ratios like [Mg/Fe], [N/Fe], [C/Fe] and [Ca/Fe].
 
-\subsubsection{Science Requirements for Galaxy Structure with IFUs}
+\subsubsection{Science Requirements: Galaxy Structure with IFUs}
 
 \begin{description}
 
@@ -496,17 +501,55 @@ and Virgo.
 %% Local Group Program
 %% ----------------------------------------------------------------------------------------
 \newpage
-\section{FOBOS Key Science: The Milky Way and its Local Group} \label{sec:local}
+\section{Science Drivers: Milky Way and Local Group} \label{sci:localgroup}
+
+\subsection{Halo Assembly in the Milky Way and M31}
+
+Studies of individual stars in the Milky Way (MW), Magellanic Clouds, Andromeda (M31), Triangulum galaxy (M33), and
+numerous dwarf satellites provide an exquisitely detailed look at specific examples of galaxy assembly and evolution.
+While Gaia provides on-sky motions and photometry for 1.7 billion stars in the MW, fewer than 10\%, 0.3\%, and 0.1\% of
+stars will have a full complement of astrometrics and kinematics, basic stellar parameters, and chemical abundances,
+respectively.  Moreover, Gaia distance errors increase quadratically with distance.  Spectroscopy with APOGEE, the
+Milky Way Mapper, and WEAVE provide supporting wide-field data sets but accounting for fainter stars requires
+FOBOS-like sensitivity \citep[see][]{dey19,sanderson19}.  By carefully exploiting the overlap in these data sets, FOBOS
+can link high-resolution and robust stellar information from brighter targets to stars that can only be characterized
+by photometry.  This would enable data-driven models capable of providing photometric estimates of stellar
+parameters (temperature, surface gravity, metallicity, and alpha-element abundance) for {\it all} stars in the Gaia
+dataset  \citep[see][]{2015ApJ...808...16N, 2018arXiv180401530T, 2018arXiv180803278T}.
+
+Of particular interest is the ability of future imaging surveys to increase the census of stellar streams and other
+substructure by a hundredfold.  The stars in these structures are faint, however, and easily confused with background
+galaxies in ground-based photometry.  With spectrocopic reference samples from FOBOS, the goal is to photometrically
+reconstruct the star-formation histories of disrupted satellites and compare them with dynamical models to constrain
+assembly histories and enclosed mass constraints \citep[e.g.,][]{2017ApJ...836..234S}.
+
+
+
+\subsubsection{Science Requirements: Halo Assembly}
+
+\begin{description}
+
+\item[S5.1] 
 
 A calculation of how the abundance precision (as represented by the Cramer-Rao bound) suffers as you decrease the resolving power of the UV channel while maintaining R~3500 for the other channels (see attached). This is assuming a full spectrum fitting approach for an RGB star at [Fe/H]=-1.0 and -2.0 with a constant S/N=30. As expected, the precision decreases, but not dramatically so. A comparison at fixed integration time would result in slightly smaller differences between the different options.
 
+\end{description}
 
+
+\subsection{Globular Clusters?}
+
+\subsection{Massive Stars?}
 
 %% ----------------------------------------------------------------------------------------------------
 %%   FOBOS Key Programs
 %% ----------------------------------------------------------------------------------------------------
 
-\section{Cosmology Key Program}
+\section{Key Program: Cosmology}\label{prog:cosmology}
+
+\edit{In the description of straw-man observing programs, we don't have to follow the same thematic structure as we did in the science requirements.  For example, the \photoz{} survey and the 1B galaxy sample may be very similar and can be combined here.  So we could change the title of this key program to a more general ``The 1B Galaxy Inferrence'' or something...
+
+There are at least two Cosmology programs: a \photoz{} training program a la \citet{newman15} and \citet{hemmati18} and a LBG dN/d$z$ program motivated by \citet{wilson19}.  We should have defined their top-level requirements in Section \ref{sci:cosmology}, but can we combine the observing needs into a single program here with multiple target classes?  Or do we break them out?}
+
 
 \begin{description}
 
@@ -518,14 +561,16 @@ A calculation of how the abundance precision (as represented by the Cramer-Rao b
 
 \end{description}
 
-\subsubsection{Cosmology Survey Success Metric and Completeness Metrics}
+\subsection{Cosmology Survey Success Metric and Completeness Metrics}
 
 What are they?
 
 
-\section{Galaxy Evolution Key Program}
+\section{Key Program: Galaxy Evolution}\label{prog:galaxies}
 
-\subsection{IFU Program}
+\subsection{IFU Program}\label{prog:galaxies-IFU}
+
+\edit{Text here right now is stolen from MaNGA...  Need to think about GLAO.}
 
 \begin{description}
  \item[R2.2] A median S/N of $>33$ per pixel in the r-band continuum
@@ -614,7 +659,7 @@ strategy, the IFU regularity, and the fiber fill-factor:
 \end{itemize}
 
 
-\subsubsection{Science Justification}
+\subsubsection{IFU Program Science Justification}
 
 In typical observing conditions (seeing $\leq$ 2\arcsec), the image
 quality of the data cube is governed primarily by the fiber diameter
@@ -711,8 +756,11 @@ Using the empirical relation between S/N measured in raw spectra and that of fib
 Both metric have to be satisfied before a plate is considered done. With this metric, the majority of the plates will be finished with 9 exposures taken in good conditions, with a small fraction needing 12 or 15 good exposures. 
 
 
+\subsection{Galaxy Ecosystem Program}\label{prog:ecosystem}
 
-\section{Local Group Key Program}
+\edit{This program could combine IGM tomography and $z \sim 1$--2 1M galaxy environment survey.}
+
+\section{Local Group Key Program}\label{prog:localgroup}
 
 \begin{description}
 
